@@ -1,0 +1,13 @@
+/* ---------------------------------------------------------------------
+Original Author: Jess Green
+Contributors: N/A
+
+Target Browsers: IE7, IE6
+Media Type: Screen, Projection
+Width: All Sizes
+------------------------------------------------------------------------ */
+
+/* Bicubic resizing for non-native sized IMG */
+img {
+    -ms-interpolation-mode: bicubic;
+}

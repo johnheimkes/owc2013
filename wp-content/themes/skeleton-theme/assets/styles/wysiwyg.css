@@ -1,0 +1,208 @@
+/* ---------------------------------------------------------------------
+Original Author: Neil Wargo
+Contributors: N/A
+
+Target Browsers: All
+Media Type: Screen, Projection
+Width: All Sizes
+
+This should only serve as a baseline for WYSIWYG areas in the text. Modify
+or delete where appropriate.
+------------------------------------------------------------------------ */
+
+.wysiwyg b,
+.wysiwyg strong {
+    font-weight: bold;
+}
+
+.wysiwyg em,
+.wysiwyg i {
+    font-style: italic;
+}
+
+.wysiwyg ul,
+.wysiwyg ol {
+    padding-left: 40px;
+}
+
+.wysiwyg ul {
+    list-style-type: disc;
+}
+
+.wysiwyg ol {
+    list-style-type: decimal;
+}
+
+.wysiwyg del {
+    text-decoration: line-through;
+}
+
+.wysiwyg p, 
+.wysiwyg ul,
+.wysiwyg ol {
+    margin-bottom: 1em;
+}
+
+.wysiwyg h1,
+.wysiwyg h2,
+.wysiwyg h3,
+.wysiwyg h4,
+.wysiwyg h5,
+.wysiwyg h6 {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.wysiwyg h1 {
+    font-size: 36px;
+}
+
+.wysiwyg h2 {
+    font-size: 32px;
+}
+
+.wysiwyg h3 {
+    font-size: 28px;
+}
+
+.wysiwyg h4 {
+    font-size: 24px;
+}
+
+.wysiwyg h5 {
+    font-size: 18px;
+}
+
+.wysiwyg h6 {
+    font-size: 14px;
+}
+
+.wysiwyg blockquote {
+    margin-left: 40px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+.wysiwyg blockquote:before {
+    content: "\201C";
+    font: italic 72px sans-serif;
+    float: left;
+    line-height: 63px;
+    margin-right: 10px;
+}
+
+.wysiwyg q:before {
+    content: "\201C";
+}
+
+.wysiwyg q:after {
+    content: "\201D";
+}
+
+.wysiwyg q {
+    quotes: "\201C" "\201D"
+}
+
+.wysiwyg sub {
+    font-size: 0.5em;
+    position: relative;
+    top: 0.5em;    
+}
+
+.wysiwyg sup {
+    font-size: 0.5em;
+    position: relative;
+    top: -1em;    
+}
+
+.wysiwyg pre,
+.wysiwyg code,
+.wysiwyg var,
+.wysiwyg kbd,
+.wysiwyg tt {
+    font-family: Consolas, monospace;
+}
+
+.wysiwyg address {
+    font-style: italic;
+    margin-bottom: 1em;
+}
+
+.wysiwyg abbr {
+    border-bottom: 1px dotted black;
+}
+
+.wysiwyg dl {
+    margin-left: 25px;
+    margin-bottom: 1em;
+}
+
+.wysiwyg dt {
+    font-weight: bold;
+}
+
+.wysiwyg dd {
+    margin-left: 25px;
+}
+
+.wysiwyg table {
+    margin-bottom: 1em;
+}
+
+.wysiwyg table td {
+    padding: 5px;
+}
+
+.aligncenter {
+    margin: 0 auto;
+    display: block;
+    clear: both;
+}
+
+.alignleft {
+    float: left;
+    clear: left;
+}
+
+.alignright {
+    float: right;
+    clear: right;
+}
+
+img.aligncenter,
+.wp-caption.aligncenter {
+    margin: 5px auto;
+}
+
+img.alignnone {
+    margin: 5px;
+}
+
+img.alignleft,
+.wp-caption.alignleft {
+    margin: 5px 5px 5px 0;
+}
+
+img.alignright,
+.wp-caption.alignright {
+    margin: 5px 0 5px 5px;
+}
+
+.wp-caption {
+    background-color: #FFF9EB;
+    box-shadow: 0 0 2px #666;
+    border-radius: 5px;
+    padding: 10px 5px 5px;
+}
+
+.wp-caption img {
+    margin: 0 auto 10px;
+    display: block;    
+}
+
+.wp-caption-text {
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 10px !important;
+}
