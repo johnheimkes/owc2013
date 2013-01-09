@@ -14,18 +14,27 @@
  * @package WordPress
  */
 
+/**
+ * Home & site URL.
+ *
+ * This will override the home/site URL settings
+ * in the General Settings of wp-admin.
+ */
+define('WP_HOME', 'http://[shenanigans.stuff]');
+define('WP_SITEURL', WP_HOME);
+
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'database_name_here');
+define('DB_NAME', 'owc2013');
 
 /** MySQL database username */
-define('DB_USER', 'username_here');
+define('DB_USER', 'owc');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'password_here');
+define('DB_PASSWORD', 'owc');
 
 /** MySQL hostname */
-define('DB_HOST', 'localhost');
+define('DB_HOST', 'dev.papabear.me');
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');
@@ -59,7 +68,7 @@ define('NONCE_SALT',       'put your unique phrase here');
  * You can have multiple installations in one database if you give each a unique
  * prefix. Only numbers, letters, and underscores please!
  */
-$table_prefix  = 'wp_';
+$table_prefix  = 'owc_';
 
 /**
  * WordPress Localized Language, defaults to English.
