@@ -34,7 +34,7 @@ define('DB_USER', 'owc');
 define('DB_PASSWORD', 'owc');
 
 /** MySQL hostname */
-define('DB_HOST', '10.0.1.13');
+define('DB_HOST', 'PAPABEAR_IP_GOES_HERE');
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');
