@@ -31,6 +31,10 @@ Width: All Sizes
     float: left;
 }
 
+.grid-col img {
+    max-width: 100%;
+}
+
 .grid-col-right {
     float: right;
 }
@@ -66,4 +70,8 @@ Width: All Sizes
     background: #CCCCCC;
     line-height: 20px;
     text-align: center;
+}
+
+.wireframe.grid-col {
+    border: 1px solid #ccc;
 }
