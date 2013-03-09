@@ -66,7 +66,37 @@ function nerderyEnqueueScripts()
         true
     );
 
+    // ExternalLinks cript
+    wp_register_script(
+        'nerdery-external-links',
+        NERDERY_THEME_PATH_URL . 'assets/scripts/external-links.js',
+        array('jquery'),
+        '1.0',
+        true
+    );
+
+    // AutoReplace script
+    wp_register_script(
+        'nerdery-auto-replace',
+        NERDERY_THEME_PATH_URL . 'assets/scripts/auto-replace.js',
+        array('jquery'),
+        '1.0',
+        true
+    );
+
+    // Carousel script
+    wp_register_script(
+        'nerdery-carousel',
+        NERDERY_THEME_PATH_URL . 'assets/scripts/carousel.js',
+        array('jquery'),
+        '1.0',
+        true
+    );
+
     wp_enqueue_script('nerdery-global');
+    wp_enqueue_script('nerdery-external-links');
+    wp_enqueue_script('nerdery-auto-replace');
+    wp_enqueue_script('nerdery-carousel');
 
     // Comment reply script for threaded comments (registered in WP core)
     if (is_singular() && get_option('thread_comments')) {
@@ -100,7 +130,16 @@ function nerderyEnqueueStyles()
         '1.0',
         'screen, projection'
     );
-    
+
+    // Mobile Screen Stylesheet
+    wp_register_style(
+        'nerdery-screen_small',
+        NERDERY_THEME_PATH_URL . 'assets/styles/screen_small.css',
+        array('nerdery-reset'),
+        '1.0',
+        'screen and (max-width: 480px)'
+    );
+
     // WYSIWYG Stylesheet
     wp_register_style(
         'nerdery-wysiwyg',
@@ -154,6 +193,7 @@ function nerderyEnqueueStyles()
     // Queue the stylesheets. Note that because nerdery-screen was registered
     // with nerdery-reset as a dependency, it does not need to be enqueued here.
     wp_enqueue_style('nerdery-screen');
+    wp_enqueue_style('nerdery-screen_small');
     wp_enqueue_style('nerdery-wysiwyg');
     wp_enqueue_style('nerdery-print');
     wp_enqueue_style('nerdery-ie9');
@@ -161,8 +201,35 @@ function nerderyEnqueueStyles()
     wp_enqueue_style('nerdery-ie7');
 }
 
+/**
+ * Change the text of a top level admin menu item
+ *
+ * @access public
+ * @global array $menu
+ */
+function change_the_menu() {
+  global $menu;
+ 
+	// Strings
+	$to_match     = __( 'Products' );
+	$replace_with = __( 'Events' );
+ 
+	// Loop through the top level menu items
+	foreach ( $menu as $menu_position => $menu_properties ) {
+ 
+		// Look for a match
+		if ( $to_match === $menu_properties[0] ) {
+ 
+			// Found a match, so change the global and bail
+			$menu[$menu_position][0] = $replace_with;
+			break;
+		}
+	}
+}
+add_action( 'admin_menu', 'change_the_menu' );
+
 // Merne's Shitz -- will need to be modified.
-if ( function_exists( 'add_image_size' ) ) { 
+if ( function_exists( 'add_image_size' ) ) {
     add_image_size( 'profile-thumb', 270, 246, true ); //(cropped)
     add_image_size( 'slideshow-full', 1320, 675, true );
 }
@@ -213,7 +280,7 @@ function setup_post_types() {
             'has_archive' => false,
         )
     );
-    
+
     // stoke.d Profile
     register_post_type( 'stoked_profile',
         array(
@@ -240,7 +307,7 @@ function setup_post_types() {
             'has_archive' => false,
         )
     );
-    
+
     // Hero and Home Page Builder
     register_post_type( 'stoked_hero_home',
         array(
@@ -265,9 +332,9 @@ function setup_post_types() {
             'has_archive' => false,
         )
     );
-    
-    
-} 
+
+
+}
 // Init Post types
 add_action( 'init', 'setup_post_types');
 
@@ -286,28 +353,28 @@ function wpt_portfolio_icons() {
         .wp_themeSkin iframe {
             background: #FFF !important; /* yeah, I know...but its for the extra TinyMCE's */
         }
-        
+
         .st-custom-heading {
             font-size: 16px;
             font-weight: bold;
             line-height: 1.5;
             margin: 10px 0;
         }
-        
+
     </style>
-<?php 
+<?php
 }
 add_action( 'admin_head', 'wpt_portfolio_icons' );
 
-function setup_theme_admin_menus() {  
-    add_menu_page('Site Options', 'Social Media', 'administrator', 'site-options', 'theme_front_page_settings', null, 3); 
+function setup_theme_admin_menus() {
+    add_menu_page('Site Options', 'Social Media', 'administrator', 'site-options', 'theme_front_page_settings', null, 3);
 }
 add_action("admin_menu", "setup_theme_admin_menus");
 
 function theme_front_page_settings() {
-    // Check that the user is allowed to update options  
-    if (!current_user_can('manage_options')) {  
-        wp_die('You do not have sufficient permissions to access this page.');  
+    // Check that the user is allowed to update options
+    if (!current_user_can('manage_options')) {
+        wp_die('You do not have sufficient permissions to access this page.');
     }
 
     if (isset($_POST["update_settings"])) {
@@ -323,7 +390,7 @@ function theme_front_page_settings() {
         update_option("theme_twitter", $twitter);
         update_option("theme_instagram", $instagram);
     }
-    
+
     $get_homepage_int           = get_option("theme_homepage_int");
 
     $get_linked_in              = get_option("theme_linked_in");
@@ -332,13 +399,13 @@ function theme_front_page_settings() {
     $get_instagram              = get_option("theme_instagram");
 
     ?>
-    
-    <div class="form-wrap">  
-            <?php screen_icon('themes'); ?> <h2>Stoke.d Contact Info and Theme Options</h2>  
+
+    <div class="form-wrap">
+            <?php screen_icon('themes'); ?> <h2>Stoke.d Contact Info and Theme Options</h2>
 
             <form method="POST" action="">
                 <fieldset>
-                    <input type="hidden" name="update_settings" value="Y" />  
+                    <input type="hidden" name="update_settings" value="Y" />
                     <legend class="admin-legend">Social Media and Other Options</legend>
                     <p>NOTE: The RSS feed is automatically linked.</p>
                     <ul class="form-list">
@@ -364,7 +431,7 @@ function theme_front_page_settings() {
                         </li>
                     </ul>
                 </fieldset>
-                <p class="btn-holder">  
+                <p class="btn-holder">
                     <input type="submit" value="Save settings" class="button-primary" />
                 </p>
             </form>
@@ -376,20 +443,20 @@ function theme_front_page_settings() {
 function extend_events_plug($post) {
     // TODO: ADD IN ALL FIELDS!
     $eventDetails = array();
-    
+
     $eventDetails[0] = get_post_meta($post->ID, 'steventdates', TRUE);
     $eventDetails[1] = get_post_meta($post->ID, 'steventtuition', TRUE);
     $eventDetails[2] = get_post_meta($post->ID, 'steventcancellation', TRUE);
-    
+
     $eventDetails[3] = get_post_meta($post->ID, 'steventoverview', TRUE);
     $eventDetails[4] = get_post_meta($post->ID, 'steventcontact', TRUE);
     $eventDetails[5] = get_post_meta($post->ID, 'steventwhoattend', TRUE);
     $eventDetails[6] = get_post_meta($post->ID, 'steventkeytake', TRUE);
     $eventDetails[7] = get_post_meta($post->ID, 'steventvenue', TRUE);
-    
+
     $eventDetails[8] = get_post_meta($post->ID, 'steventexternal', TRUE);
     $eventDetails[9] = get_post_meta($post->ID, 'steventreglink', TRUE)
-    
+
     ?>
     <ul class="meta-box-list">
         <li>
@@ -433,24 +500,24 @@ function setup_pages_metabox($post) {
     $section3 = get_post_meta($post->ID, 'section3', TRUE);
     $section4 = get_post_meta($post->ID, 'section4', TRUE);
     $section5 = get_post_meta($post->ID, 'section5', TRUE);
-    
+
     $sectionArray = array($section1, $section2, $section3, $section4, $section5);
-    
+
     // Query Sections
     $sectionQuery = new WP_Query( 'post_type=page' );
     ?>
     <ul class="meta-box-list">
         <?php
         $numSections = 5;
-        
+
         for($i=1;$i <= $numSections; $i++){
             echo "<li>Section ".$i.": <select name='section".$i."' id='section".$i."'><option value='null'>Select One</option>";
             foreach($sectionQuery->posts as $section) {
 
                 if($sectionArray[$i-1] == $section->ID){
-                    echo "<option value='".$section->ID."' selected='selected'>".$section->post_title."</option>";                    
+                    echo "<option value='".$section->ID."' selected='selected'>".$section->post_title."</option>";
                 } else {
-                    echo "<option value='".$section->ID."'>".$section->post_title."</option>";                    
+                    echo "<option value='".$section->ID."'>".$section->post_title."</option>";
                 }
             }
             echo "</select></li>";
@@ -468,65 +535,65 @@ function write_panel_save($post_id) {
     if (defined('DOING_AUTOSAVE') && DOING_AUTOSAVE) {
         return $post_id;
     }
-    
+
     if(isset($_REQUEST['section1'])) {
         update_post_meta($post_id, 'section1', $_REQUEST['section1']);
     }
-    
+
     if(isset($_REQUEST['section2'])) {
         update_post_meta($post_id, 'section2', $_REQUEST['section2']);
     }
-    
+
     if(isset($_REQUEST['section3'])) {
         update_post_meta($post_id, 'section3', $_REQUEST['section3']);
     }
-    
+
     if(isset($_REQUEST['section4'])) {
         update_post_meta($post_id, 'section4', $_REQUEST['section4']);
     }
-    
+
     if(isset($_REQUEST['section5'])) {
         update_post_meta($post_id, 'section5', $_REQUEST['section5']);
     }
-    
+
     if(isset($_REQUEST['steventdates'])) {
         update_post_meta($post_id, 'steventdates', $_REQUEST['steventdates']);
     }
-    
+
     if(isset($_REQUEST['steventtuition'])) {
         update_post_meta($post_id, 'steventtuition', $_REQUEST['steventtuition']);
     }
-    
+
     if(isset($_REQUEST['steventcancellation'])) {
         update_post_meta($post_id, 'steventcancellation', $_REQUEST['steventcancellation']);
     }
-    
+
     if(isset($_REQUEST['steventoverview'])) {
         update_post_meta($post_id, 'steventoverview', $_REQUEST['steventoverview']);
     }
-    
+
     if(isset($_REQUEST['steventcontact'])) {
         update_post_meta($post_id, 'steventcontact', $_REQUEST['steventcontact']);
     }
-    
+
     if(isset($_REQUEST['steventwhoattend'])) {
         update_post_meta($post_id, 'steventwhoattend', $_REQUEST['steventwhoattend']);
     }
-    
+
     if(isset($_REQUEST['steventkeytake'])) {
         update_post_meta($post_id, 'steventkeytake', $_REQUEST['steventkeytake']);
     }
-    
+
     if(isset($_REQUEST['steventvenue'])) {
         update_post_meta($post_id, 'steventvenue', $_REQUEST['steventvenue']);
     }
-    
+
     if(isset($_REQUEST['steventexternal'])) {
         update_post_meta($post_id, 'steventexternal', $_REQUEST['steventexternal']);
     }
-    
+
     if(isset($_REQUEST['steventreglink'])) {
         update_post_meta($post_id, 'steventreglink', $_REQUEST['steventreglink']);
     }
-    
+
 }
