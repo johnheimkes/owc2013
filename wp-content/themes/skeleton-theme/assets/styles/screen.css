@@ -29,6 +29,9 @@ Width: All Sizes
 
 .grid-col {
     float: left;
+    border: 1px solid #000000;
+    /* REMOVE below for production work */
+    -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
 }
 
 .grid-col img {
@@ -62,7 +65,27 @@ Width: All Sizes
 }
 
 /* ---------------------------------------------------------------------
- Styleguide (Remove before Deployment)
+ Horizontal Lists
+------------------------------------------------------------------------ */
+
+/* ---------------------------------------------------------------------
+ Horizontal List
+------------------------------------------------------------------------ */
+
+.h-list {
+    overflow: hidden;
+}
+
+.h-list > * {
+    float: left;
+}
+
+.h-list-members > * {
+    width: 50%;
+}
+
+/* ---------------------------------------------------------------------
+ Styleguide (REMOVE before Deployment)
 ------------------------------------------------------------------------ */
 
 .style-grid .grid-col {
@@ -75,3 +98,6 @@ Width: All Sizes
 .wireframe.grid-col {
     border: 1px solid #ccc;
 }
+
+
+
