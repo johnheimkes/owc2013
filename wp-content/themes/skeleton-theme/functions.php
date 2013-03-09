@@ -201,6 +201,33 @@ function nerderyEnqueueStyles()
     wp_enqueue_style('nerdery-ie7');
 }
 
+/**
+ * Change the text of a top level admin menu item
+ *
+ * @access public
+ * @global array $menu
+ */
+function change_the_menu() {
+  global $menu;
+ 
+	// Strings
+	$to_match     = __( 'Products' );
+	$replace_with = __( 'Events' );
+ 
+	// Loop through the top level menu items
+	foreach ( $menu as $menu_position => $menu_properties ) {
+ 
+		// Look for a match
+		if ( $to_match === $menu_properties[0] ) {
+ 
+			// Found a match, so change the global and bail
+			$menu[$menu_position][0] = $replace_with;
+			break;
+		}
+	}
+}
+add_action( 'admin_menu', 'change_the_menu' );
+
 // Merne's Shitz -- will need to be modified.
 if ( function_exists( 'add_image_size' ) ) {
     add_image_size( 'profile-thumb', 270, 246, true ); //(cropped)
