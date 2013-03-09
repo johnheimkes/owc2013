@@ -12,7 +12,7 @@ class Jetpack_Custom_CSS {
 		add_filter( 'get_edit_post_link', array( __CLASS__, 'revision_post_link' ), 10, 3 );
 
 		if ( ! is_admin() )
-			add_filter( 'stylesheet_uri', array( __CLASS__, 'style_filter' ) );
+			add_filter( 'style_loader_tag', array( __CLASS__, 'style_tag_filter' ) );
 
 		define( 'SAFECSS_USE_ACE', ! jetpack_is_mobile() && ! Jetpack_User_Agent_Info::is_ipad() && apply_filters( 'safecss_use_ace', true ) );
 
@@ -64,110 +64,147 @@ class Jetpack_Custom_CSS {
 		if ( isset( $_POST['safecss'] ) && false == strstr( $_SERVER[ 'REQUEST_URI' ], 'options.php' ) ) {
 			check_admin_referer( 'safecss' );
 
-			// Remove wp_filter_post_kses, this causes CSS escaping issues
-			remove_filter( 'content_save_pre', 'wp_filter_post_kses' );
-			remove_filter( 'content_filtered_save_pre', 'wp_filter_post_kses' );
-			remove_all_filters( 'content_save_pre' );
+			$save_result = self::save( array(
+				'css' => $_POST['safecss'],
+				'is_preview' => isset( $_POST['action'] ) && $_POST['action'] == 'preview',
+				'preprocessor' => isset( $_POST['custom_css_preprocessor'] ) ? $_POST['custom_css_preprocessor'] : '',
+				'add_to_existing' => isset( $_POST['add_to_existing'] ) ? $_POST['add_to_existing'] == 'true' : true,
+				'content_width' => isset( $_POST['custom_content_width'] ) ? $_POST['custom_content_width'] : false,
+			) );
 
-			do_action( 'safecss_save_pre' );
-
-			$warnings = array();
-
-			safecss_class();
-			$csstidy = new csstidy();
-			$csstidy->optimise = new safecss( $csstidy );
-
-			$csstidy->set_cfg( 'remove_bslash',              false );
-			$csstidy->set_cfg( 'compress_colors',            false );
-			$csstidy->set_cfg( 'compress_font-weight',       false );
-			$csstidy->set_cfg( 'optimise_shorthands',        0 );
-			$csstidy->set_cfg( 'remove_last_;',              false );
-			$csstidy->set_cfg( 'case_properties',            false );
-			$csstidy->set_cfg( 'discard_invalid_properties', true );
-			$csstidy->set_cfg( 'css_level',                  'CSS3.0' );
-			$csstidy->set_cfg( 'preserve_css',               true );
-			$csstidy->set_cfg( 'template',                   dirname( __FILE__ ) . '/csstidy/wordpress-standard.tpl' );
-
-			$css = $orig = stripslashes( $_POST['safecss'] );
-
-			$css = preg_replace( '/\\\\([0-9a-fA-F]{4})/', '\\\\\\\\$1', $prev = $css );
-
-			if ( $css != $prev )
-				$warnings[] = 'preg_replace found stuff';
-
-			// Some people put weird stuff in their CSS, KSES tends to be greedy
-			$css = str_replace( '<=', '&lt;=', $css );
-			// Why KSES instead of strip_tags?  Who knows?
-			$css = wp_kses_split( $prev = $css, array(), array() );
-			$css = str_replace( '&gt;', '>', $css ); // kses replaces lone '>' with &gt;
-			// Why both KSES and strip_tags?  Because we just added some '>'.
-			$css = strip_tags( $css );
-
-			if ( $css != $prev )
-				$warnings[] = 'kses found stuff';
-
-			// if we're not using a preprocessor
-			if ( ! isset( $_POST['custom_css_preprocessor'] ) || empty( $_POST['custom_css_preprocessor'] ) ) {
-				do_action( 'safecss_parse_pre', $csstidy, $css );
-
-				$csstidy->parse( $css );
-
-				do_action( 'safecss_parse_post', $csstidy, $warnings );
-
-				$css = $csstidy->print->plain();
+			if ( $_POST['action'] == 'preview' ) {
+				wp_safe_redirect( add_query_arg( 'csspreview', 'true', get_option( 'home' ) ) );
+				exit;
 			}
 
-			if ( isset( $_POST['custom_content_width'] ) && intval( $_POST['custom_content_width'] ) > 0 )
-				$custom_content_width = intval( $_POST['custom_content_width'] );
-			else
-				$custom_content_width = false;
-
-			if ( $_POST['add_to_existing'] == 'true' )
-				$add_to_existing = 'yes';
-			else
-				$add_to_existing = 'no';
-
-			$preprocessor = isset( $_POST['custom_css_preprocessor'] ) ? $_POST['custom_css_preprocessor'] : '';
-
-			if ( $_POST['action'] == 'preview' || Jetpack_Custom_CSS::is_freetrial() ) {
-				// Save the CSS
-				$safecss_revision_id = Jetpack_Custom_CSS::save_revision( $css, true, $preprocessor );
-
-				// Cache Buster
-				update_option( 'safecss_preview_rev', intval( get_option( 'safecss_preview_rev' ) ) + 1);
-
-				update_metadata( 'post', $safecss_revision_id, 'custom_css_add', $add_to_existing );
-				update_metadata( 'post', $safecss_revision_id, 'content_width', $custom_content_width );
-				update_metadata( 'post', $safecss_revision_id, 'custom_css_preprocessor', $preprocessor );
-
-				if ( $_POST['action'] == 'preview' ) {
-					wp_safe_redirect( add_query_arg( 'csspreview', 'true', get_option( 'home' ) ) );
-					exit;
-				}
-
-				do_action( 'safecss_save_preview_post' );
-			}
-
-			// Save the CSS
-			$safecss_post_id = Jetpack_Custom_CSS::save_revision( $css, false, $preprocessor );
-
-			$safecss_post_revision = Jetpack_Custom_CSS::get_current_revision();
-
-			update_option( 'safecss_rev', intval( get_option( 'safecss_rev' ) ) + 1 );
-
-			update_post_meta( $safecss_post_id, 'custom_css_add', $add_to_existing );
-			update_post_meta( $safecss_post_id, 'content_width', $custom_content_width );
-			update_post_meta( $safecss_post_id, 'custom_css_preprocessor', $preprocessor );
-			update_metadata( 'post', $safecss_post_revision['ID'], 'custom_css_add', $add_to_existing );
-			update_metadata( 'post', $safecss_post_revision['ID'], 'content_width', $custom_content_width );
-			update_metadata( 'post', $safecss_post_revision['ID'], 'custom_css_preprocessor', $preprocessor );
-
-			add_action( 'admin_notices', array( 'Jetpack_Custom_CSS', 'saved_message' ) );
+			if ( $save_result )
+				add_action( 'admin_notices', array( 'Jetpack_Custom_CSS', 'saved_message' ) );
 		}
 
 		// Modify all internal links so that preview state persists
 		if ( Jetpack_Custom_CSS::is_preview() )
 			ob_start( array( 'Jetpack_Custom_CSS', 'buffer' ) );
+	}
+
+	/**
+	 * Save new custom CSS. This should be the entry point for any third-party code using Jetpack_Custom_CSS
+	 * to save CSS.
+	 *
+	 * @param array $args Array of arguments:
+	 *        string $css The CSS (or LESS or Sass)
+	 *        bool $is_preview Whether this CSS is preview or published
+	 *        bool $add_to_existing Whether this CSS replaces the theme's CSS or supplements it.
+	 *        int $content_width A custom $content_width to go along with this CSS.
+	 * @return int The post ID of the saved Custom CSS post.
+	 */
+	public static function save( $args = array() ) {
+		$defaults = array(
+			'css' => '',
+			'is_preview' => false,
+			'preprocessor' => '',
+			'add_to_existing' => true,
+			'content_width' => false,
+		);
+
+		$args = wp_parse_args( $args, $defaults );
+
+		// Remove wp_filter_post_kses, this causes CSS escaping issues
+		remove_filter( 'content_save_pre', 'wp_filter_post_kses' );
+		remove_filter( 'content_filtered_save_pre', 'wp_filter_post_kses' );
+		remove_all_filters( 'content_save_pre' );
+
+		do_action( 'safecss_save_pre', $args );
+
+		$warnings = array();
+
+		safecss_class();
+		$csstidy = new csstidy();
+		$csstidy->optimise = new safecss( $csstidy );
+
+		$csstidy->set_cfg( 'remove_bslash',              false );
+		$csstidy->set_cfg( 'compress_colors',            false );
+		$csstidy->set_cfg( 'compress_font-weight',       false );
+		$csstidy->set_cfg( 'optimise_shorthands',        0 );
+		$csstidy->set_cfg( 'remove_last_;',              false );
+		$csstidy->set_cfg( 'case_properties',            false );
+		$csstidy->set_cfg( 'discard_invalid_properties', true );
+		$csstidy->set_cfg( 'css_level',                  'CSS3.0' );
+		$csstidy->set_cfg( 'preserve_css',               true );
+		$csstidy->set_cfg( 'template',                   dirname( __FILE__ ) . '/csstidy/wordpress-standard.tpl' );
+
+		$css = $orig = stripslashes( $args['css'] );
+
+		$css = preg_replace( '/\\\\([0-9a-fA-F]{4})/', '\\\\\\\\$1', $prev = $css );
+
+		if ( $css != $prev )
+			$warnings[] = 'preg_replace found stuff';
+
+		// Some people put weird stuff in their CSS, KSES tends to be greedy
+		$css = str_replace( '<=', '&lt;=', $css );
+		// Why KSES instead of strip_tags?  Who knows?
+		$css = wp_kses_split( $prev = $css, array(), array() );
+		$css = str_replace( '&gt;', '>', $css ); // kses replaces lone '>' with &gt;
+		// Why both KSES and strip_tags?  Because we just added some '>'.
+		$css = strip_tags( $css );
+
+		if ( $css != $prev )
+			$warnings[] = 'kses found stuff';
+
+		// if we're not using a preprocessor
+		if ( ! $args['preprocessor'] ) {
+			do_action( 'safecss_parse_pre', $csstidy, $css, $args );
+
+			$csstidy->parse( $css );
+
+			do_action( 'safecss_parse_post', $csstidy, $warnings, $args );
+
+			$css = $csstidy->print->plain();
+		}
+
+		if ( $args['content_width'] && intval( $args['content_width']) > 0 && ( ! isset( $GLOBALS['content_width'] ) || $args['content_width'] != $GLOBALS['content_width'] ) )
+			$custom_content_width = intval( $args['content_width'] );
+		else
+			$custom_content_width = false;
+
+		if ( $args['add_to_existing'] )
+			$add_to_existing = 'yes';
+		else
+			$add_to_existing = 'no';
+
+		if ( $args['is_preview'] || Jetpack_Custom_CSS::is_freetrial() ) {
+			// Save the CSS
+			$safecss_revision_id = Jetpack_Custom_CSS::save_revision( $css, true, $args['preprocessor'] );
+
+			// Cache Buster
+			update_option( 'safecss_preview_rev', intval( get_option( 'safecss_preview_rev' ) ) + 1);
+
+			update_metadata( 'post', $safecss_revision_id, 'custom_css_add', $add_to_existing );
+			update_metadata( 'post', $safecss_revision_id, 'content_width', $custom_content_width );
+			update_metadata( 'post', $safecss_revision_id, 'custom_css_preprocessor', $args['preprocessor'] );
+
+			if ( $args['is_preview'] ) {
+				return $safecss_revision_id;
+			}
+
+			// Freetrial only.
+			do_action( 'safecss_save_preview_post' );
+		}
+
+		// Save the CSS
+		$safecss_post_id = Jetpack_Custom_CSS::save_revision( $css, false, $args['preprocessor'] );
+
+		$safecss_post_revision = Jetpack_Custom_CSS::get_current_revision();
+
+		update_option( 'safecss_rev', intval( get_option( 'safecss_rev' ) ) + 1 );
+
+		update_post_meta( $safecss_post_id, 'custom_css_add', $add_to_existing );
+		update_post_meta( $safecss_post_id, 'content_width', $custom_content_width );
+		update_post_meta( $safecss_post_id, 'custom_css_preprocessor', $args['preprocessor'] );
+		update_metadata( 'post', $safecss_post_revision['ID'], 'custom_css_add', $add_to_existing );
+		update_metadata( 'post', $safecss_post_revision['ID'], 'content_width', $custom_content_width );
+		update_metadata( 'post', $safecss_post_revision['ID'], 'custom_css_preprocessor', $args['preprocessor'] );
+
+		return $safecss_post_id;
 	}
 
 	/**
@@ -473,13 +510,14 @@ class Jetpack_Custom_CSS {
 		<?php
 	}
 
-	static function style_filter( $current ) {
+	static function style_tag_filter( $link_tag ) {
 		if ( Jetpack_Custom_CSS::is_freetrial() && ( ! Jetpack_Custom_CSS::is_preview() || ! current_user_can( 'switch_themes' ) ) )
-			return $current;
-		else if ( Jetpack_Custom_CSS::skip_stylesheet() )
-			return apply_filters( 'safecss_style_filter_url', plugins_url( 'custom-css/blank.css', __FILE__ ) );
+			return $link_tag;
 
-		return $current;
+		if ( Jetpack_Custom_CSS::skip_stylesheet() && strpos( $link_tag, get_stylesheet_uri() ) )
+			return preg_replace( '/rel=([\'"])stylesheet([\'"])/', 'rel=$1original-stylesheet$1', $link_tag );
+
+		return $link_tag;
 	}
 
 	static function buffer( $html ) {
@@ -595,9 +633,9 @@ class Jetpack_Custom_CSS {
 		if ( defined( 'SAFECSS_USE_ACE' ) && SAFECSS_USE_ACE ) {
 			$url = plugins_url( 'custom-css/js/', __FILE__ );
 			wp_enqueue_script( 'jquery.spin' );
-			wp_enqueue_script( 'safecss-ace', $url . 'ace/ace.js', array(), '20121228', true );
-			wp_enqueue_script( 'safecss-ace-css', $url . 'ace/mode-css.js', array( 'safecss-ace' ), '20121228', true );
-			wp_enqueue_script( 'safecss-ace-use', $url . 'safecss-ace.js', array( 'jquery', 'safecss-ace-css' ), '20121228', true );
+			wp_enqueue_script( 'safecss-ace', $url . 'ace/ace.js', array(), '20130213', true );
+			wp_enqueue_script( 'safecss-ace-css', $url . 'ace/mode-css.js', array( 'safecss-ace' ), '20130213', true );
+			wp_enqueue_script( 'safecss-ace-use', $url . 'safecss-ace.js', array( 'jquery', 'safecss-ace-css' ), '20130213', true );
 		}
 	}
 
@@ -663,6 +701,14 @@ class Jetpack_Custom_CSS {
 		<script type="text/javascript">
 			/*<![CDATA[*/
 			var safecssResize, safecssInit;
+
+			<?php
+
+			if ( defined( 'SAFECSS_USE_ACE' ) && SAFECSS_USE_ACE ) {
+					?>var safecssAceSrcPath = <?php echo json_encode( parse_url( plugins_url( 'custom-css/js/ace/', __FILE__ ), PHP_URL_PATH ) ); ?>;<?php
+			}
+
+			?>
 
 			( function ( $ ) {
 				var safe, win;
@@ -951,7 +997,7 @@ class Jetpack_Custom_CSS {
 	 */
 	static function disable() {
 		remove_action( 'wp_head', array( 'Jetpack_Custom_CSS', 'link_tag' ), 101 );
-	    remove_filter( 'stylesheet_uri', array( 'Jetpack_Custom_CSS', 'style_filter' ) );
+		remove_filter( 'style_loader_tag', array( __CLASS__, 'style_tag_filter' ) );
 	}
 
 	/**

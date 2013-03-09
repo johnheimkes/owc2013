@@ -372,15 +372,12 @@ class The_Neverending_Home_Page {
 	/**
 	 * Let's overwrite the default post_per_page setting to always display a fixed amount.
 	 *
-	 * @global $wp_the_query Used to provide compatibility back to WP 3.2
 	 * @param object $query
 	 * @uses self::archive_supports_infinity, self::get_settings
 	 * @return null
 	 */
 	function posts_per_page_query( $query ) {
-		global $wp_the_query;
-
-		if ( self::archive_supports_infinity() && $query === $wp_the_query ) // After 3.3, this line would be: if ( self::archive_supports_infinity() && $query->is_main_query() )
+		if ( self::archive_supports_infinity() && $query->is_main_query() )
 			$query->set( 'posts_per_page', self::get_settings()->posts_per_page );
 	}
 
@@ -443,7 +440,7 @@ class The_Neverending_Home_Page {
 	 * @return string
 	 */
 	function action_wp_head() {
-		global $wp_query, $wp_rewrite;
+		global $wp_query, $wp_the_query, $wp_rewrite;
 
 		// Base JS settings
 		$js_settings = array(
@@ -453,7 +450,7 @@ class The_Neverending_Home_Page {
 			'wrapper'          => self::has_wrapper(),
 			'wrapper_class'    => is_string( self::get_settings()->wrapper ) ? esc_js( self::get_settings()->wrapper ) : 'infinite-wrap',
 			'footer'           => is_string( self::get_settings()->footer ) ? esc_js( self::get_settings()->footer ) : self::get_settings()->footer,
-			'text'             => esc_js( __( 'Load more posts', 'jetpack' ) ),
+			'text'             => esc_js( __( 'Older posts', 'jetpack' ) ),
 			'totop'            => esc_js( __( 'Scroll back to top', 'jetpack' ) ),
 			'order'            => 'DESC',
 			'scripts'          => array(),
@@ -760,7 +757,7 @@ class The_Neverending_Home_Page {
 		// Add query filter that checks for posts below the date
 		add_filter( 'posts_where', array( $this, 'query_time_filter' ), 10, 2 );
 
-		$wp_query = new WP_Query( $query_args );
+		$wp_the_query = $wp_query = new WP_Query( $query_args );
 
 		remove_filter( 'posts_where', array( $this, 'query_time_filter' ), 10, 2 );
 
@@ -850,7 +847,7 @@ class The_Neverending_Home_Page {
 	 * @uses apply_filters, current_theme_supports, is_home, is_archive, self::get_settings
 	 * @return bool
 	 */
-	public function archive_supports_infinity() {
+	public static function archive_supports_infinity() {
 		return (bool) apply_filters( 'infinite_scroll_archive_supported', current_theme_supports( 'infinite-scroll' ) && ( is_home() || is_archive() ), self::get_settings() );
 	}
 

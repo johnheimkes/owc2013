@@ -4,19 +4,21 @@
  * Module Description: Simple, concise site stats with no additional load on your server.
  * Sort Order: 1
  * First Introduced: 1.1
+ * Requires Connection: Yes
  */
 
 if ( defined( 'STATS_VERSION' ) ) {
 	return;
 }
 
-define( 'STATS_VERSION', '7' );
+define( 'STATS_VERSION', '8' );
 defined( 'STATS_DASHBOARD_SERVER' ) or define( 'STATS_DASHBOARD_SERVER', 'dashboard.wordpress.com' );
 
 add_action( 'jetpack_modules_loaded', 'stats_load' );
 
 // Tell HQ about changed settings
 Jetpack_Sync::sync_options( __FILE__,
+	'stats_options',
 	'home',
 	'siteurl',
 	'blogname',
