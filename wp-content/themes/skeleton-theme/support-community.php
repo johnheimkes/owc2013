@@ -14,7 +14,7 @@
 
 <div class="page-content">
     <h2>Support Community</h2>
-    <div class="grid-row">
+    <div class="grid-row grid-row-push-l ">
         <div class="grid-col grid-col-12">
             <ul class="h-list nav">
                 <li>
@@ -33,7 +33,7 @@
                     <a href="#">Services</a>
                 </li>
                 <li>
-                    <a href="#">Mediation</a>
+                    <a href="#">Mediation Longer Name</a>
                 </li>
             </ul>
         </div>
