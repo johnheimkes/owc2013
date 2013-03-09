@@ -67,3 +67,43 @@ Width: All Sizes
     line-height: 20px;
     text-align: center;
 }
+
+/* ---------------------------------------------------------------------
+ carousels
+------------------------------------------------------------------------ */
+.carousel { position: relative; }
+
+.carousel-slide-wrapper { overflow: hidden; }
+
+.carousel-slide-list {
+    font-size: 0;
+    white-space: nowrap;
+    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-transition-duration: 300ms;
+}
+
+.carousel-slide-list > * {
+    display: inline-block;
+    margin-left: 0;
+    width: 50%;
+    font-size: 14px;
+    vertical-align: top;
+}
+
+.carousel-nav {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -80px;
+    overflow: hidden;
+    font-size: 0;
+    text-align: center;
+}
+
+.carousel-nav > * {
+    display: inline-block;
+    font-size: 14px;
+    vertical-align: top;
+}
+
+.carousel-nav-item-is-active { background-color: #f00; }

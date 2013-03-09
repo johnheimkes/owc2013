@@ -2,29 +2,27 @@
 Global JavaScript & jQuery
 
 Target Browsers: All
-Authors: Jess Green
+Authors: Zach Walders, Scott Garrison
 
 JS Devs beware! WordPress loads jQuery in noConflict mode.
 ------------------------------------------------------------------------ */
 jQuery(function($) {
-
     // Initialize!
-    NERDThemeJS($);
-
+    CMRSThemeJS($);
 });
 
-var NERDThemeJS = function($){
+var CMRSThemeJS = function($){
 
-    var NERD = NERD || {};
+    var CMRS = CMRS || {};
 
     /* ---------------------------------------------------------------------
     ExternalLinks
-    Author: Nerdery Boilerplate
+    Author: CMRSery Boilerplate
 
     Launches links with a rel="external" in a new window
     ------------------------------------------------------------------------ */
 
-    NERD.ExternalLinks = {
+    CMRS.ExternalLinks = {
         init: function() {
             $('a[rel=external]').attr('target', '_blank');
         }
@@ -32,7 +30,7 @@ var NERDThemeJS = function($){
 
     /* ---------------------------------------------------------------------
     AutoReplace
-    Author: Nerdery Boilerplate
+    Author: CMRSery Boilerplate
 
     Mimics HTML5 placeholder behavior
 
@@ -43,7 +41,7 @@ var NERDThemeJS = function($){
     submitted if the default text remains in input field - which we may
     or may not want to leave in place, depending on usage in site
     ------------------------------------------------------------------------ */
-    NERD.AutoReplace = {
+    CMRS.AutoReplace = {
         $fields: undefined,
 
         init: function() {
@@ -94,7 +92,19 @@ var NERDThemeJS = function($){
     };
 
 
-    NERD.ExternalLinks.init();
-    NERD.AutoReplace.init();
+    CMRS.ExternalLinks.init();
+    CMRS.AutoReplace.init();
 
-} // end NERDThemeJS
+    var carousel = new APP.Carousel({
+        carouselWrapperSelector: '.js-carousel',
+        slideWrapperSelector: '.js-carousel-slide-wrapper',
+        slideListSelector: '.js-carousel-slide-list',
+        navWrapperClass: 'carousel-nav',
+        navItemClass: 'carousel-nav-item',
+        navItemActiveClass: 'carousel-nav-item-is-active',
+        buttonClass: 'carousel-btn',
+        buttonPrevClass: 'carousel-btn-prev',
+        buttonNextClass: 'carousel-btn-next',
+        animationDuration: 300
+    });
+}; // end CMRSThemeJS
