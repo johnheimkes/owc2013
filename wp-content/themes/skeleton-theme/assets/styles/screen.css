@@ -1,8 +1,69 @@
 /* ---------------------------------------------------------------------
-Original Author: Jess Green
+Original Author: Scott Garrison / Kristine Grad
 Contributors: N/A
 
 Target Browsers: All
 Media Type: Screen, Projection
 Width: All Sizes
 ------------------------------------------------------------------------ */
+
+/* ---------------------------------------------------------------------
+ Grid
+------------------------------------------------------------------------ */
+
+.grid-row {
+    overflow: hidden;
+}
+
+.grid-row-push-l {
+    margin-bottom: 40px;
+}
+
+.grid-row-push-m {
+    margin-bottom: 30px;
+}
+
+.grid-row-push-s {
+    margin-bottom: 20px;
+}
+
+.grid-col {
+    float: left;
+}
+
+.grid-col-right {
+    float: right;
+}
+
+.grid-col + .grid-col { margin-left: 2.08333%; } /* approx 20px margin on 960width  */
+
+.grid-col-1 { width: 8.125%; }
+.grid-col-2 { width: 18.33333%; }
+.grid-col-3 { width: 28.54166%; }
+.grid-col-4 { width: 38.75%; }
+.grid-col-5 { width: 48.95833%; }
+.grid-col-6 { width: 59.16666%; }
+.grid-col-7 { width: 69.375%; }
+.grid-col-8 { width: 79.58333%; }
+.grid-col-9 { width: 89.79166%; }
+.grid-col-10 { width: 100%; }
+
+/* ---------------------------------------------------------------------
+ Layout
+------------------------------------------------------------------------ */
+
+.page-content {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+/* ---------------------------------------------------------------------
+ Styleguide (Remove before Deployment)
+------------------------------------------------------------------------ */
+
+.style-grid .grid-col {
+    height: 20px;
+    background: #CCCCCC;
+    line-height: 20px;
+    text-align: center;
+}
