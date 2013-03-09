@@ -11,9 +11,13 @@ Width: All Sizes
  Grid
 ------------------------------------------------------------------------ */
 
-.grid-row {
-    overflow: hidden;
+.grid-row:before,
+.grid-row:after {
+   content: " ";
+   display: table;
 }
+
+.grid-row:after { clear: both; }
 
 .grid-row-push-l {
     margin-bottom: 40px;
@@ -29,24 +33,33 @@ Width: All Sizes
 
 .grid-col {
     float: left;
+    border: 1px solid #000000;
+    /* REMOVE below for production work */
+    -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+
+.grid-col img {
+    max-width: 100%;
 }
 
 .grid-col-right {
     float: right;
 }
 
-.grid-col + .grid-col { margin-left: 2.08333%; } /* approx 20px margin on 960width  */
+.grid-col + .grid-col { margin-left: 2.291666666667%; } /* approx 20px margin on 960width  */
 
-.grid-col-1 { width: 8.125%; }
-.grid-col-2 { width: 18.33333%; }
-.grid-col-3 { width: 28.54166%; }
-.grid-col-4 { width: 38.75%; }
-.grid-col-5 { width: 48.95833%; }
-.grid-col-6 { width: 59.16666%; }
-.grid-col-7 { width: 69.375%; }
-.grid-col-8 { width: 79.58333%; }
-.grid-col-9 { width: 89.79166%; }
-.grid-col-10 { width: 100%; }
+.grid-col-1 { width: 6.145833333333%; }
+.grid-col-2 { width: 14.6875%; }
+.grid-col-3 { width: 23.229166666667%; }
+.grid-col-4 { width: 31.770833333333%; }
+.grid-col-5 { width: 40.3125%; }
+.grid-col-6 { width: 48.854166666667%; }
+.grid-col-7 { width: 57.395833333333%; }
+.grid-col-8 { width: 65.9375%; }
+.grid-col-9 { width: 74.479166666667%; }
+.grid-col-10 { width: 83.020833333333%; }
+.grid-col-11 { width: 91.5625%; }
+.grid-col-12 { width: 100%; }
 
 /* ---------------------------------------------------------------------
  Layout
@@ -58,7 +71,27 @@ Width: All Sizes
 }
 
 /* ---------------------------------------------------------------------
- Styleguide (Remove before Deployment)
+ Horizontal Lists
+------------------------------------------------------------------------ */
+
+/* ---------------------------------------------------------------------
+ Horizontal List
+------------------------------------------------------------------------ */
+
+.h-list {
+    overflow: hidden;
+}
+
+.h-list > * {
+    float: left;
+}
+
+.h-list-members > * {
+    width: 50%;
+}
+
+/* ---------------------------------------------------------------------
+ Styleguide (REMOVE before Deployment)
 ------------------------------------------------------------------------ */
 
 .style-grid .grid-col {
@@ -68,8 +101,12 @@ Width: All Sizes
     text-align: center;
 }
 
+.wireframe.grid-col {
+    border: 1px solid #ccc;
+}
+
 /* ---------------------------------------------------------------------
- carousels
+ Carousel
 ------------------------------------------------------------------------ */
 .carousel { position: relative; }
 
