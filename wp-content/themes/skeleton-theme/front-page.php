@@ -4,11 +4,16 @@
  *
  * @category Nerdery_Skeleton_Theme
  * @package Nerdery_Skeleton_Theme
- * @subpackage Single
+ * @subpackage Front-page
  * @author
  * @version 1.0
  */
 ?>
+
 <?php get_header(); ?>
-<?php get_template_part( 'loops/loop', 'single' ); ?>
+
+<h1>Shenanigans</h1>
+
+<?php get_sidebar(); ?>
+
 <?php get_footer(); ?>
