@@ -14,6 +14,30 @@
 
 <div class="page-content">
     <h2>Support Community</h2>
+    <div class="grid-row">
+        <div class="grid-col grid-col-12">
+            <ul class="h-list nav">
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+                <li>
+                    <a href="#">Donations</a>
+                </li>
+                <li>
+                    <a href="#">Services</a>
+                </li>
+                <li>
+                    <a href="#">Mediation</a>
+                </li>
+            </ul>
+        </div>
+    </div><!-- End .grid-row -->
     <div class="grid-row grid-row-push-s">
         <div class="grid-col grid-col-6">
             <h3>Help Us...</h3>
@@ -22,12 +46,12 @@
             </p>
         </div>
         <div class="grid-col grid-col-6"><img src="http://placehold.it/960x500" /></div>
-    </div>
+    </div><!-- End .grid-row -->
     <div class="grid-row grid-row-push-s">
         <div class="grid-col grid-col-12">
             <img src="http://placehold.it/960x100" />
         </div>
-    </div>
+    </div><!-- End .grid-row -->
     <div class="grid-row grid-row-push-s">
         <div class="grid-col grid-col-6">
             <h3>Donate Online</h3>
@@ -35,37 +59,104 @@
         <div class="grid-col grid-col-6">
             <h3>Donate Mail</h3>
         </div>
-    </div>
+    </div><!-- End .grid-row -->
     <div class="grid-row">
-        <div class="grid-row">
-            <div class="grid-col grid-col-6">
-                <ul class="h-list h-list-members">
-                    <li>
-                        Donator 1
-                    </li>
-                    <li>
-                        Donator 2
-                    </li>
-                    <li>
-                        Donator 3
-                    </li>
-                    <li>
-                        Donator 4
-                    </li>
-                    <li>
-                        Donator 5
-                    </li>
-                    <li>
-                        Donator 6
-                    </li>
-                </ul>
-            </div>
-            <div class="grid-col grid-col-6">
-                PRESIDENTS CIRCLE
-            </div>
+        <div class="grid-col grid-col-6">
+            <ul class="h-list h-list-members">
+                <li>
+                    Donator 1
+                </li>
+                <li>
+                    Donator 2
+                </li>
+                <li>
+                    Donator 3
+                </li>
+                <li>
+                    Donator 4
+                </li>
+                <li>
+                    Donator 5
+                </li>
+                <li>
+                    Donator 6
+                </li>
+            </ul>
+        </div>
+        <div class="grid-col grid-col-6">
+            PRESIDENTS CIRCLE
+        </div>
+    </div><!-- End .grid-row -->
+    <div class="grid-row">
+        <div class="grid-col grid-col-6">
+            <ul class="h-list h-list-members">
+                <li>
+                    Donator 1
+                </li>
+                <li>
+                    Donator 2
+                </li>
+                <li>
+                    Donator 3
+                </li>
+                <li>
+                    Donator 4
+                </li>
+                <li>
+                    Donator 5
+                </li>
+                <li>
+                    Donator 6
+                </li>
+            </ul>
+        </div>
+        <div class="grid-col grid-col-6">
+            Leader
+        </div>
+    </div><!-- End .grid-row -->
+    <div class="grid-row">
+        <div class="grid-col grid-col-6">
+            <ul class="h-list h-list-members">
+                <li>
+                    Donator 1
+                </li>
+                <li>
+                    Donator 2
+                </li>
+                <li>
+                    Donator 3
+                </li>
+                <li>
+                    Donator 4
+                </li>
+                <li>
+                    Donator 5
+                </li>
+                <li>
+                    Donator 6
+                </li>
+            </ul>
+        </div>
+        <div class="grid-col grid-col-6">
+            Facilitator
+        </div>
+    </div><!-- End .grid-row -->
+    <div class="grid-row">
+        <div class="grid-col grid-col-12">
+            <ul>
+                <li>
+                    Other ways to help
+                </li>
+            </ul>
+
+            <ul>
+                <li>
+                    Policies
+                </li>
+            </ul>
         </div>
     </div>
-</div>
+</div><!-- End .page-content -->
 
 <?php get_footer(); ?>
 
