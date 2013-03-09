@@ -66,15 +66,36 @@ function nerderyEnqueueScripts()
         true
     );
 
+    // ExternalLinks cript
+    wp_register_script(
+        'nerdery-external-links',
+        NERDERY_THEME_PATH_URL . 'assets/scripts/external-links.js',
+        array('jquery'),
+        '1.0',
+        true
+    );
+
+    // AutoReplace script
+    wp_register_script(
+        'nerdery-auto-replace',
+        NERDERY_THEME_PATH_URL . 'assets/scripts/auto-replace.js',
+        array('jquery'),
+        '1.0',
+        true
+    );
+
     // Carousel script
     wp_register_script(
         'nerdery-carousel',
         NERDERY_THEME_PATH_URL . 'assets/scripts/carousel.js',
+        array('jquery'),
         '1.0',
         true
     );
 
     wp_enqueue_script('nerdery-global');
+    wp_enqueue_script('nerdery-external-links');
+    wp_enqueue_script('nerdery-auto-replace');
     wp_enqueue_script('nerdery-carousel');
 
     // Comment reply script for threaded comments (registered in WP core)
