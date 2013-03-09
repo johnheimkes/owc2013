@@ -11,9 +11,13 @@ Width: All Sizes
  Grid
 ------------------------------------------------------------------------ */
 
-.grid-row {
-    overflow: hidden;
+.grid-row:before,
+.grid-row:after {
+   content: " ";
+   display: table;
 }
+
+.grid-row:after { clear: both; }
 
 .grid-row-push-l {
     margin-bottom: 40px;
