@@ -72,9 +72,22 @@ if(get_field('home_section_4a')):
     <h2>Section 4b</h2>
     <div>
         <?php while(has_sub_field('home_section_4b')): ?>
-            <img src="<?php the_sub_field('home_section_4a_image'); ?>" alt="alt" />
-            <?php the_sub_field('home_section_4a_quote'); ?>
-            <?php the_sub_field('home_section_4a_author'); ?>
+            <img src="<?php the_sub_field('home_section_4b_image'); ?>" alt="alt" />
+            <?php the_sub_field('home_section_4b_quote'); ?>
+            <?php the_sub_field('home_section_4b_author'); ?>
+        <?php endwhile; ?>
+    </div>
+<?php endif; ?>
+
+<?php
+// Partners Section
+
+if(get_field('partners')):
+?>
+    <h2>Partners</h2>
+    <div>
+        <?php while(has_sub_field('partners')): ?>
+            <?php the_sub_field('partner_name'); ?>
         <?php endwhile; ?>
     </div>
 <?php endif; ?>
