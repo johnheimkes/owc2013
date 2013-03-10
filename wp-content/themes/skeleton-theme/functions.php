@@ -93,10 +93,20 @@ function nerderyEnqueueScripts()
         true
     );
 
+    // Navigation script
+    wp_register_script(
+        'nerdery-navigation',
+        NERDERY_THEME_PATH_URL . 'assets/scripts/navigation.js',
+        array('jquery'),
+        '1.0',
+        true
+    );
+
     wp_enqueue_script('nerdery-global');
     wp_enqueue_script('nerdery-external-links');
     wp_enqueue_script('nerdery-auto-replace');
     wp_enqueue_script('nerdery-carousel');
+    wp_enqueue_script('nerdery-navigation');
 
     // Comment reply script for threaded comments (registered in WP core)
     if (is_singular() && get_option('thread_comments')) {
@@ -133,9 +143,9 @@ function nerderyEnqueueStyles()
 
     // Mobile Screen Stylesheet
     wp_register_style(
-        'nerdery-screen_small',
+        'nerdery-screen-small',
         NERDERY_THEME_PATH_URL . 'assets/styles/screen_small.css',
-        array('nerdery-reset'),
+        array('nerdery-screen'),
         '1.0',
         'screen and (max-width: 480px)'
     );
@@ -193,7 +203,7 @@ function nerderyEnqueueStyles()
     // Queue the stylesheets. Note that because nerdery-screen was registered
     // with nerdery-reset as a dependency, it does not need to be enqueued here.
     wp_enqueue_style('nerdery-screen');
-    wp_enqueue_style('nerdery-screen_small');
+    wp_enqueue_style('nerdery-screen-small');
     wp_enqueue_style('nerdery-wysiwyg');
     wp_enqueue_style('nerdery-print');
     wp_enqueue_style('nerdery-ie9');
