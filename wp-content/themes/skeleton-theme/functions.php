@@ -253,6 +253,7 @@ add_action( 'admin_menu', 'change_the_menu' );
 // Merne's Shitz -- will need to be modified.
 if ( function_exists( 'add_image_size' ) ) {
     add_image_size( 'directors-full', 222, 222, true );
+    add_image_size( 'homepage-quote', 242, 242, true );
 }
 
 function my_scripts_method() {

@@ -39,28 +39,32 @@
         </div><!-- End .page-header -->
     </div>
 
-    <div class="slideout nav-container" id="nav">
-        <ul class="h-list nav">
-            <li>
-                <a href="#">Home</a>
-            </li>
-            <li>
-                <a href="#">About</a>
-            </li>
-            <li>
-                <a href="#">Contact</a>
-            </li>
-            <li>
-                <a href="#">Donations</a>
-            </li>
-            <li>
-                <a href="#">Services</a>
-            </li>
-            <li>
-                <a href="#">Mediation Longer Name</a>
-            </li>
-        </ul>
+    <div class="slideout nav-container bg-turq" id="nav">
+        <div class="wrapper-nav">
+            <ul class="nav">
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">Mediation</a>
+                </li>
+                <li>
+                    <a href="#">Training</a>
+                </li>
+                <li>
+                    <a href="#">Volunteer</a>
+                </li>
+                <li>
+                    <a href="#">Support</a>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#">Resources</a>
+                </li>
+            </ul>
+        </div>
     </div>
 
 <div class="page-content">
-        <?php get_search_form(); ?>
