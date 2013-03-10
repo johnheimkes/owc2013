@@ -20,6 +20,9 @@
                             <a href="#overview">Overview</a>
                         </li>
                         <li>
+                            <a href="#staff">Staff & Directors</a>
+                        </li>                        
+                        <li>
                             <a href="#accomplishments">Accomplishments</a>
                         </li>
                         <li>
@@ -41,41 +44,84 @@
                         <p>To develop the capacity of the community to respectfully resolve conflict and repair harm.</p>
                     </div>
                     <div class="grid-col grid-col-5">
-                        <img src="/assets/images/homepage_hero.png" />
+                        <img src="<?php bloginfo('template_directory'); ?>/images/homepage-hero.png" title="" alt="" />
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
-    <h1>Our Directors</h1>
-        <div class="grid-row grid-row-push-s">
-            <div class="grid-col grid-col-4">
-                First Last
-                <br />Title
-            </div>
-            <div class="grid-col grid-col-4">
-                First Last
-                <br />Title
-            </div>
-            <div class="grid-col grid-col-4">
-                First Last
-                <br />Title
-            </div>
+    <div class="grid-site">  
+        <div class="grid-sidebar">
+            &nbsp;
         </div>
-        <div class="grid-row grid-row-push-s">
-            <div class="grid-col grid-col-3">
-                <div class="btn">
-                    Download Annual Report
+        <div class="grid-main">
+            <div class="grid-row-s">            
+                <div class="grid-col grid-col-12">
+                    <h2>Our Staff</h2>
+                    <p>The full-time staff of Community Mediation & Restorative Services provide the infrastructure of the organization – serving as the link between referral sources, supporters, volunteers and clients. They are supported by talented part-time staff interns and volunteers.</p>
+                    image
+                </div>
+            </div>                     
+            <div class="grid-row grid-row-push-s">
+                <div class="grid-col grid-col-3">
+                    Beth Bailey
+                    <br />Executive Director
+                    <p>Beth has served as Executive Director since 2001, managing the financial and human resources of the organization while building strategic partnerships to connect those willing to serve with those needing services.</p>
+                </div>
+                <div class="grid-col grid-col-3">
+                    Sandra Moberg Walls
+                    <br />Program Director
+                    <p>Sandra lives and breathes the CMRS mission – inspiring and inspired by dedicated volunteers and courageous participants to find hope in difficult situations.</p>
+                </div>
+                <div class="grid-col grid-col-3">
+                    MiaLisa McFarland Millares
+                    <br />Program Director
+                    <p>Jill is motivated by the opportunity to meaningfully help others and considers it a privilege to work with the volunteers, clients and partners of CMRS.</p>
                 </div>
             </div>
         </div>
-    <h1>At A Glance</h1>
-        <div class="grid-row grid-row-push-s">
-            <div class="grid-col grid-col-12">
-                126 Volunteers
-                <br /> 1,015 mediation cases
-            </div>
-        </div>
+
+        <div class="grid-main">
+            <div class="grid-row-s">            
+                <div class="grid-col grid-col-10">
+                    <h2>Part-time Staff</h2>
+                </div>
+            </div>   
+
+            <div class="grid-row-s">            
+                <div class="grid-col grid-col-10">
+                    <h2>2013 Board of Directors</h2>
+                </div>
+            </div> 
+
+            <div class="grid-row-s">            
+                <div class="grid-col grid-col-2">
+                    <b>Jason Fink</b>
+                    Board President
+                </div>
+            </div>    
+            
+            <div class="grid-row-s">            
+                <div class="grid-col grid-col-2">
+                    <b>Leslie Sinner McEvoy</b>
+                    Vice President
+                </div>
+            </div>    
+            
+            <div class="grid-row-s">            
+                <div class="grid-col grid-col-2">
+                    <b>Andrew Silverstein</b>
+                    Treasurer
+                </div>
+            </div>    
+            
+            <div class="grid-row-s">            
+                <div class="grid-col grid-col-2">
+                    <b>Mary Heer-Forsberg</b>
+                    Secretary
+                </div>
+            </div>                                                                          
+        </div> 
+    </div>      
 
 <?php get_footer(); ?>
