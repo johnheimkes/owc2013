@@ -22,7 +22,7 @@ function nerdery_register_post_types()
                 'edit_item'     => 'Edit Director',
             ),
             'public'        => true,
-            'description'   => 'Directors Listing'
+            'description'   => 'Directors Listing',
             'supports'      => array(
                 'title',
                 'editor',
