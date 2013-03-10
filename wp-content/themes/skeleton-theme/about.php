@@ -51,15 +51,12 @@
         </div>
     </div>
     <div class="grid-site">  
-        <div class="grid-sidebar">
-            &nbsp;
-        </div>
         <div class="grid-main">
             <div class="grid-row-s">            
                 <div class="grid-col grid-col-12">
                     <h2>Our Staff</h2>
                     <p>The full-time staff of Community Mediation & Restorative Services provide the infrastructure of the organization – serving as the link between referral sources, supporters, volunteers and clients. They are supported by talented part-time staff interns and volunteers.</p>
-                    image
+                    <img src="http://192.168.1.101/owc2013/wp-content/uploads/2013/03/about-staff.jpg" title="" alt="" />
                 </div>
             </div>                     
             <div class="grid-row grid-row-push-s">
