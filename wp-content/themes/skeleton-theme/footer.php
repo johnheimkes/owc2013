@@ -9,7 +9,28 @@
  * @version $Id$
  */
 ?>
-        <div class="page-footer"></div>
+        <div class="page-footer">
+        	<ul>
+        		<li>
+        			<a href="">Link</a>
+        		</li>
+        		<li>
+        			<a href="">Link</a>
+        		</li>
+        		<li>
+        			<a href="">Link</a>
+        		</li>
+        		<li>
+        			<a href="">Link</a>
+        		</li>
+        		<li>
+        			<a href="">Link</a>
+        		</li>
+        		<li>
+        			<a href="">Link</a>
+        		</li>     		        		        		        		        		
+        	</ul>
+        </div>
     </div><!-- /.page-content -->
 <?php wp_footer(); ?>
 </body>
