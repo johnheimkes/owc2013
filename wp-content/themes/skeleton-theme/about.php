@@ -50,7 +50,7 @@
             </div>
         </div>
     </div>
-    <div class="grid-site">  
+    <div class="grid-site ex-padded-bottom">  
         <div class="grid-main">
             <div class="grid-row-s">            
                 <div class="grid-col grid-col-10">
@@ -292,8 +292,8 @@
 
                     <div class="grid-col grid-col-3">
                         <span class="hdg-bold">$123,456</span> Program
-                        <span class="hdg-bold">$123,456</span> Fundrasing
-                        <span class="hdg-bold">$123,456</span> Administration
+                        <br><span class="hdg-bold">$123,456</span> Fundrasing
+                        <br><span class="hdg-bold">$123,456</span> Administration
                     </div>
                     <div class="grid-col grid-col-4">
                         MEETS STANDARDS IMAGE
