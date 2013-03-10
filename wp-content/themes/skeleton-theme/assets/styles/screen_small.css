@@ -20,6 +20,18 @@ Width: 480px and under
     margin-left: 0;
 }
 
+.grid-row-s .grid-col + .grid-col {
+    margin-left: 0;
+}
+
+.grid-main {
+    float: none;
+    width: 100%;
+    margin-left: 0;
+}
+
+.grid-row-s .grid-col { width: 100%; }
+
 /* ---------------------------------------------------------------------
  Header
 ------------------------------------------------------------------------ */
@@ -94,4 +106,14 @@ Width: 480px and under
     -webkit-transform: translateX(275px);
     -moz-transform: translateX(275px);
     min-width: 320px;
+}
+
+/* ---------------------------------------------------------------------
+ Heros
+------------------------------------------------------------------------ */
+
+.hero-img {
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
 }
