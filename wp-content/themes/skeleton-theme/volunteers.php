@@ -22,6 +22,9 @@
                             Sign Up
                         </div>
                     </div>
+                    <div class="grid-col grid-col-5">
+                        <img src="http://192.168.1.101/owc2013/wp-content/uploads/2013/03/volunteer-hero.jpg" title="" alt="" />
+                    </div>
                 </div>
             </div>
         </div>

@@ -22,7 +22,7 @@
                     </div>
                 </div>
                 <div class="grid-col grid-col-6 padded-bottom">
-                    <img src="<?php bloginfo('template_directory'); ?>/images/training.jpg" title="" alt="" />
+                    <img src="http://192.168.1.101/owc2013/wp-content/uploads/2013/03/training-hero.jpg" title="" alt="" />
                 </div>
             </div>
         </div>
