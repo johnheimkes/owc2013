@@ -230,8 +230,7 @@ add_action( 'admin_menu', 'change_the_menu' );
 
 // Merne's Shitz -- will need to be modified.
 if ( function_exists( 'add_image_size' ) ) {
-    add_image_size( 'profile-thumb', 270, 246, true ); //(cropped)
-    add_image_size( 'slideshow-full', 1320, 675, true );
+    add_image_size( 'directors-full', 222, 222, true );
 }
 
 function my_scripts_method() {
@@ -252,91 +251,6 @@ function my_scripts_method() {
 }
 add_action('wp_enqueue_scripts', 'my_scripts_method');
 
-
-function setup_post_types() {
-
-    // Slideshow
-    register_post_type( 'slideshow',
-        array(
-            'labels' => array(
-                'name' => __( 'Slideshow' ),
-                'singular_name' => __( 'Slide' ),
-                'add_new' => __( 'Add New' ),
-                'add_new_item' => __( 'Add New Slide' ),
-                'edit' => __( 'Edit' ),
-                'edit_item' => __( 'Edit Slide' ),
-                'new_item' => __( 'New Slide' ),
-            ),
-            'description' => 'Homepage Carousel/Slideshow',
-            'public' => true,
-            'menu_position' => 100,
-            // 'menu_icon' => get_bloginfo('template_directory') . '/images/cpt/slideshow-icon-16-alt.png',
-            'supports' => array(
-                'title',
-                'editor',
-                'thumbnail',
-                'revisions'
-            ),
-            'has_archive' => false,
-        )
-    );
-
-    // stoke.d Profile
-    register_post_type( 'stoked_profile',
-        array(
-            'labels' => array(
-                'name' => __( 'stoke.d Profile' ),
-                'singular_name' => __( 'stoke.d Profile' ),
-                'add_new' => __( 'Add New' ),
-                'add_new_item' => __( 'Add New stoke.d Profile' ),
-                'edit' => __( 'Edit' ),
-                'edit_item' => __( 'Edit stoke.d Profile' ),
-                'new_item' => __( 'New stoke.d Profile' ),
-            ),
-            'description' => 'Controls Profiles for the Who We Are section',
-            'public' => true,
-            'menu_position' => 100,
-            // 'menu_icon' => get_bloginfo('template_directory') . '/images/cpt/slideshow-icon-16-alt.png',
-            'supports' => array(
-                'title',
-                'excerpt',
-                'editor',
-                'thumbnail',
-                'revisions'
-            ),
-            'has_archive' => false,
-        )
-    );
-
-    // Hero and Home Page Builder
-    register_post_type( 'stoked_hero_home',
-        array(
-            'labels' => array(
-                'name' => __( 'Home Structure' ),
-                'singular_name' => __( 'Home Structure' ),
-                'add_new' => __( 'Add New' ),
-                'add_new_item' => __( 'Add New Home Structure' ),
-                'edit' => __( 'Edit' ),
-                'edit_item' => __( 'Edit Home Structure' ),
-                'new_item' => __( 'New Home Structure' ),
-            ),
-            'description' => 'Home Page Structure and addition of hero image/slide.',
-            'public' => true,
-            'menu_position' => 100,
-            'supports' => array(
-                'title',
-                'excerpt',
-                'thumbnail',
-                'revisions'
-            ),
-            'has_archive' => false,
-        )
-    );
-
-
-}
-// Init Post types
-add_action( 'init', 'setup_post_types');
 
 // Custom Write Panels
 function customize_write_panels() {

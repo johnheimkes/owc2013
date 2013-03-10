@@ -12,23 +12,24 @@
 add_action('init', 'nerdery_register_post_types');
 function nerdery_register_post_types()
 {
-    // register your post-types here
-    /*
-     * @see register_post_type() http://codex.wordpress.org/Function_Reference/register_post_type
-     *
-     */
     register_post_type(
-        'nerdery_carousel', // prefix your post-type
+        'directors',
         array(
             'labels' => array(
-                'name'          => 'Carousels', // plural name
-                'singular_name' => 'Carousel'
+                'name'          => 'Directors',
+                'singular_name' => 'Director',
+                'add_new_item'  => 'Add New Director',
+                'edit_item'     => 'Edit Director',
             ),
-            'public' => true,
-            'supports' => array(
+            'public'        => true,
+            'description'   => 'Directors Listing'
+            'supports'      => array(
                 'title',
+                'editor',
                 'thumbnail',
-            )
+                'revisions',
+            ),
+            'has_archive'   => true,
         )
     );
 }
