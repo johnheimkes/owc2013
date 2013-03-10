@@ -17,7 +17,7 @@
             <div class="grid-row">
                 <div class="grid-col grid-col-6">
                     <div class="hero-message">
-                        <h2>Training</h2>
+                        <h2 class="hdg-4">Training</h1>
                         <p>Community Mediation & Restorative Services, Inc believes training is an effective strategy as we seek to develop the capacity of our community to respectfully resolve conflict and repair harm. We collaborate with other mediation and restorative parties to create more opportunities for people to participate in transformative, skill-building experiences.</p>
                     </div>
                 </div>

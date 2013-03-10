@@ -40,11 +40,11 @@
             <div class="grid-main">
                 <div class="grid-row-s">
                     <div class="grid-col grid-col-5">
-                        <h3>Our Mission</h3>
+                        <h2 class="hdg-5 hdg-bold">Our Mission</h3>
                         <p>To develop the capacity of the community to respectfully resolve conflict and repair harm.</p>
                     </div>
                     <div class="grid-col grid-col-5">
-                        <img src="<?php bloginfo('template_directory'); ?>/images/homepage-hero.png" title="" alt="" />
+                        <img src="http://192.168.1.101/owc2013/wp-content/uploads/2013/03/about-hero.jpg" title="" alt="" />
                     </div>
                 </div>
             </div>
@@ -53,25 +53,25 @@
     <div class="grid-site">  
         <div class="grid-main">
             <div class="grid-row-s">            
-                <div class="grid-col grid-col-12">
-                    <h2>Our Staff</h2>
-                    <p>The full-time staff of Community Mediation & Restorative Services provide the infrastructure of the organization – serving as the link between referral sources, supporters, volunteers and clients. They are supported by talented part-time staff interns and volunteers.</p>
+                <div class="grid-col grid-col-10">
+                    <h2 class="hdg-5 hdg-bold">Our Staff</h2>
+                    <p class="section-padded">The full-time staff of Community Mediation & Restorative Services provide the infrastructure of the organization – serving as the link between referral sources, supporters, volunteers and clients. They are supported by talented part-time staff interns and volunteers.</p>
                     <img src="http://192.168.1.101/owc2013/wp-content/uploads/2013/03/about-staff.jpg" title="" alt="" />
                 </div>
             </div>                     
             <div class="grid-row grid-row-push-s">
-                <div class="grid-col grid-col-3">
-                    Beth Bailey
+                <div class="grid-col grid-col-4">
+                    <span class="hdg-bold">Beth Bailey</span>
                     <br />Executive Director
                     <p>Beth has served as Executive Director since 2001, managing the financial and human resources of the organization while building strategic partnerships to connect those willing to serve with those needing services.</p>
                 </div>
-                <div class="grid-col grid-col-3">
-                    Sandra Moberg Walls
+                <div class="grid-col grid-col-4">
+                    <span class="hdg-bold">Sandra Moberg Walls</span>
                     <br />Program Director
                     <p>Sandra lives and breathes the CMRS mission – inspiring and inspired by dedicated volunteers and courageous participants to find hope in difficult situations.</p>
                 </div>
-                <div class="grid-col grid-col-3">
-                    MiaLisa McFarland Millares
+                <div class="grid-col grid-col-4">
+                    <span class="hdg-bold">MiaLisa McFarland Millares</span>
                     <br />Program Director
                     <p>Jill is motivated by the opportunity to meaningfully help others and considers it a privilege to work with the volunteers, clients and partners of CMRS.</p>
                 </div>
@@ -81,7 +81,7 @@
         <div class="grid-main">
             <div class="grid-row-s">            
                 <div class="grid-col grid-col-10">
-                    <h2>Part-time Staff</h2>
+                    <h2 class="hdg-5 hdg-bold">Part-time Staff</h2>
                 </div>
             </div>  
 
@@ -173,7 +173,7 @@
             </div>   
         </div>
 
-        <div class="grid-main"></div>
+        <div class="grid-main">
             <div class="grid-row-s">            
                 <div class="grid-col grid-col-2">
                     Joan Molenaar
@@ -195,9 +195,7 @@
                     Suzanne West
                 </div>
             </div>                                                    
-                                                                                    
         </div>                 
-
     </div>      
 
     <div class="section-wrap bg-turq">
@@ -239,14 +237,14 @@
 
                 <div class="grid-row-s">
                     <div class="grid-col grid-col-2">
-                        People Standing Icon<
+                        People Standing Icon
                     </div>
                     <div class="grid-col grid-col-2">
                         <span class="large">264</span>
                         Mediations
                     </div> 
                     <div class="grid-col grid-col-5">
-                        <h3>Community Services</h3>
+                        <h3 class="hdg-3">Community Services</h3>
                         <p>Giving Hennepin County residents an opportunity to respectfully move from conflic to resolution.</p>
                     </div>                                    
                 </div>    
@@ -260,7 +258,7 @@
                         Conferences
                     </div> 
                     <div class="grid-col grid-col-5">
-                        <h3>Youth and Restorative Services</h3>
+                        <h3 class="hdg-3">Youth and Restorative Services</h3>
                         <p>Supporting youth by holding them accountable, repairing harm and improving conflict resolution and decision making skills. 96% succeeded!</p>
                     </div>                                    
                 </div> 
@@ -274,7 +272,7 @@
                         Mediators Trained
                     </div> 
                     <div class="grid-col grid-col-5">
-                        <h3>Volunteer and Training Opportunities</h3>
+                        <h3 class="hdg-3">Volunteer and Training Opportunities</h3>
                         <p>Investing in our community through Volunteer Development and Mediation & Restorative Practices trainings</p>
                     </div>                                    
                 </div>                 
@@ -292,7 +290,7 @@
                 </div>
                 <div class="grid-row-s">
                     <div class="grid-col grid-col-3">
-                        <h3>Income</h3>
+                        <h3 class="hdg-3">Income</h3>
                         <span class="large">$247,948</span>
                     </div>                    
 
@@ -309,7 +307,7 @@
                 </div>    
                 <div class="grid-row-s">
                     <div class="grid-col grid-col-3">
-                        <h3>Expenses</h3>
+                        <h3 class="hdg-3">Expenses</h3>
                         <span class="large">$257,811</span>
                     </div>                    
 
@@ -324,7 +322,7 @@
                 </div> 
                 <div class="grid-row-s">
                     <div class="grid-col grid-col-5">
-                        <h3>Expenses</h3>
+                        <h3 class="hdg-3">Expenses</h3>
                         <span class="large">81%</span>
                         <p>of all donations go to 
                         <br />providing services</p>
