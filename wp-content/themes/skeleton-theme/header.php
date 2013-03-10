@@ -32,10 +32,35 @@
     <?php wp_head(); // Always have wp_head() just before the closing </head> ?>
 </head>
 <body <?php body_class(); ?>>
-    <div class="page-wrapper">
+    <div class="wrapper-header">
         <div class="page-header">
-            <?php if(get_header_image()): ?>
-            <img src="<?php header_image() ?>" />
-            <?php endif; ?>
-        </div>
+            <a href="#" id="btn-menu" class="btn-menu"></a>
+            <a href="#" class="logo offscreen">Community Mediation and Restorative Services</a>
+        </div><!-- End .page-header -->
+    </div>
+
+    <div class="slideout nav-container" id="nav">
+        <ul class="h-list nav">
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="#">About</a>
+            </li>
+            <li>
+                <a href="#">Contact</a>
+            </li>
+            <li>
+                <a href="#">Donations</a>
+            </li>
+            <li>
+                <a href="#">Services</a>
+            </li>
+            <li>
+                <a href="#">Mediation Longer Name</a>
+            </li>
+        </ul>
+    </div>
+
+<div class="page-content">
         <?php get_search_form(); ?>

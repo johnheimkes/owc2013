@@ -18,6 +18,15 @@ var CMRS = CMRS || {};
 
         APP.AutoReplace.init();
 
+        var slideoutmenu = new APP.SlideoutMenu(
+            $('#btn-menu'), /* button clicked to bring menu visible */
+            $('#nav'), /*  */
+            $('.page-header'),
+            $('.page-content'),
+            'left-active'
+        );
+
+
         var carousel = new APP.Carousel({
             carouselWrapperSelector: '.js-carousel',
             slideWrapperSelector: '.js-carousel-slide-wrapper',
