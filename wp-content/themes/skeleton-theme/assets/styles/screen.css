@@ -355,7 +355,7 @@ img {
     background-color: #005581;
     font-size: 14px;
     color: #fff;
-    width: 130px;
+    width: 150px;
 }
 
 .secondary-nav a {
@@ -783,6 +783,10 @@ img {
         background-image: none;
     }
 
+    .secondary-nav {
+        display: none;
+    }      
+
 }
 
 @media screen and (max-width: 782px) {
@@ -794,11 +798,11 @@ img {
 
     .hennepin-county {
         margin: 0;
-    }
+    }   
 
 }
 
-@media screen and (max-width: 767px) { /* under tablet size */
+@media screen and (max-width: 767px) { /* under tablet size */   
 
     .header-contact {
         display: none;
@@ -832,12 +836,6 @@ img {
         display: block;
     }
 }
-@media screen and (max-width: 646px) {
-    .secondary-nav {
-        display: none;
-    }
-}
-
 /* ---------------------------------------------------------------------
   SPRITE
 ------------------------------------------------------------------------ */
