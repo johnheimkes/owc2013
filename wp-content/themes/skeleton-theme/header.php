@@ -32,10 +32,55 @@
     <?php wp_head(); // Always have wp_head() just before the closing </head> ?>
 </head>
 <body <?php body_class(); ?>>
-    <div class="page-wrapper">
+    <div class="wrapper-header">
         <div class="page-header">
-            <?php if(get_header_image()): ?>
-            <img src="<?php header_image() ?>" />
-            <?php endif; ?>
+            <a href="#" id="btn-menu" class="btn-menu"></a>
+            <a href="#" class="logo offscreen">Community Mediation and Restorative Services</a>
+            <div class="header-contact">
+                <ul>
+                    <li>
+                        Phone: 763-561-0033
+                    </li>
+                    <li>
+                        Espanol: 612-629-6058
+                    </li>
+                    <li>
+                        <a href="mailto:staff@mediationprogram.com">staff@mediationprogram.com</a>
+                    </li>
+                </ul>
+            </div>
+        </div><!-- End .page-header -->
+    </div>
+
+    <div class="slideout nav-container bg-turq" id="nav">
+        <div class="wrapper-nav">
+            <ul class="nav">
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">Mediation</a>
+                </li>
+                <li>
+                    <a href="#">Training</a>
+                </li>
+                <li>
+                    <a href="#">Volunteer</a>
+                </li>
+                <li>
+                    <a href="#">Support</a>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#">Resources</a>
+                </li>
+                <li>
+                    <a href="#">Volunteer Login</a>
+                </li>
+            </ul>
         </div>
-        <?php get_search_form(); ?>
+    </div>
+
+<div class="page-content">
