@@ -10,7 +10,7 @@
  */
 ?>
 <?php get_header(); ?>
-    <div class="section-wrap section-wrap-about bg-lightblue">
+    <div class="section-wrap bg-lightblue">
         <div class="grid-site">
             <div class="grid-sidebar">
                 <div class="secondary-nav">
@@ -35,14 +35,14 @@
                 </div>
             </div>
             <div class="grid-main">
-                <div class="grid-col grid-col-5">
-                    <div class="hero-message">
-                        <h2>Our Mission</h2>
+                <div class="grid-row-s">
+                    <div class="grid-col grid-col-5">
+                        <h3>Our Mission</h3>
                         <p>To develop the capacity of the community to respectfully resolve conflict and repair harm.</p>
                     </div>
-                </div>
-                <div class="grid-col grid-col-5">
-                    <img src="/assets/images/homepage_hero.png" />
+                    <div class="grid-col grid-col-5">
+                        <img src="/assets/images/homepage_hero.png" />
+                    </div>
                 </div>
             </div>
         </div>
