@@ -83,13 +83,36 @@
                 <div class="grid-col grid-col-10">
                     <h2>Part-time Staff</h2>
                 </div>
-            </div>   
+            </div>  
 
             <div class="grid-row-s">            
-                <div class="grid-col grid-col-10">
-                    <h2>2013 Board of Directors</h2>
+                <div class="grid-col grid-col-2">
+                    <b>James Henson</b>
                 </div>
-            </div> 
+            </div>    
+            
+            <div class="grid-row-s">            
+                <div class="grid-col grid-col-2">
+                    <b>Mariam Feingold</b>
+                </div>
+            </div>    
+            
+            <div class="grid-row-s">            
+                <div class="grid-col grid-col-2">
+                    <b>Linda Freeman</b>
+                </div>
+            </div>                                                                          
+        </div> 
+
+        <hr>
+
+
+        <div class="grid-main">
+            <div class="grid-row-s">            
+                <div class="grid-col grid-col-10">
+                    <h2>Board of Directors</h2>
+                </div>
+            </div>  
 
             <div class="grid-row-s">            
                 <div class="grid-col grid-col-2">
@@ -119,6 +142,224 @@
                 </div>
             </div>                                                                          
         </div> 
+
+        <div class="grid-main">
+            <div class="grid-row-s">            
+                <div class="grid-col grid-col-10">
+                    <b>Additional Board Members</b>
+                </div>
+            </div>  
+
+            <div class="grid-row-s">            
+                <div class="grid-col grid-col-2">
+                    Tyler Aman
+                </div>
+            </div> 
+
+            <div class="grid-row-s">            
+                <div class="grid-col grid-col-2">
+                    Rich Krambeer
+                </div>
+            </div> 
+            <div class="grid-row-s">            
+                <div class="grid-col grid-col-2">
+                    Johnathan Levy
+                </div>
+            </div> 
+            <div class="grid-row-s">            
+                <div class="grid-col grid-col-2">
+                    Ben Lowndes
+                </div>
+            </div>   
+        </div>
+
+        <div class="grid-main"></div>
+            <div class="grid-row-s">            
+                <div class="grid-col grid-col-2">
+                    Joan Molenaar
+                </div>
+            </div> 
+
+            <div class="grid-row-s">            
+                <div class="grid-col grid-col-2">
+                    Judge Allen Oleisky
+                </div>
+            </div> 
+            <div class="grid-row-s">            
+                <div class="grid-col grid-col-2">
+                    Jocelyn VanKnight
+                </div>
+            </div> 
+            <div class="grid-row-s">            
+                <div class="grid-col grid-col-2">
+                    Suzanne West
+                </div>
+            </div>                                                    
+                                                                                    
+        </div>                 
+
     </div>      
+
+    <div class="section-wrap bg-turq">
+        <div class="grid-site">
+            <div class="grid-sidebar">
+                <div class="secondary-nav">
+                    <ul>
+                        <li class="title">About</li>
+                        <li>
+                            <a href="#overview">Overview</a>
+                        </li>
+                        <li>
+                            <a href="#staff">Staff & Directors</a>
+                        </li>                        
+                        <li>
+                            <a href="#accomplishments">Accomplishments</a>
+                        </li>
+                        <li>
+                            <a href="#financial-report">Financial Report</a>
+                        </li>
+                        <li>
+                            <a href="#partners">Partners</a>
+                        </li>
+                        <li>
+                            <a href="contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="grid-main">
+                <div class="grid-row-s">
+                    <div class="grid-col grid-col-7">
+                        <h2>2012 Accomplishments</h2>
+                    </div>
+                    <div class="grid-col grid-col-2">
+                        <div class="btn">Download Annual Report</div>
+                    </div>                    
+                </div>
+
+                <div class="grid-row-s">
+                    <div class="grid-col grid-col-2">
+                        People Standing Icon<
+                    </div>
+                    <div class="grid-col grid-col-2">
+                        <span class="large">264</span>
+                        Mediations
+                    </div> 
+                    <div class="grid-col grid-col-5">
+                        <h3>Community Services</h3>
+                        <p>Giving Hennepin County residents an opportunity to respectfully move from conflic to resolution.</p>
+                    </div>                                    
+                </div>    
+
+                <div class="grid-row-s">
+                    <div class="grid-col grid-col-2">
+                        Gavel Icon
+                    </div>
+                    <div class="grid-col grid-col-2">
+                        <span class="large">290</span>
+                        Conferences
+                    </div> 
+                    <div class="grid-col grid-col-5">
+                        <h3>Youth and Restorative Services</h3>
+                        <p>Supporting youth by holding them accountable, repairing harm and improving conflict resolution and decision making skills. 96% succeeded!</p>
+                    </div>                                    
+                </div> 
+
+                <div class="grid-row-s">
+                    <div class="grid-col grid-col-2">
+                        Tools Icon
+                    </div>
+                    <div class="grid-col grid-col-2">
+                        <span class="large">62</span>
+                        Mediators Trained
+                    </div> 
+                    <div class="grid-col grid-col-5">
+                        <h3>Volunteer and Training Opportunities</h3>
+                        <p>Investing in our community through Volunteer Development and Mediation & Restorative Practices trainings</p>
+                    </div>                                    
+                </div>                 
+            </div>
+        </div>
+    </div>  
+
+    <div class="section-wrap bg-white">
+        <div class="grid-site">
+            <div class="grid-main">
+                <div class="grid-row-s">
+                    <div class="grid-col grid-col-12">
+                        <h2>Financial Report</h2>
+                    </div>
+                </div>
+                <div class="grid-row-s">
+                    <div class="grid-col grid-col-3">
+                        <h3>Income</h3>
+                        <span class="large">$247,948</span>
+                    </div>                    
+
+                    <div class="grid-col grid-col-3">
+                        <b>$123,456</b> Contracts and Fees
+                        <b>$123,456</b> Foundations
+                        <b>$123,456</b> State of MN
+                    </div>
+                    <div class="grid-col grid-col-2">
+                        <div class="btn">2013 Financial Report</div>
+                        <br /><a href="#">2012 Financial Report</a>
+                        <br /><a href="#">2013 Financial Report</a>
+                    </div>             
+                </div>    
+                <div class="grid-row-s">
+                    <div class="grid-col grid-col-3">
+                        <h3>Expenses</h3>
+                        <span class="large">$257,811</span>
+                    </div>                    
+
+                    <div class="grid-col grid-col-3">
+                        <b>$123,456</b> Program
+                        <b>$123,456</b> Fundrasing
+                        <b>$123,456</b> Administration
+                    </div>
+                    <div class="grid-col grid-col-4">
+                        MEETS STANDARDS IMAGE
+                    </div>             
+                </div> 
+                <div class="grid-row-s">
+                    <div class="grid-col grid-col-5">
+                        <h3>Expenses</h3>
+                        <span class="large">81%</span>
+                        <p>of all donations go to 
+                        <br />providing services</p>
+                    </div>                              
+                </div>   
+            </div>
+
+            <hr>
+
+            <div class="grid-main">
+                <div class="grid-row-s">
+                    <div class="grid-col grid-col-12">
+                        <h2>Partners</h2>
+                    </div>
+                </div>
+                <div class="grid-row-s">
+                    <div class="grid-col grid-col-4">
+                        <a href="#">Conflict Resolution Minnesota</a>
+                        <a href="#"></a>
+                        <a href="#"></a>
+                    </div>      
+                    <div class="grid-col grid-col-4">
+                        <a href="#"></a>
+                        <a href="#"></a>
+                        <a href="#"></a>
+                    </div>      
+                    <div class="grid-col grid-col-4">
+                        <a href="#"></a>
+                    </div>                                                            
+            </div>
+
+        </div>
+    </div>      
+
+
+
 
 <?php get_footer(); ?>

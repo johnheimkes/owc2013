@@ -153,7 +153,7 @@ a:focus {
     font-weight: bold;
 }
 
-.bg-turq { background: #54accd; }
+.bg-turq { background: #54accd; color: #fff; }
 .bg-lightblue { background: #d7e5ef; }
 .bg-darkblue { background: #005581; }
 .bg-white { background: #FFFFFF; }
