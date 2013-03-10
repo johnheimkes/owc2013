@@ -20,13 +20,16 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
     <div class="grid-site">
         <div class="grid-main">
             <div class="grid-row-s">
-                <div class="grid-col grid-col-5">
-                    <h2 class="hdg-5 hdg-bold"><?php the_title(); ?></h3>
-                        <?php the_content(); ?>
+                <div class="grid-col grid-col-7">
+                    <h2 class="hdg hdg-5 hdg-bold"><?php the_title(); ?></h3>
+                        <span class="hdg-4 hdg"><?php the_content(); ?></span>
                     <br>             
                     <div class="btn">
                         Sign Up
                     </div>
+                </div>
+                <div class="grid-col grid-col-3">
+                    <img src="<?php bloginfo('template_directory'); ?>/assets/images/volunteersGraphic.png" alt="" />
                 </div>
             </div>
         </div>
