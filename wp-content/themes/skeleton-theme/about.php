@@ -40,7 +40,7 @@
                 <p>To develop the capacity of the community to respectfully resolve conflict and repair harm.</p>
             </div>            
             <div class="grid-col grid-col-4">
-                Picture here                
+                <img src="/assets/images/homepage_hero.png" />            
             </div>              
         </div>
     </div>
