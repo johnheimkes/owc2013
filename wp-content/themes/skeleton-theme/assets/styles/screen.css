@@ -355,8 +355,7 @@ img {
     background-color: #005581;
     font-size: 14px;
     color: #fff;
-    max-width: 150px;
-    min-width: 100px;
+    width: 130px;
 }
 
 .secondary-nav a {
@@ -827,6 +826,11 @@ img {
 
     .nav-footer > li  {
         display: block;
+    }
+}
+@media screen and (max-width: 646px) {
+    .secondary-nav {
+        display: none;
     }
 }
 
