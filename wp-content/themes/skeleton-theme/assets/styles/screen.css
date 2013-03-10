@@ -159,6 +159,47 @@ a:focus {
 .bg-white { background: #FFFFFF; }
 
 /* ---------------------------------------------------------------------
+ Headings
+------------------------------------------------------------------------ */
+
+.hdg {
+    line-height: 1;
+    color: #005581;
+}
+
+.hdg-invert {
+    color: #FFFFFF;
+}
+
+.hdg-cap {
+    text-transform: uppercase;
+}
+
+.hdg-bold {
+    font-weight: bold;
+}
+
+.hdg-1 {
+    font-size: 48px;
+}
+
+.hdg-2 {
+    font-size: 40px;
+}
+
+.hdg-3 {
+    font-size: 32px;
+}
+
+.hdg-4 {
+    font-size: 24px;
+}
+
+.hdg-5 {
+    font-size: 18px;
+}
+
+/* ---------------------------------------------------------------------
  Header
 ------------------------------------------------------------------------ */
 
