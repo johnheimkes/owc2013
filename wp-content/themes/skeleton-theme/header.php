@@ -36,6 +36,19 @@
         <div class="page-header">
             <a href="#" id="btn-menu" class="btn-menu"></a>
             <a href="#" class="logo offscreen">Community Mediation and Restorative Services</a>
+            <div class="header-contact">
+                <ul>
+                    <li>
+                        Phone: 763-561-0033
+                    </li>
+                    <li>
+                        Espanol: 612-629-6058
+                    </li>
+                    <li>
+                        <a href="mailto:staff@mediationprogram.com">staff@mediationprogram.com</a>
+                    </li>
+                </ul>
+            </div>
         </div><!-- End .page-header -->
     </div>
 
@@ -62,6 +75,9 @@
                 </li>
                 <li>
                     <a href="#">Resources</a>
+                </li>
+                <li>
+                    <a href="#">Volunteer Login</a>
                 </li>
             </ul>
         </div>

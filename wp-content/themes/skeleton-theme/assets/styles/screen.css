@@ -25,8 +25,6 @@ Width: All Sizes
 
 .grid-col {
     float: left;
-
-    /* REMOVE below for production work */
     -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
 }
 
@@ -194,6 +192,16 @@ a:focus {
 
 .page-content {
     background: #ededed;
+}
+
+.header-contact {
+    float: right;
+    margin-top: -50px;
+    font-size: 12px;
+}
+
+.header-contact a {
+    color: #005581;
 }
 
 /* ---------------------------------------------------------------------
@@ -386,10 +394,18 @@ a:focus {
  Individual Media Queries
 ------------------------------------------------------------------------ */
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 782px) {
 
     .nav > li > a {
         font-size: 12px;
-        padding: 0 8px;
+        padding: 0 12px;
+    }
+}
+
+@media screen and (max-width: 646px) {
+
+    .nav > li > a {
+        font-size: 14px;
+        padding: 0 22px;
     }
 }
