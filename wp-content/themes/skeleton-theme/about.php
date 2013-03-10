@@ -202,10 +202,10 @@
         <div class="grid-site">
             <div class="grid-main">
                 <div class="grid-row-s">
-                    <div class="grid-col grid-col-8">
+                    <div class="grid-col grid-col-6">
                         <h2 class="hdg-5 hdg-bold hdg-padded">2012 Accomplishments</h2>
                     </div>
-                    <div class="grid-col grid-col-2">
+                    <div class="grid-col grid-col-4 padded-top">
                         <div class="btn">Download Annual Report</div>
                     </div>                    
                 </div>
@@ -278,12 +278,14 @@
                         <br><span class="hdg-bold">$123,456</span> Foundations
                         <br><span class="hdg-bold">$123,456</span> State of MN
                     </div>
-                    <div class="grid-col grid-col-2">
+                    <div class="grid-col grid-col-4">
                         <div class="btn">2013 Financial Report</div>
                         <br /><a href="#">2012 Financial Report</a>
                         <br /><a href="#">2013 Financial Report</a>
                     </div>             
-                </div>    
+                </div>
+            </div>    
+            <div class="grid-main">
                 <div class="grid-row-s">
                     <div class="grid-col grid-col-3">
                         <h3 class="hdg-bold">Expenses</h3>
