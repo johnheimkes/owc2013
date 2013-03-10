@@ -1,7 +1,7 @@
 /**
  * @fileOverview DropDown View Module File
  *
- * @author 
+ * @author Zach Walders
  * @version 1.0
  */
 CMRS.DropDown = function($) {
