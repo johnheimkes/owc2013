@@ -35,7 +35,7 @@
     <div class="wrapper-header">
         <div class="page-header">
             <a href="#" id="btn-menu" class="btn-menu"></a>
-            <a href="#" class="logo offscreen">Community Mediation and Restorative Services</a>
+            <h1><a href="#" class="logo offscreen">Community Mediation and Restorative Services</a></h1>
             <div class="header-contact">
                 <ul>
                     <li>
