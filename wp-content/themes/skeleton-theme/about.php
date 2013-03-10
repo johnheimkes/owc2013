@@ -210,9 +210,9 @@
                     </div>                    
                 </div>
             </div>
-            
+
             <div class="grid-main">
-                <div class="grid-row-s">
+                <div class="grid-row-s padded-bottom">
                     <div class="grid-col grid-col-1">
                         People Standing Icon
                     </div>
@@ -220,36 +220,38 @@
                         <h5 class="hdg-1">264</h5>
                         <span class="hdg-5">Mediations</span>
                     </div> 
-                    <div class="grid-col grid-col-4">
-                        <h5 class="hdg-5 hdg-bold">Community Services</h3>
+                    <div class="grid-col grid-col-6">
+                        <h3 class="hdg-5 hdg-bold">Community Services</h3>
                         <p>Giving Hennepin County residents an opportunity to respectfully move from conflic to resolution.</p>
                     </div>                                    
-                </div>    
-
+                </div>  
+            </div>
+            <div class="grid-main">
                 <div class="grid-row-s">
-                    <div class="grid-col grid-col-3">
+                    <div class="grid-col grid-col-1">
                         Gavel Icon
                     </div>
                     <div class="grid-col grid-col-3">
                         <h5 class="hdg-1">290</h5>
-                        Conferences
+                        <span class="hdg-5">Conferences</span>
                     </div> 
-                    <div class="grid-col grid-col-3">
+                    <div class="grid-col grid-col-6">
                         <h3 class="hdg-bold">Youth and Restorative Services</h3>
                         <p>Supporting youth by holding them accountable, repairing harm and improving conflict resolution and decision making skills. 96% succeeded!</p>
                     </div>                                    
                 </div> 
-
+            </div>
+            <div class="grid-main">
                 <div class="grid-row-s">
-                    <div class="grid-col grid-col-2">
+                    <div class="grid-col grid-col-1">
                         Tools Icon
                     </div>
-                    <div class="grid-col grid-col-2">
-                        <span class="hdg-1">62</span>
-                        Mediators Trained
+                    <div class="grid-col grid-col-3">
+                        <h5 class="hdg-1">62</h5>
+                        <span class="hdg-5">Mediators Trained</span>
                     </div> 
-                    <div class="grid-col grid-col-5">
-                        <h3 class="hdg-3">Volunteer and Training Opportunities</h3>
+                    <div class="grid-col grid-col-6">
+                        <h3 class="hdg-bold">Volunteer and Training Opportunities</h3>
                         <p>Investing in our community through Volunteer Development and Mediation & Restorative Practices trainings</p>
                     </div>                                    
                 </div>                 
