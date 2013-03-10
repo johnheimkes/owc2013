@@ -10,25 +10,25 @@
  */
 ?>
         <div class="page-footer">
-        	<ul>
+        	<ul class="h-list nav-footer">
         		<li>
-        			<a href="">Link</a>
+        			<a href="#">Link</a>
         		</li>
         		<li>
-        			<a href="">Link</a>
+        			<a href="#">Link</a>
         		</li>
         		<li>
-        			<a href="">Link</a>
+        			<a href="#">Link</a>
         		</li>
         		<li>
-        			<a href="">Link</a>
+        			<a href="#">Link</a>
         		</li>
         		<li>
-        			<a href="">Link</a>
+        			<a href="#">Link</a>
         		</li>
         		<li>
-        			<a href="">Link</a>
-        		</li>     		        		        		        		        		
+        			<a href="#">Link</a>
+        		</li>
         	</ul>
         </div>
     </div><!-- /.page-content -->
