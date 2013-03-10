@@ -1,0 +1,53 @@
+.icon-sprite-about {
+	background-image: url(sprites.png);
+	background-repeat: no-repeat;
+}
+
+.icon-standing {
+	background-position: 0 0;
+	width: 107px;
+	height: 96px;
+}
+
+.about-gavel {
+	background-position: -151px 0;
+	width: 119px;
+	height: 97px;
+}
+
+.about-school {
+	background-position: -301px 0;
+	width: 116px;
+	height: 120px;
+}
+
+.about-tools {
+	background-position: -450px -2px ;
+	width: 92px;
+	height: 96px;
+}
+
+.about-standards {
+	background-position: 0 -103px ;
+	width: 129px;
+	height: 98px;
+}
+
+.home-presents {
+	background-position: -151px -101px ;
+	width: 31px;
+	height: 36px;
+}
+
+.home-home {
+	background-position: -151px -151px ;
+	width: 37px;
+	height: 31px;
+}
+
+.home-people {
+	background-position: -201px -150px ;
+	width: 47px;
+	height: 32px;
+}
+
