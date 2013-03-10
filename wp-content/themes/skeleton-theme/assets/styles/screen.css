@@ -145,8 +145,6 @@ img {
     margin-left: 17.794486215539%;
 }
 
-
-
 .section-padded {
     padding: 20px 0;
 }
@@ -357,6 +355,8 @@ img {
     background-color: #005581;
     font-size: 14px;
     color: #fff;
+    max-width: 150px;
+    min-width: 100px;
 }
 
 .secondary-nav a {
@@ -595,6 +595,7 @@ img {
     background: -ms-linear-gradient(top,  #ffffff 0%,#e0e0e0 100%); /* IE10+ */
     background: linear-gradient(to bottom,  #ffffff 0%,#e0e0e0 100%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e0e0e0',GradientType=0 ); /* IE6-8 */
+    color: #4c4043;
 }
 
 .padded {
@@ -676,7 +677,10 @@ img {
 }
 
 .hennepin-county {
+    width: 313px;
+    height: 346px;
     margin: -140px 0 -113px 0;
+    background: url('../images/county.png') no-repeat;
 }
 
 .hero-img-home {
@@ -771,11 +775,11 @@ img {
     }
 }
 
-@media screen and (max-width: 971px) {
-    /*.hero-img-home {
+@media screen and (max-width: 885px) {
+    .hero-img-home {
         background-image: none;
     }
-*/
+
 }
 
 @media screen and (max-width: 782px) {
@@ -796,6 +800,10 @@ img {
     .header-contact {
         display: none;
     }
+
+    /*.grid-main {
+        margin-left: 5%;
+    }*/
 
 }
 
@@ -820,4 +828,79 @@ img {
     .nav-footer > li  {
         display: block;
     }
+}
+
+/* ---------------------------------------------------------------------
+  SPRITE
+------------------------------------------------------------------------ */
+
+.icon-sprite-about {
+    background-image: url(../images/sprite.png);
+    background-repeat: no-repeat;
+}
+
+.icon-standing {
+    background-position: 0 0;
+    width: 107px;
+    height: 96px;
+}
+
+.about-gavel {
+    background-position: -151px 0;
+    width: 119px;
+    height: 97px;
+}
+
+.about-school {
+    background-position: -301px 0;
+    width: 116px;
+    height: 120px;
+}
+
+.about-tools {
+    background-position: -450px -2px ;
+    width: 92px;
+    height: 96px;
+}
+
+.about-standards {
+    background-position: 0 -103px ;
+    width: 129px;
+    height: 98px;
+}
+
+.home-presents {
+    background-position: -151px -101px ;
+    width: 31px;
+    height: 36px;
+}
+
+.home-home {
+    background-position: -151px -151px ;
+    width: 37px;
+    height: 31px;
+}
+
+.home-people {
+    background-position: -201px -150px ;
+    width: 47px;
+    height: 32px;
+}
+
+.nav-person {
+    background-position: -301px -151px ;
+    width: 19px;
+    height: 17px;
+}
+
+.nav-search {
+    background-position: -251px -101px ;
+    width: 19px;
+    height: 19px;
+}
+
+.nav-toggle {
+    background-position: -250px -151px ;
+    width: 17px;
+    height: 12px;
 }

@@ -159,7 +159,7 @@ function nerderyEnqueueStyles()
         NERDERY_THEME_PATH_URL . 'assets/styles/screen_small.css',
         array('nerdery-screen'),
         '1.0',
-        'screen and (max-width: 480px)'
+        'screen and (max-width: 767px)'
     );
 
     // WYSIWYG Stylesheet

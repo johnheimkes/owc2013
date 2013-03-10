@@ -34,7 +34,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="grid-col grid-col-6">
+                <div class="grid-col grid-col-6 mobile-none">
                     &nbsp;
                 </div>
             </div>
@@ -48,7 +48,7 @@
             <div class="grid-row-s">
                 <div class="grid-col grid-col-5">
                     <div class="hennepin-county">
-                        <img src="http://placehold.it/313x345" />
+
                     </div>
                 </div>
                 <div class="grid-col grid-col-5">
@@ -77,7 +77,7 @@
 <div class="section-wrap bg-turq">
     <div class="grid-site">
         <div class="grid-row">
-            <div class="grid-col grid-col-1">
+            <div class="grid-col grid-col-1 mobile-none">
                 &nbsp;
             </div>
             <div class="grid-col grid-col-7">
@@ -158,7 +158,7 @@
             </div>
         </div>
         <div class="grid-row">
-            <div class="grid-col grid-col-1">
+            <div class="grid-col grid-col-1 mobile-none">
                 &nbsp;
             </div>
             <div class="grid-col grid-col-4">
