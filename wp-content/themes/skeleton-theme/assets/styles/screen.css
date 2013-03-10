@@ -12,7 +12,7 @@ Width: All Sizes
 ------------------------------------------------------------------------ */
 
 .grid--push-l {
-    margin-bottom: 40px;
+    margin-bottom: 60px;
 }
 
 .grid-row-push-m {
@@ -95,7 +95,7 @@ a {
 
 a:hover,
 a:focus {
-    color: #005581;
+    color: #d7e5ef;
 }
 
 .logo {
@@ -118,6 +118,7 @@ img {
 .grid-site {
     max-width: 960px;
     margin: 0 auto;
+    padding: 60px 0 80px 0;
 }
 
 .grid-site:before,
@@ -142,9 +143,7 @@ img {
     margin-left: 17.794486215539%;
 }
 
-.section-wrap {
-    padding: 60px 0 80px 0;
-}
+
 
 .section-padded {
     padding: 20px 0;
@@ -368,17 +367,21 @@ img {
 
 .page-footer {
     background-color: #005581;
+    padding: 30px 0;
 }
 
-.wrapper-footer {
+.wrapper-nav-footer {
     margin: 0 auto;
     max-width: 960px;
 }
 
+.wrapper-footer {
+    padding: 0 22%;
+}
+
 .nav-footer {
     margin: 0 auto;
-    line-height: 60px;
-    text-align: center;
+    padding: 0 0 0 0;
 }
 
 .nav-footer > li {
@@ -411,6 +414,28 @@ img {
     transition:
         background 0.3s ease-in-out,
         opacity 0.3s ease-in-out 0s;
+}
+
+.footer-copy {
+    margin: 0 auto;
+    max-width: 930px;
+    color: #FFFFFF;
+    padding: 30px 15px 0 15px;
+}
+
+.footer-copy > ul > * + * {
+    margin-left: 3%;
+}
+
+.footer-contact {
+    margin: 0 auto;
+    max-width: 930px;
+    color: #FFFFFF;
+    padding: 30px 15px 0 15px;
+}
+
+.footer-contact > ul > * + * {
+    margin-left: 3%;
 }
 
 /* ---------------------------------------------------------------------
@@ -514,22 +539,50 @@ img {
     border-bottom: 1px solid #005581;
 }
 
-.participant-options > * {
-
-}
-
 /* ---------------------------------------------------------------------
  Heros
 ------------------------------------------------------------------------ */
 
 .hero-img {
-    margin-top: -60px;
-    width: 469px;
-    height: 308px;
+    /*margin-top: -60px;*/
+
 }
 
 .hennepin-county {
     margin: -103px 0 -53px 0;
+}
+
+.hero-img-home {
+    background-image: url('../images/homepage-hero.png');
+    background-repeat: no-repeat;
+    background-position: right top;
+}
+
+/* ---------------------------------------------------------------------
+ Partners
+------------------------------------------------------------------------ */
+
+.partners {
+    width: 715px;
+    margin: 0 auto;
+}
+
+.partners-hd {
+    margin-bottom: 30px;
+}
+
+.partners-bd > * {
+    float: left;
+    width: 23.229166666667%;
+}
+
+.partners-bd > * + * {
+    margin-left: 2.291666666667%;
+}
+
+.partners-bd a {
+    font-size: 18px;
+    color: #005581;
 }
 
 /* ---------------------------------------------------------------------
@@ -558,18 +611,92 @@ img {
  Individual Media Queries
 ------------------------------------------------------------------------ */
 
+@media screen and (max-width: 1127px) {
+    .nav-footer > li > a {
+        font-size: 14px;
+        padding: 0 22px;
+        line-height: 60px;
+        text-align: center;
+    }
+
+    .footer-copy {
+        font-size: 11px;
+    }
+
+    .footer-contact {
+        font-size: 11px;
+    }
+
+    .footer-copy > ul > * {
+        float: none;
+    }
+
+    .footer-copy > ul > * + * {
+        margin: 10px 0;
+    }
+
+    .footer-contact > ul > * {
+        float: none;
+    }
+
+    .footer-contact > ul > * + * {
+        margin: 10px 0;
+    }
+}
+
+@media screen and (max-width: 971px) {
+    .hero-img-home {
+        background-image: none;
+    }
+}
+
 @media screen and (max-width: 782px) {
 
     .nav > li > a {
         font-size: 12px;
         padding: 0 12px;
     }
+
+    .hennepin-county {
+        margin: 0;
+    }
+
+}
+
+@media screen and (max-width: 767px) { /* under tablet size */
+
+    .header-contact {
+        display: none;
+    }
+
+    .section-wrap-img {
+        padding: 60px 0 80px 0;
+    }
+
+    .hero-img {
+        margin: 0;
+    }
 }
 
 @media screen and (max-width: 646px) {
 
-    .nav > li > a {
+    .page-footer {
+        padding: 0;
+    }
+
+    .wrapper-footer {
+        padding: 0;
+    }
+
+    .nav > li > a,
+    .nav-footer > li > a {
         font-size: 14px;
         padding: 0 22px;
+        line-height: 60px;
+        text-align: center;
+    }
+
+    .nav-footer > li  {
+        display: block;
     }
 }

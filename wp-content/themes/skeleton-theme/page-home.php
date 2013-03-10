@@ -10,9 +10,9 @@
  */
 ?>
 <?php get_header(); ?>
- <div class="section-wrap-img bg-lightblue">
-    <div class="grid-site">
-        <div class="grid-main">
+ <div class="section-wrap bg-lightblue">
+    <div class="grid-site hero-img hero-img-home">
+        <div class="grid-main ">
             <div class="grid-row-s">
                 <div class="grid-col grid-col-5">
                     <div class="feature">
@@ -35,9 +35,7 @@
                     </div>
                 </div>
                 <div class="grid-col grid-col-5">
-                    <div class="hero-img">
-                        <img src="http://placehold.it/469x308" />
-                    </div>
+
                 </div>
             </div>
         </div>
@@ -108,7 +106,7 @@
 
 <div class="section-wrap bg-lightblue">
     <div class="grid-site">
-        <div class="grid-row">
+        <div class="grid-row grid--push-l">
             <div class="participant-options">
                 <?php
                 // Section 4a
@@ -203,7 +201,7 @@
 
                     <div class="partners-bd">
                         <div class="partner-name">
-                            <?php the_sub_field('partner_name'); ?>
+                            <a href="#"><?php the_sub_field('partner_name'); ?></a>
                         </div>
                     </div>
                     <?php endwhile; ?>
