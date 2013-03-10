@@ -209,17 +209,19 @@
                         <div class="btn">Download Annual Report</div>
                     </div>                    
                 </div>
-
+            </div>
+            
+            <div class="grid-main">
                 <div class="grid-row-s">
-                    <div class="grid-col grid-col-3">
+                    <div class="grid-col grid-col-1">
                         People Standing Icon
                     </div>
                     <div class="grid-col grid-col-3">
-                        <span class="large">264</span>
-                        Mediations
+                        <h5 class="hdg-1">264</h5>
+                        <span class="hdg-5">Mediations</span>
                     </div> 
-                    <div class="grid-col grid-col-3">
-                        <h3 class="hdg-5">Community Services</h3>
+                    <div class="grid-col grid-col-4">
+                        <h5 class="hdg-5 hdg-bold">Community Services</h3>
                         <p>Giving Hennepin County residents an opportunity to respectfully move from conflic to resolution.</p>
                     </div>                                    
                 </div>    
@@ -229,7 +231,7 @@
                         Gavel Icon
                     </div>
                     <div class="grid-col grid-col-3">
-                        <span class="large">290</span>
+                        <h5 class="hdg-1">290</h5>
                         Conferences
                     </div> 
                     <div class="grid-col grid-col-3">
@@ -243,7 +245,7 @@
                         Tools Icon
                     </div>
                     <div class="grid-col grid-col-2">
-                        <span class="large">62</span>
+                        <span class="hdg-1">62</span>
                         Mediators Trained
                     </div> 
                     <div class="grid-col grid-col-5">
@@ -260,19 +262,19 @@
             <div class="grid-main">
                 <div class="grid-row-s">
                     <div class="grid-col grid-col-12">
-                        <h2>Financial Report</h2>
+                        <h2 class="hdg-5 hdg-bold padded-bottom">Financial Report</h2>
                     </div>
                 </div>
                 <div class="grid-row-s">
                     <div class="grid-col grid-col-3">
-                        <h3 class="hdg-3">Income</h3>
-                        <span class="large">$247,948</span>
+                        <h3 class="hdg-bold">Income</h3>
+                        <span class="hdg-2 turq hdg-bold">$247,948</span>
                     </div>                    
 
                     <div class="grid-col grid-col-3">
-                        <b>$123,456</b> Contracts and Fees
-                        <b>$123,456</b> Foundations
-                        <b>$123,456</b> State of MN
+                        <span class="hdg-bold">$123,456</span> Contracts and Fees
+                        <br><span class="hdg-bold">$123,456</span> Foundations
+                        <br><span class="hdg-bold">$123,456</span> State of MN
                     </div>
                     <div class="grid-col grid-col-2">
                         <div class="btn">2013 Financial Report</div>
@@ -282,24 +284,24 @@
                 </div>    
                 <div class="grid-row-s">
                     <div class="grid-col grid-col-3">
-                        <h3 class="hdg-3">Expenses</h3>
-                        <span class="large">$257,811</span>
+                        <h3 class="hdg-bold">Expenses</h3>
+                        <span class="hdg-2 turq hdg-bold">$257,811</span>
                     </div>                    
 
                     <div class="grid-col grid-col-3">
-                        <b>$123,456</b> Program
-                        <b>$123,456</b> Fundrasing
-                        <b>$123,456</b> Administration
+                        <span class="hdg-bold">$123,456</span> Program
+                        <span class="hdg-bold">$123,456</span> Fundrasing
+                        <span class="hdg-bold">$123,456</span> Administration
                     </div>
                     <div class="grid-col grid-col-4">
                         MEETS STANDARDS IMAGE
                     </div>             
                 </div> 
                 <div class="grid-row-s">
-                    <div class="grid-col grid-col-5">
-                        <h3 class="hdg-3">Expenses</h3>
-                        <span class="large">81%</span>
-                        <p>of all donations go to 
+                    <div class="grid-col grid-col-10">
+                        <h3 class="hdg-bold">Expenses</h3>
+                        <span class="hdg-2 hdg-bold turq">81%</span>
+                        <p class="padded-bottom">of all donations go to 
                         <br />providing services</p>
                     </div>                              
                 </div>   
@@ -310,25 +312,36 @@
             <div class="grid-main">
                 <div class="grid-row-s">
                     <div class="grid-col grid-col-10">
-                        <h2>Partners</h2>
+                        <h2 class="hdg-5 hdg-bold">Partners</h2>
                     </div>
                 </div>
                 <div class="grid-row-s">
-                    <div class="grid-col grid-col-3">
+                    <div class="grid-col grid-col-3 padded-top">
                         <a href="#">Conflict Resolution Minnesota</a>
+                    </div>
+                    <div class="grid-col grid-col-3 padded-top">                        
                         <a href="#">hennepin county youth restorative justice collaborative</a>
+                    </div>
+                    <div class="grid-col grid-col-3 padded-top">                        
                         <a href="#">minnesota state bar association adr section</a>
                     </div>      
-                    <div class="grid-col grid-col-3">
-                        <a href="#">minnesota youth intervention program association</a>
-                        <a href="#">hennepin county juvenile advisory committee</a>
-                        <a href="#">Minnesota Restorative Services Coalition</a>
-                    </div>      
-                    <div class="grid-col grid-col-3">
-                        <a href="#">macc alliance</a>
-                    </div>                                                            
                 </div>
-
+                <div class="grid-row-s">
+                    <div class="grid-col grid-col-3 padded-top">
+                        <a href="#">minnesota youth intervention program association</a>
+                    </div>                    
+                    <div class="grid-col grid-col-3 padded-top">                        
+                        <a href="#">hennepin county juvenile advisory committee</a>
+                    </div>
+                    <div class="grid-col grid-col-3 padded-top">                        
+                        <a href="#">Minnesota Restorative Services Coalition</a>
+                    </div>                                                              
+                </div>
+                <div class="grid-row-s">
+                    <div class="grid-col grid-col-3 padded-top">
+                        <a href="#">macc alliance</a>
+                    </div>    
+                </div>
             </div>
         </div>
     </div>      
