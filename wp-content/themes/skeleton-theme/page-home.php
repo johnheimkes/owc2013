@@ -87,7 +87,7 @@
                 ?>
                     <?php while(has_sub_field('home_section_3')): ?>
                     <div class="section-quote">
-                        <div class="section-quote-bd">
+                        <div class="section-quote-bd white">
                             <?php the_sub_field('home_section_3_quote'); ?>
                         </div>
                         <div class="section-quote-ft">
@@ -116,7 +116,7 @@
                 <div class="grid-col grid-col-4">
                     <div class="feature">
                         <div class="feature-hd">
-                            <h2 class="hdg hdg-4">Volunteers</h2>
+                            <h2 class="hdg hdg-4"><i class="icn icon-sprite-about home-people"></i>Volunteers</h2>
                         </div>
                         <div class="feature-bd">
                             <?php the_sub_field('home_section_4a_volunteers_paragraph'); ?>
@@ -130,7 +130,7 @@
                 <div class="grid-col grid-col-4">
                     <div class="feature">
                         <div class="feature-hd">
-                            <h2 class="hdg hdg-4">Donations</h2>
+                            <h2 class="hdg hdg-4"><i class="icn icon-sprite-about home-presents"></i>Donations</h2>
                         </div>
                         <div class="feature-bd">
                             <?php the_sub_field('home_section_4a_donors_paragraph'); ?>
@@ -143,7 +143,7 @@
                 <div class="grid-col grid-col-4">
                     <div class="feature">
                         <div class="feature-hd">
-                            <h2 class="hdg hdg-4">Partners</h2>
+                            <h2 class="hdg hdg-4"><i class="icn icon-sprite-about home-home"></i>Partners</h2>
                         </div>
                         <div class="feature-bd">
                             <?php the_sub_field('home_section_4a_nonprofits_paragraph'); ?>
@@ -172,7 +172,7 @@
             </div>
             <div class="grid-col grid-col-7">
                     <div class="section-quote">
-                        <div class="section-quote-bd">
+                        <div class="section-quote-bd blue">
                             <?php the_sub_field('home_section_4b_quote'); ?>
                         </div>
                         <div class="section-quote-ft">
@@ -195,18 +195,18 @@
                     </div>
 
 
+
                     <div class="partners-bd">
                         <?php
-                        // Section 3
-                        if(get_field('partners')):
-                        ?>
-                        <?php while(has_sub_field('partners')): ?>
+                    $partners_query = new WP_Query( "post_type=partners" );
+
+                    foreach($partners_query->posts as $partner) { ?>
                         <div class="partner-name">
-                            <a href="#"><?php the_sub_field('partner_name'); ?></a>
-                        </div>
-                            <?php endwhile; ?>
-                        <?php endif; ?>
+                            <?php echo $partner->post_content; ?>
+                       </div>
+                       <?php } ?>
                     </div>
+
 
             </div>
         </div>

@@ -150,3 +150,15 @@ img {
     display: none;
 }
 
+.partners {
+    width: 100%;
+}
+
+.partners-bd > * {
+    height: 175px;
+}
+
+.participant-options > * + * {
+    margin-top: 25px;
+}
+

@@ -667,14 +667,42 @@ img {
 ------------------------------------------------------------------------ */
 
 .section-quote {
+    position: relative;
     margin-top: 70px;
 }
 
 .section-quote-bd {
     margin-bottom: 40px;
+    padding-right: 50px;
     font-size: 18px;
     color: #005581;
 }
+
+.section-quote-bd:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -25px;
+    left: -60px;
+    width: 54px;
+    height: 40px;
+}
+
+.section-quote-bd:after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 54px;
+    height: 40px;
+}
+
+.section-quote-bd.white:before { background: url('../images/white-dkblue-quotes_03.png') no-repeat; }
+.section-quote-bd.white:after { background: url('../images/white-dkblue-quotes_07.png') no-repeat; }
+
+.section-quote-bd.blue:before { background: url('../images/white-ltblue-quotes_03.png') no-repeat; }
+.section-quote-bd.blue:after { background: url('../images/white-ltblue-quotes_07.png') no-repeat; }
 
 .section-quote-ft {
     font-size: 18px;
@@ -720,7 +748,7 @@ img {
 ------------------------------------------------------------------------ */
 
 .partners {
-    width: 715px;
+    width: 75%;
     margin: 0 auto;
 }
 
@@ -728,13 +756,19 @@ img {
     margin-bottom: 30px;
 }
 
-.partners-bd > * {
-    float: left;
-    width: 23.229166666667%;
+.partners-bd {
+    margin-left: -6%;
 }
 
-.partners-bd > * + * {
-    margin-left: 2.291666666667%;
+.partners-bd > * {
+    float: left;
+    height: 100px;
+    width: 26%;
+    margin-bottom: 20px;
+}
+
+.partners-bd > * {
+    margin-left: 6%;
 }
 
 .partners-bd a {
@@ -808,7 +842,7 @@ img {
 
     .secondary-nav {
         display: none;
-    }      
+    }
 
 }
 
@@ -821,11 +855,11 @@ img {
 
     .hennepin-county {
         margin: 0;
-    }   
+    }
 
 }
 
-@media screen and (max-width: 767px) { /* under tablet size */   
+@media screen and (max-width: 767px) { /* under tablet size */
 
     .header-contact {
         display: none;
@@ -906,18 +940,21 @@ img {
     background-position: -151px -101px ;
     width: 31px;
     height: 36px;
+    margin-right: 10px;
 }
 
 .home-home {
     background-position: -151px -151px ;
     width: 37px;
     height: 31px;
+    margin-right: 10px;
 }
 
 .home-people {
     background-position: -201px -150px ;
     width: 47px;
     height: 32px;
+    margin-right: 10px;
 }
 
 .nav-person {
