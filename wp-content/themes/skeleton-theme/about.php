@@ -44,7 +44,7 @@
                         <p>To develop the capacity of the community to respectfully resolve conflict and repair harm.</p>
                     </div>
                     <div class="grid-col grid-col-5">
-                        <img src="http://192.168.1.101/owc2013/wp-content/uploads/2013/03/about-hero.jpg" title="" alt="" />
+                        <img src="http://192.168.1.101/owc2013/wp-content/uploads/about-hero.jpg" title="" alt="" />
                     </div>
                 </div>
             </div>
