@@ -34,7 +34,7 @@
 <body <?php body_class(); ?>>
     <div class="wrapper-header">
         <div class="page-header">
-            <a href="#" id="btn-menu" class="btn-menu"></a>
+            <a href="#" id="btn-menu" class="btn btn-menu"><i class="icn icon-sprite-about nav-toggle"></i></a>
             <h1><a href="#" class="logo offscreen">Community Mediation and Restorative Services</a></h1>
             <div class="header-contact">
                 <ul>

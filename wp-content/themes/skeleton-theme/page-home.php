@@ -14,7 +14,7 @@
     <div class="grid-site hero-img hero-img-home">
         <div class="grid-main ">
             <div class="grid-row-s">
-                <div class="grid-col grid-col-5">
+                <div class="grid-col grid-col-4">
                     <div class="feature">
                         <div class="feature-hd">
                             <?php
@@ -34,8 +34,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="grid-col grid-col-5">
-
+                <div class="grid-col grid-col-6 mobile-none">
+                    &nbsp;
                 </div>
             </div>
         </div>
@@ -48,7 +48,7 @@
             <div class="grid-row-s">
                 <div class="grid-col grid-col-5">
                     <div class="hennepin-county">
-                        <img src="http://placehold.it/313x345" />
+
                     </div>
                 </div>
                 <div class="grid-col grid-col-5">
@@ -77,7 +77,7 @@
 <div class="section-wrap bg-turq">
     <div class="grid-site">
         <div class="grid-row">
-            <div class="grid-col grid-col-1">
+            <div class="grid-col grid-col-1 mobile-none">
                 &nbsp;
             </div>
             <div class="grid-col grid-col-7">
@@ -158,7 +158,7 @@
             </div>
         </div>
         <div class="grid-row">
-            <div class="grid-col grid-col-1">
+            <div class="grid-col grid-col-1 mobile-none">
                 &nbsp;
             </div>
             <div class="grid-col grid-col-4">
@@ -193,19 +193,21 @@
                 <div class="partners-hd">
                         <h2 class="hdg hdg-4">Partners</h2>
                     </div>
-                <?php
-                // Section 3
-                if(get_field('partners')):
-                ?>
-                    <?php while(has_sub_field('partners')): ?>
+
 
                     <div class="partners-bd">
+                        <?php
+                        // Section 3
+                        if(get_field('partners')):
+                        ?>
+                        <?php while(has_sub_field('partners')): ?>
                         <div class="partner-name">
                             <a href="#"><?php the_sub_field('partner_name'); ?></a>
                         </div>
+                            <?php endwhile; ?>
+                        <?php endif; ?>
                     </div>
-                    <?php endwhile; ?>
-            <?php endif; ?>
+
             </div>
         </div>
     </div>
