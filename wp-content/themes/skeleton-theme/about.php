@@ -336,26 +336,27 @@
 
             <div class="grid-main">
                 <div class="grid-row-s">
-                    <div class="grid-col grid-col-12">
+                    <div class="grid-col grid-col-10">
                         <h2>Partners</h2>
                     </div>
                 </div>
                 <div class="grid-row-s">
-                    <div class="grid-col grid-col-4">
+                    <div class="grid-col grid-col-3">
                         <a href="#">Conflict Resolution Minnesota</a>
-                        <a href="#"></a>
-                        <a href="#"></a>
+                        <a href="#">hennepin county youth restorative justice collaborative</a>
+                        <a href="#">minnesota state bar association adr section</a>
                     </div>      
-                    <div class="grid-col grid-col-4">
-                        <a href="#"></a>
-                        <a href="#"></a>
-                        <a href="#"></a>
+                    <div class="grid-col grid-col-3">
+                        <a href="#">minnesota youth intervention program association</a>
+                        <a href="#">hennepin county juvenile advisory committee</a>
+                        <a href="#">Minnesota Restorative Services Coalition</a>
                     </div>      
-                    <div class="grid-col grid-col-4">
-                        <a href="#"></a>
+                    <div class="grid-col grid-col-3">
+                        <a href="#">macc alliance</a>
                     </div>                                                            
-            </div>
+                </div>
 
+            </div>
         </div>
     </div>      
 
