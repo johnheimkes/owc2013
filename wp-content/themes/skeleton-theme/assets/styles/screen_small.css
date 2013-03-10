@@ -4,7 +4,7 @@ Contributors: N/A
 
 Target Browsers: All
 Media Type: Screen, Projection
-Width: 480px and under
+Width: 767px and under
 ------------------------------------------------------------------------ */
 
 /* ---------------------------------------------------------------------
@@ -32,6 +32,11 @@ Width: 480px and under
 
 .grid-row-s .grid-col { width: 100%; }
 
+img {
+    display: block;
+    margin: 0 auto;
+}
+
 /* ---------------------------------------------------------------------
  Header
 ------------------------------------------------------------------------ */
@@ -46,6 +51,21 @@ Width: 480px and under
 
 .btn-menu {
     display: block;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.logo {
+    display: block;
+    width: 98px;
+    height: 41px;
+    margin: 10px auto 0;
+    background: url('../images/logo-mobile.png') no-repeat;
+}
+
+.page-header {
+    height: 60px;
 }
 
 /* ---------------------------------------------------------------------
@@ -115,11 +135,18 @@ Width: 480px and under
 }
 
 /* ---------------------------------------------------------------------
- Heros
+ Other
 ------------------------------------------------------------------------ */
 
-.hero-img {
-    margin: 0 auto;
-    max-width: 100%;
-    height: auto;
+.grid-site {
+    padding: 20px 0 40px 0;
 }
+
+.hennepin-county {
+    margin: 0 auto;
+}
+
+.mobile-none {
+    display: none;
+}
+

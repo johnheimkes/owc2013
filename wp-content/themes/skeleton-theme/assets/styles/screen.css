@@ -145,8 +145,6 @@ img {
     margin-left: 17.794486215539%;
 }
 
-
-
 .section-padded {
     padding: 20px 0;
 }
@@ -597,6 +595,7 @@ img {
     background: -ms-linear-gradient(top,  #ffffff 0%,#e0e0e0 100%); /* IE10+ */
     background: linear-gradient(to bottom,  #ffffff 0%,#e0e0e0 100%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e0e0e0',GradientType=0 ); /* IE6-8 */
+    color: #4c4043;
 }
 
 .padded {
@@ -678,7 +677,10 @@ img {
 }
 
 .hennepin-county {
+    width: 313px;
+    height: 346px;
     margin: -140px 0 -113px 0;
+    background: url('../images/county.png') no-repeat;
 }
 
 .hero-img-home {
@@ -773,11 +775,11 @@ img {
     }
 }
 
-@media screen and (max-width: 971px) {
-    /*.hero-img-home {
+@media screen and (max-width: 885px) {
+    .hero-img-home {
         background-image: none;
     }
-*/
+
 }
 
 @media screen and (max-width: 782px) {
@@ -798,6 +800,10 @@ img {
     .header-contact {
         display: none;
     }
+
+    /*.grid-main {
+        margin-left: 5%;
+    }*/
 
 }
 
