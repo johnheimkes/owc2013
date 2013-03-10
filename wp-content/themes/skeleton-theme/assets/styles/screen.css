@@ -1,0 +1,264 @@
+/* ---------------------------------------------------------------------
+Original Author: Scott Garrison / Kristine Grad
+Contributors: N/A
+
+Target Browsers: All
+Media Type: Screen, Projection
+Width: All Sizes
+------------------------------------------------------------------------ */
+
+/* ---------------------------------------------------------------------
+ Grid
+------------------------------------------------------------------------ */
+
+.grid-row {
+    max-width: 796px;
+}
+
+.grid-row:before,
+.grid-row:after {
+   content: " ";
+   display: table;
+}
+
+.grid-row:after { clear: both; }
+
+.grid-row-push-l {
+    margin-bottom: 40px;
+}
+
+.grid-row-push-m {
+    margin-bottom: 30px;
+}
+
+.grid-row-push-s {
+    margin-bottom: 20px;
+}
+
+.grid-col {
+    float: left;
+
+    /* REMOVE below for production work */
+    -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+
+.grid-col img {
+    max-width: 100%;
+}
+
+.grid-col-right {
+    float: right;
+}
+
+.grid-col + .grid-col { margin-left: 2.763819095477%; } /* approx 20px margin on 960width  */
+
+.grid-col-1 { width: 7.518796992481%; }
+.grid-col-2 { width: 17.794486215539%; }
+.grid-col-3 { width: 28.070175438596%; }
+.grid-col-4 { width: 38.345864661654%; }
+.grid-col-5 { width: 48.621553884712%; }
+.grid-col-6 { width: 58.897243107769%; }
+.grid-col-7 { width: 69.172932330827%; }
+.grid-col-8 { width: 79.448621553885%; }
+.grid-col-9 { width: 89.724310776942%; }
+.grid-col-10 { width: 100%; }
+
+/* ---------------------------------------------------------------------
+ Base Styles
+------------------------------------------------------------------------ */
+
+body {
+    font: 14px/1.5 Helvetica, Arial, sans-serif;
+    background: #ededed;
+    color: #414042;
+}
+
+a {
+    color: #FFFFFF;
+    text-decoration: none;
+    -moz-transition:
+        color 0.3s ease-in-out,
+        opacity 0.3s ease-in-out 0s;
+    -webkit-transition:
+        color 0.3s ease-in-out,
+        opacity 0.3s ease-in-out 0s;
+    -ms-transition:
+        color 0.3s ease-in-out,
+        opacity 0.3s ease-in-out 0s;
+    -o-transition:
+        color 0.3s ease-in-out,
+        opacity 0.3s ease-in-out 0s;
+    transition:
+        color 0.3s ease-in-out,
+        opacity 0.3s ease-in-out 0s;
+}
+
+a:hover,
+a:focus {
+    color: #005581;
+}
+
+.logo {
+    display: block;
+    background: url('../images/logo.png') no-repeat;
+}
+
+/* ---------------------------------------------------------------------
+ Layout
+------------------------------------------------------------------------ */
+
+.grid-site {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.grid-site:before,
+.grid-site:after {
+   content: " ";
+   display: table;
+}
+
+.grid-site:after { clear: both; }
+
+.grid-sidebar {
+    float: left;
+    max-width: 162px;
+}
+
+.grid-main {
+    float: left;
+    max-width: 798px;
+}
+
+.bg-turq { background: #54accd; }
+.bg-lightblue { background: #d7e5ef; }
+.bg-darkblue { background: #005581; }
+.bg-white { background: #FFFFFF; }
+
+/* ---------------------------------------------------------------------
+ Header
+------------------------------------------------------------------------ */
+
+.wrapper-header {
+    height: 120px;
+    background: #ffffff; /* Old browsers */
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlMGUwZTAiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top,  #ffffff 0%, #e0e0e0 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#e0e0e0)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #ffffff 0%,#e0e0e0 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #ffffff 0%,#e0e0e0 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #ffffff 0%,#e0e0e0 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #ffffff 0%,#e0e0e0 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e0e0e0',GradientType=0 ); /* IE6-8 */
+}
+
+.btn-menu {
+    display: none;
+    width: 20px;
+    height: 20px;
+    border: 1px solid red;
+}
+
+/* ---------------------------------------------------------------------
+ Horizontal Lists
+------------------------------------------------------------------------ */
+
+.nav {
+    position: relative;
+    max-width: 960px;
+    margin: 0 auto;
+    top: 50px;
+    left: 0;
+}
+
+.nav > * {
+    display: block;
+    width: 16.6666666666667%;
+    text-align: center;
+}
+
+/* ---------------------------------------------------------------------
+ Horizontal List
+------------------------------------------------------------------------ */
+
+.h-list {
+    overflow: hidden;
+}
+
+.h-list > * {
+    float: left;
+}
+
+.h-list-members > * {
+    width: 50%;
+}
+
+/* ---------------------------------------------------------------------
+ Sub Nav
+------------------------------------------------------------------------ */
+
+.secondary-nav {
+    background-color: #005581;
+    font-size: 14px;
+    color: #fff;
+}
+
+.secondary-nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.secondary-nav .title {
+    background-color: #0088bb;
+    font-weight: bold;
+}
+
+.secondary-nav ul li {
+    padding: 10px 0;
+    padding-left: 20px;
+}
+
+/* ---------------------------------------------------------------------
+ Other
+------------------------------------------------------------------------ */
+.btn {
+    font-weight: bold;
+    background-color: #f6f6f7;
+    border-radius: 3px;
+    border: 1px solid #909295;
+    -moz-box-shadow: -1px 1px 5px -1px #888;
+    -webkit-box-shadow: -1px 1px 5px -1px#888;
+    box-shadow: -1px 1px 5px -1px #888;
+}
+
+.wide-blue {
+    width: 100%;
+    background-color: #d7e5ef;
+}
+
+/* ---------------------------------------------------------------------
+ Styleguide (REMOVE before Deployment)
+------------------------------------------------------------------------ */
+
+.style-grid .grid-col {
+    height: 20px;
+    background: #CCCCCC;
+    line-height: 20px;
+    text-align: center;
+}
+
+/* ---------------------------------------------------------------------
+ Utility Classes
+------------------------------------------------------------------------ */
+
+.offscreen {
+    display: block;
+    text-indent: -999999px;
+}
+
+.visually-hidden {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
