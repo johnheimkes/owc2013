@@ -122,6 +122,14 @@ a:focus {
     margin-left: 2.763819095477%;
 }
 
+.hero-message {
+    color: #005581;
+}
+
+.hero-message h2 {
+    font-weight: bold;
+}
+
 .bg-turq { background: #54accd; }
 .bg-lightblue { background: #d7e5ef; }
 .bg-darkblue { background: #005581; }
@@ -187,7 +195,7 @@ a:focus {
 }
 
 /* ---------------------------------------------------------------------
- Sub Nav
+ Secondary Nav
 ------------------------------------------------------------------------ */
 
 .secondary-nav {

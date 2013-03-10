@@ -36,8 +36,10 @@
             </div>
             <div class="grid-main">
                 <div class="grid-col grid-col-5">
-                    <h3>Our Mission</h3>
-                    <p>To develop the capacity of the community to respectfully resolve conflict and repair harm.</p>
+                    <div class="hero-message">
+                        <h2>Our Mission</h2>
+                        <p>To develop the capacity of the community to respectfully resolve conflict and repair harm.</p>
+                    </div>
                 </div>
                 <div class="grid-col grid-col-5">
                     <img src="/assets/images/homepage_hero.png" />
