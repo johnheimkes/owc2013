@@ -94,10 +94,20 @@ function nerderyEnqueueScripts()
         true
     );
 
+    // Dropdown script
+    wp_register_script(
+        'nerdery-dropdown',
+        NERDERY_THEME_PATH_URL . 'assets/scripts/dropdown.js',
+        array('jquery'),
+        '1.0',
+        true
+    );
+
     wp_enqueue_script('nerdery-global');
     wp_enqueue_script('nerdery-external-links');
     wp_enqueue_script('nerdery-auto-replace');
     wp_enqueue_script('nerdery-carousel');
+    wp_enqueue_script('nerdery-dropdown');
 
     // Comment reply script for threaded comments (registered in WP core)
     if (is_singular() && get_option('thread_comments')) {

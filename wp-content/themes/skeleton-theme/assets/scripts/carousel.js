@@ -1,5 +1,5 @@
 /**
- * @fileOverview carousel View Module File
+ * @fileOverview Carousel View Module File
  *
  * @author 
  * @version 1.0
@@ -8,27 +8,26 @@ CMRS.Carousel = function($) {
     'use strict';
 
     var CONSTANTS = {
-        navItemText: 'carousel slide ',
-        movementPercentage: 100,
-        swipeXThresholdModifier: 0.3,
-        swipeYThresholdModifier: 0.3
+        navItemText: 'slide ',
+        movementPercentage: 100
     };
 
     var $window = $(window);
 
     /**
-     * Description
+     * Determines current wrapper and creates carousels for each related wrapper found
      *
-     * @name carousel
-     * @class carousel short description
-     * @constructor
-     *
-     * @since 1.0
+     * @author 
+     * @version 1.0
      */
-    var Carousel = function(options) {
+    var CarouselFactory = function(options) {
         this.options = options;
 
-        this.init();
+        if (!this.checkOptions) {
+            return;
+        }
+
+        this.buildCarousels();
     };
 
     /**
@@ -36,10 +35,9 @@ CMRS.Carousel = function($) {
      * if options are missing, throws error
      * if dom elements exist, return true, if not return false
      *
-     * @returns {Carousel}
      * @since 1.0
      */
-    Carousel.prototype.checkOptions = function() {
+    CarouselFactory.prototype.checkOptions = function() {
         var requiredOptions = [
             'carouselWrapperSelector',
             'slideWrapperSelector',
@@ -50,7 +48,9 @@ CMRS.Carousel = function($) {
             'buttonClass',
             'buttonPrevClass',
             'buttonNextClass',
-            'animationDuration'
+            'animationDuration',
+            'swipeXThresholdModifier',
+            'swipeYThresholdModifier'
         ];
 
         var requiredDomElements = [
@@ -81,6 +81,38 @@ CMRS.Carousel = function($) {
     };
 
     /**
+     * Builds new carousels for each wrapper found
+     *
+     * @since 1.0
+     */
+    CarouselFactory.prototype.buildCarousels= function() {
+        this.carousels = [];
+        var $wrappers = $(this.options.carouselWrapperSelector);
+        var length = $wrappers.length;
+        var i = 0;
+
+        for (; i < length; i++) {
+            this.options.$wrapper = $wrappers.eq(i);
+            this.carousels.push(new Carousel(this.options));
+        }
+    };
+
+    /**
+     * Description
+     *
+     * @name carousel
+     * @class carousel short description
+     * @constructor
+     *
+     * @since 1.0
+     */
+    var Carousel = function(options) {
+        this.options = options;
+
+        this.init();
+    };
+
+    /**
      * Initializes the UI Component View
      * Runs a single setupHandlers call, followed by createChildren and layout
      *
@@ -88,13 +120,10 @@ CMRS.Carousel = function($) {
      * @since 1.0
      */
     Carousel.prototype.init = function() {
-        if (!this.checkOptions()) {
-            return;
-        }
-
         this.isClickTouchEnabled = false;
         this.isResizable = false;
         this.isTouch = (('ontouchstart' in window) || window.DocumentTouch && document instanceof DocumentTouch) ? true : false;
+        this.hasTouchMoved = false;
 
         return this
             .setupHandlers()
@@ -121,9 +150,11 @@ CMRS.Carousel = function($) {
             return this;
         }
 
-        this.onTouchStartHandler = $.proxy(this.onTouchStart, this);
-        this.onTouchMoveHandler = $.proxy(this.onTouchMove, this);
-        this.onTouchEndHandler = $.proxy(this.onTouchEnd, this);
+        this.onSwipeStartHandler = $.proxy(this.onSwipeStart, this);
+        this.onSwipeMoveHandler = $.proxy(this.onSwipeMove, this);
+        this.onSwipeEndHandler = $.proxy(this.onSwipeEnd, this);
+        this.onTouchButtonStartHandler = $.proxy(this.onTouchButtonStart, this);
+        this.onTouchButtonMoveHandler = $.proxy(this.onTouchButtonMove, this);
 
         return this;
     };
@@ -136,7 +167,7 @@ CMRS.Carousel = function($) {
      * @since 1.0
      */
     Carousel.prototype.createChildren = function() {
-        this.$wrapper = $(this.options.carouselWrapperSelector);
+        this.$wrapper = this.options.$wrapper;
         this.$slideWrapper = this.$wrapper.find(this.options.slideWrapperSelector);
         this.$slideList = this.$wrapper.find(this.options.slideListSelector);
         this.$slides = this.$slideList.children();
@@ -144,7 +175,6 @@ CMRS.Carousel = function($) {
         this.$navItems = null;
         this.$prevButton = null;
         this.$nextButton = null;
-        this.animationDuration = this.options.animationDuration;
         this.totalSlides = 0;
         this.activeIndex = 0;
 
@@ -153,8 +183,8 @@ CMRS.Carousel = function($) {
         }
 
         this.swipeDirection = null;
-        this.swipeXThreshold = Math.ceil($window.outerWidth() * CONSTANTS.swipeXThresholdModifier);
-        this.swipeYThreshold = Math.ceil(this.$slideList.outerHeight() * CONSTANTS.swipeYThresholdModifier);
+        this.swipeXThreshold = Math.round($window.outerWidth() * this.options.swipeXThresholdModifier);
+        this.swipeYThreshold = Math.round(this.$slideList.outerHeight() * this.options.swipeYThresholdModifier);
         this.touchStartX = 0;
         this.touchStartY = 0;
 
@@ -168,10 +198,10 @@ CMRS.Carousel = function($) {
      * @since 1.0
      */
     Carousel.prototype.renderNav = function() {
-        var visibleSlides = Math.ceil(this.$slideList.outerWidth() / this.$slides.eq(0).outerWidth());
+        var visibleSlides = Math.round(this.$slideList.outerWidth() / this.$slides.eq(0).outerWidth());
         var i = 0;
 
-        this.totalSlides = Math.ceil(this.$slides.length / visibleSlides);
+        this.totalSlides = Math.round(this.$slides.length / visibleSlides);
 
         this.$wrapper.append(
             '<button class="' + this.options.buttonClass + ' ' + this.options.buttonPrevClass + '">' +
@@ -239,17 +269,24 @@ CMRS.Carousel = function($) {
 
         this.isEnabled = true;
 
-        this.$navItems.on('click', this.onJumpToIndexHandler);
-        this.$prevButton.on('click', this.onPrevHandler);
-        this.$nextButton.on('click', this.onNextHandler);
-
-        if (!this.isTouch) {
-            return this;
+        if (this.isTouch) {
+            this.$slideList.on('touchstart', this.onSwipeStartHandler);
+            this.$slideList.on('touchmove', this.onSwipeMoveHandler);
+            this.$slideList.on('touchend', this.onSwipeEndHandler);
+            this.$navItems.on('touchstart', this.onTouchButtonStartHandler);
+            this.$prevButton.on('touchstart', this.onTouchButtonStartHandler);
+            this.$nextButton.on('touchstart', this.onTouchButtonStartHandler);
+            this.$navItems.on('touchmove', this.onTouchButtonMoveHandler);
+            this.$prevButton.on('touchmove', this.onTouchButtonMoveHandler);
+            this.$nextButton.on('touchmove', this.onTouchButtonMoveHandler);
+            this.$navItems.on('touchend', this.onJumpToIndexHandler);
+            this.$prevButton.on('touchend', this.onPrevHandler);
+            this.$nextButton.on('touchend', this.onNextHandler);
+        } else {
+            this.$navItems.on('click', this.onJumpToIndexHandler);
+            this.$prevButton.on('click', this.onPrevHandler);
+            this.$nextButton.on('click', this.onNextHandler);
         }
-
-        this.$slideList.on('touchstart', this.onTouchStartHandler);
-        this.$slideList.on('touchmove', this.onTouchMoveHandler);
-        this.$slideList.on('touchend', this.onTouchEndHandler);
 
         return this;
     };
@@ -269,17 +306,24 @@ CMRS.Carousel = function($) {
 
         this.isEnabled = false;
 
-        this.$navItems.off('click', this.onJumpToIndexHandler);
-        this.$prevButton.off('click', this.onPrevHandler);
-        this.$nextButton.off('click', this.onNextHandler);
-
-        if (!this.isTouch) {
-            return this;
+        if (this.isTouch) {
+            this.$slideList.off('touchstart', this.onSwipeStartHandler);
+            this.$slideList.off('touchmove', this.onSwipeMoveHandler);
+            this.$slideList.off('touchend', this.onSwipeEndHandler);
+            this.$navItems.off('touchstart', this.onTouchButtonStartHandler);
+            this.$prevButton.off('touchstart', this.onTouchButtonStartHandler);
+            this.$nextButton.off('touchstart', this.onTouchButtonStartHandler);
+            this.$navItems.off('touchmove', this.onTouchButtonMoveHandler);
+            this.$prevButton.off('touchmove', this.onTouchButtonMoveHandler);
+            this.$nextButton.off('touchmove', this.onTouchButtonMoveHandler);
+            this.$navItems.off('touchend', this.onJumpToIndexHandler);
+            this.$prevButton.off('touchend', this.onPrevHandler);
+            this.$nextButton.off('touchend', this.onNextHandler);
+        } else {
+            this.$navItems.off('click', this.onJumpToIndexHandler);
+            this.$prevButton.off('click', this.onPrevHandler);
+            this.$nextButton.off('click', this.onNextHandler);
         }
-
-        this.$slideList.off('touchstart', this.onTouchStartHandler);
-        this.$slideList.off('touchmove', this.onTouchMoveHandler);
-        this.$slideList.off('touchend', this.onTouchEndHandler);
 
         return this;
     };
@@ -334,7 +378,7 @@ CMRS.Carousel = function($) {
 
             this.$slides.eq(0).stop().animate({
                 'margin-left': (animationDistance + '%')
-            }, this.animationDuration);
+            }, this.options.animationDuration);
         }
 
         this.updateNav();
@@ -384,6 +428,20 @@ CMRS.Carousel = function($) {
     };
 
     /**
+     * updateLayout
+     * Carries out updates necessary after resize
+     *
+     * @since 1.0
+     */
+    Carousel.prototype.updateLayout = function(indexRatio) {
+        this.activeIndex = Math.round((this.totalSlides - 1) * indexRatio);
+        this.swipeXThreshold = Math.round($window.outerWidth() * this.options.swipeXThresholdModifier);
+        this.swipeYThreshold = Math.round(this.$slideList.outerHeight() * this.options.swipeYThresholdModifier);
+
+        return this;
+    };
+
+    /**
      * Destroys the view
      * Tears down any events, handlers, elements
      * Should be called when the object should be left unused
@@ -407,6 +465,10 @@ CMRS.Carousel = function($) {
      * @since 1.0
      */
     Carousel.prototype.onJumpToIndex = function(e) {
+        if (this.isTouch && this.hasTouchMoved) {
+            return false;
+        }
+
         this.activeIndex = this.$navItems.index($(e.currentTarget));
 
         this.slide();
@@ -420,15 +482,13 @@ CMRS.Carousel = function($) {
      * @since 1.0
      */
     Carousel.prototype.onPrev = function(e) {
-        if (this.activeIndex === 0) {
+        if (this.isTouch && this.hasTouchMoved || this.activeIndex === 0) {
             return false;
         }
 
         this.activeIndex -= 1;
 
         this.slide();
-
-        return false;
     };
 
     /**
@@ -439,51 +499,36 @@ CMRS.Carousel = function($) {
      * @since 1.0
      */
     Carousel.prototype.onNext = function(e) {
-        if (this.activeIndex === (this.totalSlides - 1)) {
+        if (this.isTouch && this.hasTouchMoved || this.activeIndex === (this.totalSlides - 1)) {
             return false;
         }
 
         this.activeIndex += 1;
 
         this.slide();
-
-        return false;
     };
 
     /**
-     * onJumpToIndex Handler
-     * Performs this action on clicking pips
-     *
-     * @param {MouseEvent} event Click event
-     * @since 1.0
-     */
-    Carousel.prototype.onJumpToIndex = function(e) {
-        this.activeIndex = this.$navItems.index($(e.currentTarget));
-
-        this.slide();
-    };
-
-    /**
-     * onTouchStart Handler
+     * onSwipeStart Handler
      * Performs this action on touchstart of the slide wrapper
      *
      * @param {TouchEvent} event touch event
      * @since 1.0
      */
-    Carousel.prototype.onTouchStart = function(e) {
+    Carousel.prototype.onSwipeStart = function(e) {
         this.touchStartX = e.originalEvent.touches[0].screenX;
         this.touchStartY = e.originalEvent.touches[0].screenY;
         this.swipeDirection = null;
     };
 
     /**
-     * onTouchMove Handler
+     * onSwipeMove Handler
      * Performs this action on touchmove of the slide wrapper
      *
      * @param {TouchEvent} event touch event
      * @since 1.0
      */
-    Carousel.prototype.onTouchMove = function(e) {
+    Carousel.prototype.onSwipeMove = function(e) {
         var touchCurrentX = e.originalEvent.touches[0].screenX;
         var touchCurrentY = e.originalEvent.touches[0].screenY;
         var touchXDistance = (this.touchStartX - touchCurrentX);
@@ -503,15 +548,15 @@ CMRS.Carousel = function($) {
     };
 
     /**
-     * onTouchEnd Handler
+     * onSwipeEnd Handler
      * Performs this action on touchend of the slide wrapper
      *
      * @param {TouchEvent} event touch event
      * @since 1.0
      */
-    Carousel.prototype.onTouchEnd = function(e) {
+    Carousel.prototype.onSwipeEnd = function(e) {
         if (!this.swipeDirection) {
-            return;
+            return false;
         }
 
         if (this.swipeDirection === 'left') {
@@ -519,6 +564,28 @@ CMRS.Carousel = function($) {
         } else if (this.swipeDirection === 'right') {
             this.onPrevHandler();
         }
+    };
+
+    /**
+     * onTouchButtonStart Handler
+     * Performs this action on touchstart of a carousel buton
+     *
+     * @param {TouchEvent} event touch event
+     * @since 1.0
+     */
+    Carousel.prototype.onTouchButtonStart = function(e) {
+        this.hasTouchMoved = false;
+    };
+
+    /**
+     * onTouchButtonMove Handler
+     * Performs this action on touchmove of a carousel buton
+     *
+     * @param {TouchEvent} event touch event
+     * @since 1.0
+     */
+    Carousel.prototype.onTouchButtonMove = function(e) {
+        this.hasTouchMoved = true;
     };
 
     /**
@@ -535,12 +602,10 @@ CMRS.Carousel = function($) {
             .disableClickTouch()
             .destroyNav()
             .renderNav()
-            .enableClickTouch();
-
-        this.activeIndex = Math.round((this.totalSlides - 1) * indexRatio);
-
-        this.slide();
+            .enableClickTouch()
+            .updateLayout(indexRatio)
+            .slide();
     };
 
-    return Carousel;
+    return CarouselFactory;
 }(jQuery);
