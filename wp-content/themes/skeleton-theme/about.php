@@ -10,11 +10,10 @@
  */
 ?>
 <?php get_header(); ?>
-<div class="page-content style">
-    <div class="wide-blue">
-        <div class="grid-row grid-row-push-s">
-            <div class="grid-col grid-col-2">
-                <div class="secondary-nav">                 
+    <div class="section-wrap section-wrap-about bg-lightblue">
+        <div class="grid-site">
+            <div class="grid-sidebar">
+                <div class="secondary-nav">
                     <ul>
                         <li class="title">About</li>
                         <li>
@@ -35,13 +34,15 @@
                     </ul>
                 </div>
             </div>
-            <div class="grid-col grid-col-5">
-                <h3>Our Mission</h3>
-                <p>To develop the capacity of the community to respectfully resolve conflict and repair harm.</p>
-            </div>            
-            <div class="grid-col grid-col-4">
-                <img src="/assets/images/homepage_hero.png" />            
-            </div>              
+            <div class="grid-main">
+                <div class="grid-col grid-col-5">
+                    <h3>Our Mission</h3>
+                    <p>To develop the capacity of the community to respectfully resolve conflict and repair harm.</p>
+                </div>
+                <div class="grid-col grid-col-5">
+                    <img src="/assets/images/homepage_hero.png" />
+                </div>
+            </div>
         </div>
     </div>
 
@@ -53,27 +54,26 @@
             </div>
             <div class="grid-col grid-col-4">
                 First Last
-                <br />Title                
+                <br />Title
             </div>
             <div class="grid-col grid-col-4">
                 First Last
-                <br />Title                
-            </div>                        
-        </div>  
+                <br />Title
+            </div>
+        </div>
         <div class="grid-row grid-row-push-s">
-            <div class="grid-col grid-col-3">  
+            <div class="grid-col grid-col-3">
                 <div class="btn">
                     Download Annual Report
-                </div>      
-            </div>               
-        </div> 
-    <h1>At A Glance</h1>   
+                </div>
+            </div>
+        </div>
+    <h1>At A Glance</h1>
         <div class="grid-row grid-row-push-s">
             <div class="grid-col grid-col-12">
                 126 Volunteers
                 <br /> 1,015 mediation cases
-            </div>                      
-        </div> 
-</div>
+            </div>
+        </div>
 
 <?php get_footer(); ?>

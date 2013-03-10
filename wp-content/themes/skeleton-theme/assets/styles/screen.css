@@ -11,19 +11,7 @@ Width: All Sizes
  Grid
 ------------------------------------------------------------------------ */
 
-.grid-row {
-    max-width: 796px;
-}
-
-.grid-row:before,
-.grid-row:after {
-   content: " ";
-   display: table;
-}
-
-.grid-row:after { clear: both; }
-
-.grid-row-push-l {
+.grid--push-l {
     margin-bottom: 40px;
 }
 
@@ -113,21 +101,25 @@ a:focus {
 }
 
 .grid-site:before,
-.grid-site:after {
+.grid-site:after,
+.grid-main:before,
+.grid-main:after {
    content: " ";
    display: table;
 }
 
-.grid-site:after { clear: both; }
+.grid-site:after,
+.grid-main:after { clear: both; }
 
 .grid-sidebar {
     float: left;
-    max-width: 162px;
+    max-width: 142px;
 }
 
 .grid-main {
     float: left;
     max-width: 798px;
+    margin-left: 2.763819095477%;
 }
 
 .bg-turq { background: #54accd; }
