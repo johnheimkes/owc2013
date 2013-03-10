@@ -12,26 +12,23 @@
 <?php get_header(); ?>
 
 <div class="page-content page-content-bright">
-    <div class="grid-site">
-        <div class="grid-sidebar">
-            <div class="secondary-nav">
-                <ul>
-                    <li class="title">Mediation</li>
-                    <li><a href="#overview">Overview</a></li>
-                    <li><a href="#reasons">Reasons</a></li>   
-                    <li><a href="#first-steps">First Steps</a></li>
-                    <li><a href="#get-started">Financial Report</a></li>
-                    <li><a href="#partners">Partners</a></li>
-                    <li><a href="contact">Contact</a></li>
-                </ul>
-            <!-- end .secondary-nav -->
-            </div>
-        <!-- end .grid-sidebar -->
-        </div>
-    <!-- end .grid-site -->
-    </div>
     <div class="section-wrap bg-lightblue">
         <div class="grid-site">
+            <div class="grid-sidebar">
+                <div class="secondary-nav">
+                    <ul>
+                        <li class="title">Mediation</li>
+                        <li><a href="#overview">Overview</a></li>
+                        <li><a href="#reasons">Reasons</a></li>   
+                        <li><a href="#first-steps">First Steps</a></li>
+                        <li><a href="#get-started">Financial Report</a></li>
+                        <li><a href="#partners">Partners</a></li>
+                        <li><a href="contact">Contact</a></li>
+                    </ul>
+                <!-- end .secondary-nav -->
+                </div>
+            <!-- end .grid-sidebar -->
+            </div>
             <div class="grid-main">
                 <div class="intro grid-col-10">
                     <div class="intro-hd">
