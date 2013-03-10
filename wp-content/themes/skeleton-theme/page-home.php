@@ -193,18 +193,21 @@
                 <div class="partners-hd">
                         <h2 class="hdg hdg-4">Partners</h2>
                     </div>
-                <?php
-                $partners_query = new WP_Query( "post_type=partners" );
-                
-                foreach($partners_query->posts as $partner) { ?>
-                    <div class="partners-bd">
-                        <div class="partner-name">
-                            <?php echo $partner->post_content; ?>
-                        </div>
-                    </div>
-                <?php } ?>
 
-                    
+
+                    <div class="partners-bd">
+                        <?php
+                        // Section 3
+                        if(get_field('partners')):
+                        ?>
+                        <?php while(has_sub_field('partners')): ?>
+                        <div class="partner-name">
+                            <a href="#"><?php the_sub_field('partner_name'); ?></a>
+                        </div>
+                            <?php endwhile; ?>
+                        <?php endif; ?>
+                    </div>
+
             </div>
         </div>
     </div>

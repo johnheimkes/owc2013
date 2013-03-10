@@ -597,6 +597,10 @@ img {
     color: #4c4043;
 }
 
+.btn-menu {
+    display: none;
+}
+
 .padded {
     padding: 20px 0;
 }
