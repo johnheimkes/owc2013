@@ -24,7 +24,7 @@ Width: 480px and under
  Header
 ------------------------------------------------------------------------ */
 
-.page-header {
+.wrapper-header {
     z-index: 3;
     -webkit-transform: translateX(0);
     -moz-transform: translateX(0);
@@ -51,15 +51,20 @@ Width: 480px and under
     overflow-y: auto;
 }
 
+.nav {
+    height: auto;
+}
+
 .nav-container {
+    top: 0;
     left: 0;
-    -webkit-transition: z-index 0s linear .2s;
-    -moz-transition: z-index 0s linear .2s;
 }
 
 .nav-container.active {
     visibility: visible;
     z-index: 2;
+    -webkit-transition: z-index 0s linear .2s;
+    -moz-transition: z-index 0s linear .2s;
 }
 
 .nav > * {

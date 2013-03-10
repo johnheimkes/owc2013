@@ -21,7 +21,7 @@ var CMRS = CMRS || {};
         var slideoutmenu = new APP.SlideoutMenu(
             $('#btn-menu'), /* button clicked to bring menu visible */
             $('#nav'), /*  */
-            $('.page-header'),
+            $('.wrapper-header'),
             $('.page-content'),
             'left-active'
         );
