@@ -98,6 +98,12 @@ Width: 480px and under
     -moz-transition: .2s -webkit-transform ease-in-out;
 }
 
+.section-wrap,
+.section-wrap-img {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
 /* ---------------------------------------------------------------------
  Menu Utilities
 ------------------------------------------------------------------------ */
