@@ -37,7 +37,15 @@ var CMRS = CMRS || {};
             buttonClass: 'carousel-btn',
             buttonPrevClass: 'carousel-btn-prev',
             buttonNextClass: 'carousel-btn-next',
-            animationDuration: 300
+            animationDuration: 300,
+            swipeXThresholdModifier: 0.3,
+            swipeYThresholdModifier: 0.5
+        });
+
+        var dropdown = new APP.DropDown({
+            wrapperSelector: '.js-dropdown',
+            buttonSelector: '.js-dropdown-button',
+            listSelector: '.js-dropdown-list'
         });
     });
 }(jQuery, CMRS));

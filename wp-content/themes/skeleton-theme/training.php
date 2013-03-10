@@ -13,7 +13,7 @@
 <div class="page-content style">
     <h1>Training</h1>
         <div class="grid-row grid-row-push-s">
-            <div class="wireframe grid-col grid-col-10">
+            <div class="grid-col grid-col-12">
                 <img src="http://placekitten.com/960/300" />
             </div>
         </div>

@@ -28,6 +28,7 @@ include_once 'widgets/skeleton-widget.php';
 add_theme_support('post-thumbnails');
 add_theme_support('custom-background');
 add_theme_support('custom-header');
+add_theme_support('menus');
 
 /**
  * Constants
@@ -93,10 +94,20 @@ function nerderyEnqueueScripts()
         true
     );
 
+
     // Navigation script
     wp_register_script(
         'nerdery-navigation',
         NERDERY_THEME_PATH_URL . 'assets/scripts/navigation.js',
+        array('jquery'),
+        '1.0',
+        true
+    );
+
+    // Dropdown script
+    wp_register_script(
+        'nerdery-dropdown',
+        NERDERY_THEME_PATH_URL . 'assets/scripts/dropdown.js',
         array('jquery'),
         '1.0',
         true
@@ -107,6 +118,7 @@ function nerderyEnqueueScripts()
     wp_enqueue_script('nerdery-auto-replace');
     wp_enqueue_script('nerdery-carousel');
     wp_enqueue_script('nerdery-navigation');
+    wp_enqueue_script('nerdery-dropdown');
 
     // Comment reply script for threaded comments (registered in WP core)
     if (is_singular() && get_option('thread_comments')) {
@@ -211,10 +223,36 @@ function nerderyEnqueueStyles()
     wp_enqueue_style('nerdery-ie7');
 }
 
+/**
+ * Change the text of a top level admin menu item
+ *
+ * @access public
+ * @global array $menu
+ */
+function change_the_menu() {
+  global $menu;
+
+	// Strings
+	$to_match     = __( 'Products' );
+	$replace_with = __( 'Events' );
+
+	// Loop through the top level menu items
+	foreach ( $menu as $menu_position => $menu_properties ) {
+
+		// Look for a match
+		if ( $to_match === $menu_properties[0] ) {
+
+			// Found a match, so change the global and bail
+			$menu[$menu_position][0] = $replace_with;
+			break;
+		}
+	}
+}
+add_action( 'admin_menu', 'change_the_menu' );
+
 // Merne's Shitz -- will need to be modified.
 if ( function_exists( 'add_image_size' ) ) {
-    add_image_size( 'profile-thumb', 270, 246, true ); //(cropped)
-    add_image_size( 'slideshow-full', 1320, 675, true );
+    add_image_size( 'directors-full', 222, 222, true );
 }
 
 function my_scripts_method() {
@@ -235,91 +273,6 @@ function my_scripts_method() {
 }
 add_action('wp_enqueue_scripts', 'my_scripts_method');
 
-
-function setup_post_types() {
-
-    // Slideshow
-    register_post_type( 'slideshow',
-        array(
-            'labels' => array(
-                'name' => __( 'Slideshow' ),
-                'singular_name' => __( 'Slide' ),
-                'add_new' => __( 'Add New' ),
-                'add_new_item' => __( 'Add New Slide' ),
-                'edit' => __( 'Edit' ),
-                'edit_item' => __( 'Edit Slide' ),
-                'new_item' => __( 'New Slide' ),
-            ),
-            'description' => 'Homepage Carousel/Slideshow',
-            'public' => true,
-            'menu_position' => 100,
-            // 'menu_icon' => get_bloginfo('template_directory') . '/images/cpt/slideshow-icon-16-alt.png',
-            'supports' => array(
-                'title',
-                'editor',
-                'thumbnail',
-                'revisions'
-            ),
-            'has_archive' => false,
-        )
-    );
-
-    // stoke.d Profile
-    register_post_type( 'stoked_profile',
-        array(
-            'labels' => array(
-                'name' => __( 'stoke.d Profile' ),
-                'singular_name' => __( 'stoke.d Profile' ),
-                'add_new' => __( 'Add New' ),
-                'add_new_item' => __( 'Add New stoke.d Profile' ),
-                'edit' => __( 'Edit' ),
-                'edit_item' => __( 'Edit stoke.d Profile' ),
-                'new_item' => __( 'New stoke.d Profile' ),
-            ),
-            'description' => 'Controls Profiles for the Who We Are section',
-            'public' => true,
-            'menu_position' => 100,
-            // 'menu_icon' => get_bloginfo('template_directory') . '/images/cpt/slideshow-icon-16-alt.png',
-            'supports' => array(
-                'title',
-                'excerpt',
-                'editor',
-                'thumbnail',
-                'revisions'
-            ),
-            'has_archive' => false,
-        )
-    );
-
-    // Hero and Home Page Builder
-    register_post_type( 'stoked_hero_home',
-        array(
-            'labels' => array(
-                'name' => __( 'Home Structure' ),
-                'singular_name' => __( 'Home Structure' ),
-                'add_new' => __( 'Add New' ),
-                'add_new_item' => __( 'Add New Home Structure' ),
-                'edit' => __( 'Edit' ),
-                'edit_item' => __( 'Edit Home Structure' ),
-                'new_item' => __( 'New Home Structure' ),
-            ),
-            'description' => 'Home Page Structure and addition of hero image/slide.',
-            'public' => true,
-            'menu_position' => 100,
-            'supports' => array(
-                'title',
-                'excerpt',
-                'thumbnail',
-                'revisions'
-            ),
-            'has_archive' => false,
-        )
-    );
-
-
-}
-// Init Post types
-add_action( 'init', 'setup_post_types');
 
 // Custom Write Panels
 function customize_write_panels() {
