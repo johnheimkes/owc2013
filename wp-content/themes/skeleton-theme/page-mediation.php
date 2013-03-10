@@ -185,11 +185,13 @@
                             <li>
                                 <div class="check-item">
                                     <div class="check-item-hd">
-                                        Confidentiality
+                                        <h3>Confidentiality</h3>
                                     <!-- end .check-item-hd -->
                                     </div>
                                     <div class="check-item-bd">
-                                        Staff and Mediators are bound by law to maintain confidentiality.
+                                        <p>
+                                            Staff and Mediators are bound by law to maintain confidentiality.
+                                        </p>
                                     <!-- end .check-item-bd -->
                                     </div>
                                 <!-- end .check-item -->
@@ -198,11 +200,13 @@
                             <li>
                                 <div class="check-item">
                                     <div class="check-item-hd">
-                                        Control over the solution
+                                        <h3>Control over the solution</h3>
                                     <!-- end .check-item-hd -->
                                     </div>
                                     <div class="check-item-bd">
-                                        You decide what is best for you.
+                                        <p>
+                                            You decide what is best for you.
+                                        </p>
                                     <!-- end .check-item-bd -->
                                     </div>
                                 <!-- end .check-item -->
@@ -211,11 +215,13 @@
                             <li>
                                 <div class="check-item">
                                     <div class="check-item-hd">
-                                        Closure
+                                        <h3>Closure</h3>
                                     <!-- end .check-item-hd -->
                                     </div>
                                     <div class="check-item-bd">
-                                        Decisively resolve issues that have been persistent.
+                                        <p>
+                                            Decisively resolve issues that have been persistent.
+                                        </p>
                                     <!-- end .check-item-bd -->
                                     </div>
                                 <!-- end .check-item -->
@@ -224,7 +230,7 @@
                             <li>
                                 <div class="check-item">
                                     <div class="check-item-hd">
-                                        Cost
+                                        <h3>Cost</h3>
                                     <!-- end .check-item-hd -->
                                     </div>
                                 <!-- end .check-item -->
@@ -233,11 +239,13 @@
                             <li>
                                 <div class="check-item">
                                     <div class="check-item-hd">
-                                        Convenience
+                                        <h3>Convenience</h3>
                                     <!-- end .check-item-hd -->
                                     </div>
                                     <div class="check-item-bd">
-                                        Mediation sessions are scheduled at the participants’ earliest convenience.
+                                        <p>
+                                            Mediation sessions are scheduled at the participants’ earliest convenience.
+                                        </p>
                                     <!-- end .check-item-bd -->
                                     </div>
                                 <!-- end .check-item -->
@@ -246,7 +254,7 @@
                             <li>
                                 <div class="check-item">
                                     <div class="check-item-hd">
-                                        Follow-up
+                                        <h3>Follow-up</h3>
                                     <!-- end .check-item-hd -->
                                     </div>
                                 <!-- end .check-item -->
@@ -255,7 +263,7 @@
                             <li>
                                 <div class="check-item">
                                     <div class="check-item-hd">
-                                        Successful, quick results
+                                        <h3>Successful, quick results</h3>
                                     <!-- end .check-item-hd -->
                                     </div>
                                 <!-- end .check-item -->
@@ -293,15 +301,19 @@
                         <div class="media-bd">
                             <div class="step">
                                 <div class="step-hd">
-                                    Are we the right resource for you?
+                                    <h3>Are we the right resource for you?</h3>
                                 <!-- end .step-hd -->
                                 </div>
                                 <div class="step-bd">
-                                    Do you or the others involved live in northern or western Hennepin County? If not, please see <a href="#">communitymediationminnesota.org</a> to see if there is a provider closer to you.
+                                    <p>
+                                        Do you or the others involved live in northern or western Hennepin County? If not, please see <a href="#">communitymediationminnesota.org</a> to see if there is a provider closer to you.
+                                    </p>
                                 <!-- end .step-bd -->
                                 </div>
                                 <div class="step-bd">
-                                    By statute, we do not provide services when there has been a history of domestic violence or violence involving a weapon. We also do not provide divorce mediation services (we provide shared parenting and post-relationship services). If you need a different resource, please check our resources.
+                                    <p>
+                                        By statute, we do not provide services when there has been a history of domestic violence or violence involving a weapon. We also do not provide divorce mediation services (we provide shared parenting and post-relationship services). If you need a different resource, please check our resources.
+                                    </p>
                                 <!-- end .step-bd -->
                                 </div>
                             <!-- end .step -->
@@ -321,18 +333,27 @@
     <div class="section-wrap bg-lightblue">
         <div class="grid-site">
             <div class="grid-main">
-                <div class="section-steps">
+                <div class="section-steps grid-col-5 grid-col-right grid-col-right-single">
                     <div class="section-steps-bd">
-                        <div class="media">
-                            <div class="media-element">awef
+                        <div class="media media-pull-left">
+                            <div class="media-element">
+                                <h3 class="section-steps-counter">2</h3>
                             <!-- end .media-element -->
                             </div>
                             <div class="media-bd">
                                 <div class="step">
                                     <div class="step-hd">
+                                        <h3>Fill Out The Service Request Form</h3>
                                     <!-- end .step-hd -->
                                     </div>
                                     <div class="step-bd">
+                                        <p>
+                                            Think about who needs to be invited to participate and provide us with contact information.
+                                        </p>
+                                    <!-- end .step-bd -->
+                                    </div>
+                                    <div class="step-bd">
+                                        <a href="#" class="btn">Service Request Form</a>
                                     <!-- end .step-bd -->
                                     </div>
                                 <!-- end .step -->
@@ -353,18 +374,34 @@
     </div>
     <div class="grid-site">
         <div class="grid-main">
-            <div class="section-steps">
+            <div class="section-steps grid-col-5">
                 <div class="section-steps-bd">
-                    <div class="media media-invert">
-                        <div class="media-element">waefw
+                    <div class="media media-invert media-pull-left">
+                        <div class="media-element">
+                            <ul class="icon-list">
+                                <li>
+                                    <h3 class="section-steps-counter">3</h3>
+                                </li>
+                                <li>
+                                    <img src="<?php bloginfo('template_directory'); ?>/assets/images/icon-envelope.png" alt="" />
+                                </li>
+                                <li>
+                                    <img src="<?php bloginfo('template_directory'); ?>/assets/images/icon-envelope.png" alt="" />
+                                </li>
+                            <!-- end .icon-list -->
+                            </ul>
                         <!-- end .media-element -->
                         </div>
                         <div class="media-bd">
                             <div class="step">
                                 <div class="step-hd">
+                                    <h3>Your Case Manager will extend an invitation to a mediation or a restorative</h3>
                                 <!-- end .step-hd -->
                                 </div>
                                 <div class="step-bd">
+                                    <p>
+                                        The invitation will be in letter form, unless you don’t have a way to get an address. It can also be a phone call or email. You will receive a copy of the letter.
+                                    </p>
                                 <!-- end .step-bd -->
                                 </div>
                             <!-- end .step -->
@@ -384,19 +421,25 @@
     <div class="section-wrap bg-lightblue">
         <div class="grid-site">
             <div class="grid-main">
-                <div class="section-steps">
-                    <div class="section-steps-bd">
-                        <div class="media media-invert">
-                            <div class="media-element">waef
+                <div class="section-steps grid-col-8">
+                    <div class="section-steps-icon">
+                        <img src="http://localhost:8888/owc2013/wp-content/themes/skeleton-theme/assets/images/icon-talk-bubbles.png" alt="">
+                    <!-- end .section-steps-icon -->
+                    </div>
+                    <div class="section-steps-hd">
+                        <div class="media media-pull-left">
+                            <div class="media-element">
+                                <ul class="icon-list">
+                                    <h3 class="section-steps-counter">4</h3>
+                                <!-- end .icon-list -->
+                                </ul>
                             <!-- end .media-element -->
                             </div>
                             <div class="media-bd">
                                 <div class="step">
                                     <div class="step-hd">
+                                        <h3>Your Case Manager will talk with everyone invited, explain the process, and determine if and how they might participate.</h3>
                                     <!-- end .step-hd -->
-                                    </div>
-                                    <div class="step-bd">
-                                    <!-- end .step-bd -->
                                     </div>
                                 <!-- end .step -->
                                 </div>
@@ -404,7 +447,7 @@
                             </div>
                         <!-- end .media -->
                         </div>
-                    <!-- end .section-steps-bd -->
+                    <!-- end .section-steps-hd -->
                     </div>
                 <!-- end .section-steps -->
                 </div>
@@ -416,28 +459,89 @@
     </div>
     <div class="grid-site">
         <div class="grid-main">
-            <div class="section-steps">
+            <div class="section-steps grid-col-8">
                 <div class="section-steps-hd">
+                    <div class="media media-pull-left">
+                        <div class="media-element">
+                            <ul class="icon-list">
+                                <h3 class="section-steps-counter">5</h3>
+                            <!-- end .icon-list -->
+                            </ul>
+                        <!-- end .media-element -->
+                        </div>
+                        <div class="media-bd">
+                            <div class="step">
+                                <div class="step-hd">
+                                    <h3>The day of your mediation or restorative conference</h3>
+                                <!-- end .step-hd -->
+                                </div>
+                            <!-- end .step -->
+                            </div>
+                        <!-- end .media-bd -->
+                        </div>
+                    <!-- end .media -->
+                    </div>
                 <!-- end .section-steps-hd -->
                 </div>
                 <div class="section-steps-bd">
-                    <div class="media">
-                        <div class="media-element">awfe
-                        <!-- end .media-element -->
-                        </div>
-                        <div class="media-bd">
-                            <div class="step">
-                                <div class="step-hd">
-                                <!-- end .step-hd -->
+                    <div class="step">
+                        <div class="step-bd">
+                            <div class="grid-row">
+                                <div class="grid-col grid-col-6">
+                                    <div class="step-callout">
+                                        <div class="step-icon">
+                                            <img src="<?php bloginfo('template_directory'); ?>/assets/images/icon-mediation-intro1.png" alt="" />
+                                        <!-- end .step-icon -->
+                                        </div>
+                                        <div class="step-hd">
+                                            <h3>Mediation</h3>
+                                        <!-- end .step-hd -->
+                                        </div>
+                                        <div class="step-bd">
+                                            <p>
+                                                The mediation is an informal conversation, facilitated by trained mediators. They will welcome everyone, provide an orientation to the process and answer any questions you have. The mediators will help you identify areas of common ground and capture your agreement in writing.
+                                            </p>
+                                        <!-- end .step-bd -->
+                                        </div>
+                                        <div class="step-bd">
+                                            <p>
+                                                You are in control of the outcome; the mediators will provide a safe and constructive process.
+                                            </p>
+                                        <!-- end .step-bd -->
+                                        </div>
+                                    <!-- end .step -->
+                                    </div>
+                                <!-- end .grid-col-6 -->
                                 </div>
-                                <div class="step-bd">
-                                <!-- end .step-bd -->
+                                <div class="grid-col grid-col-6">
+                                    <div class="step-callout">
+                                        <div class="step-icon">
+                                            <img src="<?php bloginfo('template_directory'); ?>/assets/images/icon-mediation-intro1.png" alt="" />
+                                        <!-- end .step-icon -->
+                                        </div>
+                                        <div class="step-hd">
+                                            <h3>Restorative Conference</h3>
+                                        <!-- end .step-hd -->
+                                        </div>
+                                        <div class="step-bd">
+                                            <p>
+                                                Your facilitators will welcome you and provide you with an orientation of the process. They will guide you through a conversation structured around four questions:
+                                            </p>
+                                        <!-- end .step-bd -->
+                                        </div>
+                                        <div class="step-bd">
+                                            
+                                        <!-- end .step-bd -->
+                                        </div>
+                                    <!-- end .step -->
+                                    </div>
+                                <!-- end .grid-col-6 -->
                                 </div>
-                            <!-- end .step -->
+                            <!-- end .grid-row -->
                             </div>
-                        <!-- end .media-bd -->
+                        <!-- end .step-bd -->
                         </div>
-                    <!-- end .media -->
+                    <!-- end .step -->
                     </div>
                 <!-- end .section-steps-bd -->
                 </div>
@@ -450,19 +554,18 @@
     <div class="section-wrap bg-lightblue">
         <div class="grid-site">
             <div class="grid-main">
-                <div class="section-steps">
+                <div class="section-steps grid-col-5 grid-col-right grid-col-right-single">
                     <div class="section-steps-bd">
-                        <div class="media">
-                            <div class="media-element">waef
+                        <div class="media media-pull-left">
+                            <div class="media-element">
+                                <h3 class="section-steps-counter">6</h3>
                             <!-- end .media-element -->
                             </div>
                             <div class="media-bd">
                                 <div class="step">
                                     <div class="step-hd">
+                                        <h3>The mediators/facilitators will give you copies of your agreement or plan.</h3>
                                     <!-- end .step-hd -->
-                                    </div>
-                                    <div class="step-bd">
-                                    <!-- end .step-bd -->
                                     </div>
                                 <!-- end .step -->
                                 </div>
@@ -482,19 +585,21 @@
     </div>
     <div class="grid-site">
         <div class="grid-main">
-            <div class="section-steps">
-                <div class="section-steps-bd">
-                    <div class="media">
-                        <div class="media-element">awfe
+            <div class="section-steps grid-col-8">
+                <div class="section-steps-hd">
+                    <div class="media media-pull-left">
+                        <div class="media-element">
+                            <ul class="icon-list">
+                                <h3 class="section-steps-counter">7</h3>
+                            <!-- end .icon-list -->
+                            </ul>
                         <!-- end .media-element -->
                         </div>
                         <div class="media-bd">
                             <div class="step">
                                 <div class="step-hd">
+                                    <h3>Your Case Manager will follow up with you before sending closure letters.</h3>
                                 <!-- end .step-hd -->
-                                </div>
-                                <div class="step-bd">
-                                <!-- end .step-bd -->
                                 </div>
                             <!-- end .step -->
                             </div>
@@ -502,7 +607,7 @@
                         </div>
                     <!-- end .media -->
                     </div>
-                <!-- end .section-steps-bd -->
+                <!-- end .section-steps-hd -->
                 </div>
             <!-- end .section-steps -->
             </div>
