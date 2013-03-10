@@ -38,7 +38,7 @@ Width: All Sizes
     float: right;
 }
 
-.grid-col + .grid-col { margin-left: 2.763819095477%; } /* approx 20px margin on 960width  */
+.grid-col + .grid-col { margin-left: 2.733819095477%; } /* approx 20px margin on 960width  */
 
 .grid-col-1 { width: 7.518796992481%; }
 .grid-col-2 { width: 17.794486215539%; }
@@ -88,6 +88,9 @@ a:focus {
 
 .logo {
     display: block;
+    width: 312px;
+    height: 64px;
+    margin: 0 auto;
     background: url('../images/logo.png') no-repeat;
 }
 
@@ -96,7 +99,7 @@ a:focus {
 ------------------------------------------------------------------------ */
 
 .grid-site {
-    width: 960px;
+    max-width: 960px;
     margin: 0 auto;
 }
 
@@ -113,13 +116,17 @@ a:focus {
 
 .grid-sidebar {
     float: left;
-    max-width: 142px;
+    width: 14.6875%;;
 }
 
 .grid-main {
     float: left;
-    max-width: 798px;
-    margin-left: 2.763819095477%;
+    width: 83.020833333333%;;
+    margin-left: 2.291666666667%%;
+}
+
+.section-wrap {
+    padding: 60px 0 80px 0;
 }
 
 .bg-turq { background: #54accd; }
@@ -143,6 +150,11 @@ a:focus {
     background: -ms-linear-gradient(top,  #ffffff 0%,#e0e0e0 100%); /* IE10+ */
     background: linear-gradient(to bottom,  #ffffff 0%,#e0e0e0 100%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e0e0e0',GradientType=0 ); /* IE6-8 */
+}
+
+.page-header {
+    max-width: 960px;
+    margin: 0 auto;
 }
 
 .btn-menu {
