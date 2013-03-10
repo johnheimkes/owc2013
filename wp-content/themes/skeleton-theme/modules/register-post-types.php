@@ -13,21 +13,18 @@ add_action('init', 'nerdery_register_post_types');
 function nerdery_register_post_types()
 {
     register_post_type(
-        'directors',
+        'partners',
         array(
             'labels' => array(
-                'name'          => 'Directors',
-                'singular_name' => 'Director',
-                'add_new_item'  => 'Add New Director',
-                'edit_item'     => 'Edit Director',
+                'name'          => 'Partners',
+                'singular_name' => 'Partner',
+                'add_new_item'  => 'Add New Partner',
+                'edit_item'     => 'Edit Partner',
             ),
             'public'        => true,
-            'description'   => 'Directors Listing',
+            'description'   => 'Partners Listing',
             'supports'      => array(
-                'title',
                 'editor',
-                'thumbnail',
-                'revisions',
             ),
             'has_archive'   => true,
         )

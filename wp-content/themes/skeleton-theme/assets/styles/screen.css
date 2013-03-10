@@ -12,7 +12,7 @@ Width: All Sizes
 ------------------------------------------------------------------------ */
 
 .grid--push-l {
-    margin-bottom: 40px;
+    margin-bottom: 60px;
 }
 
 .grid-row-push-m {
@@ -95,7 +95,7 @@ a {
 
 a:hover,
 a:focus {
-    color: #005581;
+    color: #d7e5ef;
 }
 
 .logo {
@@ -106,6 +106,11 @@ a:focus {
     background: url('../images/logo.png') no-repeat;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 /* ---------------------------------------------------------------------
  Layout
 ------------------------------------------------------------------------ */
@@ -113,6 +118,7 @@ a:focus {
 .grid-site {
     max-width: 960px;
     margin: 0 auto;
+    padding: 60px 0 80px 0;
 }
 
 .grid-site-inset { padding: 80px 0 40px; }
@@ -139,12 +145,14 @@ a:focus {
     margin-left: 17.794486215539%;
 }
 
-.section-wrap {
-    padding: 60px 0 80px 0;
-}
+
 
 .section-padded {
     padding: 20px 0;
+}
+
+.section-wrap-img {
+    padding: 60px 0 0 0;
 }
 
 .section-hr {
@@ -163,6 +171,13 @@ a:focus {
 .bg-lightblue { background: #d7e5ef; }
 .bg-darkblue { background: #005581; }
 .bg-white { background: #FFFFFF; }
+
+.bg-white a { color: #005581; }
+
+.turq { color: #54accd; }
+.lightblue { color: #d7e5ef; }
+.darkblue { color: #005581; }
+.white { color: #FFFFFF; }
 
 .bg-white a { color: #005581; }
 
@@ -205,6 +220,10 @@ a:focus {
 
 .hdg-5 {
     font-size: 18px;
+}
+
+.hdg-padded {
+    padding: 20px 0;
 }
 
 /* ---------------------------------------------------------------------
@@ -469,17 +488,21 @@ a:focus {
 
 .page-footer {
     background-color: #005581;
+    padding: 30px 0;
 }
 
-.wrapper-footer {
+.wrapper-nav-footer {
     margin: 0 auto;
     max-width: 960px;
 }
 
+.wrapper-footer {
+    padding: 0 22%;
+}
+
 .nav-footer {
     margin: 0 auto;
-    line-height: 60px;
-    text-align: center;
+    padding: 0 0 0 0;
 }
 
 .nav-footer > li {
@@ -514,10 +537,36 @@ a:focus {
         opacity 0.3s ease-in-out 0s;
 }
 
+.footer-copy {
+    margin: 0 auto;
+    max-width: 930px;
+    color: #FFFFFF;
+    padding: 30px 15px 0 15px;
+}
+
+.footer-copy > ul > * + * {
+    margin-left: 3%;
+}
+
+.footer-contact {
+    margin: 0 auto;
+    max-width: 930px;
+    color: #FFFFFF;
+    padding: 30px 15px 0 15px;
+}
+
+.footer-contact > ul > * + * {
+    margin-left: 3%;
+}
+
 /* ---------------------------------------------------------------------
- Other
+ Buttons
 ------------------------------------------------------------------------ */
 .btn {
+    display: inline-block;
+    height: 33px;
+    line-height: 33px;
+    padding: 0 12px;
     font-weight: bold;
     background-color: #f6f6f7;
     border-radius: 3px;
@@ -525,22 +574,132 @@ a:focus {
     -moz-box-shadow: -1px 1px 5px -1px #888;
     -webkit-box-shadow: -1px 1px 5px -1px#888;
     box-shadow: -1px 1px 5px -1px #888;
+    color: #4c4043;
 }
 
-.wide-blue {
-    width: 100%;
-    background-color: #d7e5ef;
+.btn:hover {
+    background: #ffffff; /* Old browsers */
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlMGUwZTAiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top,  #ffffff 0%, #e0e0e0 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#e0e0e0)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #ffffff 0%,#e0e0e0 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #ffffff 0%,#e0e0e0 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #ffffff 0%,#e0e0e0 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #ffffff 0%,#e0e0e0 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e0e0e0',GradientType=0 ); /* IE6-8 */
+}
+
+.padded-bottom {
+    padding-bottom: 20px;
+}
+
+.padded-top {
+    padding-top: 20px;
+}
+
+.ex-padded-bottom {
+    padding-bottom: 100px;
+}
+
+
+/* ---------------------------------------------------------------------
+ Feature
+------------------------------------------------------------------------ */
+
+.feature {
+
+}
+
+.feature-hd {
+    margin-bottom: 14px;
+}
+
+.feature-bd {
+    margin-bottom: 14px;
+    font-size: 18px;
+}
+
+.feature-ft {
+
 }
 
 /* ---------------------------------------------------------------------
- Styleguide (REMOVE before Deployment)
+ Qutoe Section
 ------------------------------------------------------------------------ */
 
-.style-grid .grid-col {
-    height: 20px;
-    background: #CCCCCC;
-    line-height: 20px;
-    text-align: center;
+.section-quote {
+    margin-top: 70px;
+}
+
+.section-quote-bd {
+    margin-bottom: 40px;
+    font-size: 18px;
+    color: #005581;
+}
+
+.section-quote-ft {
+    font-size: 18px;
+    font-style: italic;
+    color: #404041;
+}
+
+/* ---------------------------------------------------------------------
+ Participant Options
+------------------------------------------------------------------------ */
+
+.participant-options {
+    overflow: hidden;
+    max-width: 715px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #005581;
+}
+
+/* ---------------------------------------------------------------------
+ Heros
+------------------------------------------------------------------------ */
+
+.hero-img {
+    /*margin-top: -60px;*/
+
+}
+
+.hennepin-county {
+    margin: -103px 0 -53px 0;
+}
+
+.hero-img-home {
+    background-image: url('../images/homepage-hero.png');
+    background-repeat: no-repeat;
+    background-position: right top;
+}
+
+/* ---------------------------------------------------------------------
+ Partners
+------------------------------------------------------------------------ */
+
+.partners {
+    width: 715px;
+    margin: 0 auto;
+}
+
+.partners-hd {
+    margin-bottom: 30px;
+}
+
+.partners-bd > * {
+    float: left;
+    width: 23.229166666667%;
+}
+
+.partners-bd > * + * {
+    margin-left: 2.291666666667%;
+}
+
+.partners-bd a {
+    font-size: 18px;
+    color: #005581;
 }
 
 /* ---------------------------------------------------------------------
@@ -559,8 +718,54 @@ a:focus {
 }
 
 /* ---------------------------------------------------------------------
+ Woooooooo Classes
+------------------------------------------------------------------------ */
+.product img {
+    display: none;
+}
+
+/* ---------------------------------------------------------------------
  Individual Media Queries
 ------------------------------------------------------------------------ */
+
+@media screen and (max-width: 1127px) {
+    .nav-footer > li > a {
+        font-size: 14px;
+        padding: 0 22px;
+        line-height: 60px;
+        text-align: center;
+    }
+
+    .footer-copy {
+        font-size: 11px;
+    }
+
+    .footer-contact {
+        font-size: 11px;
+    }
+
+    .footer-copy > ul > * {
+        float: none;
+    }
+
+    .footer-copy > ul > * + * {
+        margin: 10px 0;
+    }
+
+    .footer-contact > ul > * {
+        float: none;
+    }
+
+    .footer-contact > ul > * + * {
+        margin: 10px 0;
+    }
+}
+
+@media screen and (max-width: 971px) {
+    .hero-img-home {
+        background-image: none;
+    }
+}
 
 @media screen and (max-width: 782px) {
 
@@ -568,12 +773,47 @@ a:focus {
         font-size: 12px;
         padding: 0 12px;
     }
+
+    .hennepin-county {
+        margin: 0;
+    }
+
+}
+
+@media screen and (max-width: 767px) { /* under tablet size */
+
+    .header-contact {
+        display: none;
+    }
+
+    .section-wrap-img {
+        padding: 60px 0 80px 0;
+    }
+
+    .hero-img {
+        margin: 0;
+    }
 }
 
 @media screen and (max-width: 646px) {
 
-    .nav > li > a {
+    .page-footer {
+        padding: 0;
+    }
+
+    .wrapper-footer {
+        padding: 0;
+    }
+
+    .nav > li > a,
+    .nav-footer > li > a {
         font-size: 14px;
         padding: 0 22px;
+        line-height: 60px;
+        text-align: center;
+    }
+
+    .nav-footer > li  {
+        display: block;
     }
 }

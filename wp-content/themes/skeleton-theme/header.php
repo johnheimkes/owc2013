@@ -35,7 +35,7 @@
     <div class="wrapper-header">
         <div class="page-header">
             <a href="#" id="btn-menu" class="btn-menu"></a>
-            <a href="#" class="logo offscreen">Community Mediation and Restorative Services</a>
+            <h1><a href="#" class="logo offscreen">Community Mediation and Restorative Services</a></h1>
             <div class="header-contact">
                 <ul>
                     <li>
@@ -56,25 +56,25 @@
         <div class="wrapper-nav">
             <ul class="nav">
                 <li>
-                    <a href="#">Home</a>
+                    <a href="<?php echo home_url(); ?>">Home</a>
                 </li>
                 <li>
-                    <a href="#">Mediation</a>
+                    <a href="<?php echo home_url(); ?>/mediation">Mediation</a>
                 </li>
                 <li>
-                    <a href="#">Training</a>
+                    <a href="<?php echo home_url(); ?>/training">Training</a>
                 </li>
                 <li>
-                    <a href="#">Volunteer</a>
+                    <a href="<?php echo home_url(); ?>/volunteer">Volunteer</a>
                 </li>
                 <li>
-                    <a href="#">Support</a>
+                    <a href="<?php echo home_url(); ?>/support">Support</a>
                 </li>
                 <li>
-                    <a href="#">About</a>
+                    <a href="<?php echo home_url(); ?>/about">About</a>
                 </li>
                 <li>
-                    <a href="#">Resources</a>
+                    <a href="<?php echo home_url(); ?>/resources">Resources</a>
                 </li>
                 <li>
                     <a href="#">Volunteer Login</a>
