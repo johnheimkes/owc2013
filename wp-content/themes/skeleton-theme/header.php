@@ -41,7 +41,7 @@
 
     <div class="slideout nav-container bg-turq" id="nav">
         <div class="wrapper-nav">
-            <ul class="h-list nav">
+            <ul class="nav">
                 <li>
                     <a href="#">Home</a>
                 </li>

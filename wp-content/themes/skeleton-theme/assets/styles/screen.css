@@ -129,14 +129,14 @@ a:focus {
 .grid-main:after { clear: both; }
 
 .grid-sidebar {
-    float: left;
-    width: 14.6875%;
+    position: fixed;
+    width: 11%;
 }
 
 .grid-main {
     float: left;
     width: 83.020833333333%;
-    margin-left: 2.291666666667%%;
+    margin-left: 17.794486215539%;
 }
 
 .section-wrap {
@@ -200,26 +200,29 @@ a:focus {
  Horizontal Lists
 ------------------------------------------------------------------------ */
 
-.nav {
+.wrapper-nav {
     position: relative;
     max-width: 960px;
-    height: 50px;
     margin: 0 auto;
     top: 0;
     left: 0;
-    line-height: 50px;
 }
 
-.wrapper-nav {
-    max-width: 620px;
+.nav {
     margin: 0 auto;
+    line-height: 50px;
+    text-align: center;
+}
+
+.nav > li {
+    display: inline-block;
+    vertical-align: top;
 }
 
 .nav > li > a {
     display: block;
     padding: 0 15px;
     font-size: 14px;
-    text-align: center;
     color: #FFFFFF;
     font-weight: bold;
 }
@@ -241,7 +244,6 @@ a:focus {
     transition:
         background 0.3s ease-in-out,
         opacity 0.3s ease-in-out 0s;
-
 }
 
 /* ---------------------------------------------------------------------
@@ -293,6 +295,49 @@ a:focus {
     background-color: #005581;
 }
 
+.wrapper-footer {
+    margin: 0 auto;
+    max-width: 960px;
+}
+
+.nav-footer {
+    margin: 0 auto;
+    line-height: 60px;
+    text-align: center;
+}
+
+.nav-footer > li {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.nav-footer > li > a {
+    display: block;
+    padding: 0 15px;
+    font-size: 14px;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.nav-footer > li > a:hover {
+    background: #54accd;
+    -moz-transition:
+        background 0.3s ease-in-out,
+        opacity 0.3s ease-in-out 0s;
+    -webkit-transition:
+        background 0.3s ease-in-out,
+        opacity 0.3s ease-in-out 0s;
+    -ms-transition:
+        background 0.3s ease-in-out,
+        opacity 0.3s ease-in-out 0s;
+    -o-transition:
+        background 0.3s ease-in-out,
+        opacity 0.3s ease-in-out 0s;
+    transition:
+        background 0.3s ease-in-out,
+        opacity 0.3s ease-in-out 0s;
+}
+
 /* ---------------------------------------------------------------------
  Other
 ------------------------------------------------------------------------ */
@@ -335,4 +380,16 @@ a:focus {
     position: absolute;
     top: -9999px;
     left: -9999px;
+}
+
+/* ---------------------------------------------------------------------
+ Individual Media Queries
+------------------------------------------------------------------------ */
+
+@media screen and (max-width: 640px) {
+
+    .nav > li > a {
+        font-size: 12px;
+        padding: 0 8px;
+    }
 }

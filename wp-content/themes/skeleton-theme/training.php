@@ -22,7 +22,7 @@
                     </div>
                 </div>
                 <div class="grid-col grid-col-6">
-                    <img src="/assets/images/homepage_hero.png" />
+                    <img src="<?php bloginfo('template_directory'); ?>/images/training.jpg" title="" alt="" />
                 </div>
             </div>
         </div>
@@ -31,7 +31,7 @@
         <div class="grid-site">
             <div class="grid-row">
                 <div class="hr">
-                    <div class="grid-col grid-col-9">
+                    <div class="grid-col grid-col-8">
                         <h2>Sign up to be notified</h2>
                         <h3>
                             30-Hour Basic Mediation and Communication Skills Training
@@ -49,23 +49,26 @@
                             <li>Mediating in court, community, and school settings</li>
                         </ul>
                     </div>
-                <div class="grid-col grid-col-2">           
-                    <div class="btn">Sign up for classes available</div>
-                </div>
+                <div class="grid-col grid-col-3">           
+                    Enter Email
+                </div>   
+                <div class="grid-col grid-col-1">           
+                    Send
+                </div>                                    
             </div>
             <div class="grid-row">            
-                <div class="grid-col grid-col-9">
+                <div class="grid-col grid-col-10">
                     <h2>21 Hour Family Bridge Mediation Training Including 6 Hour Domestic Violence Training</h2>
                     <p>
                         Meets Rule 114 Family Bridge and 6 Hours of Domestic Violence Training CLE credits to be applied for 
                     </p>
                 </div>
-                <div class="grid-col grid-col-1">
-                    details
+                <div class="grid-col grid-col-2">     
+                    <div class="btn">Sign up for classes available</div>
                 </div>
             </div>
             <div class="grid-row">                                 
-                <div class="grid-col grid-col-9">
+                <div class="grid-col grid-col-11">
                     <h2>14 Hour Family Bridge Mediation Training </h2>
                     <p>
                         Meets Rule 114 Family Bridge and 6 Hours of Domestic Violence Training CLE credits to be applied for 
@@ -76,7 +79,7 @@
                 </div>   
             </div>
             <div class="grid-row">                           
-                <div class="grid-col grid-col-9">
+                <div class="grid-col grid-col-11">
                     <h2>Restorative Practices</h2>
                     <p>
                         We provide a variety of restorative practice training opportunities including group and family conferencing and restorative circles. Restorative practices:
@@ -87,7 +90,7 @@
                 </div>   
             </div>
             <div class="grid-row">                             
-                <div class="grid-col grid-col-9">
+                <div class="grid-col grid-col-11">
                     <h2>Mediator Ethics & Statutes</h2>
                     <p>
                         A mix of discussion and experiential exercises designed to refresh your understanding of Rule 114 Code of Ethics and CMS best practices. 
@@ -98,7 +101,7 @@
                 </div> 
             </div> 
             <div class="grid-row">                                   
-                <div class="grid-col grid-col-9">
+                <div class="grid-col grid-col-11">
                     <h2>Continuing Education</h2>
                     <p>
                         CMRS directly and indirectly offers a variety of continuing education opportunities each year, including a 6-hour conference every Fall. 

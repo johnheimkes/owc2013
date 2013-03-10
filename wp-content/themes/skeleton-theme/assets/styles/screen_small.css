@@ -58,13 +58,14 @@ Width: 480px and under
 .nav-container {
     top: 0;
     left: 0;
+    -webkit-transition: z-index 0s linear .2s;
+    -moz-transition: z-index 0s linear .2s;
 }
 
 .nav-container.active {
     visibility: visible;
     z-index: 2;
-    -webkit-transition: z-index 0s linear .2s;
-    -moz-transition: z-index 0s linear .2s;
+
 }
 
 .nav > * {
