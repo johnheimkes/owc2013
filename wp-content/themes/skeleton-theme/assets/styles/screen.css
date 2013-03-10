@@ -295,9 +295,47 @@ a:focus {
     background-color: #005581;
 }
 
-.nav-footer {
-    overflow: hidden;
+.wrapper-footer {
     margin: 0 auto;
+    max-width: 960px;
+}
+
+.nav-footer {
+    margin: 0 auto;
+    line-height: 60px;
+    text-align: center;
+}
+
+.nav-footer > li {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.nav-footer > li > a {
+    display: block;
+    padding: 0 15px;
+    font-size: 14px;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.nav-footer > li > a:hover {
+    background: #54accd;
+    -moz-transition:
+        background 0.3s ease-in-out,
+        opacity 0.3s ease-in-out 0s;
+    -webkit-transition:
+        background 0.3s ease-in-out,
+        opacity 0.3s ease-in-out 0s;
+    -ms-transition:
+        background 0.3s ease-in-out,
+        opacity 0.3s ease-in-out 0s;
+    -o-transition:
+        background 0.3s ease-in-out,
+        opacity 0.3s ease-in-out 0s;
+    transition:
+        background 0.3s ease-in-out,
+        opacity 0.3s ease-in-out 0s;
 }
 
 /* ---------------------------------------------------------------------
