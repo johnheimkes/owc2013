@@ -56,25 +56,25 @@
         <div class="wrapper-nav">
             <ul class="nav">
                 <li>
-                    <a href="#">Home</a>
+                    <a href="<?php echo home_url(); ?>">Home</a>
                 </li>
                 <li>
-                    <a href="#">Mediation</a>
+                    <a href="<?php echo home_url(); ?>/mediation">Mediation</a>
                 </li>
                 <li>
-                    <a href="#">Training</a>
+                    <a href="<?php echo home_url(); ?>/training">Training</a>
                 </li>
                 <li>
-                    <a href="#">Volunteer</a>
+                    <a href="<?php echo home_url(); ?>/volunteer">Volunteer</a>
                 </li>
                 <li>
-                    <a href="#">Support</a>
+                    <a href="<?php echo home_url(); ?>/support">Support</a>
                 </li>
                 <li>
-                    <a href="#">About</a>
+                    <a href="<?php echo home_url(); ?>/about">About</a>
                 </li>
                 <li>
-                    <a href="#">Resources</a>
+                    <a href="<?php echo home_url(); ?>/resources">Resources</a>
                 </li>
                 <li>
                     <a href="#">Volunteer Login</a>
