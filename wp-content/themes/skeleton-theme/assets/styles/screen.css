@@ -33,7 +33,7 @@ Width: All Sizes
 
 .grid-col {
     float: left;
-    border: 1px solid #000000;
+    
     /* REMOVE below for production work */
     -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
 }
@@ -91,6 +91,49 @@ Width: All Sizes
 }
 
 /* ---------------------------------------------------------------------
+ Sub Nav
+------------------------------------------------------------------------ */
+
+.secondary-nav {
+    background-color: #005581;
+    font-size: 14px;
+    color: #fff;
+}
+
+.secondary-nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.secondary-nav .title {
+    background-color: #0088bb;
+    font-weight: bold;
+}
+
+.secondary-nav ul li {
+    padding: 10px 0;
+    padding-left: 20px;
+}
+
+/* ---------------------------------------------------------------------
+ Other
+------------------------------------------------------------------------ */
+.btn {
+    font-weight: bold;
+    background-color: #f6f6f7;
+    border-radius: 3px;
+    border: 1px solid #909295;
+    -moz-box-shadow: -1px 1px 5px -1px #888;
+    -webkit-box-shadow: -1px 1px 5px -1px#888;
+    box-shadow: -1px 1px 5px -1px #888;    
+}
+
+.wide-blue {
+    width: 100%;
+    background-color: #d7e5ef;
+}
+
+/* ---------------------------------------------------------------------
  Styleguide (REMOVE before Deployment)
 ------------------------------------------------------------------------ */
 
@@ -99,10 +142,6 @@ Width: All Sizes
     background: #CCCCCC;
     line-height: 20px;
     text-align: center;
-}
-
-.wireframe.grid-col {
-    border: 1px solid #ccc;
 }
 
 
