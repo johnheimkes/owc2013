@@ -130,12 +130,13 @@ a:focus {
 
 .grid-sidebar {
     position: fixed;
+    width: 11%;
 }
 
 .grid-main {
     float: left;
     width: 83.020833333333%;
-    margin-left: 14.6875%;
+    margin-left: 17.794486215539%;
 }
 
 .section-wrap {
