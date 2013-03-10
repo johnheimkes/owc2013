@@ -14,7 +14,7 @@
     <div class="grid-site hero-img hero-img-home">
         <div class="grid-main ">
             <div class="grid-row-s">
-                <div class="grid-col grid-col-5">
+                <div class="grid-col grid-col-4">
                     <div class="feature">
                         <div class="feature-hd">
                             <?php
@@ -34,8 +34,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="grid-col grid-col-5">
-
+                <div class="grid-col grid-col-6">
+                    &nbsp;
                 </div>
             </div>
         </div>

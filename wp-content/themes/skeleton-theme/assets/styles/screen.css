@@ -326,6 +326,13 @@ img {
         opacity 0.3s ease-in-out 0s;
 }
 
+.nav-container {
+    position: relative;
+    -webkit-box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow:    0px 3px 10px rgba(0, 0, 0, 0.2);
+    box-shadow:         0px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
 /* ---------------------------------------------------------------------
  Horizontal List
 ------------------------------------------------------------------------ */
@@ -665,12 +672,11 @@ img {
 ------------------------------------------------------------------------ */
 
 .hero-img {
-    /*margin-top: -60px;*/
-
+    padding-bottom: 30px;
 }
 
 .hennepin-county {
-    margin: -103px 0 -53px 0;
+    margin: -140px 0 -113px 0;
 }
 
 .hero-img-home {
@@ -766,9 +772,10 @@ img {
 }
 
 @media screen and (max-width: 971px) {
-    .hero-img-home {
+    /*.hero-img-home {
         background-image: none;
     }
+*/
 }
 
 @media screen and (max-width: 782px) {
@@ -790,13 +797,6 @@ img {
         display: none;
     }
 
-    .section-wrap-img {
-        padding: 60px 0 80px 0;
-    }
-
-    .hero-img {
-        margin: 0;
-    }
 }
 
 @media screen and (max-width: 646px) {
