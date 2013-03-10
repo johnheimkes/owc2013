@@ -10,7 +10,6 @@
  */
 ?>
 <?php get_header(); ?>
-<div class="page-content style">
     <h1>Styleguide</h1>
     <div class="style-grid">
         <div class="grid-row grid-row-push-s">
@@ -40,10 +39,29 @@
             <div class="grid-col grid-col-6">Grid Col 6</div>
             <div class="grid-col grid-col-6">Grid Col 6</div>
         </div>
-        <div class="grid-row grid-row-push-s">
+        <div class="grid-row grid-row-push-l">
             <div class="grid-col grid-col-4">Grid Col 4</div>
             <div class="grid-col grid-col-4">Grid Col 4</div>
             <div class="grid-col grid-col-4">Grid Col 4</div>
+        </div>
+
+        <div class="grid-row grid-row-push-l">
+            <div class="grid-col grid-col-10">
+                <div class="grid-row">
+                    <div class="grid-col grid-col-3">
+                        Grid Col 2
+                    </div>
+                    <div class="grid-col grid-col-3">
+                        Grid Col 2
+                    </div>
+                    <div class="grid-col grid-col-3">
+                        Grid Col 2
+                    </div>
+                    <div class="grid-col grid-col-3">
+                        Grid Col 2
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>

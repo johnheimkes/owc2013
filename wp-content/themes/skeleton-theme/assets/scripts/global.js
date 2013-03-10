@@ -18,6 +18,15 @@ var CMRS = CMRS || {};
 
         APP.AutoReplace.init();
 
+        var slideoutmenu = new APP.SlideoutMenu(
+            $('#btn-menu'), /* button clicked to bring menu visible */
+            $('#nav'), /*  */
+            $('.page-header'),
+            $('.page-content'),
+            'left-active'
+        );
+
+
         var carousel = new APP.Carousel({
             carouselWrapperSelector: '.js-carousel',
             slideWrapperSelector: '.js-carousel-slide-wrapper',
@@ -28,7 +37,15 @@ var CMRS = CMRS || {};
             buttonClass: 'carousel-btn',
             buttonPrevClass: 'carousel-btn-prev',
             buttonNextClass: 'carousel-btn-next',
-            animationDuration: 300
+            animationDuration: 300,
+            swipeXThresholdModifier: 0.3,
+            swipeYThresholdModifier: 0.5
+        });
+
+        var dropdown = new APP.DropDown({
+            wrapperSelector: '.js-dropdown',
+            buttonSelector: '.js-dropdown-button',
+            listSelector: '.js-dropdown-list'
         });
     });
 }(jQuery, CMRS));
