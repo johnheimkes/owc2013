@@ -129,6 +129,10 @@ a:focus {
     padding: 60px 0 80px 0;
 }
 
+.section-hr {
+    border-bottom: 1px solid #54accd;
+}
+
 .hero-message {
     color: #005581;
 }
