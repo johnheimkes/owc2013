@@ -77,10 +77,10 @@
 <div class="section-wrap bg-turq">
     <div class="grid-site">
         <div class="grid-row">
-            <div class="grid-col grid-col-1 mobile-none">
+            <div class="grid-col grid-col-2 mobile-none">
                 &nbsp;
             </div>
-            <div class="grid-col grid-col-7">
+            <div class="grid-col grid-col-6">
                 <?php
                 // Section 3
                 if(get_field('home_section_3')):
