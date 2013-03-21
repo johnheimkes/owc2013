@@ -11,7 +11,7 @@ Width: All Sizes
  Grid
 ------------------------------------------------------------------------ */
 
-.grid--push-l {
+.grid-row-push-l {
     margin-bottom: 60px;
 }
 
@@ -128,13 +128,19 @@ img {
 .grid-site:before,
 .grid-site:after,
 .grid-main:before,
-.grid-main:after {
+.grid-main:after,
+.grid-row:before,
+.grid-row:after,
+.grid-row-s:before,
+.grid-row-s:after {
    content: " ";
    display: table;
 }
 
 .grid-site:after,
-.grid-main:after { clear: both; }
+.grid-main:after,
+.grid-row,
+.grid-row-s { clear: both; }
 
 .grid-sidebar {
     position: fixed;
@@ -143,7 +149,7 @@ img {
 
 .grid-main {
     float: left;
-    width: 83.020833333333%;
+    /*width: 83.020833333333%;*/ /*not sure if needed*/
     margin-left: 17.794486215539%;
 }
 
@@ -663,6 +669,12 @@ img {
     font-size: 18px;
 }
 
+.feature-bd_extended {
+    font-size: 24px;
+    color: #005581;
+    line-height: 1.5;
+}
+
 .feature-ft {
 
 }
@@ -801,6 +813,14 @@ img {
 ------------------------------------------------------------------------ */
 .product img {
     display: none;
+}
+
+/* ---------------------------------------------------------------------
+ Volunteer Page
+------------------------------------------------------------------------ */
+
+.volunteer-img {
+    margin-top: 38%;
 }
 
 /* ---------------------------------------------------------------------

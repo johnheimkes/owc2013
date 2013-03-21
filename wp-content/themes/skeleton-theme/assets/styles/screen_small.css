@@ -18,6 +18,7 @@ Width: 767px and under
 
 .grid-col + .grid-col {
     margin-left: 0;
+    margin-top: 20px;
 }
 
 .grid-row-s .grid-col + .grid-col {
@@ -133,6 +134,14 @@ img {
     -webkit-transform: translateX(275px);
     -moz-transform: translateX(275px);
     min-width: 320px;
+}
+
+/* ---------------------------------------------------------------------
+ Volunteer Page
+------------------------------------------------------------------------ */
+
+.volunteer-img {
+    margin-top: 0;
 }
 
 /* ---------------------------------------------------------------------
