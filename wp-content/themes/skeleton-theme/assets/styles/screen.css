@@ -635,7 +635,7 @@ img {
     display: none;
 }
 
-.padded {
+/*.padded {
     padding: 20px 0;
 }
 
@@ -650,6 +650,7 @@ img {
 .ex-padded-bottom {
     padding-bottom: 100px;
 }
+probably will remove most of this unless needed*/
 
 
 /* ---------------------------------------------------------------------
@@ -671,6 +672,12 @@ img {
 
 .feature-bd_extended {
     font-size: 24px;
+    color: #005581;
+    line-height: 1.5;
+}
+
+.feature-bd_small {
+    font-size: 18px;
     color: #005581;
     line-height: 1.5;
 }
@@ -735,7 +742,7 @@ img {
     overflow: hidden;
     max-width: 715px;
     margin: 0 auto;
-    padding-bottom: 20px;
+    padding-bottom: 60px;
     border-bottom: 1px solid #005581;
 }
 

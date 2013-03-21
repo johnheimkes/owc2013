@@ -106,7 +106,7 @@
 
 <div class="section-wrap bg-lightblue">
     <div class="grid-site">
-        <div class="grid-row grid--push-l">
+        <div class="grid-row grid-row-push-l">
             <div class="participant-options">
                 <?php
                 // Section 4a
