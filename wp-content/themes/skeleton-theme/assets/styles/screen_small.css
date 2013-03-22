@@ -156,7 +156,8 @@ img {
     margin: 0 auto;
 }
 
-.hero-img-home {
+.hero-img-home,
+.hero-img-training {
     background-image: none;
 }
 

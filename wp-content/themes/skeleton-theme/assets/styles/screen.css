@@ -763,6 +763,12 @@ img {
     background-position: right top;
 }
 
+.hero-img-training {
+    background-image: url('../images/training-hero.png');
+    background-repeat: no-repeat;
+    background-position: right top;
+}
+
 /* ---------------------------------------------------------------------
  Partners
 ------------------------------------------------------------------------ */

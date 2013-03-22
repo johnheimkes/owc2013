@@ -12,8 +12,8 @@
 <?php get_header(); ?>
 <div>
     <div class="section-wrap bg-lightblue">
-        <div class="grid-site">
-            <div class="grid-main">
+        <div class="grid-site hero-img hero-img-training">
+            <div class="">
                 <div class="grid-row">
                     <div class="grid-col grid-col-5">
                         <div class="feature">
@@ -24,10 +24,7 @@
                                 Community Mediation &amp; Restorative Services, Inc believes training is an effective strategy as we seek to develop the capacity of our community to respectfully resolve conflict and repair harm. We collaborate with other mediation and restorative parties to create more opportunities for people to participate in transformative, skill-building experiences.
                             </div>
                         </div>
-                    </div>
-                    <div class="grid-col grid-col-6 ">
-                        <img src="<?php bloginfo('template_directory'); ?>/2013/03/training-hero.png" title="" alt="" />
-                    </div>
+                    </div>                    
                 </div>
             </div>
         </div>
