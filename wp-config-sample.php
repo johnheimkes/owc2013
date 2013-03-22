@@ -20,25 +20,25 @@
  * This will override the home/site URL settings
  * in the General Settings of wp-admin.
  */
-define('WP_HOME', 'http://[shenanigans.local]');
+define('WP_HOME', 'http://192.168.1.120:8888');
 define('WP_SITEURL', WP_HOME);
-
+ 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
 define('DB_NAME', 'owc2013');
-
+ 
 /** MySQL database username */
 define('DB_USER', 'owc');
-
+ 
 /** MySQL database password */
 define('DB_PASSWORD', 'owc');
-
+ 
 /** MySQL hostname */
-define('DB_HOST', '192.168.1.101');
-
+define('DB_HOST', 'dev.papabear.me');
+ 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');
-
+ 
 /** The Database Collate type. Don't change this if in doubt. */
 define('DB_COLLATE', '');
 
