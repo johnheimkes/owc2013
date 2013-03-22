@@ -123,6 +123,10 @@ img {
     padding: 60px 0 80px 0;
 }
 
+.grid-site_thin {
+    padding: 35px 0;
+}
+
 .grid-site-inset { padding: 80px 0 40px; }
 
 .grid-site:before,
@@ -149,7 +153,7 @@ img {
 
 .grid-main {
     float: left;
-    /*width: 83.020833333333%;*/ /*not sure if needed*/
+    width: 83.020833333333%;
     margin-left: 17.794486215539%;
 }
 
@@ -358,6 +362,16 @@ img {
 
 .h-list-members > * {
     width: 50%;
+}
+
+.h-list_scholarships {
+    font-size: 18px;
+}
+
+.h-list_scholarships > * + * {
+    margin-left: 10px;
+    padding-left: 10px;
+    border-left: 1px solid #414042;
 }
 
 /* ---------------------------------------------------------------------
@@ -635,24 +649,6 @@ img {
     display: none;
 }
 
-/*.padded {
-    padding: 20px 0;
-}
-
-.padded-bottom {
-    padding-bottom: 20px;
-}
-
-.padded-top {
-    padding-top: 20px;
-}
-
-.ex-padded-bottom {
-    padding-bottom: 100px;
-}
-probably will remove most of this unless needed*/
-
-
 /* ---------------------------------------------------------------------
  Feature
 ------------------------------------------------------------------------ */
@@ -687,7 +683,7 @@ probably will remove most of this unless needed*/
 }
 
 /* ---------------------------------------------------------------------
- Qutoe Section
+ Quote Section
 ------------------------------------------------------------------------ */
 
 .section-quote {
@@ -816,6 +812,23 @@ probably will remove most of this unless needed*/
 }
 
 /* ---------------------------------------------------------------------
+ Stretch Object
+------------------------------------------------------------------------ */
+
+.stretch {
+    overflow: hidden;
+    display: block;
+}
+
+.stretch > * {
+    float: right;
+}
+
+.stretch > :first-child {
+   float: left;
+}
+
+/* ---------------------------------------------------------------------
  Woooooooo Classes
 ------------------------------------------------------------------------ */
 .product img {
@@ -828,6 +841,84 @@ probably will remove most of this unless needed*/
 
 .volunteer-img {
     margin-top: 38%;
+}
+
+/* ---------------------------------------------------------------------
+ Training Page
+------------------------------------------------------------------------ */
+
+.training {
+    overflow: hidden;
+    padding: 50px 0;
+}
+
+.training:first-child {
+    padding: 0 0 50px 0;
+}
+
+.training-hd {
+    margin-bottom: 28px;
+}
+
+.training-bd {
+    /*display: none;*/
+    overflow: hidden;
+    margin-top: 25px;
+}
+
+.training-list {
+    margin: 5px 0 30px 33px;
+    list-style: disc;
+    font-size: 14px;
+}
+
+.training-prices {
+    width: 100%;
+}
+
+.training-prices td {
+    width: 33%;
+    text-align: center;
+    vertical-align: top;
+    font-size: 10px;
+}
+
+.training-prices td:first-child {
+    text-align: left;
+    line-height: 1;
+}
+
+.training-prices_category {
+    font-size: 10px;
+}
+
+.training-prices_price {
+    display: block;
+    font-size: 30px;
+    text-align: left;
+}
+
+.training + .training {
+    border-top: 2px solid #54accd;
+}
+
+.training-table > * {
+    padding: 10px 0;
+}
+
+.training-table > * + * {
+    border-top: 1px solid #ffffff;
+}
+
+.training-links > * {
+    width: 40%;
+    float: left;
+    margin-top: 20px;
+}
+
+.training-links a {
+    font-size: 18px;
+    color: #005581;
 }
 
 /* ---------------------------------------------------------------------
