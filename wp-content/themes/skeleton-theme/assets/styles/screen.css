@@ -928,6 +928,44 @@ img {
 }
 
 /* ---------------------------------------------------------------------
+ Resources Page
+------------------------------------------------------------------------ */
+
+.resource {
+    margin-top: 40px;
+}
+
+.resource-hd {
+    margin-bottom: 15px;
+}
+
+.resource a {
+    font-weight: bold;
+    color: #005581;
+}
+
+.tip-list {
+    list-style: decimal;
+    margin-left: 20px;
+}
+
+.tip-list > * {
+    margin-top: 30px;
+}
+
+.tips-pledge {
+    margin-top: 30px;
+}
+
+.tips-today {
+    margin-top: 30px;
+}
+
+.tip-list_small > * {
+    margin-top: 2px;
+}
+
+/* ---------------------------------------------------------------------
  Individual Media Queries
 ------------------------------------------------------------------------ */
 
