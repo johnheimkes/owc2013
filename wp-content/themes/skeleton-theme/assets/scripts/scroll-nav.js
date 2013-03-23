@@ -118,6 +118,7 @@ CMRS.ScrollNav = function($) {
         this.$jumpLinkTargetActive = null;
         this.$inViewTargets = [];
         this.inViewIds = [];
+        this.activeIndex = 0;
 
         this.windowHeight = null;
 
@@ -255,12 +256,7 @@ CMRS.ScrollNav = function($) {
         var length = this.$jumpLinkTargets.length;
         var i = 0;
 
-        if (scrollTop === 0) {
-            this.inViewIds.push(this.$jumpLinkTargets.eq(0).attr('id'));
-            this.$inViewTargets.push(this.$jumpLinkTargets.eq(0));
-
-            return this;
-        } else if (scrollTop === scrollTopLimit) {
+        if (scrollTop === scrollTopLimit) {
             this.inViewIds.push(this.$jumpLinkTargets.eq(length - 1).attr('id'));
             this.$inViewTargets.push(this.$jumpLinkTargets.eq(length - 1));
 
@@ -289,6 +285,10 @@ CMRS.ScrollNav = function($) {
      * @since 1.0
      */
     ScrollNav.prototype.setActiveHash = function() {
+        if (this.$inViewTargets.length === 0) {
+            return this;
+        }
+
         this.$inViewTargets[0].attr('id', '');
 
         window.location.hash = this.inViewIds[0];
