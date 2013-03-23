@@ -150,10 +150,10 @@
                 <?php while(has_sub_field('about__accomplishments')): ?>
             <div class="grid-main">
                 <div class="grid-row-s">
-                    <div class="grid-col grid-col-8">
-                        <h2 class="hdg-5 hdg-bold hdg-padded"><?php the_sub_field('about__acc_title'); ?></h2>
+                    <div class="grid-col grid-col-7">
+                        <h2 class="hdg-4 hdg-bold"><?php the_sub_field('about__acc_title'); ?></h2>
                     </div>
-                    <div class="grid-col grid-col-2">
+                    <div class="grid-col grid-col-3">
                         <a class="btn" href="<?php the_sub_field('about__accomplishments_pdf'); ?>">Download Annual Report</a>
                     </div>                    
                 </div>
@@ -161,10 +161,10 @@
             
             <div class="grid-main">
                 <div class="grid-row-s">
-                    <div class="grid-col grid-col-1">
-                        People Standing Icon
+                    <div class="grid-col grid-col-2">
+                        <i class="icn icon-sprite-about icon-standing"></i>
                     </div>
-                    <div class="grid-col grid-col-3">
+                    <div class="grid-col grid-col-2">
                         <h5 class="hdg-1"><?php the_sub_field('about__community_service_num'); ?></h5>
                         <span class="hdg-5">Mediations</span>
                     </div> 
@@ -175,29 +175,43 @@
                 </div>    
 
                 <div class="grid-row-s">
-                    <div class="grid-col grid-col-3">
-                        Gavel Icon
+                    <div class="grid-col grid-col-2">
+                        <i class="icn icon-sprite-about about-gavel"></i>
                     </div>
-                    <div class="grid-col grid-col-3">
+                    <div class="grid-col grid-col-2">
                         <h5 class="hdg-1"><?php the_sub_field('about__court_service_num'); ?></h5>
+                        Mediations
+                    </div> 
+                    <div class="grid-col grid-col-4">
+                        <h3 class="hdg-bold">Court Services</h3>
+                        <p>Facilitating the resolution of court dispute through private, efficient, respectful conversations</p>
+                    </div>                                    
+                </div>
+
+                <div class="grid-row-s">
+                    <div class="grid-col grid-col-2">
+                        <i class="icn icon-sprite-about about-school"></i>
+                    </div>
+                    <div class="grid-col grid-col-2">
+                        <h5 class="hdg-1"><?php the_sub_field('about__youth_restorative_num'); ?></h5>
                         Conferences
                     </div> 
-                    <div class="grid-col grid-col-3">
-                        <h3 class="hdg-bold"><?php the_sub_field('about__youth_restorative_num'); ?></h3>
+                    <div class="grid-col grid-col-4">
+                        <h3 class="hdg-bold">Youth and Restorative Services</h3>
                         <p>Supporting youth by holding them accountable, repairing harm and improving conflict resolution and decision making skills. 96% succeeded!</p>
                     </div>                                    
                 </div> 
 
                 <div class="grid-row-s">
                     <div class="grid-col grid-col-2">
-                        Tools Icon
+                        <i class="icn icon-sprite-about about-tools"></i>
                     </div>
                     <div class="grid-col grid-col-2">
-                        <span class="hdg-1"><?php the_sub_field('about__volunteer_training_num'); ?></span>
+                        <h5 class="hdg-1"><?php the_sub_field('about__volunteer_training_num'); ?></h5>
                         Mediators Trained
                     </div> 
-                    <div class="grid-col grid-col-5">
-                        <h3 class="hdg-3">Volunteer and Training Opportunities</h3>
+                    <div class="grid-col grid-col-4">
+                        <h3 class="hdg-bold">Volunteer and Training Opportunities</h3>
                         <p>Investing in our community through Volunteer Development and Mediation & Restorative Practices trainings</p>
                     </div>                                    
                 </div>                 
@@ -218,58 +232,52 @@
             <div class="grid-main">
                 <?php if(get_field('about__financial_reports_section')): ?>
                     <?php while(has_sub_field('about__financial_reports_section')): ?>
-                <div class="grid-row-s">
-                    <div class="grid-col grid-col-12">
-                        <h2 class="hdg-5 hdg-bold padded-bottom">Financial Report</h2>
-                    </div>
-                </div>
-                <div class="grid-row-s">
-                    <div class="grid-col grid-col-3">
-                        <h3 class="hdg-bold">Income</h3>
-                        <span class="hdg-2 turq hdg-bold"><?php the_sub_field('about__total_income'); ?></span>
-                    </div>                    
+                        <div class="grid-row-s">
+                            <div class="grid-col grid-col-7">
+                                <h2 class="hdg-5 hdg-bold padded-bottom">Financial Report</h2>
+                                <div class="grid-row">
+                                    <div class="grid-col grid-col-4">
+                                        <h3 class="hdg-bold">Income</h3>
+                                        <span class="hdg-2 turq hdg-bold"><?php the_sub_field('about__total_income'); ?></span>
+                                    </div>
+                                    <div class="grid-col grid-col-3">
+                                        <div><span class="hdg-bold"><?php the_sub_field('about__income_contracts_and_fees'); ?></span> Contracts and Fees</div>
+                                        <div><span class="hdg-bold"><?php the_sub_field('about__income_foundations'); ?></span> Foundations</div>
+                                        <div><span class="hdg-bold"><?php the_sub_field('about__income_state_mn'); ?></span> State of MN</div>
+                                    </div>
+                                </div><!-- End financial report section -->
 
-                    <div class="grid-col grid-col-3">
-                        <span class="hdg-bold"><?php the_sub_field('about__income_contracts_and_fees'); ?></span> Contracts and Fees
-                        <br><span class="hdg-bold"><?php the_sub_field('about__income_foundations'); ?></span> Foundations
-                        <br><span class="hdg-bold"><?php the_sub_field('about__income_state_mn'); ?></span> State of MN
-                    </div>
-                    <div class="grid-col grid-col-2">
-                        <?php if(get_field('about__pdf_financial_report')): ?>
-                            <?php while(has_sub_field('about__pdf_financial_report')): ?>
-                                <a class="btn" href="<?php has_sub_field('about__finanical_report_title'); ?>"><?php has_sub_field('about__financial_report_pdf'); ?></a><br />
-                            <?php endwhile; ?>
-                        <?php endif; ?>
-                    </div>             
-                </div>    
-                <div class="grid-row-s">
-                    <div class="grid-col grid-col-3">
-                        <h3 class="hdg-bold">Expenses</h3>
-                        <span class="hdg-2 turq hdg-bold"><?php the_sub_field('about__total_expenses'); ?></span>
-                    </div>                    
+                                <div class="grid-row">
+                                    <div class="grid-col grid-col-4">
+                                        <h3 class="hdg-bold">Expenses</h3>
+                                        <span class="hdg-2 turq hdg-bold"><?php the_sub_field('about__total_expenses'); ?></span>
+                                    </div>
+                                    <div class="grid-col grid-col-3">
+                                        <div><span class="hdg-bold"><?php the_sub_field('about__expense_program'); ?></span> Program</div>
+                                        <div><span class="hdg-bold"><?php the_sub_field('about__expense_fundraising'); ?></span> Fundraising</div>
+                                        <div><span class="hdg-bold"><?php the_sub_field('about__expense_admin'); ?></span> Administration</div>
+                                    </div>
+                                </div><!-- End financial report section -->
 
-                    <div class="grid-col grid-col-3">
-                        <span class="hdg-bold"><?php the_sub_field('about__expense_program'); ?></span> Program
-                        <span class="hdg-bold"><?php the_sub_field('about__expense_fundraising'); ?></span> Fundraising
-                        <span class="hdg-bold"><?php the_sub_field('about__expense_admin'); ?></span> Administration
-                    </div>
-                    <div class="grid-col grid-col-4">
-                        MEETS STANDARDS IMAGE
-                    </div>             
-                </div> 
-                <div class="grid-row-s">
-                    <div class="grid-col grid-col-10">
-                        <h3 class="hdg-bold">Expenses</h3>
-                        <span class="hdg-2 hdg-bold turq"><?php the_sub_field('about__percent_donate'); ?></span>
-                        <p class="padded-bottom">of all donations go to 
-                        <br />providing services</p>
-                    </div>                              
-                </div>
+                                <div class="grid-row">
+                                    <div class="grid-col grid-col-4">
+                                        <h3 class="hdg-bold">Expenses</h3>
+                                        <span class="hdg-2 hdg-bold turq"><?php the_sub_field('about__percent_donate'); ?></span>
+                                        <p class="padded-bottom">of all donations go to providing services</p>
+                                    </div>
+                                </div><!-- End financial report section -->
+                            </div>
+                            <div class="grid-col grid-col-3">
+                                <?php if(get_field('about__pdf_financial_report')): ?>
+                                    <?php while(has_sub_field('about__pdf_financial_report')): ?>
+                                        <a class="btn" href="<?php has_sub_field('about__financial_report_pdf'); ?>"><?php has_sub_field('about__financial_report_title'); ?></a>
+                                    <?php endwhile; ?>
+                                <?php endif; ?>
+                            </div>
+                        </div>           
                 <?php endwhile; ?>
                 <?php endif; ?>
             </div>
-
-            <hr>
 
             <div class="grid-main">
                 <div class="grid-row-s">
