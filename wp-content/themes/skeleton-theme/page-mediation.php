@@ -51,7 +51,7 @@
         </div>
     <!-- end .bg-lightblue -->
     </div>
-    <div id="#overview" class="grid-site grid-site-inset js-jump-link-target">
+    <div id="overview" class="grid-site grid-site-inset js-jump-link-target">
         <div class="grid-main">
             <div class="media">
                 <div class="media-element">
@@ -172,7 +172,7 @@
         </div>
     <!-- end .bg-lightblue -->
     </div>
-    <div id="#reasons" class="section-wrap bg-turq js-jump-link-target">
+    <div id="reasons" class="section-wrap bg-turq js-jump-link-target">
         <div class="grid-site">
             <div class="grid-main">
                 <div class="summary grid-col-6">
@@ -281,7 +281,7 @@
         </div>
     <!-- end .bg-turq -->
     </div>
-    <div id="#first-steps" class="grid-site grid-site-inset js-jump-link-target">
+    <div id="first-steps" class="grid-site grid-site-inset js-jump-link-target">
         <div class="grid-main">
             <div class="section-steps grid-col-7">
                 <div class="section-steps-hd">
@@ -330,7 +330,7 @@
         </div>
     <!-- end .grid-site -->
     </div>
-    <div id="#financial-report" class="section-wrap bg-lightblue js-jump-link-target">
+    <div id="financial-report" class="section-wrap bg-lightblue js-jump-link-target">
         <div class="grid-site">
             <div class="grid-main">
                 <div class="section-steps grid-col-5 grid-col-right grid-col-right-single">
@@ -457,7 +457,7 @@
         </div>
     <!-- end .bg-turq -->
     </div>
-    <div id="#partners" class="grid-site js-jump-link-target">
+    <div id="partners" class="grid-site js-jump-link-target">
         <div class="grid-main">
             <div class="section-steps grid-col-8">
                 <div class="section-steps-hd">
@@ -615,7 +615,7 @@
         </div>
     <!-- end .grid-site -->
     </div>
-    <div id="#contact" class="section-wrap bg-turq js-jump-link-target">
+    <div id="contact" class="section-wrap bg-turq js-jump-link-target">
         <div class="grid-site">
             <div class="grid-main">
                 <div class="section-steps">

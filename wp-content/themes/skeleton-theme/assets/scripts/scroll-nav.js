@@ -289,6 +289,10 @@ CMRS.ScrollNav = function($) {
      * @since 1.0
      */
     ScrollNav.prototype.setActiveHash = function() {
+        if (this.$inViewTargets.length === 0) {
+            return this;
+        }
+
         this.$inViewTargets[0].attr('id', '');
 
         window.location.hash = this.inViewIds[0];
