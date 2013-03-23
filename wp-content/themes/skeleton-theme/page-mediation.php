@@ -29,7 +29,7 @@
                 </div>
             <!-- end .grid-sidebar -->
             </div>
-            <div class="grid-main">
+            <div id="overview" class="grid-main js-jump-link-target">
                 <div class="intro grid-col-10">
                     <div class="intro-hd">
                         <h2 class="heading-intro">
@@ -51,7 +51,7 @@
         </div>
     <!-- end .bg-lightblue -->
     </div>
-    <div id="overview" class="grid-site grid-site-inset js-jump-link-target">
+    <div class="grid-site grid-site-inset">
         <div class="grid-main">
             <div class="media">
                 <div class="media-element">
