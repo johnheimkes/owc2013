@@ -401,6 +401,27 @@ img {
 }
 
 /* ---------------------------------------------------------------------
+ Blocks
+------------------------------------------------------------------------ */
+
+.blocks {
+    overflow: hidden;
+    position: relative;
+    margin-left: -6%;
+}
+
+.blocks > * {
+    float: left;
+    margin-left: 6%;
+}
+
+.blocks-2up > * { width: 44%; }
+.blocks-4up > * { width: 19%;}
+
+.blocks-large > * { height: 50px; }
+.blocks-small > * { height: 40px; }
+
+/* ---------------------------------------------------------------------
  Media Object
 ------------------------------------------------------------------------ */
 .media:after,
@@ -691,6 +712,15 @@ img {
     margin-top: 70px;
 }
 
+.section-quote_about {
+    margin-top: 5px;
+    margin-left: 50px;
+}
+
+.section-quote-hd_about {
+    margin-left: 50px;
+}
+
 .section-quote-bd {
     margin-bottom: 40px;
     padding-right: 50px;
@@ -765,6 +795,12 @@ img {
 
 .hero-img-training {
     background-image: url('../images/training-hero.png');
+    background-repeat: no-repeat;
+    background-position: right top;
+}
+
+.hero-img-about {
+    background-image: url('../images/about-hero.png');
     background-repeat: no-repeat;
     background-position: right top;
 }

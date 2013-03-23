@@ -12,7 +12,7 @@
 <?php get_header(); ?>
 
     <div class="section-wrap bg-lightblue">
-        <div class="grid-site">
+        <div class="grid-site hero-img hero-img-about">
             <div class="grid-sidebar">
                 <div class="secondary-nav">
                     <ul>
@@ -41,11 +41,12 @@
             <div class="grid-main">
                 <div class="grid-row-s">
                     <div class="grid-col grid-col-5">
-                        <h2 class="hdg-5 hdg-bold">Our Mission</h3>
-                        <p>To develop the capacity of the community to respectfully resolve conflict and repair harm.</p>
-                    </div>
-                    <div class="grid-col grid-col-5">
-                        <img src="http://192.168.1.101/owc2013/wp-content/uploads/2013/03/about-hero.jpg" title="" alt="" />
+                        <h2 class="hdg-5 hdg-bold section-quote-hd_about">Our Mission</h3>
+                        <div class="section-quote section-quote_about">
+                            <div class="section-quote-bd blue">
+                                To develop the capacity of the community to respectfully resolve conflict and repair harm.
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -55,7 +56,7 @@
         <div class="grid-main">
             <div class="grid-row-s">            
                 <div class="grid-col grid-col-10">
-                    <h2 class="hdg-5 hdg-bold hdg-padded">Our Staff</h2>
+                    <h2 class="hdg-4 hdg-bold hdg-padded">Our Staff</h2>
                     <?php if(get_field('about__our_staff')): ?>
                         <?php while(has_sub_field('about__our_staff')): ?>
                         <p class="padded-bottom"><?php the_sub_field('about__our_staff_content'); ?></p>
@@ -66,13 +67,15 @@
             </div>
             <div class="grid-row grid-row-push-s">
                 <?php if(get_field('about__ft_staff')): ?>
-                    <div class="grid-col grid-col-4 padded-top">
+                    
                     <?php while(has_sub_field('about__ft_staff')): ?>
-                        <span class="hdg-bold"><?php the_sub_field('about__employee_name'); ?></span>
-                        <br /><?php the_sub_field('about__employee_title'); ?>
-                        <p><?php the_sub_field('about__employee_biography'); ?></p>
+                        <div class="grid-col grid-col-4 padded-top">
+                            <div class="hdg-bold"><?php the_sub_field('about__employee_name'); ?></div>
+                            <div><?php the_sub_field('about__employee_title'); ?></div>
+                            <p><?php the_sub_field('about__employee_biography'); ?></p>
+                        </div>
                     <?php endwhile; ?>
-                    </div>
+                    
                 <?php endif; ?>
             </div>
         </div>
@@ -85,11 +88,12 @@
             </div>  
             <?php if(get_field('about__pt_staff')): ?>
                 <div class="grid-row-s">            
-                    <div class="grid-col grid-col-2">
+                    
                 <?php while(has_sub_field('about__pt_staff')): ?>
-                    <b><?php the_sub_field('about__pt_employee_name'); ?></b>
-                <?php endwhile; ?>
+                    <div class="grid-col grid-col-2">
+                        <b><?php the_sub_field('about__pt_employee_name'); ?></b>
                     </div>
+                <?php endwhile; ?>
                 </div>
             <?php endif; ?>
         </div>
@@ -104,13 +108,15 @@
             </div>  
 
             <?php if(get_field('about__board_of_directors_officers')): ?>
-                <div class="grid-row-s">            
-                    <div class="grid-col grid-col-2">
-                <?php while(has_sub_field('about__board_of_directors_officers')): ?>
-                    <span class="hdg-bold"><?php the_sub_field('about__officer_name'); ?></span>
-                    <br /><?php the_sub_field('about__officer_title'); ?>
-                <?php endwhile; ?>
-                    </div>
+                <div class="grid-row-s">
+                    <div class="blocks blocks-4up blocks-large">              
+                    <?php while(has_sub_field('about__board_of_directors_officers')): ?>
+                        <div>
+                            <div class="hdg-bold"><?php the_sub_field('about__officer_name'); ?></div>
+                            <div><?php the_sub_field('about__officer_title'); ?></div>
+                        </div>
+                    <?php endwhile; ?>
+                </div>
                 </div>
             <?php endif; ?>
                                                                   
@@ -124,11 +130,13 @@
             </div>  
 
             <?php if(get_field('about__board_of_directors_members')): ?>
-                <div class="grid-row-s">            
-                    <div class="grid-col grid-col-2">
-                <?php while(has_sub_field('about__board_of_directors_members')): ?>
-                    <?php the_sub_field('member_name'); ?>
-                <?php endwhile; ?>
+                <div class="grid-row-s">   
+                    <div class="blocks blocks-4up blocks-small">           
+                    <?php while(has_sub_field('about__board_of_directors_members')): ?>
+                        <div>
+                            <?php the_sub_field('member_name'); ?>
+                        </div>
+                    <?php endwhile; ?>
                     </div>
                 </div>
             <?php endif; ?>

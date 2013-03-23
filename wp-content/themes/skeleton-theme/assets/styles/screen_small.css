@@ -157,7 +157,8 @@ img {
 }
 
 .hero-img-home,
-.hero-img-training {
+.hero-img-training,
+.hero-img-about {
     background-image: none;
 }
 
@@ -196,6 +197,14 @@ img {
 
 .section-quote-ft {
     padding: 0 50px;
+}
+
+.section-quote_about {
+    margin-left: 0px;
+}
+
+.section-quote-hd_about {
+    margin-left: 0px;
 }
 
 .h-list_scholarships {
