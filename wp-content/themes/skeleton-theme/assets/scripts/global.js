@@ -47,5 +47,12 @@ var CMRS = CMRS || {};
             buttonSelector: '.js-dropdown-button',
             listSelector: '.js-dropdown-list'
         });
+
+        var scrollNav = new APP.ScrollNav({
+            'animationDuration': 300,
+            'jumpLinkSelector': '.js-jump-link',
+            'jumpLinkActiveClass': 'secondary-nav-item_isActive',
+            'jumpLinkTargetSelector': '.js-jump-link-target'
+        });
     });
 }(jQuery, CMRS));

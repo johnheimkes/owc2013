@@ -379,13 +379,17 @@ img {
 ------------------------------------------------------------------------ */
 
 .secondary-nav {
+    width: 150px;
     background-color: #005581;
     font-size: 14px;
     color: #fff;
-    width: 150px;
 }
 
+.secondary-nav a,
+.secondary-nav .title { padding: 10px 0 10px 20px; }
+
 .secondary-nav a {
+    display: block;
     color: #fff;
     text-decoration: none;
 }
@@ -395,10 +399,7 @@ img {
     font-weight: bold;
 }
 
-.secondary-nav ul li {
-    padding: 10px 0;
-    padding-left: 20px;
-}
+.secondary-nav .secondary-nav-item_isActive { background-color: #00476c; }
 
 /* ---------------------------------------------------------------------
  Blocks
