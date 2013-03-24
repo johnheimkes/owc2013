@@ -30,7 +30,7 @@
             <!-- end .grid-sidebar -->
             </div>
             <div id="overview" class="grid-main js-jump-link-target">
-                <div class="intro grid-col-10">
+                <div class="intro grid-col grid-col-10">
                     <div class="intro-hd">
                         <h2 class="heading-intro">
                             If you need help to go from conflict to resolution, take the first step here.
@@ -59,7 +59,7 @@
                 <!-- end .media-element -->
                 </div>
                 <div class="media-bd">
-                    <div class="summary grid-col-9">
+                    <div class="summary grid-col grid-col-9">
                         <div class="summary-hd">
                             <h2>Mediation</h2>
                         <!-- end .summary-hd --> 
@@ -88,7 +88,7 @@
                 <!-- end .media-element -->
                 </div>
                 <div class="media-bd">
-                    <div class="summary grid-col-9">
+                    <div class="summary grid-col grid-col-9">
                         <div class="summary-hd">
                             <h2>Restorative Justice</h2>
                         <!-- end .summary-hd --> 
@@ -125,7 +125,7 @@
                     </div>
                     <div class="summary-bd">
                         <div class="grid-row">
-                            <div class="grid-col grid-col-4">
+                            <div class="grid-col grid-col grid-col grid-col-4">
                                 <ul class="summary-list">
                                     <li><a href="#">Agencies/Citizens</a></li>
                                     <li><a href="#">Builders/Homeowners</a></li>
@@ -135,9 +135,9 @@
                                     <li><a href="#">Elderly Parent Care</a></li>                                    
                                 <!-- end .summary-list -->
                                 </ul>
-                            <!-- end .grid-col-4 -->
+                            <!-- end .grid-col grid-col-4 -->
                             </div>
-                            <div class="grid-col grid-col-4">
+                            <div class="grid-col grid-col grid-col grid-col-4">
                                 <ul class="summary-list">
                                     <li><a href="#">Employees/Employers</a></li>
                                     <li><a href="#">Family Members</a></li>
@@ -147,9 +147,9 @@
                                     <li><a href="#">Neighbors</a></li>
                                 <!-- end .summary-list -->
                                 </ul>
-                            <!-- end .grid-col-4 -->
+                            <!-- end .grid-col grid-col-4 -->
                             </div>
-                            <div class="grid-col grid-col-4">
+                            <div class="grid-col grid-col grid-col grid-col-4">
                                 <ul class="summary-list">
                                     <li><a href="#">Run-Aways</a></li>
                                     <li><a href="#">Schools</a></li>
@@ -158,7 +158,7 @@
                                     <li><a href="#">Victims/Offenders</a></li>
                                 <!-- end .summary-list -->
                                 </ul>
-                            <!-- end .grid-col-4 -->
+                            <!-- end .grid-col grid-col-4 -->
                             </div>
                         <!-- end .grid-row -->
                         </div>
@@ -175,7 +175,7 @@
     <div id="reasons" class="section-wrap bg-turq js-jump-link-target">
         <div class="grid-site">
             <div class="grid-main">
-                <div class="summary grid-col-6">
+                <div class="summary grid-col grid-col-6">
                     <div class="summary-hd summary-hd-invert">
                         <h2>Reasons to Consider Mediation or Restorative Practices</h2>
                     <!-- end .summary-hd --> 
@@ -283,7 +283,7 @@
     </div>
     <div id="first-steps" class="grid-site grid-site-inset js-jump-link-target">
         <div class="grid-main">
-            <div class="section-steps grid-col-7">
+            <div class="section-steps grid-col grid-col-7">
                 <div class="section-steps-hd">
                     <h2 class="heading-steps">Taking the First Steps</h2>
                 <!-- end .section-steps-hd -->
@@ -333,7 +333,7 @@
     <div id="financial-report" class="section-wrap bg-lightblue js-jump-link-target">
         <div class="grid-site">
             <div class="grid-main">
-                <div class="section-steps grid-col-5 grid-col-right grid-col-right-single">
+                <div class="section-steps grid-col grid-col-5 grid-col grid-col-right grid-col grid-col-right-single">
                     <div class="section-steps-bd">
                         <div class="media media-pull-left">
                             <div class="media-element">
@@ -374,7 +374,7 @@
     </div>
     <div class="grid-site">
         <div class="grid-main">
-            <div class="section-steps grid-col-5">
+            <div class="section-steps grid-col grid-col-5">
                 <div class="section-steps-bd">
                     <div class="media media-invert media-pull-left">
                         <div class="media-element">
@@ -421,7 +421,7 @@
     <div class="section-wrap bg-lightblue">
         <div class="grid-site">
             <div class="grid-main">
-                <div class="section-steps grid-col-8">
+                <div class="section-steps grid-col grid-col-8">
                     <div class="section-steps-icon">
                         <img src="http://localhost:8888/owc2013/wp-content/themes/skeleton-theme/assets/images/icon-talk-bubbles.png" alt="">
                     <!-- end .section-steps-icon -->
@@ -459,7 +459,7 @@
     </div>
     <div id="partners" class="grid-site js-jump-link-target">
         <div class="grid-main">
-            <div class="section-steps grid-col-8">
+            <div class="section-steps grid-col grid-col-8">
                 <div class="section-steps-hd">
                     <div class="media media-pull-left">
                         <div class="media-element">
@@ -487,7 +487,7 @@
                     <div class="step">
                         <div class="step-bd">
                             <div class="grid-row">
-                                <div class="grid-col grid-col-6">
+                                <div class="grid-col grid-col grid-col grid-col-6">
                                     <div class="step-callout">
                                         <div class="step-icon">
                                             <img src="<?php bloginfo('template_directory'); ?>/assets/images/icon-mediation-intro1.png" alt="" />
@@ -511,9 +511,9 @@
                                         </div>
                                     <!-- end .step -->
                                     </div>
-                                <!-- end .grid-col-6 -->
+                                <!-- end .grid-col grid-col-6 -->
                                 </div>
-                                <div class="grid-col grid-col-6">
+                                <div class="grid-col grid-col grid-col grid-col-6">
                                     <div class="step-callout">
                                         <div class="step-icon">
                                             <img src="<?php bloginfo('template_directory'); ?>/assets/images/icon-mediation-intro1.png" alt="" />
@@ -535,7 +535,7 @@
                                         </div>
                                     <!-- end .step -->
                                     </div>
-                                <!-- end .grid-col-6 -->
+                                <!-- end .grid-col grid-col-6 -->
                                 </div>
                             <!-- end .grid-row -->
                             </div>
@@ -554,7 +554,7 @@
     <div class="section-wrap bg-lightblue">
         <div class="grid-site">
             <div class="grid-main">
-                <div class="section-steps grid-col-5 grid-col-right grid-col-right-single">
+                <div class="section-steps grid-col grid-col-5 grid-col grid-col-right grid-col grid-col-right-single">
                     <div class="section-steps-bd">
                         <div class="media media-pull-left">
                             <div class="media-element">
@@ -585,7 +585,7 @@
     </div>
     <div class="grid-site">
         <div class="grid-main">
-            <div class="section-steps grid-col-8">
+            <div class="section-steps grid-col grid-col-8">
                 <div class="section-steps-hd">
                     <div class="media media-pull-left">
                         <div class="media-element">
