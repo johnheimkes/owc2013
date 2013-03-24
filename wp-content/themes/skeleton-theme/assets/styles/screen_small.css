@@ -221,3 +221,28 @@ img {
 .h-list_scholarships {
     font-size: 14px;
 }
+
+.blocks-large > * {
+    height: auto;
+}
+
+.blocks-small > * {
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.accomplishments .grid-col {
+    text-align: center;
+}
+
+.accomplishments .grid-row-s {
+    margin-bottom: 60px;
+}
+
+.about-accomplishments-divide {
+    display: none;
+}
+
+.about-report {
+    margin-left: 0;
+}

@@ -149,6 +149,7 @@ img {
 .grid-sidebar {
     position: fixed;
     width: 11%;
+    margin-left: -20px;
 }
 
 .grid-main {
@@ -962,6 +963,46 @@ img {
 .training-links a {
     font-size: 18px;
     color: #005581;
+}
+
+/* ---------------------------------------------------------------------
+ About Page
+------------------------------------------------------------------------ */
+
+.about-staff {
+    margin: 40px 0;
+}
+
+.about-employee {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.about-seperate-border {
+    overflow: hidden;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+    border-bottom: 1px solid #d6d6d6;
+}
+
+.about-accomplishments-divide {
+    width: 81px;
+    height: 120px;
+    background: url('../images/about-divide.png') no-repeat center;
+}
+
+.about-accomplishments-number {
+    font-size: 72px;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.about-report {
+    margin-left: 10%;
+}
+
+.about-report > * + * {
+    margin-top: 10px;
 }
 
 /* ---------------------------------------------------------------------
