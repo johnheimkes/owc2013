@@ -439,7 +439,12 @@ img {
     text-align: left;
 }
 
-.media-pull-left { margin-left: -10px; }
+.media-pull-left {
+    margin-left: -10px;
+    padding-top: 30px;
+}
+
+.media-pull-left-wide { margin-left: -38px; }
 
 .media-push-right { margin-right: 200px; }
 
@@ -517,6 +522,8 @@ img {
 /* ---------------------------------------------------------------------
  Steps Section Object
 ------------------------------------------------------------------------ */
+.section-steps-push-left { margin-left: 34px; }
+
 .section-steps-hd,
 .section-steps-icon {
     margin-bottom: 40px;
@@ -557,7 +564,55 @@ img {
 /* ---------------------------------------------------------------------
  Icon List
 ------------------------------------------------------------------------ */
-.icon-list > li { margin-bottom: 5px; }
+.icon-list > li {
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+/* ---------------------------------------------------------------------
+ Layer Tethers
+------------------------------------------------------------------------ */
+.tether {
+    height: 0;
+    position: relative;
+}
+
+.tether-pulled { margin: -40px 0 40px; }
+
+.tether-intersect {
+    margin-left: -55px;
+    width: 125px;
+    position: relative;
+    left: 100%;
+    border-top: 4px dotted #54accd;
+}
+
+.tether-intersect-wide { width: 225px; }
+
+.tether-line {
+    margin-left: -2px;
+    width: 0;
+    height: 125px;
+    position: absolute;
+    left: 50%;
+    top: -145px;
+    border-left: 4px dotted #54accd;
+}
+
+.tether-line-small {
+    height: 90px;
+    top: -100px;
+}
+
+.tether-line-medium {
+    height: 175px;
+    top: -195px;
+}
+
+.tether-line-long {
+    height: 225px;
+    top: -245px;
+}
 
 /* ---------------------------------------------------------------------
  Footer

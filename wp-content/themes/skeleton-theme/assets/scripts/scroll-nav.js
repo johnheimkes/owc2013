@@ -84,8 +84,7 @@ CMRS.ScrollNav = function($) {
             .setupHandlers()
             .createChildren()
             .layout()
-            .enable()
-            .toggleActiveClass();
+            .enable();
     };
 
     /**
@@ -119,6 +118,7 @@ CMRS.ScrollNav = function($) {
         this.$inViewTargets = [];
         this.inViewIds = [];
         this.activeIndex = 0;
+        this.isBeforeFirstHash = true;
 
         this.windowHeight = null;
 
@@ -250,18 +250,31 @@ CMRS.ScrollNav = function($) {
         var $currentTarget;
         var scrollTop = $window.scrollTop();
         var scrollTopLimit = ($(document).outerHeight() - this.windowHeight);
+        var firstOffsetTop = this.$jumpLinkTargets.eq(0).offset().top;
         var currentOffsetTop;
         var currentOffsetBottom;
 
         var length = this.$jumpLinkTargets.length;
         var i = 0;
 
-        if (scrollTop === scrollTopLimit) {
+        if (scrollTop === 0) {
+            window.location.hash = '';
+
+            this.isBeforeFirstHash = true;
+
+            return this;
+        } else if (scrollTop < firstOffsetTop) {
+            this.isBeforeFirstHash = true;
+
+            return this;
+        } else if (scrollTop === scrollTopLimit) {
             this.inViewIds.push(this.$jumpLinkTargets.eq(length - 1).attr('id'));
             this.$inViewTargets.push(this.$jumpLinkTargets.eq(length - 1));
 
             return this;
         }
+
+        this.isBeforeFirstHash = false;
 
         for (; i < length; i++) {
             $currentTarget = this.$jumpLinkTargets.eq(i);
@@ -333,6 +346,10 @@ CMRS.ScrollNav = function($) {
     ScrollNav.prototype.toggleActiveClass = function() {
         if (this.$jumpLinkActive) {
             this.$jumpLinkActive.removeClass(this.options.jumpLinkActiveClass);
+        }
+
+        if (this.isBeforeFirstHash) {
+            return this;
         }
 
         this.$jumpLinkActive = this.$jumpLinks.eq(this.activeIndex);
