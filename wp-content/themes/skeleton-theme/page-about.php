@@ -305,4 +305,41 @@
         </div>
     </div>
 
+    <div class=" bg-turq about-contact">
+        <div class="contact-google">
+            <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=9220+Bass+Lake+Road,+Suite+270+New+Hope,+Minnesota+55428&amp;aq=&amp;sll=44.965041,-93.295555&amp;sspn=0.183885,0.402031&amp;ie=UTF8&amp;hq=&amp;hnear=9220+Bass+Lake+Rd+%23270,+New+Hope,+Minnesota+55428&amp;ll=45.058698,-93.397047&amp;spn=0.097627,0.219555&amp;t=m&amp;z=13&amp;output=embed"></iframe><br /><small><a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=9220+Bass+Lake+Road,+Suite+270+New+Hope,+Minnesota+55428&amp;aq=&amp;sll=44.965041,-93.295555&amp;sspn=0.183885,0.402031&amp;ie=UTF8&amp;hq=&amp;hnear=9220+Bass+Lake+Rd+%23270,+New+Hope,+Minnesota+55428&amp;ll=45.058698,-93.397047&amp;spn=0.097627,0.219555&amp;t=m&amp;z=13" style="color:#0000FF;text-align:left">View Larger Map</a></small>
+        </div>
+        <div class="contact-form">
+            <div class="contact-form-container">
+                <div class="contact-form-hd">
+                    <i class="icn-contact"></i><h2 class="hdg-3 hdg-invert hdg-inline">Contact Us</h2>
+                </div>
+                <div class="contact-form-bd">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt utlaoreet dolore magna aliquam erat volutpat.
+                </div>
+                <div class="contact-form-msg">
+                    <form method="post" action="">
+                        <fieldset>
+                            <input type="text" placeholder="Name" />
+                            <input type="email" placeholder="Email" />
+                            <textarea cols="30" rows="5" placeholder="Message"></textarea>
+                            <input type="submit" value="Submit" class="btn" />
+                        </fieldset>
+                    </form>
+                </div>
+                <div class="contact-form-ft">
+                    <div>
+                        For information on funding or service contracts email: <a href="mailto:director@mediationprogram.com">director@mediationprogram.com</a>
+                    </div>
+                    <div>
+                        For information about setting up a mediation or volunteer opportunities email: <a href="mailto:staff@mediationprogram.com">staff@mediationprogram.com</a>
+                    </div>
+                    <div>
+                        Para servicios en español, por favor llámenos al 612-629-6058
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 <?php get_footer(); ?>
