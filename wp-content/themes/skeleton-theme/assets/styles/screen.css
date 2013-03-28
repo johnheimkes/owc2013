@@ -527,10 +527,9 @@ img {
 .section-steps-push-left { margin-left: 34px; }
 
 .section-steps-hd,
-.section-steps-icon {
-    margin-bottom: 40px;
-    text-align: center;
-}
+.section-steps-icon { text-align: center; }
+
+.section-steps-hd { margin-bottom: 30px; }
 
 .section-steps-hd {
     font-size: 44px;
@@ -581,6 +580,8 @@ img {
 
 .tether-pulled { margin: -40px 0 40px; }
 
+.tether-pushed { margin-top: 40px; }
+
 .tether-intersect {
     margin-left: -55px;
     width: 125px;
@@ -589,31 +590,44 @@ img {
     border-top: 4px dotted #54accd;
 }
 
-.tether-intersect-wide { width: 225px; }
+.tether-intersect-wide {
+    margin-left: -115px;
+    width: 225px;
+}
 
 .tether-line {
     margin-left: -2px;
     width: 0;
-    height: 125px;
+    height: 140px;
     position: absolute;
     left: 50%;
-    top: -145px;
+    top: -140px;
     border-left: 4px dotted #54accd;
 }
 
+.tether-line-reverse {
+    top: auto;
+    bottom: -140px;
+}
+
 .tether-line-small {
-    height: 90px;
-    top: -100px;
+    height: 124px;
+    top: -130px;
 }
 
 .tether-line-medium {
-    height: 175px;
-    top: -195px;
+    height: 188px;
+    top: -215px;
+}
+
+.tether-line-medium-reverse {
+    top: auto;
+    bottom: -215px;
 }
 
 .tether-line-long {
-    height: 225px;
-    top: -245px;
+    height: 280px;
+    top: -300px;
 }
 
 /* ---------------------------------------------------------------------

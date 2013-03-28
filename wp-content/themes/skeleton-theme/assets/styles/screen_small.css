@@ -13,7 +13,7 @@ Width: 767px and under
 
 .grid-col {
     float: none;
-    width: 100%;
+    width: auto;
 }
 
 .grid-col + .grid-col {
@@ -27,11 +27,11 @@ Width: 767px and under
 
 .grid-main {
     float: none;
-    width: 100%;
+    width: auto;
     margin-left: 0;
 }
 
-.grid-row-s .grid-col { width: 100%; }
+.grid-row-s .grid-col { width: auto; }
 
 img {
     display: block;
@@ -153,14 +153,28 @@ img {
 
 .media-float-right { float: none; }
 
+.media-pull-left,
+.media-pull-left-wide {
+    margin: 0;
+    padding: 0;
+}
+
 .media-pull-left > .media-element { margin: 0 10px 0 0; }
+
+/* ---------------------------------------------------------------------
+ Mediation
+------------------------------------------------------------------------ */
+.section-steps-icon { margin-bottom: 20px; }
+
+.step-callout { padding-top: 0; }
+
+.tether { display: none; }
 
 /* ---------------------------------------------------------------------
  Other
 ------------------------------------------------------------------------ */
-
 .grid-site {
-    padding: 20px 0 20px 0;
+    padding: 20px;
 }
 
 .hennepin-county {
@@ -178,7 +192,7 @@ img {
 }
 
 .partners {
-    width: 100%;
+    width: auto;
 }
 
 .partners-bd > * {

@@ -433,7 +433,7 @@
                         <div class="tether">
                             <div class="tether-line tether-line-medium"></div>
                         </div>
-                        <img src="http://localhost:8888/owc2013/wp-content/themes/skeleton-theme/assets/images/icon-talk-bubbles.png" alt="">
+                        <img src="<?php bloginfo('template_directory'); ?>/assets/images/icon-talk-bubbles.png" alt="">
                     <!-- end .section-steps-icon -->
                     </div>
                     <div class="section-steps-hd">
@@ -523,6 +523,10 @@
                                             <p>
                                                 You are in control of the outcome; the mediators will provide a safe and constructive process.
                                             </p>
+
+                                            <div class="tether tether-pushed tether-intersect tether-intersect-wide">
+                                                <div class="tether-line tether-line-reverse"></div>
+                                            </div>
                                         <!-- end .step-bd -->
                                         </div>
                                     <!-- end .step -->
@@ -572,9 +576,12 @@
             <div class="grid-main">
                 <div class="section-steps grid-col grid-col-5 grid-col grid-col-right grid-col grid-col-right-single">
                     <div class="section-steps-bd">
-                        <div class="media media-pull-left">
+                        <div class="media media-pull-left media-pull-left-wide">
                             <div class="media-element">
                                 <h3 class="section-steps-counter">6</h3>
+                                <div class="tether">
+                                    <div class="tether-line tether-line-medium tether-line-medium-reverse"></div>
+                                </div>
                             <!-- end .media-element -->
                             </div>
                             <div class="media-bd">
