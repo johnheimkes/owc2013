@@ -41,7 +41,7 @@
             <div id="overview" class="grid-main js-jump-link-target">
                 <div class="grid-row-s">
                     <div class="grid-col grid-col-5">
-                        <h2 class="hdg-5 hdg-bold section-quote-hd_about">Our Mission</h3>
+                        <h2 class="hdg-5 hdg-bold section-quote-hd_about">Our Mission</h2>
                         <div class="section-quote section-quote_about">
                             <div class="section-quote-bd blue">
                                 To develop the capacity of the community to respectfully resolve conflict and repair harm.
