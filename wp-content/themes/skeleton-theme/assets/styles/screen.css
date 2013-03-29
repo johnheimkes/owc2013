@@ -454,18 +454,30 @@ img {
 
 .media-element {
     margin: 0 40px 0 0;
+    position: relative;
     float: left;
     line-height: 1;
 }
 
-.media-pull-left > .media-element { margin: -30px 10px 0 0; }
+.grid-col .media-element-abs {
+    display: block;
+    margin-right: 10px;
+    width: auto;
+    max-width: none;
+    height: auto;
+    position: absolute;
+    top: 5px;
+    right: 100%;
+}
 
-.media-bd {overflow:  hidden; }
+.media-pull-left > .media-element { margin: -30px 10px 0 0; }
 
 .media-invert > .media-element {
     margin: 0 0 0 40px;
     float: right;
 }
+
+.media-bd {overflow:  hidden; }
 
 /* ---------------------------------------------------------------------
  Intro Object
@@ -598,16 +610,16 @@ img {
 .tether-line {
     margin-left: -2px;
     width: 0;
-    height: 140px;
+    height: 124px;
     position: absolute;
     left: 50%;
-    top: -140px;
+    top: -128px;
     border-left: 4px dotted #54accd;
 }
 
 .tether-line-reverse {
     top: auto;
-    bottom: -140px;
+    bottom: -127px;
 }
 
 .tether-line-small {

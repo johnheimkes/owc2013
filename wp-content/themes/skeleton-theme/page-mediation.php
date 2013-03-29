@@ -341,7 +341,10 @@
                                 <div class="tether">
                                     <div class="tether-line"></div>
                                 </div>
-                                <h3 class="section-steps-counter">2</h3>
+                                <h3 class="section-steps-counter">
+                                    <img class="media-element-abs" src="<?php bloginfo('template_directory'); ?>/assets/images/icon-notepad.png" alt="" />
+                                    2
+                                </h3>
                             <!-- end .media-element -->
                             </div>
                             <div class="media-bd">
@@ -578,7 +581,10 @@
                     <div class="section-steps-bd">
                         <div class="media media-pull-left media-pull-left-wide">
                             <div class="media-element">
-                                <h3 class="section-steps-counter">6</h3>
+                                <h3 class="section-steps-counter">
+                                    <img class="media-element-abs" src="<?php bloginfo('template_directory'); ?>/assets/images/icon-notepad-group.png" alt="" />
+                                    6
+                                </h3>
                                 <div class="tether">
                                     <div class="tether-line tether-line-medium tether-line-medium-reverse"></div>
                                 </div>
