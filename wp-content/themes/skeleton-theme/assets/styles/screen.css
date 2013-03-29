@@ -143,8 +143,8 @@ img {
 
 .grid-site:after,
 .grid-main:after,
-.grid-row,
-.grid-row-s { clear: both; }
+.grid-row:after,
+.grid-row-s:after { clear: both; }
 
 .grid-sidebar {
     position: fixed;
@@ -549,12 +549,32 @@ img {
     font-weight: bold;
 }
 
+.section-steps-hd-invert {
+    color: #ffffff;
+    text-align: left;
+}
+
 .section-steps-counter {
     font-size: 60px;
     color: #54accd;
 }
 
 .section-steps-bd { font-size: 14px; }
+
+.section-steps-bd-dark { color: #414042; }
+
+.section-steps-bd-spaced { margin-bottom: 10px; }
+
+.section-steps-bd-spaced-loose { margin-bottom: 20px; }
+
+.section-steps-content-bold { font-weight: bold; }
+
+.section-steps-v-list > * { margin-bottom: 10px; }
+
+.section-steps-divider {
+    margin: 40px 0;
+    border-top: 1px solid #ffffff;
+}
 
 /* ---------------------------------------------------------------------
  Individual Step Object

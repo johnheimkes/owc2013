@@ -282,85 +282,40 @@
         </div>
     <!-- end .bg-turq -->
     </div>
-    <div id="first-steps" class="grid-site grid-site-inset js-jump-link-target">
-        <div class="grid-main">
-            <div class="section-steps grid-col grid-col-7">
-                <div class="section-steps-hd">
-                    <h2 class="heading-steps">Taking the First Steps</h2>
-                <!-- end .section-steps-hd -->
-                </div>
-                <div class="section-steps-icon">
-                    <img src="<?php bloginfo('template_directory'); ?>/assets/images/icon-steps-intro.png" alt="" />
-                <!-- end .section-steps-icon -->
-                </div>
-                <div class="section-steps-bd">
-                    <div class="media media-pull-left">
-                        <div class="media-element">
-                            <h3 class="section-steps-counter">1</h3>
-                        <!-- end .media-element -->
-                        </div>
-                        <div class="media-bd">
-                            <div class="step">
-                                <div class="step-hd">
-                                    <h3>Are we the right resource for you?</h3>
-                                <!-- end .step-hd -->
-                                </div>
-                                <div class="step-bd">
-                                    <p>
-                                        Do you or the others involved live in northern or western Hennepin County? If not, please see <a href="#">communitymediationminnesota.org</a> to see if there is a provider closer to you.
-                                    </p>
-                                <!-- end .step-bd -->
-                                </div>
-                                <div class="step-bd">
-                                    <p>
-                                        By statute, we do not provide services when there has been a history of domestic violence or violence involving a weapon. We also do not provide divorce mediation services (we provide shared parenting and post-relationship services). If you need a different resource, please check our resources.
-                                    </p>
-                                <!-- end .step-bd -->
-                                </div>
-                            <!-- end .step -->
-                            </div>
-                        <!-- end .media-bd -->
-                        </div>
-                    <!-- end .media -->
-                    </div>
-                <!-- end .section-steps-bd -->
-                </div>
-            <!-- end .section-steps -->
-            </div>
-        <!-- end .grid-main -->
-        </div>
-    <!-- end .grid-site -->
-    </div>
-    <div class="section-wrap bg-lightblue">
-        <div class="grid-site">
+    <div id="first-steps" class="js-jump-link-target">
+        <div class="grid-site grid-site-inset">
             <div class="grid-main">
-                <div class="section-steps grid-col grid-col-5 grid-col grid-col-right grid-col grid-col-right-single">
+                <div class="section-steps grid-col grid-col-7">
+                    <div class="section-steps-hd">
+                        <h2 class="heading-steps">Taking the First Steps</h2>
+                    <!-- end .section-steps-hd -->
+                    </div>
+                    <div class="section-steps-icon">
+                        <img src="<?php bloginfo('template_directory'); ?>/assets/images/icon-steps-intro.png" alt="" />
+                    <!-- end .section-steps-icon -->
+                    </div>
                     <div class="section-steps-bd">
-                        <div class="media media-pull-left media-pull-left-wide">
+                        <div class="media media-pull-left">
                             <div class="media-element">
-                                <div class="tether">
-                                    <div class="tether-line"></div>
-                                </div>
-                                <h3 class="section-steps-counter">
-                                    <img class="media-element-abs" src="<?php bloginfo('template_directory'); ?>/assets/images/icon-notepad.png" alt="" />
-                                    2
-                                </h3>
+                                <h3 class="section-steps-counter">1</h3>
                             <!-- end .media-element -->
                             </div>
                             <div class="media-bd">
                                 <div class="step">
                                     <div class="step-hd">
-                                        <h3>Fill Out The Service Request Form</h3>
+                                        <h3>Are we the right resource for you?</h3>
                                     <!-- end .step-hd -->
                                     </div>
                                     <div class="step-bd">
                                         <p>
-                                            Think about who needs to be invited to participate and provide us with contact information.
+                                            Do you or the others involved live in northern or western Hennepin County? If not, please see <a href="#">communitymediationminnesota.org</a> to see if there is a provider closer to you.
                                         </p>
                                     <!-- end .step-bd -->
                                     </div>
                                     <div class="step-bd">
-                                        <a href="#" class="btn">Service Request Form</a>
+                                        <p>
+                                            By statute, we do not provide services when there has been a history of domestic violence or violence involving a weapon. We also do not provide divorce mediation services (we provide shared parenting and post-relationship services). If you need a different resource, please check our resources.
+                                        </p>
                                     <!-- end .step-bd -->
                                     </div>
                                 <!-- end .step -->
@@ -377,73 +332,73 @@
             </div>
         <!-- end .grid-site -->
         </div>
-    <!-- end .bg-turq -->
-    </div>
-    <div class="grid-site">
-        <div class="grid-main">
-            <div class="section-steps grid-col grid-col-5">
-                <div class="section-steps-bd">
-                    <div class="media media-invert media-pull-left">
-                        <div class="media-element">
-                            <div class="tether">
-                                <div class="tether-line tether-line-long"></div>
-                            </div>
-                            <ul class="icon-list">
-                                <li>
-                                    <h3 class="section-steps-counter">3</h3>
-                                </li>
-                                <li>
-                                    <img src="<?php bloginfo('template_directory'); ?>/assets/images/icon-envelope.png" alt="" />
-                                </li>
-                                <li>
-                                    <img src="<?php bloginfo('template_directory'); ?>/assets/images/icon-envelope.png" alt="" />
-                                </li>
-                            <!-- end .icon-list -->
-                            </ul>
-                        <!-- end .media-element -->
-                        </div>
-                        <div class="media-bd">
-                            <div class="step">
-                                <div class="step-hd">
-                                    <h3>Your Case Manager will extend an invitation to a mediation or a restorative</h3>
-                                <!-- end .step-hd -->
+        <div class="section-wrap bg-lightblue">
+            <div class="grid-site">
+                <div class="grid-main">
+                    <div class="section-steps grid-col grid-col-5 grid-col grid-col-right grid-col grid-col-right-single">
+                        <div class="section-steps-bd">
+                            <div class="media media-pull-left media-pull-left-wide">
+                                <div class="media-element">
+                                    <div class="tether">
+                                        <div class="tether-line"></div>
+                                    </div>
+                                    <h3 class="section-steps-counter">
+                                        <img class="media-element-abs" src="<?php bloginfo('template_directory'); ?>/assets/images/icon-notepad.png" alt="" />
+                                        2
+                                    </h3>
+                                <!-- end .media-element -->
                                 </div>
-                                <div class="step-bd">
-                                    <p>
-                                        The invitation will be in letter form, unless you don’t have a way to get an address. It can also be a phone call or email. You will receive a copy of the letter.
-                                    </p>
-                                <!-- end .step-bd -->
+                                <div class="media-bd">
+                                    <div class="step">
+                                        <div class="step-hd">
+                                            <h3>Fill Out The Service Request Form</h3>
+                                        <!-- end .step-hd -->
+                                        </div>
+                                        <div class="step-bd">
+                                            <p>
+                                                Think about who needs to be invited to participate and provide us with contact information.
+                                            </p>
+                                        <!-- end .step-bd -->
+                                        </div>
+                                        <div class="step-bd">
+                                            <a href="#" class="btn">Service Request Form</a>
+                                        <!-- end .step-bd -->
+                                        </div>
+                                    <!-- end .step -->
+                                    </div>
+                                <!-- end .media-bd -->
                                 </div>
-                            <!-- end .step -->
+                            <!-- end .media -->
                             </div>
-                        <!-- end .media-bd -->
+                        <!-- end .section-steps-bd -->
                         </div>
-                    <!-- end .media -->
+                    <!-- end .section-steps -->
                     </div>
-                <!-- end .section-steps-bd -->
+                <!-- end .grid-main -->
                 </div>
-            <!-- end .section-steps -->
+            <!-- end .grid-site -->
             </div>
-        <!-- end .grid-main -->
+        <!-- end .bg-turq -->
         </div>
-    <!-- end .grid-site -->
-    </div>
-    <div class="section-wrap bg-lightblue">
         <div class="grid-site">
             <div class="grid-main">
-                <div class="section-steps section-steps-push-left grid-col grid-col-8">
-                    <div class="section-steps-icon">
-                        <div class="tether">
-                            <div class="tether-line tether-line-medium"></div>
-                        </div>
-                        <img src="<?php bloginfo('template_directory'); ?>/assets/images/icon-talk-bubbles.png" alt="">
-                    <!-- end .section-steps-icon -->
-                    </div>
-                    <div class="section-steps-hd">
-                        <div class="media media-pull-left">
+                <div class="section-steps grid-col grid-col-5">
+                    <div class="section-steps-bd">
+                        <div class="media media-invert media-pull-left">
                             <div class="media-element">
+                                <div class="tether">
+                                    <div class="tether-line tether-line-long"></div>
+                                </div>
                                 <ul class="icon-list">
-                                    <h3 class="section-steps-counter">4</h3>
+                                    <li>
+                                        <h3 class="section-steps-counter">3</h3>
+                                    </li>
+                                    <li>
+                                        <img src="<?php bloginfo('template_directory'); ?>/assets/images/icon-envelope.png" alt="" />
+                                    </li>
+                                    <li>
+                                        <img src="<?php bloginfo('template_directory'); ?>/assets/images/icon-envelope.png" alt="" />
+                                    </li>
                                 <!-- end .icon-list -->
                                 </ul>
                             <!-- end .media-element -->
@@ -451,7 +406,229 @@
                             <div class="media-bd">
                                 <div class="step">
                                     <div class="step-hd">
-                                        <h3>Your Case Manager will talk with everyone invited, explain the process, and determine if and how they might participate.</h3>
+                                        <h3>Your Case Manager will extend an invitation to a mediation or a restorative</h3>
+                                    <!-- end .step-hd -->
+                                    </div>
+                                    <div class="step-bd">
+                                        <p>
+                                            The invitation will be in letter form, unless you don’t have a way to get an address. It can also be a phone call or email. You will receive a copy of the letter.
+                                        </p>
+                                    <!-- end .step-bd -->
+                                    </div>
+                                <!-- end .step -->
+                                </div>
+                            <!-- end .media-bd -->
+                            </div>
+                        <!-- end .media -->
+                        </div>
+                    <!-- end .section-steps-bd -->
+                    </div>
+                <!-- end .section-steps -->
+                </div>
+            <!-- end .grid-main -->
+            </div>
+        <!-- end .grid-site -->
+        </div>
+        <div class="section-wrap bg-lightblue">
+            <div class="grid-site">
+                <div class="grid-main">
+                    <div class="section-steps section-steps-push-left grid-col grid-col-8">
+                        <div class="section-steps-icon">
+                            <div class="tether">
+                                <div class="tether-line tether-line-medium"></div>
+                            </div>
+                            <img src="<?php bloginfo('template_directory'); ?>/assets/images/icon-talk-bubbles.png" alt="">
+                        <!-- end .section-steps-icon -->
+                        </div>
+                        <div class="section-steps-hd">
+                            <div class="media media-pull-left">
+                                <div class="media-element">
+                                    <ul class="icon-list">
+                                        <h3 class="section-steps-counter">4</h3>
+                                    <!-- end .icon-list -->
+                                    </ul>
+                                <!-- end .media-element -->
+                                </div>
+                                <div class="media-bd">
+                                    <div class="step">
+                                        <div class="step-hd">
+                                            <h3>Your Case Manager will talk with everyone invited, explain the process, and determine if and how they might participate.</h3>
+                                        <!-- end .step-hd -->
+                                        </div>
+                                    <!-- end .step -->
+                                    </div>
+                                <!-- end .media-bd -->
+                                </div>
+                            <!-- end .media -->
+                            </div>
+                        <!-- end .section-steps-hd -->
+                        </div>
+                    <!-- end .section-steps -->
+                    </div>
+                <!-- end .grid-main -->
+                </div>
+            <!-- end .grid-site -->
+            </div>
+        <!-- end .bg-turq -->
+        </div>
+        <div class="grid-site">
+            <div class="grid-main">
+                <div class="section-steps section-steps-push-left grid-col grid-col-8">
+                    <div class="section-steps-hd">
+                        <div class="tether">
+                            <div class="tether-line"></div>
+                        </div>
+                        <div class="media media-pull-left">
+                            <div class="media-element">
+                                <ul class="icon-list">
+                                    <h3 class="section-steps-counter">5</h3>
+                                <!-- end .icon-list -->
+                                </ul>
+                            <!-- end .media-element -->
+                            </div>
+                            <div class="media-bd">
+                                <div class="step">
+                                    <div class="step-hd">
+                                        <h3>The day of your mediation or restorative conference</h3>
+                                    <!-- end .step-hd -->
+                                    </div>
+                                <!-- end .step -->
+                                </div>
+                            <!-- end .media-bd -->
+                            </div>
+                        <!-- end .media -->
+                        </div>
+                    <!-- end .section-steps-hd -->
+                    </div>
+                    <div class="section-steps-bd">
+                        <div class="step">
+                            <div class="step-bd">
+                                <div class="grid-row">
+                                    <div class="grid-col grid-col grid-col grid-col-6">
+                                        <div class="step-callout">
+                                            <div class="step-icon">
+                                                <img src="<?php bloginfo('template_directory'); ?>/assets/images/icon-mediation-intro1.png" alt="" />
+                                                <div class="tether tether-pulled tether-intersect">
+                                                    <div class="tether-line tether-line-small"></div>
+                                                </div>
+                                            <!-- end .step-icon -->
+                                            </div>
+                                            <div class="step-hd">
+                                                <h3>Mediation</h3>
+                                            <!-- end .step-hd -->
+                                            </div>
+                                            <div class="step-bd">
+                                                <p>
+                                                    The mediation is an informal conversation, facilitated by trained mediators. They will welcome everyone, provide an orientation to the process and answer any questions you have. The mediators will help you identify areas of common ground and capture your agreement in writing.
+                                                </p>
+                                            <!-- end .step-bd -->
+                                            </div>
+                                            <div class="step-bd">
+                                                <p>
+                                                    You are in control of the outcome; the mediators will provide a safe and constructive process.
+                                                </p>
+
+                                                <div class="tether tether-pushed tether-intersect tether-intersect-wide">
+                                                    <div class="tether-line tether-line-reverse"></div>
+                                                </div>
+                                            <!-- end .step-bd -->
+                                            </div>
+                                        <!-- end .step -->
+                                        </div>
+                                    <!-- end .grid-col grid-col-6 -->
+                                    </div>
+                                    <div class="grid-col grid-col grid-col grid-col-6">
+                                        <div class="step-callout">
+                                            <div class="step-icon">
+                                                <img src="<?php bloginfo('template_directory'); ?>/assets/images/icon-mediation-intro1.png" alt="" />
+                                            <!-- end .step-icon -->
+                                            </div>
+                                            <div class="step-hd">
+                                                <h3>Restorative Conference</h3>
+                                            <!-- end .step-hd -->
+                                            </div>
+                                            <div class="step-bd">
+                                                <p>
+                                                    Your facilitators will welcome you and provide you with an orientation of the process. They will guide you through a conversation structured around four questions:
+                                                </p>
+                                            <!-- end .step-bd -->
+                                            </div>
+                                            <div class="step-bd">
+                                                
+                                            <!-- end .step-bd -->
+                                            </div>
+                                        <!-- end .step -->
+                                        </div>
+                                    <!-- end .grid-col grid-col-6 -->
+                                    </div>
+                                <!-- end .grid-row -->
+                                </div>
+                            <!-- end .step-bd -->
+                            </div>
+                        <!-- end .step -->
+                        </div>
+                    <!-- end .section-steps-bd -->
+                    </div>
+                <!-- end .section-steps -->
+                </div>
+            <!-- end .grid-main -->
+            </div>
+        <!-- end .grid-site -->
+        </div>
+        <div class="section-wrap bg-lightblue">
+            <div class="grid-site">
+                <div class="grid-main">
+                    <div class="section-steps grid-col grid-col-5 grid-col grid-col-right grid-col grid-col-right-single">
+                        <div class="section-steps-bd">
+                            <div class="media media-pull-left media-pull-left-wide">
+                                <div class="media-element">
+                                    <h3 class="section-steps-counter">
+                                        <img class="media-element-abs" src="<?php bloginfo('template_directory'); ?>/assets/images/icon-notepad-group.png" alt="" />
+                                        6
+                                    </h3>
+                                    <div class="tether">
+                                        <div class="tether-line tether-line-medium tether-line-medium-reverse"></div>
+                                    </div>
+                                <!-- end .media-element -->
+                                </div>
+                                <div class="media-bd">
+                                    <div class="step">
+                                        <div class="step-hd">
+                                            <h3>The mediators/facilitators will give you copies of your agreement or plan.</h3>
+                                        <!-- end .step-hd -->
+                                        </div>
+                                    <!-- end .step -->
+                                    </div>
+                                <!-- end .media-bd -->
+                                </div>
+                            <!-- end .media -->
+                            </div>
+                        <!-- end .section-steps-bd -->
+                        </div>
+                    <!-- end .section-steps -->
+                    </div>
+                <!-- end .grid-main -->
+                </div>
+            <!-- end .grid-site -->
+            </div>
+        <!-- end .bg-turq -->
+        </div>
+        <div class="grid-site">
+            <div class="grid-main">
+                <div class="section-steps grid-col grid-col-8">
+                    <div class="section-steps-hd">
+                        <div class="media media-pull-left">
+                            <div class="media-element">
+                                <ul class="icon-list">
+                                    <h3 class="section-steps-counter">7</h3>
+                                <!-- end .icon-list -->
+                                </ul>
+                            <!-- end .media-element -->
+                            </div>
+                            <div class="media-bd">
+                                <div class="step">
+                                    <div class="step-hd">
+                                        <h3>Your Case Manager will follow up with you before sending closure letters.</h3>
                                     <!-- end .step-hd -->
                                     </div>
                                 <!-- end .step -->
@@ -468,188 +645,92 @@
             </div>
         <!-- end .grid-site -->
         </div>
-    <!-- end .bg-turq -->
-    </div>
-    <div class="grid-site">
-        <div class="grid-main">
-            <div class="section-steps section-steps-push-left grid-col grid-col-8">
-                <div class="section-steps-hd">
-                    <div class="tether">
-                        <div class="tether-line"></div>
-                    </div>
-                    <div class="media media-pull-left">
-                        <div class="media-element">
-                            <ul class="icon-list">
-                                <h3 class="section-steps-counter">5</h3>
-                            <!-- end .icon-list -->
-                            </ul>
-                        <!-- end .media-element -->
-                        </div>
-                        <div class="media-bd">
-                            <div class="step">
-                                <div class="step-hd">
-                                    <h3>The day of your mediation or restorative conference</h3>
-                                <!-- end .step-hd -->
-                                </div>
-                            <!-- end .step -->
-                            </div>
-                        <!-- end .media-bd -->
-                        </div>
-                    <!-- end .media -->
-                    </div>
-                <!-- end .section-steps-hd -->
-                </div>
-                <div class="section-steps-bd">
-                    <div class="step">
-                        <div class="step-bd">
-                            <div class="grid-row">
-                                <div class="grid-col grid-col grid-col grid-col-6">
-                                    <div class="step-callout">
-                                        <div class="step-icon">
-                                            <img src="<?php bloginfo('template_directory'); ?>/assets/images/icon-mediation-intro1.png" alt="" />
-                                            <div class="tether tether-pulled tether-intersect">
-                                                <div class="tether-line tether-line-small"></div>
-                                            </div>
-                                        <!-- end .step-icon -->
-                                        </div>
-                                        <div class="step-hd">
-                                            <h3>Mediation</h3>
-                                        <!-- end .step-hd -->
-                                        </div>
-                                        <div class="step-bd">
-                                            <p>
-                                                The mediation is an informal conversation, facilitated by trained mediators. They will welcome everyone, provide an orientation to the process and answer any questions you have. The mediators will help you identify areas of common ground and capture your agreement in writing.
-                                            </p>
-                                        <!-- end .step-bd -->
-                                        </div>
-                                        <div class="step-bd">
-                                            <p>
-                                                You are in control of the outcome; the mediators will provide a safe and constructive process.
-                                            </p>
-
-                                            <div class="tether tether-pushed tether-intersect tether-intersect-wide">
-                                                <div class="tether-line tether-line-reverse"></div>
-                                            </div>
-                                        <!-- end .step-bd -->
-                                        </div>
-                                    <!-- end .step -->
-                                    </div>
-                                <!-- end .grid-col grid-col-6 -->
-                                </div>
-                                <div class="grid-col grid-col grid-col grid-col-6">
-                                    <div class="step-callout">
-                                        <div class="step-icon">
-                                            <img src="<?php bloginfo('template_directory'); ?>/assets/images/icon-mediation-intro1.png" alt="" />
-                                        <!-- end .step-icon -->
-                                        </div>
-                                        <div class="step-hd">
-                                            <h3>Restorative Conference</h3>
-                                        <!-- end .step-hd -->
-                                        </div>
-                                        <div class="step-bd">
-                                            <p>
-                                                Your facilitators will welcome you and provide you with an orientation of the process. They will guide you through a conversation structured around four questions:
-                                            </p>
-                                        <!-- end .step-bd -->
-                                        </div>
-                                        <div class="step-bd">
-                                            
-                                        <!-- end .step-bd -->
-                                        </div>
-                                    <!-- end .step -->
-                                    </div>
-                                <!-- end .grid-col grid-col-6 -->
-                                </div>
-                            <!-- end .grid-row -->
-                            </div>
-                        <!-- end .step-bd -->
-                        </div>
-                    <!-- end .step -->
-                    </div>
-                <!-- end .section-steps-bd -->
-                </div>
-            <!-- end .section-steps -->
-            </div>
-        <!-- end .grid-main -->
-        </div>
-    <!-- end .grid-site -->
-    </div>
-    <div class="section-wrap bg-lightblue">
-        <div class="grid-site">
-            <div class="grid-main">
-                <div class="section-steps grid-col grid-col-5 grid-col grid-col-right grid-col grid-col-right-single">
-                    <div class="section-steps-bd">
-                        <div class="media media-pull-left media-pull-left-wide">
-                            <div class="media-element">
-                                <h3 class="section-steps-counter">
-                                    <img class="media-element-abs" src="<?php bloginfo('template_directory'); ?>/assets/images/icon-notepad-group.png" alt="" />
-                                    6
-                                </h3>
-                                <div class="tether">
-                                    <div class="tether-line tether-line-medium tether-line-medium-reverse"></div>
-                                </div>
-                            <!-- end .media-element -->
-                            </div>
-                            <div class="media-bd">
-                                <div class="step">
-                                    <div class="step-hd">
-                                        <h3>The mediators/facilitators will give you copies of your agreement or plan.</h3>
-                                    <!-- end .step-hd -->
-                                    </div>
-                                <!-- end .step -->
-                                </div>
-                            <!-- end .media-bd -->
-                            </div>
-                        <!-- end .media -->
-                        </div>
-                    <!-- end .section-steps-bd -->
-                    </div>
-                <!-- end .section-steps -->
-                </div>
-            <!-- end .grid-main -->
-            </div>
-        <!-- end .grid-site -->
-        </div>
-    <!-- end .bg-turq -->
-    </div>
-    <div class="grid-site">
-        <div class="grid-main">
-            <div class="section-steps grid-col grid-col-8">
-                <div class="section-steps-hd">
-                    <div class="media media-pull-left">
-                        <div class="media-element">
-                            <ul class="icon-list">
-                                <h3 class="section-steps-counter">7</h3>
-                            <!-- end .icon-list -->
-                            </ul>
-                        <!-- end .media-element -->
-                        </div>
-                        <div class="media-bd">
-                            <div class="step">
-                                <div class="step-hd">
-                                    <h3>Your Case Manager will follow up with you before sending closure letters.</h3>
-                                <!-- end .step-hd -->
-                                </div>
-                            <!-- end .step -->
-                            </div>
-                        <!-- end .media-bd -->
-                        </div>
-                    <!-- end .media -->
-                    </div>
-                <!-- end .section-steps-hd -->
-                </div>
-            <!-- end .section-steps -->
-            </div>
-        <!-- end .grid-main -->
-        </div>
-    <!-- end .grid-site -->
+    <!-- end #first-steps -->
     </div>
     <div id="get-started" class="section-wrap bg-turq js-jump-link-target">
         <div class="grid-site">
             <div class="grid-main">
                 <div class="section-steps">
-                    <div class="section-steps-bd">
-                    <!-- end .section-steps-bd -->
+                    <div class="section-steps-hd section-steps-hd-invert">
+                        <h3>Get Started</h3>
+                    <!-- end .section-steps-hd -->
+                    </div>
+                    <div class="grid-row">
+                        <div class="grid-col grid-col-7">
+                            <div class="section-steps-bd section-steps-bd-dark section-steps-bd-spaced">
+                                <p>
+                                    To open or refer a case simply call the office, send an email, or send us a letter or fax. We will need contact information.
+                                </p>
+                            </div>
+                            <div class="section-steps-bd section-steps-bd-dark section-steps-bd-spaced-loose">
+                                <p>
+                                    Our staff will send an invitation to mediate and a brochure to all parties. A case developer will answer any questions or concerns over the phone, and then gather scheduling information. Mediations can be held days, evenings, or weekend.
+                                </p>
+                            </div>
+                            <div class="section-steps-bd section-steps-bd-dark section-steps-bd-spaced">
+                                <a href="#" class="btn">Contact Us</a>
+                            </div>
+                        <!-- end .grid-col -->
+                        </div>
+                        <div class="grid-col grid-col-4">
+                            <div class="section-steps-bd section-steps-bd-spaced">
+                                <h4>Community Mediation & Restoration Services, Inc. </h4>
+                            </div>
+                            <div class="section-steps-bd section-steps-bd-dark section-steps-bd-spaced-loose">
+                                <span>9220 Bass Lake Road, Suite 270 New Hope, MN 55428</span>
+                            </div>
+                            <div class="section-steps-bd section-steps-bd-dark section-steps-bd-spaced-loose">
+                                <ul>
+                                    <li>
+                                        <span class="section-steps-content-bold">Phone: </span>763-561-0033
+                                    </li>
+                                    <li>
+                                        <span class="section-steps-content-bold">Fax: </span>763-561-0266
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="section-steps-bd section-steps-bd-dark section-steps-bd-spaced">
+                                <span>Para servicios en español, por favor llámenos al 612-629-6058</span>
+                            </div>
+                        <!-- end .grid-col -->
+                        </div>
+                    <!-- end .grid -->
+                    </div>
+                    <div class="section-steps-divider"></div>
+                    <div class="grid-row">
+                        <div class="grid-col grid-col-7">
+                            <div class="section-steps-bd section-steps-bd-spaced-loose">
+                                <h4>Forms</h4>
+                            </div>
+                            <div class="section-steps-bd section-steps-bd-spaced-loose">
+                                <ul class="section-steps-v-list">
+                                    <li><a href="#">City Referral Form</a></li>
+                                    <li><a href="#">Community Agency Referral Form</a></li>
+                                    <li><a href="#">Housing Referral Form</a></li>
+                                    <li><a href="#">Juvenile Referral Form</a></li>
+                                    <li><a href="#">School Referral Form</a></li>
+                                    <li><a href="#">Mediation Request</a></li>
+                                    <li><a href="#">Small Claims Mediation</a></li>
+                                    <li><a href="#">Request Form</a></li>
+                                </ul>
+                            </div>
+                            <div class="section-steps-bd section-steps-bd-dark section-steps-bd-spaced">
+                                <a href="#" class="btn">Small Claims Administrative Fee</a>
+                            </div>
+                        <!-- end .grid-col -->
+                        </div>
+                        <div class="grid-col grid-col-4">
+                            <div class="section-steps-bd section-steps-bd-spaced">
+                                <h4>CMRS works in partnership with the following 15 cities:</h4>
+                            </div>
+                            <div class="section-steps-bd section-steps-bd-dark section-steps-bd-spaced-loose">
+                                <p>
+                                    Brooklyn Center, Brooklyn Park, Champlin, Corcoran, Crystal, Golden Valley, Hopkins, Maple Grove, Minnetonka, Mound, New Hope, Orono, Plymouth, Robbinsdale, and St. Louis Park
+                                </p>
+                            </div>
+                        <!-- end .grid-col -->
+                        </div>
+                    <!-- end .grid -->
                     </div>
                 <!-- end .section-steps -->
                 </div>
