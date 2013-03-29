@@ -170,6 +170,13 @@ img {
 
 .tether { display: none; }
 
+.grid-col .media-element-abs {
+    max-width: none;
+    position: static;
+    top: auto;
+    right: auto;
+}
+
 /* ---------------------------------------------------------------------
  Other
 ------------------------------------------------------------------------ */
