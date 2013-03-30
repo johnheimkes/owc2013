@@ -1249,6 +1249,130 @@ body p {
 }
 
 /* ---------------------------------------------------------------------
+ Support Page
+------------------------------------------------------------------------ */
+
+.pledge {
+    line-height: 1;
+    font-size: 18px;
+    margin: 30px 0 0 50px;
+}
+
+.pledge-hd {
+    font-weight: bold;
+    margin-bottom: 5px;
+
+}
+
+.pledge-bd {
+    font-size: 48px;
+    font-weight: bold;
+    color: #0088bb;
+    margin-bottom: 15px;
+}
+
+.notice {
+    margin-left: 56px;
+}
+
+.notice-hd {
+    margin-bottom: 5px;
+}
+
+.notice-subhd {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.donate-online-hd {
+    margin-bottom: 10px;
+}
+
+.donate-online-bd {
+    margin-bottom: 20px;
+}
+
+.donate-mail {
+    margin-left: 100px;
+}
+
+.donate-mail-hd {
+    margin-bottom: 10px;
+}
+
+.donate-mail-bd {
+    margin-bottom: 20px;
+}
+
+.donate-mail-bd a {
+    color: #005581;
+}
+
+.other-ways-list {
+    margin-top: 15px;
+}
+
+.other-ways-list > *:before {
+    content: "+";
+    display: inline-block;
+    vertical-align: 2px;
+}
+
+.supporting-groups-subhd {
+    margin: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.supporting-groups-list {
+    margin-top: 10px;
+}
+
+.supporting-groups-list > *:before {
+    content: "+";
+    display: inline-block;
+    vertical-align: 2px;
+    margin-right: 3px;
+}
+
+.supporting-groups-list > * + * {
+    margin-top: 10px;
+}
+
+.supporting-groups-sublist {
+    margin-left: 31px;
+    list-style: circle;
+}
+
+.donor-policy {
+    padding-top: 50px;
+    margin-top: 50px;
+    border-top: 1px solid #d6d6d6;
+}
+
+.donor-subhead {
+    margin: 10px 0 20px;
+}
+
+.support-tree + .support-tree {
+    padding-top: 15px;
+    margin-top: 15px;
+    border-top: 1px solid #d6d6d6;
+}
+
+.support-tree-list {
+    overflow: hidden;
+    margin-left: -20px;
+}
+
+.support-tree-list > * {
+    float: left;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+/* ---------------------------------------------------------------------
  Individual Media Queries
 ------------------------------------------------------------------------ */
 
@@ -1419,4 +1543,47 @@ body p {
     background-position: -248px -140px ;
     width: 21px;
     height: 26px;
+}
+
+/* ---------------------------------------------------------------------
+  SPRITE Support
+------------------------------------------------------------------------ */
+
+.icn-support {
+    background: url('../images/sprite-support.png') no-repeat;
+}
+
+.icn-package {
+    width: 36px;
+    height: 40px;
+    background-position: 0 0;
+}
+
+.icn-speaker {
+    width: 31px;
+    height: 22px;
+    background-position: 0 -66px;
+    margin-left: -56px;
+    margin-right: 25px;
+}
+
+.icn-donations {
+    width: 177px;
+    height: 176px;
+    background-position: 0 -115px;
+    margin-left: 60px;
+}
+
+.icn-letter {
+    width: 45px;
+    height: 32px;
+    background-position: 0 -315px;
+    margin-right: 25px;
+}
+
+.icn-cpu {
+    width: 45px;
+    height: 36px;
+    background-position: 0 -372px;
+    margin-right: 25px;
 }
