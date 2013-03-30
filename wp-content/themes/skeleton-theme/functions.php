@@ -10,7 +10,6 @@
  * @version    $Id$
  */
 
-// TODO: Move the following to a custom theme class
 /**
  * Includes
  */

@@ -406,7 +406,7 @@
                             <div class="media-bd">
                                 <div class="step">
                                     <div class="step-hd">
-                                        <h3>Your Case Manager will extend an invitation to a mediation or a restorative</h3>
+                                        <h3>Your Case Manager will extend an invitation to a mediation or a restorative conference.</h3>
                                     <!-- end .step-hd -->
                                     </div>
                                     <div class="step-bd">
