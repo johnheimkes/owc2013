@@ -53,9 +53,9 @@
                     <div class="training-hd">
                         <div class="stretch">
                             <h3 class="hdg-5 hdg-bold darkblue grid-col-8">
-                                30-Hour Basic Mediation and Communication Skills Training
+                                30 Hour Basic Mediation and Communication Skills Training
                             </h3>
-                            <span class="">Details</span>
+                            <span class="js-train-trig">Details</span>
                         </div>
                     </div>
                     <div class="training-subhead grid-col-8">
@@ -144,7 +144,7 @@
                             <h3 class="hdg-5 hdg-bold darkblue grid-col-8">
                                 21 Hour Family Bridge Mediation Training Including 6 Hour Domestic Violence Training
                             </h3>
-                            <span class="">Details</span>
+                            <span class="js-train-trig">Details</span>
                         </div>
                     </div>
                     <div class="training-subhead grid-col-8">

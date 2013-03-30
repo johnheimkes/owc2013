@@ -1019,9 +1019,13 @@ body p {
 }
 
 .training-bd {
-    /*display: none;*/
+    display: block;
     overflow: hidden;
     margin-top: 25px;
+}
+
+.closed .training-bd {
+    display: none;
 }
 
 .training-list {

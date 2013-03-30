@@ -54,5 +54,34 @@ var CMRS = CMRS || {};
             'jumpLinkActiveClass': 'secondary-nav-item_isActive',
             'jumpLinkTargetSelector': '.js-jump-link-target'
         });
+        
+        
+        APP.TrainingExpanderationatoriffic.init();
     });
+    
+APP.TrainingExpanderationatoriffic = {
+    init: function() {
+        var self = this;
+        if($('.training').length > 0) {
+            $('.training-bd').hide();
+            $('.training').addClass('closed');
+            $('.js-train-trig').on("click", function(e){
+                e.preventDefault();
+                self.bind($(this));
+            });
+        }
+    },
+    bind: function(targ) {
+        training = targ.closest('.training');
+        trainingBd = training.find('.training-bd')
+        if(training.hasClass('closed')) {
+            trainingBd.slideToggle(300);
+            training.removeClass('closed');
+        } else {
+            trainingBd.slideToggle(300);
+            training.addClass('closed');
+        }
+    }
+};
+    
 }(jQuery, CMRS));
