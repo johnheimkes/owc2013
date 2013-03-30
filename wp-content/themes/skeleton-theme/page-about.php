@@ -52,7 +52,6 @@
             </div>
         </div>
     </div>
-<<<<<<< HEAD
     <div class="section-wrap">
         <div class="grid-site">  
             <div id="staff" class="grid-main js-jump-link-target">
@@ -76,25 +75,6 @@
                                 <div class="about-employee"><?php the_sub_field('about__employee_title'); ?></div>
                                 <p><?php the_sub_field('about__employee_biography'); ?></p>
                             </div>
-=======
-    <div class="grid-site">  
-        <div class="grid-main">
-            <div class="grid-row-s">            
-                <div class="grid-col grid-col-10">
-                    <h2 class="hdg-5 hdg-bold hdg-padded">Our Staff</h2>
-                    <?php if(get_field('about__our_staff')): ?>
-                        <?php while(has_sub_field('about__our_staff')): ?>
-                        <p class="padded-bottom"><?php the_sub_field('about__our_staff_content'); ?></p>
-                        
-                        <?php
-                        
-                            $attachment_id = the_sub_field('about__staff_image');
-                            $image_attributes = wp_get_attachment_image_src( $attachment_id );
-
-                        ?>
-                        
-                        <img src="<?php echo $image_attributes[0]; ?>" width="<?php echo $image_attributes[1]; ?>" height="<?php echo $image_attributes[2]; ?>">
->>>>>>> John did it...
                         <?php endwhile; ?>
                         
                     <?php endif; ?>
@@ -124,7 +104,6 @@
                     <div class="grid-col grid-col-10">
                         <h2 class="hdg-4 hdg-bold grid-row-push-s">Board of Directors</h2>
                     </div>
-<<<<<<< HEAD
                 </div>  
 
                 <?php if(get_field('about__board_of_directors_officers')): ?>
@@ -136,27 +115,6 @@
                                 <div class="hdg-6"><?php the_sub_field('about__officer_title'); ?></div>
                             </div>
                         <?php endwhile; ?>
-=======
-                </div>
-            <?php endif; ?>
-        </div>
-        <hr>
-
-        <div class="grid-main">
-            <div class="grid-row-s">
-                <div class="grid-col grid-col-10">
-                    <h2 class="hdg-5 hdg-bold hdg-padded">Board of Directors</h2>
-                </div>
-            </div>  
-
-            <?php if(get_field('about__board_of_directors_officers')): ?>
-                <div class="grid-row-s">            
-                    <div class="grid-col grid-col-2">
-                <?php while(has_sub_field('about__board_of_directors_officers')): ?>
-                    <span class="hdg-bold"><?php the_sub_field('about__officer_name'); ?></span>
-                    <br /><?php the_sub_field('about__officer_title'); ?>
-                <?php endwhile; ?>
->>>>>>> John did it...
                     </div>
                     </div>
                 <?php endif; ?>
@@ -265,6 +223,12 @@
         <?php endif; ?>
         </div>
     </div>  
+
+            
+                    <?php the_sub_field('about__finanical_report_title'); ?><?php the_sub_field('about__financial_report_pdf'); ?>
+
+    
+     
     <div class="section-wrap bg-white">
         <div class="grid-site">
             <div id="financial-report" class="grid-main js-jump-link-target">
