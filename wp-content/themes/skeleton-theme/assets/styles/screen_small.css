@@ -294,3 +294,27 @@ img {
 .contact-form-container {
     padding: 10% 15%;
 }
+
+/* ---------------------------------------------------------------------
+ Footer
+------------------------------------------------------------------------ */
+
+.page-footer {
+        padding: 0;
+    }
+
+.wrapper-footer {
+    padding: 0;
+}
+
+.nav > li > a,
+.nav-footer > li > a {
+    font-size: 14px;
+    padding: 0 22px;
+    line-height: 60px;
+    text-align: center;
+}
+
+.nav-footer > li  {
+    display: block;
+}
