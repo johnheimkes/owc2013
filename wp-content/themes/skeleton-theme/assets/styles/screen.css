@@ -1354,6 +1354,10 @@ body p {
     list-style: circle;
 }
 
+.supporting-groups-sublist li {
+    margin-top: 10px;
+}
+
 .donor-policy {
     padding-top: 50px;
     margin-top: 50px;

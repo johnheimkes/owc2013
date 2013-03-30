@@ -414,6 +414,7 @@
                                         <p>
                                             The invitation will be in letter form, unless you don’t have a way to get an address. It can also be a phone call or email. You will receive a copy of the letter.
                                         </p>
+                                        <p><a href="<?php echo home_url();?>/case-managers">Learn More about my Case manager</a></p>
                                     <!-- end .step-bd -->
                                     </div>
                                 <!-- end .step -->

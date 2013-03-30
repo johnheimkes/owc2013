@@ -163,7 +163,7 @@
     <div id="individual-supports" class="section-wrap bg-white js-jump-link-target">
         <div class="grid-site">
             <div class="grid-main">
-                <h2 class="hdg-4 hdg-bold">Individual Supports</h2>
+                <h2 class="hdg-4 hdg-bold">Individual Supporters</h2>
                 <div class="support-tree">
                     <div class="support-tree-hd">
                         <h3 class="hdg-5 hdg-bold">Presidents Circle ($3,000+)</h3>
