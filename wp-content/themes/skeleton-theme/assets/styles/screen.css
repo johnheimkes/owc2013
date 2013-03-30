@@ -98,6 +98,7 @@ a {
 a:hover,
 a:focus {
     color: #d7e5ef;
+    text-decoration: underline;
 }
 
 .logo {
@@ -342,6 +343,7 @@ img {
     transition:
         background 0.3s ease-in-out,
         opacity 0.3s ease-in-out 0s;
+    text-decoration: none;
 }
 
 .nav-container {
@@ -715,6 +717,7 @@ img {
     transition:
         background 0.3s ease-in-out,
         opacity 0.3s ease-in-out 0s;
+    text-decoration: none;
 }
 
 .footer-copy {
@@ -769,6 +772,7 @@ img {
     background: linear-gradient(to bottom,  #ffffff 0%,#e0e0e0 100%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e0e0e0',GradientType=0 ); /* IE6-8 */
     color: #4c4043;
+    text-decoration: none;
 }
 
 .btn-menu {
