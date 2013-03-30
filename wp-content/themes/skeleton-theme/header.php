@@ -56,25 +56,25 @@
         <div class="wrapper-nav">
             <ul class="nav">
                 <li>
-                    <a href="<?php echo home_url(); ?>">Home</a>
+                    <a <?php if(is_front_page()) { echo "class='current'"; } ?> href="<?php echo home_url(); ?>">Home</a>
                 </li>
                 <li>
-                    <a href="<?php echo home_url(); ?>/mediation">Mediation</a>
+                    <a <?php if(is_page('mediation')) { echo " class='current'"; } ?> href="<?php echo home_url(); ?>/mediation">Mediation</a>
                 </li>
                 <li>
-                    <a href="<?php echo home_url(); ?>/training">Training</a>
+                    <a <?php if(is_page('training')) { echo " class='current'"; } ?> href="<?php echo home_url(); ?>/training">Training</a>
                 </li>
                 <li>
-                    <a href="<?php echo home_url(); ?>/volunteer">Volunteer</a>
+                    <a <?php if(is_page('volunteer')) { echo " class='current'"; } ?> href="<?php echo home_url(); ?>/volunteer">Volunteer</a>
                 </li>
                 <li>
-                    <a href="<?php echo home_url(); ?>/support">Support</a>
+                    <a <?php if(is_page('support')) { echo " class='current'"; } ?> href="<?php echo home_url(); ?>/support">Support</a>
                 </li>
                 <li>
-                    <a href="<?php echo home_url(); ?>/about">About</a>
+                    <a <?php if(is_page('about')) { echo " class='current'"; } ?> href="<?php echo home_url(); ?>/about">About</a>
                 </li>
                 <li>
-                    <a href="<?php echo home_url(); ?>/resources">Resources</a>
+                    <a <?php if(is_page('resources')) { echo " class='current'"; } ?> href="<?php echo home_url(); ?>/resources">Resources</a>
                 </li>
                 <li>
                     <a href="#">Volunteer Login</a>
