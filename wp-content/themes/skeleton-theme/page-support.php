@@ -21,7 +21,7 @@
                             <a href="#support-us" class="js-jump-link">Support Us</a>
                         </li>
                         <li>
-                            <a href="#individual-supports" class="js-jump-link">Individual Supports</a>
+                            <a href="#individual-supports" class="js-jump-link">Individual Supporters</a>
                         </li>                        
                         <li>
                             <a href="#supporting-groups" class="js-jump-link">Supporting Groups</a>
