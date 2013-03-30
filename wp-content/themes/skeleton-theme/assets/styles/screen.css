@@ -1296,7 +1296,7 @@ body p {
 .donate-mail {
     padding-left: 80px;
     margin-left: 20px;
-    border: 3px dashed #ffffff;
+    border-left: 3px dashed #ffffff;
 }
 
 .donate-mail-hd {
