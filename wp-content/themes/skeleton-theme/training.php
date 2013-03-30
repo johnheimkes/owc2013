@@ -189,6 +189,95 @@
                         </div>
                     </div> 
                 </div> 
+                
+                <div class="training">
+                    <div class="training-hd">
+                        <div class="stretch">
+                            <h3 class="hdg-5 hdg-bold darkblue grid-col-8">
+                                14 Hour Family Bridge Mediation Training
+                            </h3>
+                            <span class="js-train-trig">Details</span>
+                        </div>
+                    </div>
+                    <div class="training-subhead grid-col-8">
+                        Meets Rule 114 Community (Civil) Bridge Training Requirements CLE credits to be applied for
+                    </div>
+                    <div class="training-bd">
+                        <div class="grid-row-s">
+                            <div class="grid-col grid-col-5">
+                                <h4 class="hdg-bold">Topics Include:</h4>
+                                <ul class="training-list">
+                                    <li>Conflict resolution and mediation theory</li>
+                                    <li>Mediation skills and techniques</li>
+                                    <li>Components in the mediation process</li>
+                                    <li>Mediator conduct</li>
+                                    <li>Mediation Rules, statutes, and practices</li>
+                                    <li>Mediating in court, community, and school settings</li>
+                                </ul>
+                                <a class="btn">Download PDF</a>
+                            </div>
+                            <div class="grid-col grid-col-5">
+                                <h4 class="hdg-bold">Prices</h4>
+                                <ul class="training-table">
+                                    <li>
+                                        <table class="training-prices">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="training-prices_category">
+                                                        Attorney (CIE Credits)
+                                                        <span class="training-prices_price">$600</span>
+                                                    </td>
+                                                    <td>
+                                                        <a href="#" class="btn">Register &amp; Buy</a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="#" class="btn">Register</a>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </li>
+                                    <li>
+                                        <table class="training-prices">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="training-prices_category">
+                                                        Private Practitioner
+                                                        <span class="training-prices_price">$350</span>
+                                                    </td>
+                                                    <td>
+                                                        <a href="#" class="btn">Register &amp; Buy</a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="#" class="btn">Register</a>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </li>
+                                    <li>
+                                        <table class="training-prices">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="training-prices_category">
+                                                        Volunteer
+                                                        <span class="training-prices_price">$200</span>
+                                                    </td>
+                                                    <td>
+                                                        <a href="#" class="btn">Register &amp; Buy</a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="#" class="btn">Register</a>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
 
             </div>
         </div>
@@ -205,7 +294,7 @@
                 <div class="grid-row-s">
                     <div class="stretch">
                         <div>
-                            Something to accessible to all
+                            Limited number of scholarships are available. Contact your sponsoring organization about scholarship possibilities
                         </div>
                         <div>
                             <ul class="h-list h-list_scholarships">
@@ -228,15 +317,15 @@
             <div class="grid-main">
                 <div class="grid-row-s">
                     <div class="grid-col grid-col-10">
-                        <h2 class="hdg-4 hdg-bold">Activities Outside of Our Training</h2>
+                        <h2 class="hdg-4 hdg-bold">Upcoming Workshops and Conferences</h2>
                     </div>
                 </div>
                 <div class="grid-row-s">
                     <ul class="training-links">
-                        <li><a href="#">Outside Event Link</a></li>
-                        <li><a href="#">Outside Event Link</a></li>
-                        <li><a href="#">Outside Event Link</a></li>
-                        <li><a href="#">Outside Event Link</a></li>
+                        <li><a href="#">Center for Multicultural Mediation and Restorative Justice (CMMRJ)</a></li>
+                        <li><a href="#">Dispute Resolution Center (DRC)</a></li>
+                        <li><a href="#">Community Mediation &amp; Restorative Services, Inc. (CMS)</a></li>
+                        <li><a href="#">Mediation Services For Anoka County (MSAC)</a></li>
                     </ul>
                 </div>
             </div>
