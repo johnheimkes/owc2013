@@ -278,6 +278,275 @@
                         </div>
                     </div> 
                 </div>
+                
+                
+                <div class="training">
+                    <div class="training-hd">
+                        <div class="stretch">
+                            <h3 class="hdg-5 hdg-bold darkblue grid-col-8">
+                                Restorative Services
+                            </h3>
+                            <span class="js-train-trig">Details</span>
+                        </div>
+                    </div>
+                    <div class="training-subhead grid-col-8">
+                        We provide a variety of restorative practice training opportunities including group and family conferencing and restorative circles. Restorative practices:
+                    </div>
+                    <div class="training-bd">
+                        <div class="grid-row-s">
+                            <div class="grid-col grid-col-5">
+                                <h4 class="hdg-bold">Topics Include:</h4>
+                                <ul class="training-list">
+                                    <li>Conflict resolution and mediation theory</li>
+                                    <li>Mediation skills and techniques</li>
+                                    <li>Components in the mediation process</li>
+                                    <li>Mediator conduct</li>
+                                    <li>Mediation Rules, statutes, and practices</li>
+                                    <li>Mediating in court, community, and school settings</li>
+                                </ul>
+                                <a class="btn">Download PDF</a>
+                            </div>
+                            <div class="grid-col grid-col-5">
+                                <h4 class="hdg-bold">Prices</h4>
+                                <ul class="training-table">
+                                    <li>
+                                        <table class="training-prices">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="training-prices_category">
+                                                        Attorney (CIE Credits)
+                                                        <span class="training-prices_price">$600</span>
+                                                    </td>
+                                                    <td>
+                                                        <a href="#" class="btn">Register &amp; Buy</a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="#" class="btn">Register</a>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </li>
+                                    <li>
+                                        <table class="training-prices">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="training-prices_category">
+                                                        Private Practitioner
+                                                        <span class="training-prices_price">$350</span>
+                                                    </td>
+                                                    <td>
+                                                        <a href="#" class="btn">Register &amp; Buy</a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="#" class="btn">Register</a>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </li>
+                                    <li>
+                                        <table class="training-prices">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="training-prices_category">
+                                                        Volunteer
+                                                        <span class="training-prices_price">$200</span>
+                                                    </td>
+                                                    <td>
+                                                        <a href="#" class="btn">Register &amp; Buy</a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="#" class="btn">Register</a>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+                
+                
+                <div class="training">
+                    <div class="training-hd">
+                        <div class="stretch">
+                            <h3 class="hdg-5 hdg-bold darkblue grid-col-8">
+                                Mediator Ethics &amp; Statutes
+                            </h3>
+                            <span class="js-train-trig">Details</span>
+                        </div>
+                    </div>
+                    <div class="training-subhead grid-col-8">
+                        A mix of discussion and experiential exercises designed to refresh your understanding of Rule 114 Code of Ethics and CMS best practices.
+                    </div>
+                    <div class="training-bd">
+                        <div class="grid-row-s">
+                            <div class="grid-col grid-col-5">
+                                <h4 class="hdg-bold">Topics Include:</h4>
+                                <ul class="training-list">
+                                    <li>Conflict resolution and mediation theory</li>
+                                    <li>Mediation skills and techniques</li>
+                                    <li>Components in the mediation process</li>
+                                    <li>Mediator conduct</li>
+                                    <li>Mediation Rules, statutes, and practices</li>
+                                    <li>Mediating in court, community, and school settings</li>
+                                </ul>
+                                <a class="btn">Download PDF</a>
+                            </div>
+                            <div class="grid-col grid-col-5">
+                                <h4 class="hdg-bold">Prices</h4>
+                                <ul class="training-table">
+                                    <li>
+                                        <table class="training-prices">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="training-prices_category">
+                                                        Attorney (CIE Credits)
+                                                        <span class="training-prices_price">$600</span>
+                                                    </td>
+                                                    <td>
+                                                        <a href="#" class="btn">Register &amp; Buy</a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="#" class="btn">Register</a>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </li>
+                                    <li>
+                                        <table class="training-prices">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="training-prices_category">
+                                                        Private Practitioner
+                                                        <span class="training-prices_price">$350</span>
+                                                    </td>
+                                                    <td>
+                                                        <a href="#" class="btn">Register &amp; Buy</a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="#" class="btn">Register</a>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </li>
+                                    <li>
+                                        <table class="training-prices">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="training-prices_category">
+                                                        Volunteer
+                                                        <span class="training-prices_price">$200</span>
+                                                    </td>
+                                                    <td>
+                                                        <a href="#" class="btn">Register &amp; Buy</a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="#" class="btn">Register</a>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+                
+                
+                <div class="training">
+                    <div class="training-hd">
+                        <div class="stretch">
+                            <h3 class="hdg-5 hdg-bold darkblue grid-col-8">
+                                Continuing Education
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="training-subhead grid-col-8">
+                        CMRS directly and indirectly offers a variety of continuing education opportunities each year, including a 6-hour conference every Fall.
+                    </div>
+                    <div class="training-bd">
+                        <div class="grid-row-s">
+                            <div class="grid-col grid-col-5">
+                                <h4 class="hdg-bold">Topics Include:</h4>
+                                <ul class="training-list">
+                                    <li>Conflict resolution and mediation theory</li>
+                                    <li>Mediation skills and techniques</li>
+                                    <li>Components in the mediation process</li>
+                                    <li>Mediator conduct</li>
+                                    <li>Mediation Rules, statutes, and practices</li>
+                                    <li>Mediating in court, community, and school settings</li>
+                                </ul>
+                                <a class="btn">Download PDF</a>
+                            </div>
+                            <div class="grid-col grid-col-5">
+                                <h4 class="hdg-bold">Prices</h4>
+                                <ul class="training-table">
+                                    <li>
+                                        <table class="training-prices">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="training-prices_category">
+                                                        Attorney (CIE Credits)
+                                                        <span class="training-prices_price">$600</span>
+                                                    </td>
+                                                    <td>
+                                                        <a href="#" class="btn">Register &amp; Buy</a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="#" class="btn">Register</a>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </li>
+                                    <li>
+                                        <table class="training-prices">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="training-prices_category">
+                                                        Private Practitioner
+                                                        <span class="training-prices_price">$350</span>
+                                                    </td>
+                                                    <td>
+                                                        <a href="#" class="btn">Register &amp; Buy</a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="#" class="btn">Register</a>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </li>
+                                    <li>
+                                        <table class="training-prices">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="training-prices_category">
+                                                        Volunteer
+                                                        <span class="training-prices_price">$200</span>
+                                                    </td>
+                                                    <td>
+                                                        <a href="#" class="btn">Register &amp; Buy</a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="#" class="btn">Register</a>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
 
             </div>
         </div>
@@ -323,8 +592,8 @@
                 <div class="grid-row-s">
                     <ul class="training-links">
                         <li><a href="#">Center for Multicultural Mediation and Restorative Justice (CMMRJ)</a></li>
-                        <li><a href="#">Dispute Resolution Center (DRC)</a></li>
                         <li><a href="#">Community Mediation &amp; Restorative Services, Inc. (CMS)</a></li>
+                        <li><a href="#">Dispute Resolution Center (DRC)</a></li>
                         <li><a href="#">Mediation Services For Anoka County (MSAC)</a></li>
                     </ul>
                 </div>
