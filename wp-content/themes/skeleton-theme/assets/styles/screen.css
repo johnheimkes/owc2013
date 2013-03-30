@@ -731,7 +731,7 @@ body p {
     margin: 0 auto;
     max-width: 930px;
     color: #FFFFFF;
-    padding: 30px 15px 0 15px;
+    padding: 62px 15px 0 15px;
 }
 
 .footer-copy > ul > * + * {
@@ -742,7 +742,7 @@ body p {
     margin: 0 auto;
     max-width: 930px;
     color: #FFFFFF;
-    padding: 30px 15px 0 15px;
+    padding: 32px 15px 0 15px;
 }
 
 .footer-contact > ul > * + * {
@@ -1022,6 +1022,10 @@ body p {
     display: block;
     overflow: hidden;
     margin-top: 25px;
+}
+
+.js-train-trig {
+    cursor: pointer;
 }
 
 .closed .training-bd {
