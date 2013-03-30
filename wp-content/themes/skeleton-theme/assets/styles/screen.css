@@ -114,6 +114,10 @@ img {
     height: auto;
 }
 
+body p {
+    margin-bottom: 15px;
+}
+
 /* ---------------------------------------------------------------------
  Layout
 ------------------------------------------------------------------------ */
@@ -151,6 +155,8 @@ img {
     position: fixed;
     width: 11%;
     margin-left: -20px;
+    z-index: 100;
+    opacity: 0.9;
 }
 
 .grid-main {
@@ -671,7 +677,7 @@ img {
 
 .page-footer {
     background-color: #005581;
-    padding: 30px 0;
+    padding: 30px 0 143px;
 }
 
 .wrapper-nav-footer {
