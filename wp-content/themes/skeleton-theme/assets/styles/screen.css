@@ -1294,7 +1294,9 @@ body p {
 }
 
 .donate-mail {
-    margin-left: 100px;
+    padding-left: 80px;
+    margin-left: 20px;
+    border-left: 3px dashed #ffffff;
 }
 
 .donate-mail-hd {
@@ -1307,6 +1309,13 @@ body p {
 
 .donate-mail-bd a {
     color: #005581;
+}
+
+.donate-mail .icn,
+.donate-online .icn,
+.notice .icn {
+    position: relative;
+    top: 3px;
 }
 
 .other-ways-list {
@@ -1432,34 +1441,8 @@ body p {
         display: none;
     }
 
-    /*.grid-main {
-        margin-left: 5%;
-    }*/
-
 }
 
-@media screen and (max-width: 646px) {
-
-    .page-footer {
-        padding: 0;
-    }
-
-    .wrapper-footer {
-        padding: 0;
-    }
-
-    .nav > li > a,
-    .nav-footer > li > a {
-        font-size: 14px;
-        padding: 0 22px;
-        line-height: 60px;
-        text-align: center;
-    }
-
-    .nav-footer > li  {
-        display: block;
-    }
-}
 /* ---------------------------------------------------------------------
   SPRITE
 ------------------------------------------------------------------------ */
