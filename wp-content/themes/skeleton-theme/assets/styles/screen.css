@@ -326,7 +326,8 @@ img {
     font-weight: bold;
 }
 
-.nav > li > a:hover {
+.nav > li > a:hover,
+.nav > li > a.current {
     background: #005581;
     -moz-transition:
         background 0.3s ease-in-out,

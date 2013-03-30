@@ -21,7 +21,7 @@
                             <a href="#overview" class="js-jump-link">Overview</a>
                         </li>
                         <li>
-                            <a href="#staff" class="js-jump-link">Staff & Directors</a>
+                            <a href="#staff" class="js-jump-link">Staff &amp; Directors</a>
                         </li>                        
                         <li>
                             <a href="#accomplishments" class="js-jump-link">Accomplishments</a>
@@ -214,7 +214,7 @@
                     </div> 
                     <div class="grid-col grid-col-4">
                         <h3 class="hdg-4 hdg-bold">Volunteer and Training Opportunities</h3>
-                        <p>Investing in our community through Volunteer Development and Mediation & Restorative Practices trainings</p>
+                        <p>Investing in our community through Volunteer Development and Mediation &amp; Restorative Practices trainings</p>
                     </div>                                    
                 </div>                 
             </div>
