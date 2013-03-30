@@ -13,26 +13,26 @@
             <div class="wrapper-footer">
                 <div class="wrapper-nav-footer">
                 	<ul class="nav-footer">
-                		<li>
-                			<a href="#">Home</a>
-                		</li>
-                		<li>
-                			<a href="#">Mediation</a>
-                		</li>
-                		<li>
-                			<a href="#">Training</a>
-                		</li>
-                		<li>
-                			<a href="#">Volunteer</a>
-                		</li>
-                		<li>
-                			<a href="#">Support</a>
-                		</li>
-                		<li>
-                			<a href="#">About</a>
-                		</li>
+                	    <li>
+                            <a <?php if(is_front_page()) { echo "class='current'"; } ?> href="<?php echo home_url(); ?>">Home</a>
+                        </li>
                         <li>
-                            <a href="#">Resources</a>
+                            <a <?php if(is_page('mediation')) { echo " class='current'"; } ?> href="<?php echo home_url(); ?>/mediation">Mediation</a>
+                        </li>
+                        <li>
+                            <a <?php if(is_page('training')) { echo " class='current'"; } ?> href="<?php echo home_url(); ?>/training">Training</a>
+                        </li>
+                        <li>
+                            <a <?php if(is_page('volunteer')) { echo " class='current'"; } ?> href="<?php echo home_url(); ?>/volunteer">Volunteer</a>
+                        </li>
+                        <li>
+                            <a <?php if(is_page('support')) { echo " class='current'"; } ?> href="<?php echo home_url(); ?>/support">Support</a>
+                        </li>
+                        <li>
+                            <a <?php if(is_page('about')) { echo " class='current'"; } ?> href="<?php echo home_url(); ?>/about">About</a>
+                        </li>
+                        <li>
+                            <a <?php if(is_page('resources')) { echo " class='current'"; } ?> href="<?php echo home_url(); ?>/resources">Resources</a>
                         </li>
                         <li>
                             <a href="#">Volunteer Login</a>
