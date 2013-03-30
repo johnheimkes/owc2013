@@ -30,7 +30,7 @@
                             <?php endif; ?>
                         </div>
                         <div class="feature-ft">
-                            <a href='#' class="btn">How It Works</a>
+                            <a href='<?php echo home_url(); ?>/about' class="btn">How It Works</a>
                         </div>
                     </div>
                 </div>

@@ -40,6 +40,7 @@
                             <p>
                                 For over 30 years we have helped people have respectful and productive conversations, resulting in better understanding and creative, concrete solutions.
                             </p>
+                            <a href="#" class="btn">Service Request Form</a>
                         <!-- end .intro-bd -->
                         </div>
                     <!-- end .intro -->
@@ -100,7 +101,7 @@
                             </div>
                             <div class="summary-bd">
                                 <p>
-                                    Community Mediation & Restorative Services works with local police, schools, the Hennepin County Attorney’s office and Juvenile Court to provide.
+                                    Community Mediation &amp; Restorative Services works with local police, schools, the Hennepin County Attorney’s office and Juvenile Court to provide.
                                 </p>
                             <!-- end .summary-bd --> 
                             </div>
@@ -126,35 +127,35 @@
                             <div class="grid-row">
                                 <div class="grid-col grid-col grid-col grid-col-4">
                                     <ul class="summary-list">
-                                        <li><a href="#">Agencies/Citizens</a></li>
-                                        <li><a href="#">Builders/Homeowners</a></li>
-                                        <li><a href="#">Businesses/Consumers</a></li>
-                                        <li><a href="#">Children and Youth</a></li>
-                                        <li><a href="#">Divorced/Unmarried parents</a></li>
-                                        <li><a href="#">Elderly Parent Care</a></li>                                    
+                                        <li>Agencies/Citizens</li>
+                                        <li>Builders/Homeowners</li>
+                                        <li>Businesses/Consumers</li>
+                                        <li>Children and Youth</li>
+                                        <li>Divorced/Unmarried parents</li>
+                                        <li>Elderly Parent Care</li>                                    
                                     <!-- end .summary-list -->
                                     </ul>
                                 <!-- end .grid-col grid-col-4 -->
                                 </div>
                                 <div class="grid-col grid-col grid-col grid-col-4">
                                     <ul class="summary-list">
-                                        <li><a href="#">Employees/Employers</a></li>
-                                        <li><a href="#">Family Members</a></li>
-                                        <li><a href="#">Friends</a></li>
-                                        <li><a href="#">Harassment</a></li>
-                                        <li><a href="#">Landlord/Tenants</a></li>
-                                        <li><a href="#">Neighbors</a></li>
+                                        <li>Employees/Employers</li>
+                                        <li>Family Members</li>
+                                        <li>Friends</li>
+                                        <li>Harassment</li>
+                                        <li>Landlord/Tenants</li>
+                                        <li>Neighbors</li>
                                     <!-- end .summary-list -->
                                     </ul>
                                 <!-- end .grid-col grid-col-4 -->
                                 </div>
                                 <div class="grid-col grid-col grid-col grid-col-4">
                                     <ul class="summary-list">
-                                        <li><a href="#">Run-Aways</a></li>
-                                        <li><a href="#">Schools</a></li>
-                                        <li><a href="#">Shared Parenting</a></li>
-                                        <li><a href="#">Truancy</a></li>
-                                        <li><a href="#">Victims/Offenders</a></li>
+                                        <li>Run-Aways</li>
+                                        <li>Schools</li>
+                                        <li>Shared Parenting</li>
+                                        <li>Truancy</li>
+                                        <li>Victims/Offenders</li>
                                     <!-- end .summary-list -->
                                     </ul>
                                 <!-- end .grid-col grid-col-4 -->
@@ -657,11 +658,6 @@
                     </div>
                     <div class="grid-row">
                         <div class="grid-col grid-col-7">
-                            <div class="section-steps-bd section-steps-bd-dark section-steps-bd-spaced">
-                                <p>
-                                    To open or refer a case simply call the office, send an email, or send us a letter or fax. We will need contact information.
-                                </p>
-                            </div>
                             <div class="section-steps-bd section-steps-bd-dark section-steps-bd-spaced-loose">
                                 <p>
                                     Our staff will send an invitation to mediate and a brochure to all parties. A case developer will answer any questions or concerns over the phone, and then gather scheduling information. Mediations can be held days, evenings, or weekend.
@@ -674,7 +670,7 @@
                         </div>
                         <div class="grid-col grid-col-4">
                             <div class="section-steps-bd section-steps-bd-spaced">
-                                <h4>Community Mediation & Restoration Services, Inc. </h4>
+                                <h4>Community Mediation &amp; Restoration Services, Inc. </h4>
                             </div>
                             <div class="section-steps-bd section-steps-bd-dark section-steps-bd-spaced-loose">
                                 <span>9220 Bass Lake Road, Suite 270 New Hope, MN 55428</span>
