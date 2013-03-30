@@ -232,3 +232,8 @@ function nerderyEnqueueStyles()
     wp_enqueue_style('nerdery-ie8');
     wp_enqueue_style('nerdery-ie7');
 }
+
+if ( function_exists( 'add_image_size' ) ) {
+    add_image_size( 'directors-full', 222, 222, true );
+    add_image_size( 'homepage-quote', 242, 242, true );
+}
