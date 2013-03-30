@@ -1026,6 +1026,13 @@ body p {
 
 .js-train-trig {
     cursor: pointer;
+    display: block;
+    padding-right: 15px;
+    background: transparent url("../images/bg-train-trig.png") no-repeat right 6px scroll;
+}
+
+.closed .js-train-trig {
+    background-position: right -16px;
 }
 
 .closed .training-bd {
