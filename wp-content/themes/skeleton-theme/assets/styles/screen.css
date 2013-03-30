@@ -1311,6 +1311,13 @@ body p {
     color: #005581;
 }
 
+.donate-mail .icn,
+.donate-online .icn,
+.notice .icn {
+    position: relative;
+    top: 3px;
+}
+
 .other-ways-list {
     margin-top: 15px;
 }
