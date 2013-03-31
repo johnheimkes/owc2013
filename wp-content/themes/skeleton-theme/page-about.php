@@ -11,7 +11,7 @@
 ?>
 <?php get_header(); ?>
 
-    <div class="section-wrap bg-lightblue">
+    <div id="overview" class="section-wrap bg-lightblue js-jump-link-target">
         <div class="grid-site hero-img hero-img-about">
             <div class="grid-sidebar">
                 <div class="secondary-nav">
@@ -38,7 +38,7 @@
                     </ul>
                 </div>
             </div>
-            <div id="overview" class="grid-main js-jump-link-target">
+            <div class="grid-main">
                 <div class="grid-row-s">
                     <div class="grid-col grid-col-5">
                         <h2 class="hdg-5 hdg-bold section-quote-hd_about">Our Mission</h2>
@@ -306,7 +306,7 @@
     </div>
 
     <div class="bg-turq about-contact">
-        <div id="contact" class="contact-google">
+        <div id="contact" class="contact-google js-jump-link-target">
             <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=9220+Bass+Lake+Road,+Suite+270+New+Hope,+Minnesota+55428&amp;aq=&amp;sll=44.965041,-93.295555&amp;sspn=0.183885,0.402031&amp;ie=UTF8&amp;hq=&amp;hnear=9220+Bass+Lake+Rd+%23270,+New+Hope,+Minnesota+55428&amp;ll=45.058698,-93.397047&amp;spn=0.097627,0.219555&amp;t=m&amp;z=13&amp;output=embed"></iframe><br /><small><a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=9220+Bass+Lake+Road,+Suite+270+New+Hope,+Minnesota+55428&amp;aq=&amp;sll=44.965041,-93.295555&amp;sspn=0.183885,0.402031&amp;ie=UTF8&amp;hq=&amp;hnear=9220+Bass+Lake+Rd+%23270,+New+Hope,+Minnesota+55428&amp;ll=45.058698,-93.397047&amp;spn=0.097627,0.219555&amp;t=m&amp;z=13" style="color:#0000FF;text-align:left">View Larger Map</a></small>
         </div>
         <div class="contact-form">
