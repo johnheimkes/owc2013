@@ -315,7 +315,7 @@
                     <i class="icn-contact"></i><h2 class="hdg-3 hdg-invert hdg-inline">Contact Us</h2>
                 </div>
                 <div class="contact-form-bd">
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt utlaoreet dolore magna aliquam erat volutpat.
+                    <p>Please reach out with any questions you may have, we're here to help!</p>
                 </div>
                 <div class="contact-form-msg">
                     <form method="post" action="">

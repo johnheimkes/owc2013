@@ -516,12 +516,11 @@ body p {
 /* ---------------------------------------------------------------------
  Summary List
 ------------------------------------------------------------------------ */
-.summary-list > li { margin-bottom: 5px; }
-
-.summary-list > li > a {
-    font-size: 12px;
+.summary-list > p { 
+    font-size: 14px;
     color: #414042;
     font-weight: bold;
+    line-height: 2.5;
 }
 
 /* ---------------------------------------------------------------------
@@ -602,6 +601,23 @@ body p {
 .step-callout > .step-hd { text-align: center; }
 
 .step-bd { margin-bottom: 10px; }
+
+.step-bd ol {
+    list-style: outside decimal;
+    color: #005581;
+    font-size: 14px;
+    margin-left: 35px;
+    font-weight: bold;
+}
+
+.step-bd ol li {
+    margin-bottom: 10px;
+}
+
+.step-bd ol strong {
+    color: #414042;
+    font-weight: normal;
+}
 
 /* ---------------------------------------------------------------------
  Icon List
@@ -882,7 +898,7 @@ body p {
 
 .participant-options {
     overflow: hidden;
-    max-width: 715px;
+    max-width: 800px;
     margin: 0 auto;
     padding-bottom: 60px;
     border-bottom: 1px solid #005581;
@@ -904,6 +920,7 @@ body p {
 }
 
 .hero-img-home {
+/*    background-image: url('../images/homepage-hero.jpg');*/
     background-image: url('../images/homepage-hero.png');
     background-repeat: no-repeat;
     background-position: right top;
@@ -1374,12 +1391,12 @@ body p {
     border-top: 1px solid #d6d6d6;
 }
 
-.support-tree-list {
+.support-tree-bd > ul {
     overflow: hidden;
     margin-left: -20px;
 }
 
-.support-tree-list > * {
+.support-tree-bd > ul > * {
     float: left;
     margin-left: 20px;
     margin-top: 10px;
@@ -1388,7 +1405,11 @@ body p {
 /* ---------------------------------------------------------------------
  Individual Media Queries
 ------------------------------------------------------------------------ */
-
+@media screen and (min-width: 768px) {
+    .feature-bd--flex-box {
+        min-height: 215px;
+    }
+}
 @media screen and (max-width: 1127px) {
     .nav-footer > li > a {
         font-size: 14px;
@@ -1443,6 +1464,9 @@ body p {
 
     .header-contact {
         display: none;
+    }
+    .feature-bd--flex-box {
+        min-height: 0;
     }
 
 }

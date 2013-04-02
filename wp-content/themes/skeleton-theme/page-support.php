@@ -16,12 +16,12 @@
             <div class="grid-sidebar">
                 <div class="secondary-nav">
                     <ul>
-                        <li class="title">Support</li>
+                        <li class="title">Donate</li>
                         <li>
-                            <a href="#support-us" class="js-jump-link">Support Us</a>
+                            <a href="#support-us" class="js-jump-link">Donations</a>
                         </li>
                         <li>
-                            <a href="#individual-supports" class="js-jump-link">Individual Supporters</a>
+                            <a href="#individual-supports" class="js-jump-link">Donors</a>
                         </li>                        
                         <li>
                             <a href="#supporting-groups" class="js-jump-link">Supporting Groups</a>
@@ -31,29 +31,38 @@
             </div>
             <div class="grid-main">
                 <div class="grid-row-s">
+                    <?php
+                    $rows = get_field('donate__section_1');
+                    if($rows)
+                    {
+                        foreach($rows as $row)
+                        { ?>
                     <div class="grid-col grid-col-5">
                         <div class="feature">
                             <div class="feature-hd">
-                            	<h2 class="hdg hdg-5 hdg-bold">Support Community</h2>
+                                <h2 class="hdg hdg-5 hdg-bold"><?php echo $row['title'];?></h2>
                             </div>
                             <div class="feature-bd feature-bd_extended">
-                                We are proud of our accomplishments, and most grateful for a community that supports this work through financial support, referrals, and donated talent.
+                                <?php echo $row['content'];?>
                             </div>
                         </div>
                     </div>
                     <div class="grid-col grid-col-5">
                         <div class="pledge">
                             <div class="pledge-hd">
-                                2013 Private Contributions
+                                <?php echo $row['private_contributions_title'];?>
                             </div>
                             <div class="pledge-bd">
-                                $1,897,124 <i class="icn icn-support icn-package"></i>
+                                <?php echo $row['total_contributions'];?> <i class="icn icn-support icn-package"></i>
                             </div>
                             <div class="pledge-ft">
-                                Goal $70,000
+                                <p>Goal: <?php echo $row['goal_contributions'];?></p>
                             </div>
                         </div>
                     </div>
+                        <?php }
+                    }
+                    ?>
                 </div>
             </div>
         </div>
@@ -63,22 +72,34 @@
         <div class="grid-site">
             <div class="grid-main">
                 <div class="grid-row-s">
+                    <?php
+                    $rows = get_field('donate__section_2');
+                    if($rows)
+                    {
+                        foreach($rows as $row)
+                        { ?>
                     <div class="grid-col grid-col-6">
                         <div class="notice">
                             <div class="notice-hd">
                                 <i class="icn icn-support icn-speaker" ></i><h2 class="hdg-inline hdg-4 hdg-bold">Notice</h2>
                             </div>
                             <div class="notice-subhd">
-                                Double your donation from November 8-15.
+                                <?php echo $row['title']; ?>
                             </div>
                             <div class="notice-bd">
-                                All online donations made between November 8-15 will be matched through a $5,000 Board of Director's and Youthprise challenge  grant. Each donor will be entered to win complimentary tickets to the Guthrie Theater.
+                                <?php echo $row['content']; ?>
                             </div>
                         </div>
                     </div>
                     <div class="grid-col grid-col-4">
-                        <i class="icn icn-support icn-donations"></i>
+                        <?php
+                        if( $row['icon_switch'] ) {
+                            echo '<i class="icn icn-support icn-donations"></i>';
+                        } ?>
                     </div>
+                        <?php }
+                    }
+                    ?>
                 </div>
             </div>
         </div>
@@ -87,16 +108,22 @@
     <div id="donate" class="section-wrap bg-turq">
         <div class="grid-site">
             <div class="grid-main">
+                <?php
+                $rows = get_field('donate__section_3');
+                if($rows)
+                {
+                    foreach($rows as $row)
+                    { ?>
                 <div class="grid-col grid-col-4">
                     <div class="donate-online">
                         <div class="donate-online-hd">
                             <i class="icn icn-support icn-cpu" ></i><h2 class="hdg hdg-4 hdg-bold hdg-invert hdg-inline">Donate Online</h2>
                         </div>
                         <div class="donate-online-bd">
-                            Donations are accepted year-round. Donating online is easy and secure.
+                            <?php echo $row['donate_online_content']; ?>
                         </div>
                         <div class="donate-online-ft">
-                            <a href="#" class="btn">Donate Now</a>
+                            <a href="<?php echo $row['donate_online_link']; ?>" class="btn">Donate Now</a>
                         </div>
                     </div>
                 </div>
@@ -110,25 +137,20 @@
                                 Your donations are welcome by mail.
                             </div>
                             <div>
-                                <a href="#">Download a Donation Form</a>
+                                <a href="<?php echo $row['download_donation_form']; ?>">Download a Donation Form</a>
                             </div>
                         </div>
                         <div class="donate-mail-ft">
                             <h3 class="hdg-5 hdg-bold">Send Donations to:</h3>
-                            <ul>
-                                <li>
-                                    Community Mediation & Restorative Services
-                                </li>
-                                <li>
-                                    9220 Bass Lake Road, Suite 270
-                                </li>
-                                <li>
-                                    New Hope, MN 55428
-                                </li>
-                            </ul>
+                            <div class="wysiwyg">
+                                <?php echo $row['send_donation_to']; ?>
+                            </div>
                         </div>
                     </div>
                 </div>
+                    <?php }
+                }
+                ?>
             </div>
         </div>
     </div>
@@ -139,21 +161,18 @@
                 <div class="grid-col grid-col-12">
                     <h2 class="hdg-4 hdg-bold">Other Ways to Help</h2>
                     <ul class="other-ways-list">
+                        <?php
+                        $rows = get_field('donate__section_4--content');
+                        if($rows)
+                        {
+                            foreach($rows as $row)
+                            { ?>
                         <li>
-                            Donate Stock
+                            <?php echo $row['item']; ?>
                         </li>
-                        <li>
-                            Donate items for CMRS' Ebay Auction
-                        </li>
-                        <li>
-                            Designate CMRS as your charity for the search engine GoodSearch
-                        </li>
-                        <li>
-                            Designate CMRS as your United Way beneficiary
-                        </li>
-                        <li>
-                            Ask your employer to match your contribution
-                        </li>
+                            <?php }
+                        }
+                        ?>
                     </ul>
                 </div>
             </div>
@@ -164,68 +183,29 @@
         <div class="grid-site">
             <div class="grid-main">
                 <h2 class="hdg-4 hdg-bold">Individual Supporters</h2>
-                <div class="support-tree">
-                    <div class="support-tree-hd">
-                        <h3 class="hdg-5 hdg-bold">Presidents Circle ($3,000+)</h3>
-                    </div>
-                    <div class="support-tree-bd">
-                        <ul class="support-tree-list">
-                            <li>
-                                Anonymous
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+                <?php
+                $rows = get_field('donate__section_5');
+                if($rows)
+                {
+                    foreach($rows as $row)
+                    { ?>
 
-                <div class="support-tree">
-                    <div class="support-tree-hd">
-                        <h3 class="hdg-5 hdg-bold">Leader ($1,000 - $2,999)</h3>
-                    </div>
-                    <div class="support-tree-bd">
-                        <ul class="support-tree-list">
-                            <li>
-                                Don Mason (In memory of Judy Mason)
-                            </li>
-                            <li>
-                                Maple Grove Lions Club
-                            </li>
-                        </ul>
-                    </div>
-                </div>
 
-                <div class="support-tree">
-                    <div class="support-tree-hd">
-                        <h3 class="hdg-5 hdg-bold">Advocate ($250 - $499)</h3>
+                    <div class="support-tree">
+                        <div class="support-tree-hd">
+                            <h3 class="hdg-5 hdg-bold"><?php echo $row['donor_level_title']; ?></h3>
+                        </div>
+                        <div class="support-tree-bd">
+                            
+                            <?php echo $row['donor_list']; ?>
+
+                        </div>
                     </div>
-                    <div class="support-tree-bd">
-                        <ul class="support-tree-list">
-                            <li>
-                                Lee &amp; Barbara Bearmon
-                            </li>
-                            <li>
-                                Larry Brauch
-                            </li>
-                            <li>
-                                Jim Campbell
-                            </li>
-                            <li>
-                                Daksha Chugani
-                            </li>
-                            <li>
-                                Mary Heer-Forsberg
-                            </li>
-                            <li>
-                                Jack Leveille
-                            </li>
-                            <li>
-                                Jonathan Levy
-                            </li>
-                            <li>
-                                Michael Swanson
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+
+
+                    <?php }
+                }
+                ?>
             </div>
         </div>
     </div>
@@ -249,7 +229,9 @@
                             <li>Fourth Judical District Court</li>
                             <li>Hennepin County Human Services and Public Health Dept</li>
                             <li>Youth Intervention Program (Office of Justice Programs)</li>
-                            <li>Fourth Judical District Court</li>
+                            <li>Hennepin County Attorney's Office</li>
+                            <li>School Districts: Hopkins, Osseo, Robbinsdale</li>
+                            <li>Builders Association of the Twin Cities</li>
                             <li>
                                 Municipalities
                                 <ul class="supporting-groups-sublist">
@@ -260,6 +242,12 @@
                                     <li>Golden Valley</li>
                                     <li>Hopkins</li>
                                     <li>Maple Grove</li>
+                                    <li>Minnetonka</li>
+                                    <li>Mound</li>
+                                    <li>New Hope</li>
+                                    <li>Plymouth</li>
+                                    <li>Robbinsdale</li>
+                                    <li>St. Louis Park</li>
                                 </ul>
                             </li>
                         </ul>
@@ -269,8 +257,11 @@
                         <ul class="supporting-groups-list">
                             <li>American Bar Association</li>
                             <li>Golden Valley Human Services Foundation</li>
-                            <li>Minneapolis Foundation (through MN Youth Intervention Progam Association)</li>
+                            <li>Minneapolis Foundation (through MN Youth Intervention Program Association)</li>
                             <li>Minnesota State Bar Association- ADR Section</li>
+                            <li>Youthprise Foundation</li>
+                            <li>State of Minnesota</li>
+                            <li>MN Supreme Court</li>
                         </ul>
                     </div>
                 </div>
@@ -278,7 +269,7 @@
                 <div class="donor-policy">
                     <h2 class="hdg-5 hdg-bold">Our Donor Privacy Policy</h2>
                     <div class="donor-subhead">Please Download our Donor Privacy Policy</div>
-                    <a href="#" class="btn">Donor Privacy Policy</a>
+                    <a href="<?php the_field('donor_privacy_policy'); ?>" class="btn">Donor Privacy Policy</a>
                 </div>
             </div>
         </div>

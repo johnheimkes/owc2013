@@ -26,7 +26,7 @@
                             <a <?php if(is_page('volunteer')) { echo " class='current'"; } ?> href="<?php echo home_url(); ?>/volunteer">Volunteer</a>
                         </li>
                         <li>
-                            <a <?php if(is_page('support')) { echo " class='current'"; } ?> href="<?php echo home_url(); ?>/support">Support</a>
+                            <a <?php if(is_page('donate')) { echo " class='current'"; } ?> href="<?php echo home_url(); ?>/donate">Donate</a>
                         </li>
                         <li>
                             <a <?php if(is_page('about')) { echo " class='current'"; } ?> href="<?php echo home_url(); ?>/about">About</a>

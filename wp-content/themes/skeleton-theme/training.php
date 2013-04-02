@@ -216,65 +216,28 @@
                                 </ul>
                                 <a class="btn">Download PDF</a>
                             </div>
-                            <div class="grid-col grid-col-5">
-                                <h4 class="hdg-bold">Prices</h4>
-                                <ul class="training-table">
-                                    <li>
-                                        <table class="training-prices">
-                                            <tbody>
-                                                <tr>
-                                                    <td class="training-prices_category">
-                                                        Attorney (CIE Credits)
-                                                        <span class="training-prices_price">$600</span>
-                                                    </td>
-                                                    <td>
-                                                        <a href="#" class="btn">Register &amp; Buy</a>
-                                                    </td>
-                                                    <td>
-                                                        <a href="#" class="btn">Register</a>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </li>
-                                    <li>
-                                        <table class="training-prices">
-                                            <tbody>
-                                                <tr>
-                                                    <td class="training-prices_category">
-                                                        Private Practitioner
-                                                        <span class="training-prices_price">$350</span>
-                                                    </td>
-                                                    <td>
-                                                        <a href="#" class="btn">Register &amp; Buy</a>
-                                                    </td>
-                                                    <td>
-                                                        <a href="#" class="btn">Register</a>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </li>
-                                    <li>
-                                        <table class="training-prices">
-                                            <tbody>
-                                                <tr>
-                                                    <td class="training-prices_category">
-                                                        Volunteer
-                                                        <span class="training-prices_price">$200</span>
-                                                    </td>
-                                                    <td>
-                                                        <a href="#" class="btn">Register &amp; Buy</a>
-                                                    </td>
-                                                    <td>
-                                                        <a href="#" class="btn">Register</a>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </li>
-                                </ul>
-                            </div>
+                            <!-- <div class="grid-col grid-col-5">
+                                                            <h4 class="hdg-bold">Prices</h4>
+                                                            <ul class="training-table">
+                                                                <li>
+                                                                    <table class="training-prices">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td class="training-prices_category">
+                                                                                    <span class="training-prices_price">$150</span>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <a href="#" class="btn">Register &amp; Buy</a>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <a href="#" class="btn">Register</a>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </li>
+                                                            </ul>
+                                                        </div> -->
                         </div>
                     </div> 
                 </div>
@@ -306,65 +269,28 @@
                                 </ul>
                                 <a class="btn">Download PDF</a>
                             </div>
-                            <div class="grid-col grid-col-5">
-                                <h4 class="hdg-bold">Prices</h4>
-                                <ul class="training-table">
-                                    <li>
-                                        <table class="training-prices">
-                                            <tbody>
-                                                <tr>
-                                                    <td class="training-prices_category">
-                                                        Attorney (CIE Credits)
-                                                        <span class="training-prices_price">$600</span>
-                                                    </td>
-                                                    <td>
-                                                        <a href="#" class="btn">Register &amp; Buy</a>
-                                                    </td>
-                                                    <td>
-                                                        <a href="#" class="btn">Register</a>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </li>
-                                    <li>
-                                        <table class="training-prices">
-                                            <tbody>
-                                                <tr>
-                                                    <td class="training-prices_category">
-                                                        Private Practitioner
-                                                        <span class="training-prices_price">$350</span>
-                                                    </td>
-                                                    <td>
-                                                        <a href="#" class="btn">Register &amp; Buy</a>
-                                                    </td>
-                                                    <td>
-                                                        <a href="#" class="btn">Register</a>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </li>
-                                    <li>
-                                        <table class="training-prices">
-                                            <tbody>
-                                                <tr>
-                                                    <td class="training-prices_category">
-                                                        Volunteer
-                                                        <span class="training-prices_price">$200</span>
-                                                    </td>
-                                                    <td>
-                                                        <a href="#" class="btn">Register &amp; Buy</a>
-                                                    </td>
-                                                    <td>
-                                                        <a href="#" class="btn">Register</a>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </li>
-                                </ul>
-                            </div>
+                            <!-- <div class="grid-col grid-col-5">
+                                                            <h4 class="hdg-bold">Prices</h4>
+                                                            <ul class="training-table">
+                                                                <li>
+                                                                    <table class="training-prices">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td class="training-prices_category">
+                                                                                    <span class="training-prices_price">$150</span>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <a href="#" class="btn">Register &amp; Buy</a>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <a href="#" class="btn">Register</a>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </li>
+                                                            </ul>
+                                                        </div> -->
                         </div>
                     </div> 
                 </div>
@@ -396,65 +322,28 @@
                                 </ul>
                                 <a class="btn">Download PDF</a>
                             </div>
-                            <div class="grid-col grid-col-5">
-                                <h4 class="hdg-bold">Prices</h4>
-                                <ul class="training-table">
-                                    <li>
-                                        <table class="training-prices">
-                                            <tbody>
-                                                <tr>
-                                                    <td class="training-prices_category">
-                                                        Attorney (CIE Credits)
-                                                        <span class="training-prices_price">$600</span>
-                                                    </td>
-                                                    <td>
-                                                        <a href="#" class="btn">Register &amp; Buy</a>
-                                                    </td>
-                                                    <td>
-                                                        <a href="#" class="btn">Register</a>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </li>
-                                    <li>
-                                        <table class="training-prices">
-                                            <tbody>
-                                                <tr>
-                                                    <td class="training-prices_category">
-                                                        Private Practitioner
-                                                        <span class="training-prices_price">$350</span>
-                                                    </td>
-                                                    <td>
-                                                        <a href="#" class="btn">Register &amp; Buy</a>
-                                                    </td>
-                                                    <td>
-                                                        <a href="#" class="btn">Register</a>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </li>
-                                    <li>
-                                        <table class="training-prices">
-                                            <tbody>
-                                                <tr>
-                                                    <td class="training-prices_category">
-                                                        Volunteer
-                                                        <span class="training-prices_price">$200</span>
-                                                    </td>
-                                                    <td>
-                                                        <a href="#" class="btn">Register &amp; Buy</a>
-                                                    </td>
-                                                    <td>
-                                                        <a href="#" class="btn">Register</a>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </li>
-                                </ul>
-                            </div>
+                            <!-- <div class="grid-col grid-col-5">
+                                                            <h4 class="hdg-bold">Prices</h4>
+                                                            <ul class="training-table">
+                                                                <li>
+                                                                    <table class="training-prices">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td class="training-prices_category">
+                                                                                    <span class="training-prices_price">$150</span>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <a href="#" class="btn">Register &amp; Buy</a>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <a href="#" class="btn">Register</a>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </li>
+                                                            </ul>
+                                                        </div> -->
                         </div>
                     </div> 
                 </div>
@@ -485,65 +374,28 @@
                                 </ul>
                                 <a class="btn">Download PDF</a>
                             </div>
-                            <div class="grid-col grid-col-5">
-                                <h4 class="hdg-bold">Prices</h4>
-                                <ul class="training-table">
-                                    <li>
-                                        <table class="training-prices">
-                                            <tbody>
-                                                <tr>
-                                                    <td class="training-prices_category">
-                                                        Attorney (CIE Credits)
-                                                        <span class="training-prices_price">$600</span>
-                                                    </td>
-                                                    <td>
-                                                        <a href="#" class="btn">Register &amp; Buy</a>
-                                                    </td>
-                                                    <td>
-                                                        <a href="#" class="btn">Register</a>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </li>
-                                    <li>
-                                        <table class="training-prices">
-                                            <tbody>
-                                                <tr>
-                                                    <td class="training-prices_category">
-                                                        Private Practitioner
-                                                        <span class="training-prices_price">$350</span>
-                                                    </td>
-                                                    <td>
-                                                        <a href="#" class="btn">Register &amp; Buy</a>
-                                                    </td>
-                                                    <td>
-                                                        <a href="#" class="btn">Register</a>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </li>
-                                    <li>
-                                        <table class="training-prices">
-                                            <tbody>
-                                                <tr>
-                                                    <td class="training-prices_category">
-                                                        Volunteer
-                                                        <span class="training-prices_price">$200</span>
-                                                    </td>
-                                                    <td>
-                                                        <a href="#" class="btn">Register &amp; Buy</a>
-                                                    </td>
-                                                    <td>
-                                                        <a href="#" class="btn">Register</a>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </li>
-                                </ul>
-                            </div>
+                            <!-- <div class="grid-col grid-col-5">
+                                                            <h4 class="hdg-bold">Prices</h4>
+                                                            <ul class="training-table">
+                                                                <li>
+                                                                    <table class="training-prices">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td class="training-prices_category">
+                                                                                    <span class="training-prices_price">$150</span>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <a href="#" class="btn">Register &amp; Buy</a>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <a href="#" class="btn">Register</a>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </li>
+                                                            </ul>
+                                                        </div> -->
                         </div>
                     </div> 
                 </div>
@@ -566,14 +418,14 @@
                             Limited number of scholarships are available. Contact your sponsoring organization about scholarship possibilities
                         </div>
                         <div>
-                            <ul class="h-list h-list_scholarships">
+                            <!-- <ul class="h-list h-list_scholarships">
                                 <li>
                                     Phone: 555-555-5555
                                 </li>
                                 <li>
                                     Email: hello@email.com
                                 </li>
-                            </ul>
+                            </ul> -->
                         </div>
                     </div>
                 </div>

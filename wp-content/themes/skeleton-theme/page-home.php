@@ -14,7 +14,7 @@
     <div class="grid-site hero-img hero-img-home">
         <div class="grid-main ">
             <div class="grid-row-s">
-                <div class="grid-col grid-col-4">
+                <div class="grid-col grid-col-5">
                     <div class="feature">
                         <div class="feature-hd">
                             <?php
@@ -118,11 +118,11 @@
                         <div class="feature-hd">
                             <h2 class="hdg hdg-4"><i class="icn icon-sprite-about home-people"></i>Volunteers</h2>
                         </div>
-                        <div class="feature-bd">
+                        <div class="feature-bd feature-bd--flex-box">
                             <?php the_sub_field('home_section_4a_volunteers_paragraph'); ?>
                         </div>
                         <div class="feature-ft">
-                            <a href="#" class="btn">Sign Up To Volunteer</a>
+                            <a href="<?php echo home_url(); ?>/volunteer" class="btn">Sign Up To Volunteer</a>
                         </div>
                     </div>
                 </div>
@@ -132,11 +132,11 @@
                         <div class="feature-hd">
                             <h2 class="hdg hdg-4"><i class="icn icon-sprite-about home-presents"></i>Donations</h2>
                         </div>
-                        <div class="feature-bd">
+                        <div class="feature-bd feature-bd--flex-box">
                             <?php the_sub_field('home_section_4a_donors_paragraph'); ?>
                         </div>
                         <div class="feature-ft">
-                            <a href="#" class="btn">More About Donations</a>
+                            <a href="<?php echo home_url(); ?>/donate" class="btn">More About Donations</a>
                         </div>
                     </div>
                 </div>
@@ -145,11 +145,11 @@
                         <div class="feature-hd">
                             <h2 class="hdg hdg-4"><i class="icn icon-sprite-about home-home"></i>Partners</h2>
                         </div>
-                        <div class="feature-bd">
+                        <div class="feature-bd feature-bd--flex-box">
                             <?php the_sub_field('home_section_4a_nonprofits_paragraph'); ?>
                         </div>
                         <div class="feature-ft">
-                            <a href="#" class="btn">Nonprofit Resources</a>
+                            <a href="<?php echo home_url(); ?>/resources" class="btn">Nonprofit Resources</a>
                         </div>
                     </div>
                 </div>

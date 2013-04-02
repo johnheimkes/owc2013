@@ -30,19 +30,30 @@
                 </div>
                 <div class="grid-main">
                     <div class="intro grid-col grid-col-10">
-                        <div class="intro-hd">
-                            <h2 class="heading-intro">
-                                If you need help to go from conflict to resolution, take the first step here.
-                            </h2>
-                        <!-- end .intro-hd -->
-                        </div>
-                        <div class="intro-bd">
-                            <p>
-                                For over 30 years we have helped people have respectful and productive conversations, resulting in better understanding and creative, concrete solutions.
-                            </p>
-                            <a href="#" class="btn">Service Request Form</a>
-                        <!-- end .intro-bd -->
-                        </div>
+                        <?php
+                        $rows = get_field('mediation__section_1');
+                        if($rows)
+                        {
+                            foreach($rows as $row)
+                            { ?>
+                                <!-- echo $row['sub_field_1'] . $row['sub_field_2']; -->
+                                <div class="intro-hd">
+                                    <h2 class="heading-intro">
+                                        <?php echo $row['mediation__section_1--title']; ?>
+                                    </h2>
+                                <!-- end .intro-hd -->
+                                </div>
+                                <div class="intro-bd">
+                                    <p><?php echo $row['mediation__section_1--tagline']; ?></p>
+                                    <a href="<?php the_field('mediation__service_request_form'); ?>" class="btn">Service Request Form</a>
+                                <!-- end .intro-bd -->
+                                </div>
+
+                            <?php }
+                        }
+                        ?>
+                        
+                        
                     <!-- end .intro -->
                     </div>
                 <!-- end .grid-main -->
@@ -53,64 +64,60 @@
         </div>
         <div class="grid-site grid-site-inset">
             <div class="grid-main">
-                <div class="media">
-                    <div class="media-element">
-                        <img src="<?php bloginfo('template_directory'); ?>/assets/images/icon-mediation-intro1.png" alt="" />
-                    <!-- end .media-element -->
-                    </div>
-                    <div class="media-bd">
-                        <div class="summary grid-col grid-col-9">
-                            <div class="summary-hd">
-                                <h2>Mediation</h2>
-                            <!-- end .summary-hd --> 
+                
+                <?php
+                $rows = get_field('mediation__section_2');
+                if($rows)
+                {
+                    foreach($rows as $row)
+                    { ?>
+                        <div class="media">
+                            <div class="media-element">
+                                <img src="<?php bloginfo('template_directory'); ?>/assets/images/icon-mediation-intro1.png" alt="" />
+                            <!-- end .media-element -->
                             </div>
-                            <div class="summary-bd">
-                                <p>
-                                    We understand when you’re in the middle of conflict it’s difficult to get started. That’s why our staff takes the burden of extending the invitation to mediate, and schedules the mediation at a time and place convenient for all. A mediation session takes 1-2 hours.
-                                </p>
-                            <!-- end .summary-bd --> 
+                            <div class="media-bd">
+                                <div class="summary grid-col grid-col-9">
+                                    <div class="summary-hd">
+                                        <h2>Mediation</h2>
+                                    <!-- end .summary-hd --> 
+                                    </div>
+                                    <div class="summary-bd">
+                                        <p><?php echo $row["mediation__section_2--mediation_content"]; ?></p>
+                                    <!-- end .summary-bd --> 
+                                    </div>
+                                <!-- end .summary -->
+                                </div>
+                            <!-- end .media-bd -->
                             </div>
-                            <div class="summary-bd">
-                                <p>
-                                    When you’re ready to start, fill out the <a href="#">online mediation request form</a> or give us a call, 763-561-0033.
-                                </p>
-                            <!-- end .summary-bd --> 
-                            </div>
-                        <!-- end .summary -->
+                        <!-- end .media -->
                         </div>
-                    <!-- end .media-bd -->
-                    </div>
-                <!-- end .media -->
-                </div>
-                <div class="media">
-                    <div class="media-element">
-                        <img src="<?php bloginfo('template_directory'); ?>/assets/images/icon-mediation-intro2.png" alt="" />
-                    <!-- end .media-element -->
-                    </div>
-                    <div class="media-bd">
-                        <div class="summary grid-col grid-col-9">
-                            <div class="summary-hd">
-                                <h2>Restorative Justice</h2>
-                            <!-- end .summary-hd --> 
+                        <div class="media">
+                            <div class="media-element">
+                                <img src="<?php bloginfo('template_directory'); ?>/assets/images/icon-mediation-intro2.png" alt="" />
+                            <!-- end .media-element -->
                             </div>
-                            <div class="summary-bd">
-                                <p>
-                                    Restorative practices provide the community with a means to hold individuals accountable to those impacted in a compassionate manner. Through our restorative services, impact is understood, harms are healed, relationships restored and future decision-making improved.
-                                </p>
-                            <!-- end .summary-bd --> 
+                            <div class="media-bd">
+                                <div class="summary grid-col grid-col-9">
+                                    <div class="summary-hd">
+                                        <h2>Restorative Justice</h2>
+                                    <!-- end .summary-hd --> 
+                                    </div>
+                                    <div class="summary-bd">
+                                        <p><?php echo $row["mediation__section_2--restorative_justice_part_content"]; ?></p>
+                                    <!-- end .summary-bd --> 
+                                    </div>
+                                <!-- end .summary -->
+                                </div>
+                            <!-- end .media-bd -->
                             </div>
-                            <div class="summary-bd">
-                                <p>
-                                    Community Mediation &amp; Restorative Services works with local police, schools, the Hennepin County Attorney’s office and Juvenile Court to provide.
-                                </p>
-                            <!-- end .summary-bd --> 
-                            </div>
-                        <!-- end .summary -->
+                        <!-- end .media -->
                         </div>
-                    <!-- end .media-bd -->
-                    </div>
-                <!-- end .media -->
-                </div>
+                    <?php }
+                }
+                ?>
+                
+                
             <!-- end .grid-main -->
             </div>
         <!-- end .grid-site -->
@@ -125,41 +132,29 @@
                         </div>
                         <div class="summary-bd">
                             <div class="grid-row">
-                                <div class="grid-col grid-col grid-col grid-col-4">
-                                    <ul class="summary-list">
-                                        <li>Agencies/Citizens</li>
-                                        <li>Builders/Homeowners</li>
-                                        <li>Businesses/Consumers</li>
-                                        <li>Children and Youth</li>
-                                        <li>Divorced/Unmarried parents</li>
-                                        <li>Elderly Parent Care</li>                                    
-                                    <!-- end .summary-list -->
-                                    </ul>
-                                <!-- end .grid-col grid-col-4 -->
-                                </div>
-                                <div class="grid-col grid-col grid-col grid-col-4">
-                                    <ul class="summary-list">
-                                        <li>Employees/Employers</li>
-                                        <li>Family Members</li>
-                                        <li>Friends</li>
-                                        <li>Harassment</li>
-                                        <li>Landlord/Tenants</li>
-                                        <li>Neighbors</li>
-                                    <!-- end .summary-list -->
-                                    </ul>
-                                <!-- end .grid-col grid-col-4 -->
-                                </div>
-                                <div class="grid-col grid-col grid-col grid-col-4">
-                                    <ul class="summary-list">
-                                        <li>Run-Aways</li>
-                                        <li>Schools</li>
-                                        <li>Shared Parenting</li>
-                                        <li>Truancy</li>
-                                        <li>Victims/Offenders</li>
-                                    <!-- end .summary-list -->
-                                    </ul>
-                                <!-- end .grid-col grid-col-4 -->
-                                </div>
+                                
+                                <?php
+                                $rows = get_field('mediation__section_3');
+                                if($rows)
+                                {
+                                    foreach($rows as $row)
+                                    { ?>
+                                        <div class="grid-col grid-col grid-col grid-col-4">
+                                            <div class="summary-list"><?php echo wpautop( $row['mediation__section_3--column_1'], true ); ?></div>
+                                        <!-- end .grid-col grid-col-4 -->
+                                        </div>
+                                        <div class="grid-col grid-col grid-col grid-col-4">
+                                            <div class="summary-list"><?php echo wpautop( $row['mediation__section_3--column_2'], false ); ?></div>
+                                        <!-- end .grid-col grid-col-4 -->
+                                        </div>
+                                        <div class="grid-col grid-col grid-col grid-col-4">
+                                            <div class="summary-list"><?php echo wpautop( $row['mediation__section_3--column_3'] ); ?></div>
+                                        <!-- end .grid-col grid-col-4 -->
+                                        </div>
+                                    <?php }
+                                }
+                                ?>
+                                
                             <!-- end .grid-row -->
                             </div>
                         <!-- end .summary-bd -->
@@ -283,6 +278,12 @@
         </div>
     <!-- end .bg-turq -->
     </div>
+    <?php
+    $rows = get_field('mediation__section_5');
+    if($rows)
+    {
+        foreach($rows as $row)
+        { ?>
     <div id="first-steps" class="js-jump-link-target">
         <div class="grid-site grid-site-inset">
             <div class="grid-main">
@@ -304,19 +305,11 @@
                             <div class="media-bd">
                                 <div class="step">
                                     <div class="step-hd">
-                                        <h3>Are we the right resource for you?</h3>
+                                        <h3><?php echo $row['mediation__section_5--step_1-title'];?></h3>
                                     <!-- end .step-hd -->
                                     </div>
                                     <div class="step-bd">
-                                        <p>
-                                            Do you or the others involved live in northern or western Hennepin County? If not, please see <a href="#">communitymediationminnesota.org</a> to see if there is a provider closer to you.
-                                        </p>
-                                    <!-- end .step-bd -->
-                                    </div>
-                                    <div class="step-bd">
-                                        <p>
-                                            By statute, we do not provide services when there has been a history of domestic violence or violence involving a weapon. We also do not provide divorce mediation services (we provide shared parenting and post-relationship services). If you need a different resource, please check our resources.
-                                        </p>
+                                        <?php echo $row['mediation__section_5--step_1'];?>
                                     <!-- end .step-bd -->
                                     </div>
                                 <!-- end .step -->
@@ -352,17 +345,15 @@
                                 <div class="media-bd">
                                     <div class="step">
                                         <div class="step-hd">
-                                            <h3>Fill Out The Service Request Form</h3>
+                                            <h3><?php echo $row['mediation__section_5--step_2-title'];?></h3>
                                         <!-- end .step-hd -->
                                         </div>
                                         <div class="step-bd">
-                                            <p>
-                                                Think about who needs to be invited to participate and provide us with contact information.
-                                            </p>
+                                            <?php echo $row['mediation__section_5--step_2'];?>
                                         <!-- end .step-bd -->
                                         </div>
                                         <div class="step-bd">
-                                            <a href="#" class="btn">Service Request Form</a>
+                                            <a href="<?php the_field('mediation__service_request_form'); ?>" class="btn">Service Request Form</a>
                                         <!-- end .step-bd -->
                                         </div>
                                     <!-- end .step -->
@@ -407,14 +398,12 @@
                             <div class="media-bd">
                                 <div class="step">
                                     <div class="step-hd">
-                                        <h3>Your Case Manager will extend an invitation to a mediation or a restorative conference.</h3>
+                                        <h3><?php echo $row['mediation__section_5--step_3-title'];?></h3>
                                     <!-- end .step-hd -->
                                     </div>
                                     <div class="step-bd">
-                                        <p>
-                                            The invitation will be in letter form, unless you don’t have a way to get an address. It can also be a phone call or email. You will receive a copy of the letter.
-                                        </p>
-                                        <p><a href="<?php echo home_url();?>/case-managers">Learn More about my Case manager</a></p>
+                                        <?php echo $row['mediation__section_5--step_3'];?>
+                                        <!-- <p><a href="<?php //echo home_url();?>/case-managers">Learn More about my Case manager</a></p> -->
                                     <!-- end .step-bd -->
                                     </div>
                                 <!-- end .step -->
@@ -454,7 +443,7 @@
                                 <div class="media-bd">
                                     <div class="step">
                                         <div class="step-hd">
-                                            <h3>Your Case Manager will talk with everyone invited, explain the process, and determine if and how they might participate.</h3>
+                                            <h3><?php echo $row['mediation__section_5--step_4-title'];?></h3>
                                         <!-- end .step-hd -->
                                         </div>
                                     <!-- end .step -->
@@ -491,7 +480,7 @@
                             <div class="media-bd">
                                 <div class="step">
                                     <div class="step-hd">
-                                        <h3>The day of your mediation or restorative conference</h3>
+                                        <h3><?php echo $row['mediation__section_5--step_5-title'];?></h3>
                                     <!-- end .step-hd -->
                                     </div>
                                 <!-- end .step -->
@@ -516,20 +505,11 @@
                                             <!-- end .step-icon -->
                                             </div>
                                             <div class="step-hd">
-                                                <h3>Mediation</h3>
+                                                <h3><?php echo $row['mediation__section_5--step_5a-title'];?></h3>
                                             <!-- end .step-hd -->
                                             </div>
                                             <div class="step-bd">
-                                                <p>
-                                                    The mediation is an informal conversation, facilitated by trained mediators. They will welcome everyone, provide an orientation to the process and answer any questions you have. The mediators will help you identify areas of common ground and capture your agreement in writing.
-                                                </p>
-                                            <!-- end .step-bd -->
-                                            </div>
-                                            <div class="step-bd">
-                                                <p>
-                                                    You are in control of the outcome; the mediators will provide a safe and constructive process.
-                                                </p>
-
+                                                <?php echo $row['mediation__section_5--step_5a'];?>
                                                 <div class="tether tether-pushed tether-intersect tether-intersect-wide">
                                                     <div class="tether-line tether-line-reverse"></div>
                                                 </div>
@@ -542,17 +522,15 @@
                                     <div class="grid-col grid-col grid-col grid-col-6">
                                         <div class="step-callout">
                                             <div class="step-icon">
-                                                <img src="<?php bloginfo('template_directory'); ?>/assets/images/icon-mediation-intro1.png" alt="" />
+                                                <img src="<?php bloginfo('template_directory'); ?>/assets/images/icon-mediation-intro2.png" alt="" />
                                             <!-- end .step-icon -->
                                             </div>
                                             <div class="step-hd">
-                                                <h3>Restorative Conference</h3>
+                                                <h3><?php echo $row['mediation__section_5--step_5b-title'];?></h3>
                                             <!-- end .step-hd -->
                                             </div>
                                             <div class="step-bd">
-                                                <p>
-                                                    Your facilitators will welcome you and provide you with an orientation of the process. They will guide you through a conversation structured around four questions:
-                                                </p>
+                                                <?php echo $row['mediation__section_5--step_5b'];?>
                                             <!-- end .step-bd -->
                                             </div>
                                             <div class="step-bd">
@@ -596,7 +574,7 @@
                                 <div class="media-bd">
                                     <div class="step">
                                         <div class="step-hd">
-                                            <h3>The mediators/facilitators will give you copies of your agreement or plan.</h3>
+                                            <h3><?php echo $row['mediation__section_5--step_6-title'];?></h3>
                                         <!-- end .step-hd -->
                                         </div>
                                     <!-- end .step -->
@@ -630,7 +608,7 @@
                             <div class="media-bd">
                                 <div class="step">
                                     <div class="step-hd">
-                                        <h3>Your Case Manager will follow up with you before sending closure letters.</h3>
+                                        <h3><?php echo $row['mediation__section_5--step_7-title'];?></h3>
                                     <!-- end .step-hd -->
                                     </div>
                                 <!-- end .step -->
@@ -649,6 +627,9 @@
         </div>
     <!-- end #first-steps -->
     </div>
+        <?php }
+    }
+    ?>
     <div id="get-started" class="section-wrap bg-turq js-jump-link-target">
         <div class="grid-site">
             <div class="grid-main">
@@ -665,7 +646,7 @@
                                 </p>
                             </div>
                             <div class="section-steps-bd section-steps-bd-dark section-steps-bd-spaced">
-                                <a href="#" class="btn">Contact Us</a>
+                                <a href="<?php echo home_url(); ?>/about/#contact" class="btn">Contact Us</a>
                             </div>
                         <!-- end .grid-col -->
                         </div>
@@ -701,18 +682,32 @@
                             </div>
                             <div class="section-steps-bd section-steps-bd-spaced-loose">
                                 <ul class="section-steps-v-list">
-                                    <li><a href="#">City Referral Form</a></li>
+                                    <!-- <li><a href="#">City Referral Form</a></li>
                                     <li><a href="#">Community Agency Referral Form</a></li>
                                     <li><a href="#">Housing Referral Form</a></li>
                                     <li><a href="#">Juvenile Referral Form</a></li>
                                     <li><a href="#">School Referral Form</a></li>
                                     <li><a href="#">Mediation Request</a></li>
                                     <li><a href="#">Small Claims Mediation</a></li>
-                                    <li><a href="#">Request Form</a></li>
+                                    <li><a href="#">Request Form</a></li> -->
+                                    <?php
+                                    
+                                    $rows = get_field('mediation__forms_list');
+                                    if($rows)
+                                    {
+
+                                        foreach($rows as $row)
+                                        {
+                                            echo '<li><a href="' . $row["mediation__pdf_file"] . '">' . $row["mediation__anchor_title"] .'</a></li>';
+                                        }
+
+                                    }
+                                    
+                                    ?>
                                 </ul>
                             </div>
                             <div class="section-steps-bd section-steps-bd-dark section-steps-bd-spaced">
-                                <a href="#" class="btn">Small Claims Administrative Fee</a>
+                                <a href="<?php the_field('mediation__small_claims_fee_link'); ?>" class="btn" rel="external">Small Claims Administrative Fee</a>
                             </div>
                         <!-- end .grid-col -->
                         </div>
