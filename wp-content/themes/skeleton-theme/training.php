@@ -65,19 +65,18 @@ get_header();
                     </div>
                     <div class="training-bd">
                         <div class="grid-row-s">
-                            
                             <div class="grid-col grid-col-5">
                                 <h4 class="hdg-bold">Topics Include:</h4>
-                                <?php if ( get_field( 'training_topics' ) ) : ?>
-                                    <ul class="training-list">
-                                        <?php while ( has_sub_field( 'training_topics') ) : ?>
-                                            <li><?php the_sub_field( 'training_topic' ); ?></li>
-                                        <?php endwhile; ?>
-                                    </ul>
-                                <?php endif; ?>
-                                <a class="btn" href="<?php the_field( 'training_document' ); ?>">Download PDF</a>
+                                <ul class="training-list">
+                                    <li>Conflict resolution and mediation theory</li>
+                                    <li>Mediation skills and techniques</li>
+                                    <li>Components in the mediation process</li>
+                                    <li>Mediator conduct</li>
+                                    <li>Mediation Rules, statutes, and practices</li>
+                                    <li>Mediating in court, community, and school settings</li>
+                                </ul>
+                                <a class="btn">Download PDF</a>
                             </div>
-                            
                             <div class="grid-col grid-col-5">
                                 <h4 class="hdg-bold">Prices</h4>
                                 <ul class="training-table">
