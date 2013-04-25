@@ -8,8 +8,6 @@
  * @author
  * @version $Id$
  */
-?>
-<?php
 
 get_header();
 
