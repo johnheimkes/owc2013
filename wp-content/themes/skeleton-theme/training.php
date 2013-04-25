@@ -66,17 +66,17 @@ get_header();
                     <div class="training-bd">
                         <div class="grid-row-s">
                             
-                            <?php if ( get_field( 'training_topics' ) ) : ?>   
                             <div class="grid-col grid-col-5">
                                 <h4 class="hdg-bold">Topics Include:</h4>
-                                <ul class="training-list">
-                                    <?php while ( has_sub_field( 'training_topics') ) : ?>
-                                        <li><?php the_sub_field( 'training_topic' ); ?></li>
-                                    <?php endwhile; ?>
-                                </ul>
+                                <?php if ( get_field( 'training_topics' ) ) : ?>
+                                    <ul class="training-list">
+                                        <?php while ( has_sub_field( 'training_topics') ) : ?>
+                                            <li><?php the_sub_field( 'training_topic' ); ?></li>
+                                        <?php endwhile; ?>
+                                    </ul>
+                                <?php endif; ?>
                                 <a class="btn" href="<?php the_field( 'training_document' ); ?>">Download PDF</a>
                             </div>
-                            <?php endif; ?>
                             
                             <div class="grid-col grid-col-5">
                                 <h4 class="hdg-bold">Prices</h4>
