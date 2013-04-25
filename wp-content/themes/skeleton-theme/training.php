@@ -11,8 +11,6 @@
 
 get_header();
 
-if ( have_posts() ) : while ( have_posts() ) : the_post();
-
 ?>
 <div>
     <div class="section-wrap bg-lightblue">
@@ -22,10 +20,10 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
                     <div class="grid-col grid-col-5">
                         <div class="feature">
                             <div class="feature-hd">
-                                <h2 class="hdg-bold hdg-5"><?php the_title(); ?></h2>
+                                <h2 class="hdg-bold hdg-5">Training</h2>
                             </div>
                             <div class="feature-bd feature-bd_small">
-                                <?php the_content(); ?>
+                                Community Mediation &amp; Restorative Services, Inc believes training is an effective strategy as we seek to develop the capacity of our community to respectfully resolve conflict and repair harm. We collaborate with other mediation and restorative parties to create more opportunities for people to participate in transformative, skill-building experiences.
                             </div>
                         </div>
                     </div>                    
@@ -52,7 +50,7 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
     <div class="section-wrap bg-lightblue">
         <div class="grid-site">
             <div class="grid-main">
-
+                <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
                 <div class="training">
                     <div class="training-hd">
                         <div class="stretch">
@@ -67,18 +65,19 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
                     </div>
                     <div class="training-bd">
                         <div class="grid-row-s">
+                            
+                            <?php if ( get_field( 'training_topics' ) ) : ?>   
                             <div class="grid-col grid-col-5">
                                 <h4 class="hdg-bold">Topics Include:</h4>
                                 <ul class="training-list">
-                                    <li>Conflict resolution and mediation theory</li>
-                                    <li>Mediation skills and techniques</li>
-                                    <li>Components in the mediation process</li>
-                                    <li>Mediator conduct</li>
-                                    <li>Mediation Rules, statutes, and practices</li>
-                                    <li>Mediating in court, community, and school settings</li>
+                                    <?php while ( has_sub_field( 'training_topics') ) : ?>
+                                        <li><?php the_sub_field( 'training_topic' ); ?></li>
+                                    <?php endwhile; ?>
                                 </ul>
-                                <a class="btn">Download PDF</a>
+                                <a class="btn" href="<?php the_field( 'training_document' ); ?>">Download PDF</a>
                             </div>
+                            <?php endif; ?>
+                            
                             <div class="grid-col grid-col-5">
                                 <h4 class="hdg-bold">Prices</h4>
                                 <ul class="training-table">
@@ -141,6 +140,7 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
                         </div>
                     </div> 
                 </div>
+                <?php endwhile; endif; ?>
 
                 <div class="training">
                     <div class="training-hd">
@@ -220,28 +220,6 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
                                 </ul>
                                 <a class="btn">Download PDF</a>
                             </div>
-                            <!-- <div class="grid-col grid-col-5">
-                                                            <h4 class="hdg-bold">Prices</h4>
-                                                            <ul class="training-table">
-                                                                <li>
-                                                                    <table class="training-prices">
-                                                                        <tbody>
-                                                                            <tr>
-                                                                                <td class="training-prices_category">
-                                                                                    <span class="training-prices_price">$150</span>
-                                                                                </td>
-                                                                                <td>
-                                                                                    <a href="#" class="btn">Register &amp; Buy</a>
-                                                                                </td>
-                                                                                <td>
-                                                                                    <a href="#" class="btn">Register</a>
-                                                                                </td>
-                                                                            </tr>
-                                                                        </tbody>
-                                                                    </table>
-                                                                </li>
-                                                            </ul>
-                                                        </div> -->
                         </div>
                     </div> 
                 </div>
@@ -273,28 +251,6 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
                                 </ul>
                                 <a class="btn">Download PDF</a>
                             </div>
-                            <!-- <div class="grid-col grid-col-5">
-                                                            <h4 class="hdg-bold">Prices</h4>
-                                                            <ul class="training-table">
-                                                                <li>
-                                                                    <table class="training-prices">
-                                                                        <tbody>
-                                                                            <tr>
-                                                                                <td class="training-prices_category">
-                                                                                    <span class="training-prices_price">$150</span>
-                                                                                </td>
-                                                                                <td>
-                                                                                    <a href="#" class="btn">Register &amp; Buy</a>
-                                                                                </td>
-                                                                                <td>
-                                                                                    <a href="#" class="btn">Register</a>
-                                                                                </td>
-                                                                            </tr>
-                                                                        </tbody>
-                                                                    </table>
-                                                                </li>
-                                                            </ul>
-                                                        </div> -->
                         </div>
                     </div> 
                 </div>
@@ -326,28 +282,6 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
                                 </ul>
                                 <a class="btn">Download PDF</a>
                             </div>
-                            <!-- <div class="grid-col grid-col-5">
-                                                            <h4 class="hdg-bold">Prices</h4>
-                                                            <ul class="training-table">
-                                                                <li>
-                                                                    <table class="training-prices">
-                                                                        <tbody>
-                                                                            <tr>
-                                                                                <td class="training-prices_category">
-                                                                                    <span class="training-prices_price">$150</span>
-                                                                                </td>
-                                                                                <td>
-                                                                                    <a href="#" class="btn">Register &amp; Buy</a>
-                                                                                </td>
-                                                                                <td>
-                                                                                    <a href="#" class="btn">Register</a>
-                                                                                </td>
-                                                                            </tr>
-                                                                        </tbody>
-                                                                    </table>
-                                                                </li>
-                                                            </ul>
-                                                        </div> -->
                         </div>
                     </div> 
                 </div>
@@ -378,35 +312,13 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
                                 </ul>
                                 <a class="btn">Download PDF</a>
                             </div>
-                            <!-- <div class="grid-col grid-col-5">
-                                                            <h4 class="hdg-bold">Prices</h4>
-                                                            <ul class="training-table">
-                                                                <li>
-                                                                    <table class="training-prices">
-                                                                        <tbody>
-                                                                            <tr>
-                                                                                <td class="training-prices_category">
-                                                                                    <span class="training-prices_price">$150</span>
-                                                                                </td>
-                                                                                <td>
-                                                                                    <a href="#" class="btn">Register &amp; Buy</a>
-                                                                                </td>
-                                                                                <td>
-                                                                                    <a href="#" class="btn">Register</a>
-                                                                                </td>
-                                                                            </tr>
-                                                                        </tbody>
-                                                                    </table>
-                                                                </li>
-                                                            </ul>
-                                                        </div> -->
                         </div>
                     </div> 
                 </div>
 
             </div>
         </div>
-    </div> 
+    </div>
 
     <div class="section-wrap section-wrap-about bg-white">
         <div class="grid-site">
@@ -460,7 +372,5 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
 </div>
 
 <?php
-
-endwhile; endif;
 
 get_footer();
