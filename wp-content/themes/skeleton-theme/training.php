@@ -8,8 +8,12 @@
  * @author
  * @version $Id$
  */
+
+get_header();
+
+if ( have_posts() ) : while ( have_posts() ) : the_post();
+
 ?>
-<?php get_header(); ?>
 <div>
     <div class="section-wrap bg-lightblue">
         <div class="grid-site hero-img hero-img-training">
@@ -18,10 +22,10 @@
                     <div class="grid-col grid-col-5">
                         <div class="feature">
                             <div class="feature-hd">
-                                <h2 class="hdg-bold hdg-5">Training</h2>
+                                <h2 class="hdg-bold hdg-5"><?php the_title(); ?></h2>
                             </div>
                             <div class="feature-bd feature-bd_small">
-                                Community Mediation &amp; Restorative Services, Inc believes training is an effective strategy as we seek to develop the capacity of our community to respectfully resolve conflict and repair harm. We collaborate with other mediation and restorative parties to create more opportunities for people to participate in transformative, skill-building experiences.
+                                <?php the_content(); ?>
                             </div>
                         </div>
                     </div>                    
