@@ -47,6 +47,9 @@
                     <li>
                         <a href="mailto:staff@mediationprogram.com">staff@mediationprogram.com</a>
                     </li>
+                    <li>
+                        <a href="<?php echo home_url(); ?>/about/#contact">Contact Us</a>
+                    </li>
                 </ul>
             </div>
         </div><!-- End .page-header -->
