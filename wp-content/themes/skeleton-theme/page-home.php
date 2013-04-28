@@ -134,7 +134,7 @@
                         </div>
                         <div class="feature-bd feature-bd--flex-box">
                             <?php the_sub_field('home_section_4a_donors_paragraph'); ?>
-                            <img src="<?php echo bloginfo('template_url'); ?>/assets/images/standards_cmyk02_2.png" width="134" height="100" alt="" />
+                            <img style="margin-top: 10px" src="<?php echo bloginfo('template_url'); ?>/assets/images/standards_cmyk02_2.png" width="100" height="75" alt="" />
                         </div>
                         <div class="feature-ft">
                             <a href="<?php echo home_url(); ?>/donate" class="btn">More About Donations</a>
