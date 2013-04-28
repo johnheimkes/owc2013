@@ -150,7 +150,7 @@
                             <?php the_sub_field('home_section_4a_nonprofits_paragraph'); ?>
                         </div>
                         <div class="feature-ft">
-                            <a href="<?php echo home_url(); ?>/resources" class="btn">Nonprofit Resources</a>
+                            <a href="<?php echo home_url(); ?>/resources" class="btn">Resources</a>
                         </div>
                     </div>
                 </div>
