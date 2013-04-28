@@ -122,7 +122,7 @@
                             <?php the_sub_field('home_section_4a_volunteers_paragraph'); ?>
                         </div>
                         <div class="feature-ft">
-                            <a href="<?php echo home_url(); ?>/volunteer" class="btn">Sign Up To Volunteer</a>
+                            <a href="<?php echo home_url(); ?>/volunteer" class="btn">Volunteer Opportunities</a>
                         </div>
                     </div>
                 </div>
@@ -134,6 +134,7 @@
                         </div>
                         <div class="feature-bd feature-bd--flex-box">
                             <?php the_sub_field('home_section_4a_donors_paragraph'); ?>
+                            <img src="<?php echo bloginfo('template_url'); ?>/assets/images/standards_cmyk02_2.jpg" width="134" height="100" alt="" />
                         </div>
                         <div class="feature-ft">
                             <a href="<?php echo home_url(); ?>/donate" class="btn">More About Donations</a>
