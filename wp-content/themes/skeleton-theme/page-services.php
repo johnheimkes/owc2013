@@ -1,7 +1,7 @@
 <?php
 /**
  * Nerdery Theme
- * Template name: Page - Mediation
+ * Template name: Page - Services
  * @category Nerdery_Skeleton_Theme
  * @package Nerdery_Skeleton_Theme
  * @subpackage Single
@@ -18,7 +18,7 @@
                 <div class="grid-sidebar">
                     <div class="secondary-nav">
                         <ul>
-                            <li class="title">Mediation</li>
+                            <li class="title">Services</li>
                             <li><a href="#overview" class="js-jump-link">Overview</a></li>
                             <li><a href="#reasons" class="js-jump-link">Reasons</a></li>   
                             <li><a href="#first-steps" class="js-jump-link">First Steps</a></li>

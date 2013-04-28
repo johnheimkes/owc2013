@@ -17,7 +17,7 @@
                             <a <?php if(is_front_page()) { echo "class='current'"; } ?> href="<?php echo home_url(); ?>">Home</a>
                         </li>
                         <li>
-                            <a <?php if(is_page('mediation')) { echo " class='current'"; } ?> href="<?php echo home_url(); ?>/mediation">Mediation</a>
+                            <a <?php if(is_page('services')) { echo " class='current'"; } ?> href="<?php echo home_url(); ?>/services">Services</a>
                         </li>
                         <li>
                             <a <?php if(is_page('training')) { echo " class='current'"; } ?> href="<?php echo home_url(); ?>/training">Training</a>
