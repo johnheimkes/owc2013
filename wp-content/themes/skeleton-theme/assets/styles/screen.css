@@ -173,8 +173,8 @@ body p {
     padding: 0 10px;
 }
 
-.section-wrap-img {
-    padding: 60px 10px 0;
+.section-wrap-img .grid-site {
+    padding: 55px 0 40px;
 }
 
 .section-hr {
@@ -293,7 +293,7 @@ body p {
 
 .header-contact {
     float: right;
-    margin-top: -50px;
+    margin-top: -63px;
     font-size: 12px;
 }
 
@@ -915,7 +915,7 @@ body p {
 .hennepin-county {
     width: 313px;
     height: 346px;
-    margin: -140px 0 -113px 0;
+    margin: -80px 0 -113px 0;
     background: url('../images/county.png') no-repeat;
 }
 

@@ -30,7 +30,7 @@
                             <?php endif; ?>
                         </div>
                         <div class="feature-ft">
-                            <a href='<?php echo home_url(); ?>/about' class="btn">How It Works</a>
+                            <a href='<?php echo home_url(); ?>/services' class="btn">How It Works</a>
                         </div>
                     </div>
                 </div>
@@ -74,7 +74,7 @@
     </div>
 </div>
 
-<div class="section-wrap bg-turq">
+<!-- <div class="section-wrap bg-turq">
     <div class="grid-site">
         <div class="grid-row">
             <div class="grid-col grid-col-2 mobile-none">
@@ -83,26 +83,26 @@
             <div class="grid-col grid-col-6">
                 <?php
                 // Section 3
-                if(get_field('home_section_3')):
+                //if(get_field('home_section_3')):
                 ?>
-                    <?php while(has_sub_field('home_section_3')): ?>
+                    <?php //while(has_sub_field('home_section_3')): ?>
                     <div class="section-quote">
                         <div class="section-quote-bd white">
-                            <?php the_sub_field('home_section_3_quote'); ?>
+                            <?php //the_sub_field('home_section_3_quote'); ?>
                         </div>
                         <div class="section-quote-ft">
-                            <?php the_sub_field('home_section_3_author'); ?>
+                            <?php //the_sub_field('home_section_3_author'); ?>
                         </div>
                     </div>
             </div>
             <div class="grid-col grid-col-4">
-                <img src="<?php the_sub_field('home_section_3_image'); ?>" alt="" />
-                    <?php endwhile; ?>
-                <?php endif; ?>
+                <img src="<?php //the_sub_field('home_section_3_image'); ?>" alt="" />
+                    <?php //endwhile; ?>
+                <?php //endif; ?>
             </div>
         </div>
     </div>
-</div>
+</div> -->
 
 <div class="section-wrap bg-lightblue">
     <div class="grid-site">
