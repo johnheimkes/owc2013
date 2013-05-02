@@ -134,11 +134,13 @@
                         </div>
                         <div class="feature-bd feature-bd--flex-box">
                             <?php the_sub_field('home_section_4a_donors_paragraph'); ?>
-                            <a href="http://www.smartgivers.org/meets_standards_seal" rel="external"><img style="margin-top: 10px" src="<?php echo bloginfo('template_url'); ?>/assets/images/standards_seal.png" width="100" height="75" alt="" /></a>
                         </div>
                         <div class="feature-ft">
                             <a href="<?php echo home_url(); ?>/donate" class="btn">More About Donations</a>
                         </div>
+                    </div>
+                    <div style="text-align: center;">
+                                                    <a href="http://www.smartgivers.org/meets_standards_seal" rel="external"><img style="margin-top: 10px" src="<?php echo bloginfo('template_url'); ?>/assets/images/standards_seal.png" width="100" height="75" alt="" /></a>
                     </div>
                 </div>
                 <div class="grid-col grid-col-4">
