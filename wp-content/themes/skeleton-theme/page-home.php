@@ -140,7 +140,7 @@
                         </div>
                     </div>
                     <div style="text-align: center;">
-                                                    <a href="http://www.smartgivers.org/meets_standards_seal" rel="external"><img style="margin-top: 10px" src="<?php echo bloginfo('template_url'); ?>/assets/images/standards_seal.png" width="100" height="75" alt="" /></a>
+                                                    <a href="http://www.smartgivers.org/meets_standards_seal" rel="external"><img style="margin-top: 10px" src="<?php echo bloginfo('template_url'); ?>/assets/images/standards_seal.png" alt="" /></a>
                     </div>
                 </div>
                 <div class="grid-col grid-col-4">
