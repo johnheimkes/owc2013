@@ -85,9 +85,10 @@
                     </div>
                     <div class="grid-col grid-col-4">
                         <?php
-                        if( $row['icon_switch'] ) {
-                            echo '<i class="icn icn-support icn-donations"></i>';
-                        } ?>
+                        if( $row['icon_switch'] ) { ?>
+                            
+                            <a href="http://givemn.razoo.com/story/Communitymediationservices" rel="external"><img style="width: 300px;" src="<?php echo bloginfo('template_url'); ?>/assets/images/givemn.jpg" alt="" /></a>
+                        <?php } ?>
                     </div>
                         <?php }
                     }
