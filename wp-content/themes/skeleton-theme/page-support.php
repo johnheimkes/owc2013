@@ -49,15 +49,7 @@
                     </div>
                     <div class="grid-col grid-col-5">
                         <div class="pledge">
-                            <div class="pledge-hd">
-                                <?php echo $row['private_contributions_title'];?>
-                            </div>
-                            <div class="pledge-bd">
-                                <?php echo $row['total_contributions'];?> <i class="icn icn-support icn-package"></i>
-                            </div>
-                            <div class="pledge-ft">
-                                <p>Goal: <?php echo $row['goal_contributions'];?></p>
-                            </div>
+                            <a href="http://www.smartgivers.org/meets_standards_seal" rel="external"><img style="width: 300px;" src="<?php echo bloginfo('template_url'); ?>/assets/images/standards_seal.jpg" alt="" /></a>
                         </div>
                     </div>
                         <?php }
