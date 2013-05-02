@@ -139,9 +139,6 @@
                             <a href="<?php echo home_url(); ?>/donate" class="btn">More About Donations</a>
                         </div>
                     </div>
-                    <div style="text-align: center;">
-                                                    <a href="http://www.smartgivers.org/meets_standards_seal" rel="external"><img style="margin-top: 10px" src="<?php echo bloginfo('template_url'); ?>/assets/images/standards_seal.jpg" alt="" /></a>
-                    </div>
                 </div>
                 <div class="grid-col grid-col-4">
                     <div class="feature">
@@ -158,6 +155,9 @@
                 </div>
                 <?php endwhile; ?>
                 <?php endif; ?>
+                <div style="text-align: center;">
+                                                <a href="http://www.smartgivers.org/meets_standards_seal" rel="external"><img style="margin-top: 10px" src="<?php echo bloginfo('template_url'); ?>/assets/images/standards_seal.jpg" alt="" /></a>
+                </div>
             </div>
         </div>
         <div class="grid-row">
