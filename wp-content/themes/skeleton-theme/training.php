@@ -55,7 +55,7 @@ get_header();
                     <div class="training-hd">
                         <div class="stretch">
                             <h3 class="hdg-5 hdg-bold darkblue grid-col-8">
-                                <?php tribe_events_title(); ?>
+                                <?php the_title(); ?>
                             </h3>
                             <span class="js-train-trig">Details</span>
                         </div>
