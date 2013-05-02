@@ -87,7 +87,7 @@
                         <?php
                         if( $row['icon_switch'] ) { ?>
                             
-                            <a href="http://givemn.razoo.com/story/Communitymediationservices" rel="external"><img style="width: 300px;" src="<?php echo bloginfo('template_url'); ?>/assets/images/givemn.jpg" alt="" /></a>
+                            <a href="http://givemn.razoo.com/story/Communitymediationservices" rel="external"><img style="width: 300px;" src="<?php echo bloginfo('template_url'); ?>/assets/images/99.jpg" alt="" /></a>
                         <?php } ?>
                     </div>
                         <?php }
