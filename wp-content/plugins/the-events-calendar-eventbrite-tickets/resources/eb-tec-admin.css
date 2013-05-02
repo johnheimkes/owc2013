@@ -1,0 +1,90 @@
+.eventsWarning {
+	display: block;
+	margin: 30px 0;
+}
+.tec-event-configure-warning {
+	background-color: #ffffe0;
+	padding: 10px 20px;
+	margin: 0 6px;
+	border: 1px solid #e6db55;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px; /* future proofing */
+}
+span.tec-radio-option {
+	white-space: nowrap;
+	margin-right: 15px;
+}
+.eventForm #eb-tec-import-event {margin: 0 0 10px;}
+
+#event_cost td {vertical-align: top !important;}
+
+.eventForm #eb-tec-payment-options td hr {
+	border-color: #DFDFDF;
+	border-style: none none solid;
+	border-width: 0 0 1px;
+	margin: 0 0 16px;
+	width: 97%;
+}
+.eventForm #eb-tec-payment-options td div {
+	display: none;
+	margin: 0 0 16px;
+}
+
+.eventForm #eb-tec-payment-options td #eb-tec-payment-options-checkboxes {display:block;}
+
+.eventForm #eb-tec-payment-options td #eb-tec-payment-options-checkboxes > div.label { margin: 0; text-decoration: none; display: block; }
+.eventForm #eb-tec-payment-options td #eb-tec-payment-options-checkboxes > div.online { margin: 0; text-decoration: none; display: block; padding: 5px 0; }
+.eventForm #eb-tec-payment-options td #eb-tec-payment-options-checkboxes > div.offline { margin: 0; text-decoration: none; display: block; padding: 5px 0; }
+
+.eventForm #eb-tec-payment-options td #eb-tec-payment-options-checkboxes span {width:33%; margin-bottom: 3px; }
+.eventForm #eb-tec-payment-options td div label {
+	cursor: default;
+	margin: 0 8px 0 0;
+}
+.eventForm #eb-tec-payment-options td div label span, span.tec-required {
+	color: #F26822;
+	font-size: 8px;
+	line-height: 16px;
+	margin: 0 0 0 4px;
+	vertical-align: top;
+}
+.eventForm #eb-tec-payment-options td div input {margin: 0 4px 4px 0;}
+
+.eventForm #eb-tec-payment-options td .eb-tec-payment-instructions label {
+	display: block;
+	margin: 0 0 3px;
+}
+.eventForm #eb-tec-existing-event-id-input {
+	display: none;
+	margin: 0 0 25px;
+}
+.eventForm .description_input, .eventForm #eb-tec-payment-options td .eb-tec-payment-instructions textarea {
+	border: 1px solid #DFDFDF;
+	font-size: 11px;
+	height: 45px;
+	width: 95%;
+}
+
+.eb-tec-payment-details td { display: none; }
+.eb-tec-payment-details td.eb-tec-payment-details-heading {float: left;}
+
+.sp-eb-widget-content p label {
+	display: block;
+	margin: 0 0 2px;
+}
+
+#event_cost tr td:first-child { width: 260px; }
+.event_links li { margin-bottom: 2px; }
+.event_links li a { font-size: 11px; }
+
+div.updated.tribe-notice {position: relative; padding-right: 10px;}
+.tribe-notice .tribe-dismiss-notice {position: absolute; top: 5px; right: 5px; font-size: 16px}
+
+.tribe-eb-logo {
+	height: 41px;
+	width: 100px;
+	float: left;
+	margin-right: 15px;
+	margin-top: -8px;
+}
