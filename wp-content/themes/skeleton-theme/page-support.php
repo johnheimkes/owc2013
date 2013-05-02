@@ -86,8 +86,9 @@
                     <div class="grid-col grid-col-4">
                         <?php
                         if( $row['icon_switch'] ) { ?>
-                            
-                            <a href="http://givemn.razoo.com/story/Communitymediationservices" rel="external"><img style="width: 300px;" src="<?php echo bloginfo('template_url'); ?>/assets/images/givemn.jpg" alt="" /></a>
+                            <div style="margin-top: 40px; position:relative; left: 20px;">
+                                <a href="http://givemn.razoo.com/story/Communitymediationservices" target="_blank" rel="external"><img style="width: 300px;" src="<?php echo bloginfo('template_url'); ?>/assets/images/99.jpg" alt="" /></a>
+                            </div>
                         <?php } ?>
                     </div>
                         <?php }
@@ -116,7 +117,7 @@
                             <?php echo $row['donate_online_content']; ?>
                         </div>
                         <div class="donate-online-ft">
-                            <a href="<?php echo $row['donate_online_link']; ?>" class="btn">Donate Now</a>
+                            <a href="<?php echo $row['donate_online_link']; ?>" target="_blank" class="btn">Donate Now</a>
                         </div>
                     </div>
                 </div>
