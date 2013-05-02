@@ -155,9 +155,9 @@
                 </div>
                 <?php endwhile; ?>
                 <?php endif; ?>
-            </div>
-            <div style="text-align: center; padding-top: 60px;">
-                                            <a href="http://www.smartgivers.org/meets_standards_seal" rel="external"><img style="margin-top: 10px" src="<?php echo bloginfo('template_url'); ?>/assets/images/standards_seal.jpg" width="300" alt="" /></a>
+                <div style="text-align: center;">
+                                                <a href="http://www.smartgivers.org/meets_standards_seal" rel="external"><img style="margin-top: 10px" src="<?php echo bloginfo('template_url'); ?>/assets/images/standards_seal.jpg" style="width: 300px; margin-top: 60px;" alt="" /></a>
+                </div>
             </div>
         </div>
         <div class="grid-row">
