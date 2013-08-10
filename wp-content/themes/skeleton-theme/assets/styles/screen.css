@@ -1613,3 +1613,11 @@ body p {
 .tribe-events-list-event-title a {
     font-weight: bold;
 }
+
+.wpcf7-form-control-wrap.your-message {
+	top: 2px;
+}
+
+.wpcf7-submit {
+	margin-top: 7px;
+}
