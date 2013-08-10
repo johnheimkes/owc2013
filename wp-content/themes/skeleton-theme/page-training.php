@@ -94,22 +94,6 @@
                     <div class="training-subhead grid-col-8">
                         CMRS directly and indirectly offers a variety of continuing education opportunities each year, including a 6-hour conference every Fall.
                     </div>
-                    <div class="training-bd">
-                        <div class="grid-row-s">
-                            <div class="grid-col grid-col-5">
-                                <h4 class="hdg-bold">Topics Include:</h4>
-                                <ul class="training-list">
-                                    <li>Conflict resolution and mediation theory</li>
-                                    <li>Mediation skills and techniques</li>
-                                    <li>Components in the mediation process</li>
-                                    <li>Mediator conduct</li>
-                                    <li>Mediation Rules, statutes, and practices</li>
-                                    <li>Mediating in court, community, and school settings</li>
-                                </ul>
-                                <a class="btn">Download PDF</a>
-                            </div>
-                        </div>
-                    </div> 
                 </div>
 
             </div>
@@ -128,16 +112,6 @@
                     <div class="stretch">
                         <div>
                             Limited number of scholarships are available. Contact your sponsoring organization about scholarship possibilities
-                        </div>
-                        <div>
-                            <!-- <ul class="h-list h-list_scholarships">
-                                <li>
-                                    Phone: 555-555-5555
-                                </li>
-                                <li>
-                                    Email: hello@email.com
-                                </li>
-                            </ul> -->
                         </div>
                     </div>
                 </div>
