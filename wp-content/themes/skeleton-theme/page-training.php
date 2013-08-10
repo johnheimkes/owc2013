@@ -56,234 +56,33 @@
                             <h3 class="hdg-5 hdg-bold darkblue grid-col-8">
                                 <?php the_title(); ?>
                             </h3>
-                            <span class="js-train-trig">Details</span>
                         </div>
                     </div>
-                    <div class="training-subhead grid-col-8">
+                    <div class="training-subhead grid-col-12">
                         <?php the_content(); ?>
+                        
+                        <?php if ( is_singular() ) : ?>
+                             <div class="grid-col grid-col-5">
+                                 <?php if ( get_field( 'training_topics' ) ) : ?>
+                                     <h4 class="hdg-bold">Topics Include:</h4>
+                                     <ul class="training-list">
+                                         <?php while ( has_sub_field( 'training_topics' ) ) : ?>
+                                             <li><?php the_sub_field( 'training_topic' ); ?></li>
+                                         <?php endwhile; ?>
+                                     </ul>
+                                 <?php endif; ?>
+                             </div>
+                             <div class="grid-col grid-col-5">
+                                 <?php if ( get_field( 'training_document' ) ) : ?>
+                                     <a class="btn" href="<?php the_field( 'training_document' ); ?>">Download PDF</a>
+                                 <?php endif; ?>
+                             </div>
+                        <?php endif; ?>
+                        
                     </div>
-                    <div class="training-bd">
-                        <div class="grid-row-s">
-                            <?php if ( get_field( 'training_topics' ) ) : ?>
-                                <div class="grid-col grid-col-5">
-                                    <h4 class="hdg-bold">Topics Include:</h4>
-                                    <ul class="training-list">
-                                        <?php while ( has_sub_field( 'training_topics' ) ) : ?>
-                                            <li><?php the_sub_field( 'training_topic' ); ?></li>
-                                        <?php endwhile; ?>
-                                    </ul>
-                                    <a class="btn">Download PDF</a>
-                                </div>
-                            <?php endif; ?>
-                            <div class="grid-col grid-col-5">
-                                <h4 class="hdg-bold">Prices</h4>
-                                <ul class="training-table">
-                                    <li>
-                                        <table class="training-prices">
-                                            <tbody>
-                                                <tr>
-                                                    <td class="training-prices_category">
-                                                        Attorney (CIE Credits)
-                                                        <span class="training-prices_price">$600</span>
-                                                    </td>
-                                                    <td>
-                                                        <a href="#" class="btn">Register &amp; Buy</a>
-                                                    </td>
-                                                    <td>
-                                                        <a href="#" class="btn">Register</a>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </li>
-                                    <li>
-                                        <table class="training-prices">
-                                            <tbody>
-                                                <tr>
-                                                    <td class="training-prices_category">
-                                                        Private Practitioner
-                                                        <span class="training-prices_price">$350</span>
-                                                    </td>
-                                                    <td>
-                                                        <a href="#" class="btn">Register &amp; Buy</a>
-                                                    </td>
-                                                    <td>
-                                                        <a href="#" class="btn">Register</a>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </li>
-                                    <li>
-                                        <table class="training-prices">
-                                            <tbody>
-                                                <tr>
-                                                    <td class="training-prices_category">
-                                                        Volunteer
-                                                        <span class="training-prices_price">$200</span>
-                                                    </td>
-                                                    <td>
-                                                        <a href="#" class="btn">Register &amp; Buy</a>
-                                                    </td>
-                                                    <td>
-                                                        <a href="#" class="btn">Register</a>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div> 
                 </div>
                 <?php endwhile; endif; ?>
 
-                <div class="training">
-                    <div class="training-hd">
-                        <div class="stretch">
-                            <h3 class="hdg-5 hdg-bold darkblue grid-col-8">
-                                21 Hour Family Bridge Mediation Training Including 6 Hour Domestic Violence Training
-                            </h3>
-                            <span class="js-train-trig">Details</span>
-                        </div>
-                    </div>
-                    <div class="training-subhead grid-col-8">
-                        Meets Rule 114 Family Bridge and 6 Hours of Domestic Violence Training CLE credits to be applied for.
-                    </div>
-                    <div class="training-bd">
-                        <div class="grid-row-s">
-                            <div class="grid-col grid-col-5">
-                                <h4 class="hdg-bold">Topics Include:</h4>
-                                <ul class="training-list">
-                                    <li>Conflict resolution and mediation theory</li>
-                                    <li>Mediation skills and techniques</li>
-                                    <li>Components in the mediation process</li>
-                                    <li>Mediator conduct</li>
-                                    <li>Mediation Rules, statutes, and practices</li>
-                                    <li>Mediating in court, community, and school settings</li>
-                                </ul>
-                                <a class="btn">Download PDF</a>
-                            </div>
-                            <div class="grid-col grid-col-5">
-                                <h4 class="hdg-bold">Prices</h4>
-                                <ul class="training-table">
-                                    <li>
-                                        <table class="training-prices">
-                                            <tbody>
-                                                <tr>
-                                                    <td class="training-prices_category">
-                                                        <span class="training-prices_price">$150</span>
-                                                    </td>
-                                                    <td>
-                                                        <a href="#" class="btn">Register &amp; Buy</a>
-                                                    </td>
-                                                    <td>
-                                                        <a href="#" class="btn">Register</a>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div> 
-                </div> 
-                
-                <div class="training">
-                    <div class="training-hd">
-                        <div class="stretch">
-                            <h3 class="hdg-5 hdg-bold darkblue grid-col-8">
-                                14 Hour Family Bridge Mediation Training
-                            </h3>
-                            <span class="js-train-trig">Details</span>
-                        </div>
-                    </div>
-                    <div class="training-subhead grid-col-8">
-                        Meets Rule 114 Community (Civil) Bridge Training Requirements CLE credits to be applied for
-                    </div>
-                    <div class="training-bd">
-                        <div class="grid-row-s">
-                            <div class="grid-col grid-col-5">
-                                <h4 class="hdg-bold">Topics Include:</h4>
-                                <ul class="training-list">
-                                    <li>Conflict resolution and mediation theory</li>
-                                    <li>Mediation skills and techniques</li>
-                                    <li>Components in the mediation process</li>
-                                    <li>Mediator conduct</li>
-                                    <li>Mediation Rules, statutes, and practices</li>
-                                    <li>Mediating in court, community, and school settings</li>
-                                </ul>
-                                <a class="btn">Download PDF</a>
-                            </div>
-                        </div>
-                    </div> 
-                </div>
-                
-                
-                <div class="training">
-                    <div class="training-hd">
-                        <div class="stretch">
-                            <h3 class="hdg-5 hdg-bold darkblue grid-col-8">
-                                Restorative Services
-                            </h3>
-                            <span class="js-train-trig">Details</span>
-                        </div>
-                    </div>
-                    <div class="training-subhead grid-col-8">
-                        We provide a variety of restorative practice training opportunities including group and family conferencing and restorative circles. Restorative practices:
-                    </div>
-                    <div class="training-bd">
-                        <div class="grid-row-s">
-                            <div class="grid-col grid-col-5">
-                                <h4 class="hdg-bold">Topics Include:</h4>
-                                <ul class="training-list">
-                                    <li>Conflict resolution and mediation theory</li>
-                                    <li>Mediation skills and techniques</li>
-                                    <li>Components in the mediation process</li>
-                                    <li>Mediator conduct</li>
-                                    <li>Mediation Rules, statutes, and practices</li>
-                                    <li>Mediating in court, community, and school settings</li>
-                                </ul>
-                                <a class="btn">Download PDF</a>
-                            </div>
-                        </div>
-                    </div> 
-                </div>
-                
-                
-                <div class="training">
-                    <div class="training-hd">
-                        <div class="stretch">
-                            <h3 class="hdg-5 hdg-bold darkblue grid-col-8">
-                                Mediator Ethics &amp; Statutes
-                            </h3>
-                            <span class="js-train-trig">Details</span>
-                        </div>
-                    </div>
-                    <div class="training-subhead grid-col-8">
-                        A mix of discussion and experiential exercises designed to refresh your understanding of Rule 114 Code of Ethics and CMS best practices.
-                    </div>
-                    <div class="training-bd">
-                        <div class="grid-row-s">
-                            <div class="grid-col grid-col-5">
-                                <h4 class="hdg-bold">Topics Include:</h4>
-                                <ul class="training-list">
-                                    <li>Conflict resolution and mediation theory</li>
-                                    <li>Mediation skills and techniques</li>
-                                    <li>Components in the mediation process</li>
-                                    <li>Mediator conduct</li>
-                                    <li>Mediation Rules, statutes, and practices</li>
-                                    <li>Mediating in court, community, and school settings</li>
-                                </ul>
-                                <a class="btn">Download PDF</a>
-                            </div>
-                        </div>
-                    </div> 
-                </div>
-                
-                
                 <div class="training">
                     <div class="training-hd">
                         <div class="stretch">
