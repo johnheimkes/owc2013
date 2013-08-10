@@ -318,14 +318,15 @@
                     <p>Please reach out with any questions you may have, we're here to help!</p>
                 </div>
                 <div class="contact-form-msg">
-                    <form method="post" action="">
+                    <!-- <form method="post" action="">
                         <fieldset>
                             <input type="text" placeholder="Name" />
                             <input type="email" placeholder="Email" />
                             <textarea cols="30" rows="5" placeholder="Message"></textarea>
                             <input type="submit" value="Submit" class="btn" />
                         </fieldset>
-                    </form>
+                    </form> -->
+						<?php do_shortcode('[contact-form-7 id="20" title="Contact form 1"]'); ?>
                 </div>
                 <div class="contact-form-ft">
                     <div>
