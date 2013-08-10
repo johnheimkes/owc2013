@@ -25,7 +25,7 @@
  
 							<ul>
 							<?php while(has_sub_field('adr_link')): ?>
-								<li><a href="<?php the_sub_field('adr_link'); ?>"><?php the_sub_field('adr_name'); ?></a></li>
+								<li><a href="<?php echo the_sub_field('adr_link'); ?>"><?php echo the_sub_field('adr_name'); ?></a></li>
 							<?php endwhile; ?>
 							</ul>
  
@@ -49,7 +49,7 @@
  
 							<ul>
 							<?php while(has_sub_field('rc_link')): ?>
-								<li><a href="<?php the_sub_field('rc_link'); ?>"><?php the_sub_field('rc_name'); ?></a></li>
+								<li><a href="<?php echo the_sub_field('rc_link'); ?>"><?php echo the_sub_field('rc_name'); ?></a></li>
 							<?php endwhile; ?>
 							</ul>
  
@@ -71,7 +71,7 @@
  
 							<ul>
 							<?php while(has_sub_field('rl_link')): ?>
-								<li><a href="<?php the_sub_field('rl_link'); ?>"><?php the_sub_field('rl_name'); ?></a></li>
+								<li><a href="<?php echo the_sub_field('rl_link'); ?>"><?php echo the_sub_field('rl_name'); ?></a></li>
 							<?php endwhile; ?>
 							</ul>
  
@@ -97,7 +97,7 @@
  
 							<ul>
 							<?php while(has_sub_field('rn_link')): ?>
-								<li><a href="<?php the_sub_field('rn_link'); ?>"><?php the_sub_field('rn_name'); ?></a></li>
+								<li><a href="<?php echo the_sub_field('rn_link'); ?>"><?php echo the_sub_field('rn_name'); ?></a></li>
 							<?php endwhile; ?>
 							</ul>
  
@@ -126,7 +126,7 @@
 
 					<ol class="tip-list">
 					<?php while(has_sub_field('neighbor_tip')): ?>
-						<li><?php the_sub_field('neighbor_tip'); ?></li>
+						<li><?php echo the_sub_field('neighbor_tip'); ?></li>
 					<?php endwhile; ?>
 					</ol>
 
