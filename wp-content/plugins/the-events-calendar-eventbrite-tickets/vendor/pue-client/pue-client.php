@@ -2,7 +2,7 @@
 /**
  * Plugin Upgrade System
  *
- * @version 1.2
+ * @version 1.5
  */
 
 // Don't load directly

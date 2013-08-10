@@ -1,3 +1,14 @@
+<?php
+
+/**
+ * displays the existing Eventbrite event meta box in the editor
+ *
+ * @package TribeEventsEventBrite
+ * @since  3.0
+ * @author Modern Tribe Inc.
+ */
+
+?>
 <script type="text/javascript" charset="utf-8">
 jQuery(document).ready(function($){
 
@@ -40,21 +51,33 @@ jQuery(document).ready(function($){
 
 	// hide/show additional payment option fields
 	var ebTecAcceptPaymentInputs = $('#eb-tec-payment-options-checkboxes input');
+	if( ebTecAcceptPaymentInputs.is(':checked') ){
+		$(".tec-eb-offline-pay-options").show();
+	} else {
+		$(".tec-eb-offline-pay-options").hide();
+	}
 	function ebTecShowHideAdditionalPaymentOptions(event) {
 		if ( event && $('.EBForm:visible').length > 0 ) {
-			var divIndex = ebTecAcceptPaymentInputs.index(this)-1;
+			var divIndex = ebTecAcceptPaymentInputs.index(this);
 			var notSelectedIndex = ebTecAcceptPaymentInputs.index( $('#eb-tec-payment-options-checkboxes input:radio:not(:checked)') );
-			if(this.checked) $('.eb-tec-payment-instructions:eq('+divIndex+')').slideDown(200);
-			else $('.eb-tec-payment-instructions:eq('+divIndex+')').slideUp(200);
+			if(this.checked) {
+				$('.eb-tec-payment-instructions:eq('+divIndex+')').slideDown(200);
+				$(".tec-eb-offline-pay-options").show();
+			} else {
+			 $('.eb-tec-payment-instructions:eq('+divIndex+')').slideUp(200);
+			}
         $('#eb-tec-payment-options-checkboxes input:radio:not(:checked)').each(function(index) {
-           var notSelectedIndex = ebTecAcceptPaymentInputs.index($(this)) - 1;
+           var notSelectedIndex = ebTecAcceptPaymentInputs.index($(this));
            if(notSelectedIndex >= 0)
              $('.eb-tec-payment-instructions:eq('+notSelectedIndex+')').slideUp(200)
         });
 		} else {
 			$.each('#eb-tec-payment-options-checkboxes ~ #eb-tec-payment-options div', function() {
 				var thisInput = $(this).find('input');
-				if(thisInput.val() != null) thisInput.closest('div').slideDown(200);
+				if(thisInput.val() != null) {
+					thisInput.closest('div').slideDown(200);
+					$(".tec-eb-offline-pay-options").show();
+				}
 			});
 		}
     $('.eb-tec-payment-details td').css('display', $('#eb-tec-payment-options-checkboxes input:checked').not('#EventBritePayment_accept_online-none').size() > 0 ? 'table-cell' : 'none');
@@ -70,9 +93,8 @@ jQuery(document).ready(function($){
 
 			var currentDate = new Date();
 			var EventDate = new Date();
-			EventDate.setTime(Date.parse(EventStartDate)+(currentDate.getTimezoneOffset()*60*1000));
-			if( $("input[name='EventRegister']:checked").val() == 'yes' &&  (typeof( EventStartDate ) == 'undefined' || !EventStartDate.length || EventDate < currentDate)) {
-				alert("<?php _e('EventBrite only allows events to be saved that start in the future.', 'tribe-eventbrite') ?>");
+			if( $("input[name='EventRegister']:checked").val() == 'yes' &&  (typeof( EventStartDate ) == 'undefined' || !EventStartDate.length || EventDate.toDateString() < currentDate.toDateString())) {
+				alert("<?php _e('Eventbrite only allows events to be saved that start in the future.', 'tribe-eventbrite') ?>");
 
 				$('#EventStartDate').focus();
 				return false;
@@ -129,7 +151,9 @@ jQuery(document).ready(function($){
 
    var datepickerOpts = {
       dateFormat: 'yy-mm-dd',
+      showOn: 'focus',
       showAnim: 'fadeIn',
+      minDate: new Date(),
       changeMonth: true,
       changeYear: true,
       numberOfMonths: 3,
@@ -141,6 +165,13 @@ jQuery(document).ready(function($){
       }
    };
    var dates = $(".etp-datepicker").datepicker(datepickerOpts);
+   $(".etp-datepicker").bind( 'click', function() {
+   		var startDate = $('#EventStartDate').val();
+		if ( startDate ) {
+         	$(this).datepicker( 'option', 'maxDate', startDate );
+         	$(this).datepicker( 'show' );
+        }
+    });
 }); // end document ready
 </script>
 
@@ -303,12 +334,20 @@ jQuery(document).ready(function($){
 				<div id="eb-tec-payment-options-checkboxes">
                <div class='label'><strong>Online</strong></div>
                <div class='online'>
+               		<?php
+               		/*
+
+
+					// EVENTBRITE changed their API to require a payment option
+
                   <span><input tabindex="<?php $tribe_ecp->tabIndex(); ?>" type="radio" class="checkbox" name="EventBritePayment_accept_online" id="EventBritePayment_accept_online-none" value="none" <?php checked( 'none' == $_EventBritePayment_accept_online ) ?> /><label for="EventBritePayment_accept_online"><?php _e('None', 'tribe-eventbrite'); ?></label></span>
+
+                  */ ?>
                   <span><input tabindex="<?php $tribe_ecp->tabIndex(); ?>" type="radio" class="checkbox" name="EventBritePayment_accept_online" value="paypal" <?php checked( !empty( $_EventBritePayment_accept_online ) && 'paypal' == $_EventBritePayment_accept_online ) ?>/><label for="EventBritePayment_accept_online"><?php _e('Paypal', 'tribe-eventbrite'); ?></label></span>
                   <span><input tabindex="<?php $tribe_ecp->tabIndex(); ?>" type="radio" class="checkbox" name="EventBritePayment_accept_online" value="google" <?php checked( !empty( $_EventBritePayment_accept_online ) && 'google' == $_EventBritePayment_accept_online ) ?>/><label for="EventBritePayment_accept_online"><?php _e('Google Checkout', 'tribe-eventbrite'); ?></label></span>
                </div>
-               <div class='label'><strong>Offline</strong></div>
-               <div class='offline'>
+               <div class='label tec-eb-offline-pay-options'><strong>Offline</strong></div>
+               <div class='offline tec-eb-offline-pay-options'>
                   <span><input tabindex="<?php $tribe_ecp->tabIndex(); ?>" type="checkbox" class="checkbox" name="EventBritePayment_accept_check" value="1" <?php checked( !empty( $_EventBritePayment_accept_check ) && 1 == $_EventBritePayment_accept_check ) ?>/><label for="EventBritePayment_accept_check"><?php _e('Check', 'tribe-eventbrite'); ?></label></span>
                   <span><input tabindex="<?php $tribe_ecp->tabIndex(); ?>" type="checkbox" class="checkbox" name="EventBritePayment_accept_cash" value="1" <?php checked( !empty( $_EventBritePayment_accept_cash ) && 1 == $_EventBritePayment_accept_cash ) ?>/><label for="EventBritePayment_accept_cash"><?php _e('Cash', 'tribe-eventbrite'); ?></label></span>
                   <span><input tabindex="<?php $tribe_ecp->tabIndex(); ?>" type="checkbox" class="checkbox" name="EventBritePayment_accept_invoice" value="1" <?php checked( !empty( $_EventBritePayment_accept_invoice ) && 1 == $_EventBritePayment_accept_invoice ) ?>/><label for="EventBritePayment_accept_invoice"><?php _e('Send an Invoice', 'tribe-eventbrite'); ?></label></span>

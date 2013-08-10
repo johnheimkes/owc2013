@@ -6,7 +6,7 @@
  * After including this file, register the helper files using the TribeCommonLibraries::register() instead of including the files directly.
  *
  * @author Peter Chester
- * @version 1.0
+ * @version 1.1
  */
 
 // Don't load directly
@@ -43,7 +43,7 @@ if( !class_exists( 'TribeCommonLibraries' ) ) {
 		 * @param string $path - absolute path of the helper class / plugin file
 		 */
 		public static function register($slug,$version,$path) {
-			if ( !isset( self::$tribe_registered_plugins[$slug] ) || version_compare( self::$tribe_registered_plugins[$slug]['version'], $version, '>' ) ) {
+			if ( !isset( self::$tribe_registered_plugins[$slug] ) || version_compare( self::$tribe_registered_plugins[$slug]['version'], $version, '<' ) ) {
 				self::$tribe_registered_plugins[$slug] = array(
 					'version'=>$version,
 					'path'=>$path,

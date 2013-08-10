@@ -1,14 +1,15 @@
-<?php if( $event['event']['status'] == 'Draft' && count( $event['event']['tickets'] ) > 0 && $tribe_ecp ) : ?>
-	<div id='eventBriteDraft' class='update'>
-		<p><?php _e('Eventbrite status is set to DRAFT. You can update this in the \'Eventbrite Information\' section further down this page.'); ?>
-	</div>
-<?php endif; ?>
-<?php if ( ( !isset( $event['event']['tickets'] ) || !count( $event['event']['tickets'] ) ) && ( !isset( $event['event']['status'] ) || $event['event']['status'] != 'Draft' ) ) : ?>
-	<div id='eventBriteDraft' class='error'>
-      <p><?php _e('You did not create any tickets for your event.  You will not be able to publish this event on Eventbrite unless you first add a ticket at Eventbrite.com.'); ?></p>
-	</div>
-<?php endif; ?>
+<?php
 
+/**
+ * displays the existing Eventbrite event in the event meta box
+ * expects _EventBriteId is present when editing an event
+ *
+ * @package TribeEventsEventBrite
+ * @since  3.0
+ * @author Modern Tribe Inc.
+ */
+
+?>
 <tr>
 	<td colspan="2" class="snp_sectionheader">
 		<h4><?php _e('Eventbrite Information', 'tribe-eventbrite'); ?></h4>
@@ -37,9 +38,18 @@
 				<option value='Live' <?php selected($event['event']['status'], 'Live') ?>><?php _e('Live', 'tribe-eventbrite'); ?></option>
 				<?php if ($event['event']['status'] != 'Draft') :  ?>
 					<option value='Canceled' <?php selected($event['event']['status'], 'Canceled') ?>><?php _e('Canceled (this will cancel the event at Eventbrite)', 'tribe-eventbrite'); ?></option>
+					
+					<?php /* per Claire at EB: 
+					// At this time, a canceled event can only be made live again through the Quick Links in the My Events tab of your account dashboard. It's not possible to make a canceled or deleted event live through the Manage page or the *API*.
+
 					<option value='Deleted' <?php selected($event['event']['status'], 'Deleted') ?>><?php _e('Deleted (this will delete the event from Eventbrite & unregister this event with Eventbrite)', 'tribe-eventbrite'); ?></option>
+
+					*/ ?>
 				<?php endif; ?>
 			</select>
+			<?php if ($event['event']['status'] == 'Canceled') :  ?>
+				<p class="tec_eb_status_cancel_notice"><strong><?php _e('Note', 'tribe-eventbrite') ?>:</strong> <?php _e( 'At this time, a canceled event can only be made live again through the Quick Links in the My Events tab of your account dashboard.', 'tribe-eventbrite' ); ?> <a href="http://www.eventbrite.com/myevent?eid=<?php echo $_EventBriteId; ?>&ref=etckt"><?php _e('Manage Event', 'tribe-eventbrite'); ?> &raquo;</a></p>
+			<?php endif; ?>
 		<?php else : ?>
 			<p><?php _e( 'This event was created without a ticket. You need to create a ticket before you can change this event\'s status.', 'tribe-eventbrite' ); ?> <a href="http://www.eventbrite.com/myevent?eid=<?php echo $_EventBriteId; ?>&ref=etckt"><?php _e('Manage Event', 'tribe-eventbrite'); ?> &raquo;</a></p>
 		<?php endif ?>
@@ -48,7 +58,12 @@
 <?php if ( $event['event']['status'] != 'Draft' || count( $event['event']['tickets'] ) > 0 ) : ?>
 	<tr class="EBForm">
 		<td></td>
-		<td class="snp_message"><small><strong><?php _e('Note', 'tribe-eventbrite') ?>:</strong> <?php _e('Cancelling or deleting the event from Eventbrite cannot be undone') ?></small></td>
+		<td class="snp_message">
+			<small>
+				<strong><?php _e('Note', 'tribe-eventbrite') ?>:</strong>
+				<?php _e('Cancelling the event from Eventbrite cannot be undone') ?>
+			</small>
+		</td>
 	</tr>
 <?php endif; ?>
 <?php if ( isset($event['event']['tickets']) && count( $event['event']['tickets'] )) : ?>
@@ -83,7 +98,7 @@
 				<tr>
 					<td>
 						<a id="edit-ticket" href="<?php echo esc_url('http://www.eventbrite.com/myevent?eid='.$event['event']['id'].'/#viewtickets') ?>"><?php _e('Edit existing tickets', 'tribe-eventbrite') ?></a><br>
-						<a id="new-ticket" href="<?php echo esc_url('http://www.eventbrite.com/edit?eid='.$event['event']['id'].'/#ticket_link') ?>">+ <?php _e('Create a new ticket', 'tribe-eventbrite') ?></a>
+						<a id="new-ticket" href="<?php echo esc_url('http://www.eventbrite.com/edit?eid='.$event['event']['id']) ?>">+ <?php _e('Create a new ticket', 'tribe-eventbrite') ?></a>
 					</td>
 				</tr>
 			</table>

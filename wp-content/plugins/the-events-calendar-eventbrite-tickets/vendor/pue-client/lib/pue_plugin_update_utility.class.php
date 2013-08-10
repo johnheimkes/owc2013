@@ -6,15 +6,15 @@
 // Don't load directly
 if ( !defined('ABSPATH') ) { die('-1'); }
 
-if ( !class_exists('PluginUpdateUtility') ) {
+if ( !class_exists('TribePluginUpdateUtility') ) {
 
 	/**
 	 * A simple container class for holding information about an available update.
 	 *
-	 * @version 1.2
+	 * @version 1.5
 	 * @access public
 	 */
-	class PluginUpdateUtility {
+	class TribePluginUpdateUtility {
 		public $id = 0;
 		public $slug;
 		public $version;
@@ -24,32 +24,32 @@ if ( !class_exists('PluginUpdateUtility') ) {
 		public $upgrade_notice;
 
 		/**
-		 * Create a new instance of PluginUpdateUtility from its JSON-encoded representation.
+		 * Create a new instance of TribePluginUpdateUtility from its JSON-encoded representation.
 		 *
 		 * @param string $json
-		 * @return PluginUpdateUtility
+		 * @return TribePluginUpdateUtility
 		 */
-		public static function fromJson($json){
+		public static function from_json($json){
 			//Since update-related information is simply a subset of the full plugin info,
 			//we can parse the update JSON as if it was a plugin info string, then copy over
 			//the parts that we care about.
-			$pluginInfo = PU_PluginInfo::fromJson($json);
+			$pluginInfo = Tribe_PU_PluginInfo::from_json($json);
 			if ( $pluginInfo != null ) {
-				return PluginUpdateUtility::fromPluginInfo($pluginInfo);
+				return TribePluginUpdateUtility::from_plugin_info($pluginInfo);
 			} else {
 				return null;
 			}
 		}
 
 		/**
-		 * Create a new instance of PluginUpdateUtility based on an instance of PU_PluginInfo.
+		 * Create a new instance of TribePluginUpdateUtility based on an instance of Tribe_PU_PluginInfo.
 		 * Basically, this just copies a subset of fields from one object to another.
 		 *
-		 * @param PU_PluginInfo $info
-		 * @return PluginUpdateUtility
+		 * @param Tribe_PU_PluginInfo $info
+		 * @return TribePluginUpdateUtility
 		 */
-		public static function fromPluginInfo($info){
-			$update = new PluginUpdateUtility();
+		public static function from_plugin_info($info){
+			$update = new TribePluginUpdateUtility();
 			$copyFields = array('id', 'slug', 'version', 'homepage', 'download_url', 'upgrade_notice', 'sections');
 			foreach($copyFields as $field){
 				$update->$field = $info->$field;
@@ -62,7 +62,7 @@ if ( !class_exists('PluginUpdateUtility') ) {
 		 *
 		 * @return object
 		 */
-		public function toWpFormat(){
+		public function to_wp_format(){
 			$update = new StdClass;
 
 			$update->id = $this->id;

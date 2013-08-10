@@ -1,824 +1,1048 @@
-# Copyright (C) 2012 
-# This file is distributed under the same license as the  package.
+# Tribe Events Eventbrite Tickets by Modern Tribe, Inc.
+# Copyright (C) Modern Tribe, Inc.
+# This file is distributed under the same license as the Tribe Events Eventbrite Tickets package.
 msgid ""
 msgstr ""
-"Project-Id-Version: The Events Calendar - Eventbrite Tickets\n"
+"Project-Id-Version: Tribe Events Eventbrite Tickets\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-06-06 22:49+0100\n"
-"PO-Revision-Date: 2012-06-09 15:48+0100\n"
-"Last-Translator: Jurgen Michiels <jurgen372@gmail.com>\n"
-"Language-Team:  <jurgen372@gmail.com>\n"
+"POT-Creation-Date: 2013-06-26 13:21-0800\n"
+"PO-Revision-Date: 2013-06-26 13:21-0800\n"
+"Last-Translator: Modern Tribe, Inc. <pro@tri.be>\n"
+"Language-Team: Modern Tribe, Inc. <pro@tri.be>\n"
+"Language: Dutch\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Poedit-Basepath: ./\n"
-"X-Poedit-KeywordsList: _;__;_e;_c;_n;_n_noop;_nc;__ngettext;__ngettext_noop;_x;_nx;_nx_noop;esc_attr__;esc_html__;esc_attr_e;esc_html_e;esc_attr_x;esc_html_x\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Poedit-Language: Dutch\n"
-"X-Poedit-Country: BELGIUM\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;"
+"_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2\n"
+"X-Poedit-Basepath: ./\n"
+"X-Textdomain-Support: yes\n"
+"X-Generator: Poedit 1.5.5\n"
 "X-Poedit-SearchPath-0: ..\n"
 
-#: ../eventbrite-api.class.php:44
-msgid "An error occurred while contacting Eventbrite. Please review your information and try again.<br />Error: "
-msgstr "Er is een probleem met het contacteren van Eventbrite. Gelieve je informatie na te kijken en nogmaals te proberen. <br />Fout:"
+#: ../lib/eventbrite-api.class.php:76
+msgid ""
+"An error occurred while contacting Eventbrite. Please review your "
+"information and try again.<br />Error: "
+msgstr ""
+"Er is een probleem met het contacteren van Eventbrite. Gelieve je informatie "
+"na te kijken en nogmaals te proberen. <br />Fout:"
 
-#: ../eventbrite-api.class.php:50
-msgid "An error occurred while contacting Eventbrite. Please review your information and try again.<br />Status: "
-msgstr "Er is een probleem met het contacteren van Eventbrite. Gelieve je informatie na te kijken en nogmaals te proberen. <br />Status:"
+#: ../lib/eventbrite-api.class.php:85
+msgid ""
+"An error occurred while contacting Eventbrite. Please review your "
+"information and try again.<br />Status: "
+msgstr ""
+"Er is een probleem met het contacteren van Eventbrite. Gelieve je informatie "
+"na te kijken en nogmaals te proberen. <br />Status:"
 
-#: ../eventbrite-api.class.php:52
-msgid "EventBrite is not answering us. Most likely they are too busy. The changes have been saved localy, maybe try again later?"
-msgstr "EventBrite heeft ons nog niet geantwoord. Waarschijnlijk is het te druk. Deze aanpassingen werden lokaal bewaard, probeer je anders straks nog eens?"
+#: ../lib/eventbrite-api.class.php:87
+msgid ""
+"EventBrite is not answering us. Most likely they are too busy. The changes "
+"have been saved localy, maybe try again later?"
+msgstr ""
+"EventBrite heeft ons nog niet geantwoord. Waarschijnlijk is het te druk. "
+"Deze aanpassingen werden lokaal bewaard, probeer je anders straks nog eens?"
 
-#: ../eventbrite-api.class.php:66
-msgid "An error occurred while updating Eventbrite. Please review your information and try again.<br />Error:<br />"
-msgstr "Er is een probleem met het contacteren van Eventbrite. Gelieve je informatie na te kijken en nogmaals te proberen. <br />Fout:<br />"
+#: ../lib/eventbrite-api.class.php:102
+msgid ""
+"An error occurred while updating Eventbrite. Please review your information "
+"and try again.<br />Error:<br />"
+msgstr ""
+"Er is een probleem met het contacteren van Eventbrite. Gelieve je informatie "
+"na te kijken en nogmaals te proberen. <br />Fout:<br />"
 
-#: ../template-tags.php:116
-msgid "m.d.Y"
-msgstr "d.m.Y"
-
-#: ../tribe-eventbrite.class.php:134
-#, php-format
-msgid "The Events Calendar: Eventbrite Tickets plugin requires %s plugin"
-msgstr "The Events Calendar: Eventribe Ticket plugin heeft de %s plugin nodig"
-
-#: ../tribe-eventbrite.class.php:134
+#: ../lib/tribe-eventbrite.class.php:130
 msgid "The Events Calendar"
 msgstr ""
 
-#: ../tribe-eventbrite.class.php:354
+#: ../lib/tribe-eventbrite.class.php:131
+#, php-format
+msgid ""
+"To begin using The Events Calendar: Eventbrite Tickets, please install the "
+"latest version of <a href=\"%s\" class=\"thickbox\" title=\"%s\">The Events "
+"Calendar</a>."
+msgstr ""
+
+#: ../lib/tribe-eventbrite.class.php:397
 msgid "Eventbrite requires that the venue have a country."
 msgstr "Eventbrite verplicht dat etablisementen een land hebben."
 
-#: ../tribe-eventbrite.class.php:355
-#: ../tribe-eventbrite.class.php:364
+#: ../lib/tribe-eventbrite.class.php:398 ../lib/tribe-eventbrite.class.php:407
 msgid "Please adjust the venue and try saving again."
 msgstr "Gelieve je etablisement aan te passen en opnieuw op te slaan."
 
-#: ../tribe-eventbrite.class.php:356
+#: ../lib/tribe-eventbrite.class.php:399
 msgid "Edit the venue"
 msgstr "Bewerk het etablissement"
 
-#: ../tribe-eventbrite.class.php:363
+#: ../lib/tribe-eventbrite.class.php:406
 msgid "Eventbrite requires that United States addresses include the state."
 msgstr "Eventbrite verplicht dat een amerikaans adres ook een staat heeft."
 
-#: ../tribe-eventbrite.class.php:372
+#: ../lib/tribe-eventbrite.class.php:415
 msgid "Ticket Name"
 msgstr "Ticket Naam"
 
-#: ../tribe-eventbrite.class.php:373
-msgid "Ticket Description"
-msgstr "Ticket beschrijving"
-
-#: ../tribe-eventbrite.class.php:374
-#: ../views/eventbrite-meta-box-extension.php:227
+#: ../lib/tribe-eventbrite.class.php:416
+#: ../views/eventbrite-meta-box-extension.php:257
 msgid "Date to Start Ticket Sales"
 msgstr "Startdatum ticketverkoop"
 
-#: ../tribe-eventbrite.class.php:375
-#: ../views/eventbrite-meta-box-extension.php:247
+#: ../lib/tribe-eventbrite.class.php:417
+#: ../views/eventbrite-meta-box-extension.php:277
 msgid "Date to End Ticket Sales"
 msgstr "Eindatum ticketverkoop"
 
-#: ../tribe-eventbrite.class.php:376
+#: ../lib/tribe-eventbrite.class.php:418
 msgid "Ticket Type"
 msgstr "Ticket Type"
 
-#: ../tribe-eventbrite.class.php:377
+#: ../lib/tribe-eventbrite.class.php:419
 msgid "Ticket Cost"
 msgstr "Kostprijs ticket"
 
-#: ../tribe-eventbrite.class.php:378
+#: ../lib/tribe-eventbrite.class.php:420
 msgid "Ticket Quantity"
 msgstr "Ticket hoeveelheid"
 
-#: ../tribe-eventbrite.class.php:379
+#: ../lib/tribe-eventbrite.class.php:421
 msgid "Ticket - Include Fee in Price"
 msgstr "Ticket - voeg onkosten toe aan prijs"
 
-#: ../tribe-eventbrite.class.php:399
+#: ../lib/tribe-eventbrite.class.php:441
 msgid "Ticket Cost (must be numeric)"
 msgstr "Ticket prijs (enkel getallen)"
 
-#: ../tribe-eventbrite.class.php:415
+#: ../lib/tribe-eventbrite.class.php:453
 msgid "Ticket Payment Methods (at least one should be selected)"
 msgstr "Betalingssystemen tickets (minstens 1 moet geselecteerd worden)"
 
-#: ../tribe-eventbrite.class.php:423
+#: ../lib/tribe-eventbrite.class.php:461
 msgid "Ticket - Paypal Account Email Address"
 msgstr "Ticket - Paypal account email adres"
 
-#: ../tribe-eventbrite.class.php:425
+#: ../lib/tribe-eventbrite.class.php:463
 msgid "Ticket - Paypal Account Email Address (must be a valid email address)"
 msgstr "Ticket - Paypal Account email adres (moet een geldig email adres zijn)"
 
-#: ../tribe-eventbrite.class.php:432
+#: ../lib/tribe-eventbrite.class.php:470
 msgid "Ticket - Google Merchant ID"
 msgstr "Ticket - Google Merchant ID"
 
-#: ../tribe-eventbrite.class.php:435
+#: ../lib/tribe-eventbrite.class.php:473
 msgid "Ticket - Google Merchant Key"
 msgstr "Ticket - Google Merchant Key"
 
-#: ../tribe-eventbrite.class.php:440
-msgid "All required fields must be filled out correctly in order for this event to be associated to Eventbrite. The following required fields were not filled out (or not correctly):"
-msgstr "Alle verplichten velden moeten ingevuld zijn in de juiste volgorde voor dit evenement om geassocieerd te kunnen worden met Eventbrite. De volgende verplichte velden waren niet ingevuld (of niet correct ingevuld)."
+#: ../lib/tribe-eventbrite.class.php:478
+msgid ""
+"All required fields must be filled out correctly in order for this event to "
+"be associated to Eventbrite. The following required fields were not filled "
+"out (or not correctly):"
+msgstr ""
+"Alle verplichten velden moeten ingevuld zijn in de juiste volgorde voor dit "
+"evenement om geassocieerd te kunnen worden met Eventbrite. De volgende "
+"verplichte velden waren niet ingevuld (of niet correct ingevuld)."
 
-#: ../tribe-eventbrite.class.php:444
+#: ../lib/tribe-eventbrite.class.php:482
 msgid "Please fill in the missing fields and try saving again."
 msgstr "Gelieve de ontbrekende velden in te vullen en opnieuw te proberen."
 
-#: ../tribe-eventbrite.class.php:464
+#: ../lib/tribe-eventbrite.class.php:502
 msgid "Ticket sales start date cannot be after the event ends"
-msgstr "De startdatum van de verkoop van de tickets kan niet na de datum van het evenement zijn"
+msgstr ""
+"De startdatum van de verkoop van de tickets kan niet na de datum van het "
+"evenement zijn"
 
-#: ../tribe-eventbrite.class.php:468
+#: ../lib/tribe-eventbrite.class.php:506
 msgid "Ticket sales end date cannot be after the event ends"
-msgstr "De einddatum van de verkoop van de tickets kan niet na de datum van het evenement zijn"
+msgstr ""
+"De einddatum van de verkoop van de tickets kan niet na de datum van het "
+"evenement zijn"
 
-#: ../tribe-eventbrite.class.php:472
+#: ../lib/tribe-eventbrite.class.php:510
 msgid "Ticket sales start date cannot be after ticket sales end date"
-msgstr "De startdatum van de verkoop van de tickets kan niet na de einddatum van de verkoop zijn."
+msgstr ""
+"De startdatum van de verkoop van de tickets kan niet na de einddatum van de "
+"verkoop zijn."
 
-#: ../tribe-eventbrite.class.php:476
+#: ../lib/tribe-eventbrite.class.php:514
 msgid "The dates you have chosen for your ticket sales are inconsistent"
-msgstr "De data dat je gekozen hebt voor de verkoop van je tickets zijn tegenstrijdig"
+msgstr ""
+"De data dat je gekozen hebt voor de verkoop van je tickets zijn tegenstrijdig"
 
-#: ../tribe-eventbrite.class.php:480
+#: ../lib/tribe-eventbrite.class.php:518
 msgid "Please adjust the dates and try saving again."
 msgstr "Gelieve je datum aan te passen en probeer opnieuw op te slaan."
 
-#: ../tribe-eventbrite.class.php:541
+#: ../lib/tribe-eventbrite.class.php:579
 msgid "Tickets must have a name"
 msgstr "Tickets moeten een naam hebben"
 
-#: ../tribe-eventbrite.class.php:551
+#: ../lib/tribe-eventbrite.class.php:589
 msgid "Paid tickets must have a numeric cost."
 msgstr "Betalende tickets mogen enkel een getal bevatten."
 
-#: ../tribe-eventbrite.class.php:557
+#: ../lib/tribe-eventbrite.class.php:595
 msgid "Ticket quantity must be numeric"
 msgstr "Ticket hoeveelheid moet een getal zijn"
 
-#: ../tribe-eventbrite.class.php:614
+#: ../lib/tribe-eventbrite.class.php:652
 msgid "This post is a revision and cannot update an Evenbrite event."
-msgstr "Deze post is een revisie en is daardoor niet mogelijk om een Evenbrite evenement bij te werken."
+msgstr ""
+"Deze post is een revisie en is daardoor niet mogelijk om een Evenbrite "
+"evenement bij te werken."
 
-#: ../tribe-eventbrite.class.php:620
-#: ../tribe-eventbrite.class.php:675
-msgid "Please supply a post title. This will become the Eventbrite event title."
-msgstr "Gelieve een post titel in te geven. Dit zal ook de Eventbrite titel te worden."
+#: ../lib/tribe-eventbrite.class.php:658 ../lib/tribe-eventbrite.class.php:712
+msgid ""
+"Please supply a post title. This will become the Eventbrite event title."
+msgstr ""
+"Gelieve een post titel in te geven. Dit zal ook de Eventbrite titel te "
+"worden."
 
-#: ../tribe-eventbrite.class.php:664
+#: ../lib/tribe-eventbrite.class.php:702
 msgid "This post is a revision and cannot create an evenbrite event."
-msgstr "Deze post is een revisie en is daardoor niet mogelijk om een Evenbrite evenement te creeren."
+msgstr ""
+"Deze post is een revisie en is daardoor niet mogelijk om een Evenbrite "
+"evenement te creeren."
 
-#: ../tribe-eventbrite.class.php:673
+#: ../lib/tribe-eventbrite.class.php:711
 msgid "Event must have a title"
 msgstr "Evenementen hebben een titel nodig"
 
-#: ../tribe-eventbrite.class.php:713
-msgid "Your event could not be marked as live in Eventbrite. It was still created as a draft though. Please review the information below and proceed accordingly."
-msgstr "Het was niet mogelijk om je evenement als live te markeren in Eventbrite. Het was echter wel gecreerd als concept. Gelieve je informatie te controleren en opnieuw te proberen."
+#: ../lib/tribe-eventbrite.class.php:750
+msgid ""
+"Your event could not be marked as live in Eventbrite. It was still created "
+"as a draft though. Please review the information below and proceed "
+"accordingly."
+msgstr ""
+"Het was niet mogelijk om je evenement als live te markeren in Eventbrite. "
+"Het was echter wel gecreerd als concept. Gelieve je informatie te "
+"controleren en opnieuw te proberen."
 
-#: ../tribe-eventbrite.class.php:905
+#: ../lib/tribe-eventbrite.class.php:945
 msgid "There was an error sending the venue to Eventbrite. Please try again."
-msgstr "Er was een fout met het versturen van je etablissement naar Eventbrite. Gelieve opnieuw te proberen."
+msgstr ""
+"Er was een fout met het versturen van je etablissement naar Eventbrite. "
+"Gelieve opnieuw te proberen."
 
-#: ../tribe-eventbrite.class.php:943
+#: ../lib/tribe-eventbrite.class.php:983
 msgid "Unamed Organizer"
 msgstr "Naamloze organisator"
 
-#: ../tribe-eventbrite.class.php:989
-msgid "An error occurred while updating Eventbrite's Organizer. Please review your information and try again.<br />Error:<br />"
-msgstr "Een fout is opgetreden wanneer we Eventbrite organisater wouden bijwerken. Gelieve je informatie bij te werken en opnieuw te proberen. <br />Fout:<br />"
+#: ../lib/tribe-eventbrite.class.php:1029
+msgid ""
+"An error occurred while updating Eventbrite's Organizer. Please review your "
+"information and try again.<br />Error:<br />"
+msgstr ""
+"Een fout is opgetreden wanneer we Eventbrite organisater wouden bijwerken. "
+"Gelieve je informatie bij te werken en opnieuw te proberen. <br />Fout:<br />"
 
-#: ../tribe-eventbrite.class.php:1072
+#: ../lib/tribe-eventbrite.class.php:1111
 msgid "We were unable to import your Eventbrite event. Please try again."
-msgstr "We waren niet in staat om je Eventbrite evenement te importeren. Gelieve opnieuw te proberen."
+msgstr ""
+"We waren niet in staat om je Eventbrite evenement te importeren. Gelieve "
+"opnieuw te proberen."
 
-#: ../tribe-eventbrite.class.php:1075
+#: ../lib/tribe-eventbrite.class.php:1114
 msgid "Event already imported."
 msgstr "Evenement is reeds geimporteerd."
 
-#: ../tribe-eventbrite.class.php:1078
-msgid "We were unable to import your Eventbrite event. Please verify the event id and try again."
-msgstr "We waren niet in staat om je Eventbrite evenement te importeren. Gelieve je evenement ID opnieuw in te geven en opnieuw te proberen."
+#: ../lib/tribe-eventbrite.class.php:1117
+msgid ""
+"We were unable to import your Eventbrite event. Please verify the event id "
+"and try again."
+msgstr ""
+"We waren niet in staat om je Eventbrite evenement te importeren. Gelieve je "
+"evenement ID opnieuw in te geven en opnieuw te proberen."
 
-#: ../tribe-eventbrite.class.php:1267
+#: ../lib/tribe-eventbrite.class.php:1294
 msgid "This event is free to attend"
 msgstr "Dit evenement is met gratis toegang"
 
-#: ../tribe-eventbrite.class.php:1311
+#: ../lib/tribe-eventbrite.class.php:1337
 msgid "PayPal Payments"
 msgstr "PayPal betalingen"
 
-#: ../tribe-eventbrite.class.php:1314
+#: ../lib/tribe-eventbrite.class.php:1340
 msgid "Google Checkout Payments"
 msgstr "Google Checkout betalingen"
 
-#: ../tribe-eventbrite.class.php:1317
+#: ../lib/tribe-eventbrite.class.php:1343
 msgid "Pay by check"
 msgstr "Betaal via cheque"
 
-#: ../tribe-eventbrite.class.php:1320
+#: ../lib/tribe-eventbrite.class.php:1346
 msgid "Pay at the door"
 msgstr "Ticketverkoop aan de kassa"
 
-#: ../tribe-eventbrite.class.php:1323
+#: ../lib/tribe-eventbrite.class.php:1349
 msgid "Send an invoice"
 msgstr "Verstuur een factuur"
 
-#: ../tribe-eventbrite.class.php:1382
+#: ../lib/tribe-eventbrite.class.php:1408
 msgid "Your user API Key is invalid. Please go to your profile and adjust it."
-msgstr "Je API Key is ongeldig, gelieve naar je profiel te gaan om de API key aan te passen."
+msgstr ""
+"Je API Key is ongeldig, gelieve naar je profiel te gaan om de API key aan te "
+"passen."
 
-#: ../tribe-eventbrite.class.php:1383
-msgid "The specified user was not found or the login credentials didn’t match. Please go to your profile and verify your API Key."
-msgstr "De specifieke gebruiker was niet gevonden of de login gegevens klopten niet. Gelieve naar je profiel te gaan en je API key te verifieren."
+#: ../lib/tribe-eventbrite.class.php:1409
+msgid ""
+"The specified user was not found or the login credentials didn’t match. "
+"Please go to your profile and verify your API Key."
+msgstr ""
+"De specifieke gebruiker was niet gevonden of de login gegevens klopten niet. "
+"Gelieve naar je profiel te gaan en je API key te verifieren."
 
-#: ../tribe-eventbrite.class.php:1384
-#: ../tribe-eventbrite.class.php:1385
-#: ../tribe-eventbrite.class.php:1396
-#: ../tribe-eventbrite.class.php:1397
-#: ../tribe-eventbrite.class.php:1398
-#: ../tribe-eventbrite.class.php:1399
-#: ../tribe-eventbrite.class.php:1400
-#: ../tribe-eventbrite.class.php:1401
-#: ../tribe-eventbrite.class.php:1402
-#: ../tribe-eventbrite.class.php:1403
-#: ../tribe-eventbrite.class.php:1404
-#: ../tribe-eventbrite.class.php:1410
-#: ../tribe-eventbrite.class.php:1412
-#: ../tribe-eventbrite.class.php:1413
-msgid "An API error occurred. Please double check the information you've entered and try again"
-msgstr "Een API error is voorgekomen. Dubbelkik op de informatie die je ingegeven hebt en probeer opnieuw"
+#: ../lib/tribe-eventbrite.class.php:1410
+#: ../lib/tribe-eventbrite.class.php:1411
+#: ../lib/tribe-eventbrite.class.php:1422
+#: ../lib/tribe-eventbrite.class.php:1423
+#: ../lib/tribe-eventbrite.class.php:1424
+#: ../lib/tribe-eventbrite.class.php:1425
+#: ../lib/tribe-eventbrite.class.php:1426
+#: ../lib/tribe-eventbrite.class.php:1427
+#: ../lib/tribe-eventbrite.class.php:1428
+#: ../lib/tribe-eventbrite.class.php:1429
+#: ../lib/tribe-eventbrite.class.php:1430
+#: ../lib/tribe-eventbrite.class.php:1436
+#: ../lib/tribe-eventbrite.class.php:1438
+#: ../lib/tribe-eventbrite.class.php:1439
+msgid ""
+"An API error occurred. Please double check the information you've entered "
+"and try again"
+msgstr ""
+"Een API error is voorgekomen. Dubbelkik op de informatie die je ingegeven "
+"hebt en probeer opnieuw"
 
-#: ../tribe-eventbrite.class.php:1386
+#: ../lib/tribe-eventbrite.class.php:1412
 msgid "The total number of tickets exceeds the maximum allowed (50)"
 msgstr "Het totaal aantal tickets overstijgt het maximum aantal (50)"
 
-#: ../tribe-eventbrite.class.php:1387
+#: ../lib/tribe-eventbrite.class.php:1413
 msgid "The ticket name is missing. Please enter a ticket name and try again."
-msgstr "De naam van het ticket ontbreekt, gelieve een naam in te geven en opnieuw te proberen."
+msgstr ""
+"De naam van het ticket ontbreekt, gelieve een naam in te geven en opnieuw te "
+"proberen."
 
-#: ../tribe-eventbrite.class.php:1388
-msgid "The date you selected for ticket sales to end is before the date you selected for ticket sales to start, please adjust your dates accordingly."
-msgstr "De einddatum van de verkoop van de tickets is voor de datum van het evenement. Gelieve een van de twee data aan te passen."
+#: ../lib/tribe-eventbrite.class.php:1414
+msgid ""
+"The date you selected for ticket sales to end is before the date you "
+"selected for ticket sales to start, please adjust your dates accordingly."
+msgstr ""
+"De einddatum van de verkoop van de tickets is voor de datum van het "
+"evenement. Gelieve een van de twee data aan te passen."
 
-#: ../tribe-eventbrite.class.php:1389
-msgid "The date you selected for ticket sales to end is after the date you selected for the event to end, please adjust your dates accordingly."
-msgstr "De einddatum van de verkoop van de tickets is na de datum van het evenement. Gelieve een van de twee data aan te passen."
+#: ../lib/tribe-eventbrite.class.php:1415
+msgid ""
+"The date you selected for ticket sales to end is after the date you selected "
+"for the event to end, please adjust your dates accordingly."
+msgstr ""
+"De einddatum van de verkoop van de tickets is na de datum van het evenement. "
+"Gelieve een van de twee data aan te passen."
 
-#: ../tribe-eventbrite.class.php:1390
+#: ../lib/tribe-eventbrite.class.php:1416
 msgid "Please specify the quantity of tickets available."
 msgstr "Gelieve een geldig aantal beschikbare tickets in te geven."
 
-#: ../tribe-eventbrite.class.php:1391
+#: ../lib/tribe-eventbrite.class.php:1417
 msgid "Please specify a valid number for quantity of tickets available."
 msgstr "Gelieve een geldig aantal beschikbare tickets in te geven."
 
-#: ../tribe-eventbrite.class.php:1392
-msgid "The quantity of tickets you provided is greater than event capacity. Please adjust your numbers accordingly"
-msgstr "De hoeveelheid tickets is groter dan de capaciteit van het evenement. Gelieve een van de twee aan te passen"
+#: ../lib/tribe-eventbrite.class.php:1418
+msgid ""
+"The quantity of tickets you provided is greater than event capacity. Please "
+"adjust your numbers accordingly"
+msgstr ""
+"De hoeveelheid tickets is groter dan de capaciteit van het evenement. "
+"Gelieve een van de twee aan te passen"
 
-#: ../tribe-eventbrite.class.php:1393
+#: ../lib/tribe-eventbrite.class.php:1419
 msgid "Please enter a valid price for the ticket"
 msgstr "Gelieve een geldige ticket prijs in te geven"
 
-#: ../tribe-eventbrite.class.php:1394
+#: ../lib/tribe-eventbrite.class.php:1420
 msgid "Please enter a valid minimum number of tickets per order"
 msgstr "Gelieve een geldig minimum aantal tickets in te geven per bestelling"
 
-#: ../tribe-eventbrite.class.php:1395
+#: ../lib/tribe-eventbrite.class.php:1421
 msgid "Please enter a valid maximum number of tickets per order"
 msgstr "Gelieve een geldig maximum aantal tickets in te geven per bestelling"
 
-#: ../tribe-eventbrite.class.php:1405
+#: ../lib/tribe-eventbrite.class.php:1431
 msgid "Please provide a valid Google merchant ID and Key"
 msgstr "Gelieve een geldige Google merchant ID en Key in te geven"
 
-#: ../tribe-eventbrite.class.php:1406
-msgid "To use Google Checkout you need to enter a 10 or 15 digit Google Checkout Merchant ID"
-msgstr "Om Google Checkout te gebruiken moet je een 10 of 15 tellende tekens Google Checkhout Merchant ID ingeven"
+#: ../lib/tribe-eventbrite.class.php:1432
+msgid ""
+"To use Google Checkout you need to enter a 10 or 15 digit Google Checkout "
+"Merchant ID"
+msgstr ""
+"Om Google Checkout te gebruiken moet je een 10 of 15 tellende tekens Google "
+"Checkhout Merchant ID ingeven"
 
-#: ../tribe-eventbrite.class.php:1407
-msgid "To use Google Checkout you need to enter a 22 character Google Checkout Merchant Key"
-msgstr "Om Google Checkout te gebruiken moet je een 22 tellende tekens Google Checkhout Merchant Key ingeven"
+#: ../lib/tribe-eventbrite.class.php:1433
+msgid ""
+"To use Google Checkout you need to enter a 22 character Google Checkout "
+"Merchant Key"
+msgstr ""
+"Om Google Checkout te gebruiken moet je een 22 tellende tekens Google "
+"Checkhout Merchant Key ingeven"
 
-#: ../tribe-eventbrite.class.php:1408
-msgid "Please select at least one method of payment (PayPal, Google or Alternative)"
-msgstr "Gelieve minstens een methode te selecteren (PayPal, Google, of alternatief)"
+#: ../lib/tribe-eventbrite.class.php:1434
+msgid ""
+"Please select at least one method of payment (PayPal, Google or Alternative)"
+msgstr ""
+"Gelieve minstens een methode te selecteren (PayPal, Google, of alternatief)"
 
-#: ../tribe-eventbrite.class.php:1409
-msgid "The Paypal email address you provided is invalid. Please go to Eventbrite to adjust it."
-msgstr "Het Paypal email adres dat je ingegeven hebt is onjuist. Gelieve naar Eventbrite te gaan en het te bewerken."
+#: ../lib/tribe-eventbrite.class.php:1435
+msgid ""
+"The Paypal email address you provided is invalid. Please go to Eventbrite to "
+"adjust it."
+msgstr ""
+"Het Paypal email adres dat je ingegeven hebt is onjuist. Gelieve naar "
+"Eventbrite te gaan en het te bewerken."
 
-#: ../tribe-eventbrite.class.php:1411
+#: ../lib/tribe-eventbrite.class.php:1437
 msgid "This event has been deleted from Eventbrite."
 msgstr "Dit evenement is verwijderd van Eventbrite."
 
-#: ../tribe-eventbrite.class.php:1414
-msgid "The organizer name already exists. Please enter a different organizer name and try again. Note that your event was not registered with Eventbrite as a result."
-msgstr "De organisators naam bestaat reeds. Gelieve een andere organisators naam te kiezen en opnieuw te proberen. Notitie: Je evenement was om deze reden niet geregistreerd bij Eventbrite."
+#: ../lib/tribe-eventbrite.class.php:1440
+msgid ""
+"The organizer name already exists. Please enter a different organizer name "
+"and try again. Note that your event was not registered with Eventbrite as a "
+"result."
+msgstr ""
+"De organisators naam bestaat reeds. Gelieve een andere organisators naam te "
+"kiezen en opnieuw te proberen. Notitie: Je evenement was om deze reden niet "
+"geregistreerd bij Eventbrite."
 
-#: ../tribe-eventbrite.class.php:1415
-msgid "The venue name already exists. Please enter a different venue name and try again. Note that your event was not registered with Eventbrite as a result."
-msgstr "Deze locatienaam bestaat reeds. Gelieve een andere locatienaam in te geven en opnieuw te proberen. Notitie: Je evenement werd niet geregristeerd bij Eventbrite als resultaat."
+#: ../lib/tribe-eventbrite.class.php:1441
+msgid ""
+"The venue name already exists. Please enter a different venue name and try "
+"again. Note that your event was not registered with Eventbrite as a result."
+msgstr ""
+"Deze locatienaam bestaat reeds. Gelieve een andere locatienaam in te geven "
+"en opnieuw te proberen. Notitie: Je evenement werd niet geregristeerd bij "
+"Eventbrite als resultaat."
 
-#: ../tribe-eventbrite.class.php:1429
+#: ../lib/tribe-eventbrite.class.php:1455
 msgid "The following Eventbrite error has occurred"
 msgstr "De volgende Eventbrite fout werd vastgesteld"
 
-#: ../tribe-eventbrite.class.php:1434
+#: ../lib/tribe-eventbrite.class.php:1460
 msgid "The event could not be made live as a result of this error."
 msgstr "Dit evenement kan niet actief worden gezet vanwege deze fout."
 
-#: ../tribe-eventbrite.class.php:1458
-msgid "Import Events"
-msgstr "Importeer evenementen"
+#
+#: ../lib/tribe-eventbrite.class.php:1484
+msgid "Import: Eventbrite "
+msgstr ""
 
-#: ../tribe-eventbrite.class.php:1651
+#
+#: ../lib/tribe-eventbrite.class.php:1484
+msgid "Import: Eventbrite"
+msgstr ""
+
+#: ../lib/tribe-eventbrite.class.php:1651
 #, php-format
-msgid "The Events Calendar: Eventbrite Tickets is now active. Add your %s to your %s (Don't have one? %s). Then simply create a new event or modify an existing event and enable Eventbrite to add and sell tickets. %s"
-msgstr "The Events Calendar: Eventbrite tickets zijn nu actief. Voeg je %s toe aan je % (Heb je er geen? %s). Dan moet je simpelweg een nieuw evenement maken of eentje bewerken en Eventbrite activeren om tickets toe te voegen en te verkopen. %s"
+msgid ""
+"Welcome to The Events Calendar: Eventbrite Tickets! We appreciate your "
+"support and hope you enjoy the functionality this add-on has to offer. "
+"Before jumping into it, make sure you've reviewed our %sEventbrite Tickets "
+"new user primer%s so you're familiar with the basics."
+msgstr ""
 
-#: ../tribe-eventbrite.class.php:1651
+#: ../lib/tribe-eventbrite.class.php:1652
+#, php-format
+msgid ""
+"Add your %s to your %s (Don't have one? %s). Then simply create a new event "
+"or modify an existing one and enable Eventbrite to add and sell tickets. %s"
+msgstr ""
+
+#: ../lib/tribe-eventbrite.class.php:1652
 msgid "Eventbrite User API Key"
 msgstr "Eventbrite User API Key"
 
-#: ../tribe-eventbrite.class.php:1651
+#: ../lib/tribe-eventbrite.class.php:1652
 msgid "profile"
 msgstr "Profiel"
 
-#: ../tribe-eventbrite.class.php:1651
+#: ../lib/tribe-eventbrite.class.php:1652
 msgid "Sign up now"
 msgstr "Regristreer nu"
 
-#: ../tribe-eventbrite.class.php:1670
+#: ../lib/tribe-eventbrite.class.php:1663
+msgid ""
+"Eventbrite status is set to DRAFT. You can update this in the 'Eventbrite "
+"Information' section further down this page."
+msgstr ""
+"Eventbrite status is momenteel opgesteld als concept. Je kan dit updaten in "
+"de Eventbrite informatie sectie hieronder."
+
+#: ../lib/tribe-eventbrite.class.php:1667
+msgid ""
+"You did not create any tickets for your event.  You will not be able to "
+"publish this event on Eventbrite unless you first add a ticket at Eventbrite."
+"com."
+msgstr ""
+"Je hebt geen tickets gecreerd voor je evenement. Je zal niet in staat zijn "
+"om het evenement te publiseren zolang je geen ticket aanmaakt op Eventbrite."
+"com"
+
+#: ../lib/tribe-eventbrite.class.php:1687
 msgid "Import"
 msgstr "Importeer"
 
-#: ../tribe-eventbrite.class.php:1679
-#: ../views/eventbrite-options.php:8
+#: ../lib/tribe-eventbrite.class.php:1696 ../views/eventbrite-options.php:8
 msgid "Eventbrite"
 msgstr ""
 
+#: ../lib/tribe-eventbrite.class.php:1712
+msgid "Import Events"
+msgstr "Importeer evenementen"
+
+#: ../public/template-tags.php:116
+msgid "m.d.Y"
+msgstr "d.m.Y"
+
 #: ../vendor/pue-client/admin-views/license-key.view.php:9
 #: ../vendor/pue-client/admin-views/license-key.view.php:13
+#: ../vendor/pue-client/lib/pue_plugin_update_engine.class.php:185
 msgid "License Key"
 msgstr "Licentie sleutel"
 
 #: ../vendor/pue-client/admin-views/license-key.view.php:10
-#: ../vendor/pue-client/admin-views/license-key.view.php:17
 msgid "A valid license key is required for support and updates."
 msgstr "Een geldige licentie sleutel is nodig voor ondersteuning en updates."
 
-#: ../vendor/pue-client/lib/pue_plugin_update_engine.class.php:194
-#, php-format
-msgid "License Key for %s"
-msgstr "Licentie sleutel voor %s"
+#: ../vendor/pue-client/admin-views/license-key.view.php:16
+msgid "Replace empty fields"
+msgstr ""
 
-#: ../vendor/pue-client/lib/pue_plugin_update_engine.class.php:195
+#: ../vendor/pue-client/admin-views/license-key.view.php:25
+#: ../vendor/pue-client/lib/pue_plugin_update_engine.class.php:186
 msgid "A valid license key is required for support and updates"
 msgstr "Een geldige licentie sleutel is nodig voor ondersteuning en updates."
 
-#: ../vendor/pue-client/lib/pue_plugin_update_engine.class.php:258
+#: ../vendor/pue-client/lib/pue_plugin_update_engine.class.php:254
 msgid "License key(s) updated."
 msgstr "Licentie sleutel(s) zijn bijgewerkt."
 
-#: ../vendor/pue-client/lib/pue_plugin_update_engine.class.php:295
+#: ../vendor/pue-client/lib/pue_plugin_update_engine.class.php:294
 msgid "Sorry, key validation server is not available."
 msgstr "Sorry, deze server om de sleutel te valideren is niet beschikbaar."
 
-#: ../vendor/pue-client/lib/pue_plugin_update_engine.class.php:297
+#: ../vendor/pue-client/lib/pue_plugin_update_engine.class.php:296
 msgid "Sorry, this key is expired."
 msgstr "Sorry, deze sleutel is vervallen."
 
-#: ../vendor/pue-client/lib/pue_plugin_update_engine.class.php:299
+#: ../vendor/pue-client/lib/pue_plugin_update_engine.class.php:298
 msgid "Sorry, this key is out of installs."
 msgstr "Sorry, deze sleutel heeft het maximum van installaties bereikt."
 
-#: ../vendor/pue-client/lib/pue_plugin_update_engine.class.php:301
+#: ../vendor/pue-client/lib/pue_plugin_update_engine.class.php:300
 msgid "Sorry, this key is not valid."
 msgstr "Sorry, maar deze sleutel is niet geldig."
 
-#: ../vendor/pue-client/lib/pue_plugin_update_engine.class.php:304
+#: ../vendor/pue-client/lib/pue_plugin_update_engine.class.php:303
 #, php-format
 msgid "Valid Key! Expires on %s"
 msgstr "Goede sleutel! Vervalt op %s"
 
-#: ../vendor/pue-client/lib/pue_plugin_update_engine.class.php:308
-msgid "Hmmm... something's wrong with this validator. Please contact <a href=\"http://tri.be/support\">support.</a>"
-msgstr "Hmmm... er is blijkbaar iets verkeerd met deze validator. Gelieve de <a href=\"http://tri.be/support\">ondersteuning</a> te contacteren."
+#: ../vendor/pue-client/lib/pue_plugin_update_engine.class.php:307
+#, php-format
+msgid ""
+"Hmmm... something's wrong with this validator. Please contact <a href=\"%s"
+"\">support.</a>"
+msgstr ""
+"Hmmm… er is blijkbaar iets verkeerd met deze validator. Gelieve de <a href="
+"\"%s\">ondersteuning</a> te contacteren."
 
-#: ../vendor/pue-client/lib/pue_plugin_update_engine.class.php:484
-msgid "[X]"
-msgstr "[X]"
+#: ../views/add-existing-event.php:41
+msgid ""
+"The content field must be empty in order to import the event description."
+msgstr ""
+"Het beschrijving veld moet leeg zijn om de evenement zijn beschrijving te "
+"importeren."
 
-#: ../views/add-existing-event.php:31
-msgid "The content field must be empty in order to import the event description."
-msgstr "Het beschrijving veld moet leeg zijn om de evenement zijn beschrijving te importeren."
-
-#: ../views/add-existing-event.php:104
+#: ../views/add-existing-event.php:114
 msgid "Import Event from Eventbrite"
 msgstr "Importeer evenement van Eventbrite"
 
-#: ../views/add-existing-event.php:109
+#: ../views/add-existing-event.php:119
 msgid "Import an existing Eventbrite event?"
 msgstr "Importeer een bestaand Eventrite evenement:"
 
-#: ../views/add-existing-event.php:118
+#: ../views/add-existing-event.php:128
 msgid "Enter your Eventbrite Event ID here:"
 msgstr "Voeg je Evenbrite Event ID in:"
 
-#: ../views/eventbrite-events-table.php:3
-msgid "Eventbrite status is set to DRAFT. You can update this in the 'Eventbrite Information' section further down this page."
-msgstr "Eventbrite status is momenteel opgesteld als concept. Je kan dit updaten in de Eventbrite informatie sectie hieronder."
-
-#: ../views/eventbrite-events-table.php:8
-msgid "You did not create any tickets for your event.  You will not be able to publish this event on Eventbrite unless you first add a ticket at Eventbrite.com."
-msgstr "Je hebt geen tickets gecreerd voor je evenement. Je zal niet in staat zijn om het evenement te publiseren zolang je geen ticket aanmaakt op Eventbrite.com"
-
-#: ../views/eventbrite-events-table.php:14
+#: ../views/eventbrite-events-table.php:15
 msgid "Eventbrite Information"
 msgstr "Eventbrite informatie"
 
-#: ../views/eventbrite-events-table.php:19
+#: ../views/eventbrite-events-table.php:20
 msgid "Eventbrite Event ID:"
 msgstr "Eventbrite Evenement ID:"
 
-#: ../views/eventbrite-events-table.php:27
+#: ../views/eventbrite-events-table.php:28
 msgid "Eventbrite Event Status:"
 msgstr "Eventbrite Evenement status:"
 
-#: ../views/eventbrite-events-table.php:36
-#: ../views/eventbrite-meta-box-extension.php:377
+#: ../views/eventbrite-events-table.php:37
+#: ../views/eventbrite-meta-box-extension.php:415
 msgid "Draft"
 msgstr "Concept"
 
-#: ../views/eventbrite-events-table.php:37
-#: ../views/eventbrite-meta-box-extension.php:378
+#: ../views/eventbrite-events-table.php:38
+#: ../views/eventbrite-meta-box-extension.php:416
 msgid "Live"
 msgstr "Live"
 
-#: ../views/eventbrite-events-table.php:39
+#: ../views/eventbrite-events-table.php:40
 msgid "Canceled (this will cancel the event at Eventbrite)"
 msgstr "Stopzetten (dit zal het evenement stopzetten op Eventbrite)"
 
-#: ../views/eventbrite-events-table.php:40
-msgid "Deleted (this will delete the event from Eventbrite & unregister this event with Eventbrite)"
-msgstr "Verwijderd (dit zal het evenement verwijderen van Eventbrite & het deregistreren op Eventbrite)"
-
-#: ../views/eventbrite-events-table.php:44
-msgid "This event was created without a ticket. You need to create a ticket before you can change this event's status."
-msgstr "Dit evenement is gecreerd zonder een ticket. Je moet een ticket creeren voordat je dit evenement zijn status kan veranderen."
-
-#: ../views/eventbrite-events-table.php:44
-msgid "Manage Event"
-msgstr "Beheer evenement "
-
 #: ../views/eventbrite-events-table.php:51
+#: ../views/eventbrite-events-table.php:63
 msgid "Note"
 msgstr "Notitie"
 
 #: ../views/eventbrite-events-table.php:51
-msgid "Cancelling or deleting the event from Eventbrite cannot be undone"
-msgstr "Stopzetten of verwijderen van dit evenement op Eventbrite kan niet ongedaan worden gemaakt."
+msgid ""
+"At this time, a canceled event can only be made live again through the Quick "
+"Links in the My Events tab of your account dashboard."
+msgstr ""
 
-#: ../views/eventbrite-events-table.php:61
+#: ../views/eventbrite-events-table.php:51
+#: ../views/eventbrite-events-table.php:54
+msgid "Manage Event"
+msgstr "Beheer evenement "
+
+#: ../views/eventbrite-events-table.php:54
+msgid ""
+"This event was created without a ticket. You need to create a ticket before "
+"you can change this event's status."
+msgstr ""
+"Dit evenement is gecreerd zonder een ticket. Je moet een ticket creeren "
+"voordat je dit evenement zijn status kan veranderen."
+
+#: ../views/eventbrite-events-table.php:64
+msgid "Cancelling the event from Eventbrite cannot be undone"
+msgstr ""
+
+#: ../views/eventbrite-events-table.php:76
 msgid "Associated Tickets:"
 msgstr "Geaccosieerde tickets:"
 
-#: ../views/eventbrite-events-table.php:62
+#: ../views/eventbrite-events-table.php:77
 msgid "The following Eventbrite tickets are associated to this event"
 msgstr "De volgende Eventbrite tickets zijn geaccosieerd met dit evenement"
 
-#: ../views/eventbrite-events-table.php:67
+#: ../views/eventbrite-events-table.php:82
 msgid "Ticket"
 msgstr "Ticket"
 
-#: ../views/eventbrite-events-table.php:67
+#: ../views/eventbrite-events-table.php:82
 msgid "Sold"
 msgstr "Verkocht"
 
-#: ../views/eventbrite-events-table.php:67
+#: ../views/eventbrite-events-table.php:82
 msgid "Available"
 msgstr "Beschikbaar"
 
-#: ../views/eventbrite-events-table.php:67
+#: ../views/eventbrite-events-table.php:82
 msgid "End Sales"
 msgstr "Stop verkoop"
 
-#: ../views/eventbrite-events-table.php:85
+#: ../views/eventbrite-events-table.php:100
 msgid "Edit existing tickets"
 msgstr "Bewerk bestaande tckets"
 
-#: ../views/eventbrite-events-table.php:86
+#: ../views/eventbrite-events-table.php:101
 msgid "Create a new ticket"
 msgstr "Maak een nieuw ticket"
 
-#: ../views/eventbrite-events-table.php:95
+#: ../views/eventbrite-events-table.php:110
 msgid "There are no tickets associated with this event!"
 msgstr "Er zijn geen ticket geacosieerd met dit evenement!"
 
-#: ../views/eventbrite-events-table.php:96
-msgid "You cannot publish this event in Eventbrite unless you first add a ticket on Eventbrite.com."
-msgstr "Je kan dit evenement publiceren in Eventbrite, zolang je eerst geen ticket toevoegt op eventbrite.com."
+#: ../views/eventbrite-events-table.php:111
+msgid ""
+"You cannot publish this event in Eventbrite unless you first add a ticket on "
+"Eventbrite.com."
+msgstr ""
+"Je kan dit evenement publiceren in Eventbrite, zolang je eerst geen ticket "
+"toevoegt op eventbrite.com."
 
-#: ../views/eventbrite-events-table.php:102
+#: ../views/eventbrite-events-table.php:117
 msgid "Eventbrite Shortcuts:"
 msgstr "Eventbrite snelkoppelingen:"
 
-#: ../views/eventbrite-events-table.php:108
+#: ../views/eventbrite-events-table.php:123
 msgid "Manage my Event"
 msgstr "Beheer mijn evenement"
 
-#: ../views/eventbrite-events-table.php:109
+#: ../views/eventbrite-events-table.php:124
 msgid "Manage Discounts"
 msgstr "Beheer kortingen"
 
-#: ../views/eventbrite-events-table.php:110
+#: ../views/eventbrite-events-table.php:125
 msgid "Manage Attendees"
 msgstr "Bewerk aanwezigen"
 
-#: ../views/eventbrite-events-table.php:111
+#: ../views/eventbrite-events-table.php:126
 msgid "Email Attendees"
 msgstr "Verstuur een email naar aanwezigen"
 
-#: ../views/eventbrite-events-table.php:112
+#: ../views/eventbrite-events-table.php:127
 msgid "Print Badges"
 msgstr "Print badges"
 
-#: ../views/eventbrite-events-table.php:113
+#: ../views/eventbrite-events-table.php:128
 msgid "Print Check-In List"
 msgstr "Print Check-In lijst"
 
-#: ../views/eventbrite-meta-box-extension.php:78
-msgid "EventBrite only allows events to be saved that start in the future."
-msgstr "Eventbrite laat enkel toe om evenementen op te slaan die plaats vinden in de toekomst."
+#: ../views/eventbrite-meta-box-extension.php:97
+msgid "Eventbrite only allows events to be saved that start in the future."
+msgstr ""
 
-#: ../views/eventbrite-meta-box-extension.php:93
+#: ../views/eventbrite-meta-box-extension.php:112
 msgid "Please provide a ticket name for the Eventbrite ticket."
 msgstr "Gelieve een ticket naam te geven voor een Eventbrite ticket."
 
-#: ../views/eventbrite-meta-box-extension.php:98
+#: ../views/eventbrite-meta-box-extension.php:117
 msgid "You must set a price for the ticket "
 msgstr "Je moet een prijs ingeven voor een ticket"
 
-#: ../views/eventbrite-meta-box-extension.php:103
+#: ../views/eventbrite-meta-box-extension.php:122
 msgid "Ticket quantity is not a number"
 msgstr "Ticket hoeveelheid is geen nummer"
 
-#: ../views/eventbrite-meta-box-extension.php:110
+#: ../views/eventbrite-meta-box-extension.php:129
 msgid "A Paypal email address must be provided."
 msgstr "Een Paypal email adres moet ingevoerd worden."
 
-#: ../views/eventbrite-meta-box-extension.php:118
+#: ../views/eventbrite-meta-box-extension.php:137
 msgid "A Google Merchant Id must be provided."
 msgstr "Een Google Merchant ID moet ingevoerd worden."
 
-#: ../views/eventbrite-meta-box-extension.php:124
+#: ../views/eventbrite-meta-box-extension.php:143
 msgid "A Google Merchant Key must be provided."
 msgstr "Een Google Merchant Key moet ingevoerd worden."
 
-#: ../views/eventbrite-meta-box-extension.php:152
-msgid "Eventbrite Integration"
-msgstr "Eventbrite integratie"
+#
+#: ../views/eventbrite-meta-box-extension.php:182
+msgid "Tickets"
+msgstr ""
 
-#: ../views/eventbrite-meta-box-extension.php:158
-msgid "This event has been deleted from Eventbrite. It is now unregistered from Eventbrite."
-msgstr "Dit evenement is verwijderd van Eventbrite. Het is nu niet langer gerigstreerd op Eventbrite."
+#: ../views/eventbrite-meta-box-extension.php:188
+msgid ""
+"This event has been deleted from Eventbrite. It is now unregistered from "
+"Eventbrite."
+msgstr ""
+"Dit evenement is verwijderd van Eventbrite. Het is nu niet langer "
+"gerigstreerd op Eventbrite."
 
-#: ../views/eventbrite-meta-box-extension.php:166
+#: ../views/eventbrite-meta-box-extension.php:196
 msgid "Register this event with eventbrite.com?"
 msgstr "Dit evenement publiceren op eventbrite.com"
 
-#: ../views/eventbrite-meta-box-extension.php:168
+#: ../views/eventbrite-meta-box-extension.php:198
 msgid "Leave this event associated with eventbrite.com?"
 msgstr "Moet dit evenement geaccosieerd worden met eventbrite.com"
 
-#: ../views/eventbrite-meta-box-extension.php:172
-#: ../views/eventbrite-meta-box-extension.php:186
+#: ../views/eventbrite-meta-box-extension.php:202
+#: ../views/eventbrite-meta-box-extension.php:216
 msgid "Yes"
 msgstr "Ja"
 
-#: ../views/eventbrite-meta-box-extension.php:173
-#: ../views/eventbrite-meta-box-extension.php:187
+#: ../views/eventbrite-meta-box-extension.php:203
+#: ../views/eventbrite-meta-box-extension.php:217
 msgid "No"
 msgstr "Neen"
 
-#: ../views/eventbrite-meta-box-extension.php:178
+#: ../views/eventbrite-meta-box-extension.php:208
 #, php-format
-msgid "This event was created by another user. Please consider contacting %s about editing these Eventbrite details."
-msgstr "Dit evenement was gepubliceerd door een andere gebruiker. Gelieve %S te contacteren omtrent het bewerken van de Eventbrite details."
+msgid ""
+"This event was created by another user. Please consider contacting %s about "
+"editing these Eventbrite details."
+msgstr ""
+"Dit evenement was gepubliceerd door een andere gebruiker. Gelieve %s te "
+"contacteren omtrent het bewerken van de Eventbrite details."
 
-#: ../views/eventbrite-meta-box-extension.php:184
+#: ../views/eventbrite-meta-box-extension.php:214
 msgid "Display tickets on event page?"
 msgstr "Toon tickets op evenementspagina?"
 
-#: ../views/eventbrite-meta-box-extension.php:193
-msgid "Note: The Eventbrite API does not yet support recurring events, so all instances of recurring events will be associated with a single Eventbrite event."
-msgstr "Notitie: The Eventbrite API ondersteund momenteel nog geen herhalende evenementen, zodanig dat alle herhalende evenementen als aparte evenementen zullen worden aangemaakt op Eventbrite."
+#: ../views/eventbrite-meta-box-extension.php:223
+msgid ""
+"Note: The Eventbrite API does not yet support recurring events, so all "
+"instances of recurring events will be associated with a single Eventbrite "
+"event."
+msgstr ""
+"Notitie: The Eventbrite API ondersteund momenteel nog geen herhalende "
+"evenementen, zodanig dat alle herhalende evenementen als aparte evenementen "
+"zullen worden aangemaakt op Eventbrite."
 
-#: ../views/eventbrite-meta-box-extension.php:196
-msgid "Note: Eventbrite requires you enter an organizer. If you neglect to enter an organizer, your display name will be passed as the organizer name to Eventbrite"
-msgstr "Notitie: Eventbrite verplicht dat je evenement een organisator heeft. Wanneer je geen organisator opgeeft zal je weergave naam doorgegeven worden als organisator."
+#: ../views/eventbrite-meta-box-extension.php:226
+msgid ""
+"Note: Eventbrite requires you enter an organizer. If you neglect to enter an "
+"organizer, your display name will be passed as the organizer name to "
+"Eventbrite"
+msgstr ""
+"Notitie: Eventbrite verplicht dat je evenement een organisator heeft. "
+"Wanneer je geen organisator opgeeft zal je weergave naam doorgegeven worden "
+"als organisator."
 
-#: ../views/eventbrite-meta-box-extension.php:201
+#: ../views/eventbrite-meta-box-extension.php:231
 msgid "Set up your first ticket"
 msgstr "Zet je eerste prijs op"
 
-#: ../views/eventbrite-meta-box-extension.php:202
-msgid "To create multiple tickets per event, submit this form, then follow the link to Eventbrite."
-msgstr "Om verschillende tickets te creeren per evenement moet je dit formulier verzenden en dan volg je de link naar Eventbrite."
+#: ../views/eventbrite-meta-box-extension.php:232
+msgid ""
+"To create multiple tickets per event, submit this form, then follow the link "
+"to Eventbrite."
+msgstr ""
+"Om verschillende tickets te creeren per evenement moet je dit formulier "
+"verzenden en dan volg je de link naar Eventbrite."
 
-#: ../views/eventbrite-meta-box-extension.php:207
+#: ../views/eventbrite-meta-box-extension.php:237
 msgid "Name"
 msgstr "Naam"
 
-#: ../views/eventbrite-meta-box-extension.php:215
+#: ../views/eventbrite-meta-box-extension.php:245
 msgid "Examples: Member, Non-member, Student, Early Bird"
 msgstr "Voorbeelden: Gebruiker, gast, studenten, vroeg gebruiker"
 
-#: ../views/eventbrite-meta-box-extension.php:219
+#: ../views/eventbrite-meta-box-extension.php:249
 msgid "Description"
 msgstr "Beschrijving"
 
-#: ../views/eventbrite-meta-box-extension.php:268
+#: ../views/eventbrite-meta-box-extension.php:298
 msgid "Type"
 msgstr "Type"
 
-#: ../views/eventbrite-meta-box-extension.php:271
+#: ../views/eventbrite-meta-box-extension.php:301
 msgid " Set Price"
 msgstr "Setprijs"
 
-#: ../views/eventbrite-meta-box-extension.php:273
+#: ../views/eventbrite-meta-box-extension.php:303
 msgid " Donation Based"
 msgstr "Gebaseerd op donaties"
 
-#: ../views/eventbrite-meta-box-extension.php:275
+#: ../views/eventbrite-meta-box-extension.php:305
 msgid " Free"
 msgstr "Gratis"
 
-#: ../views/eventbrite-meta-box-extension.php:279
+#: ../views/eventbrite-meta-box-extension.php:309
 msgid "Cost"
 msgstr "Kost"
 
-#: ../views/eventbrite-meta-box-extension.php:284
+#: ../views/eventbrite-meta-box-extension.php:314
 msgid "Quantity"
 msgstr "Hoeveelheid"
 
-#: ../views/eventbrite-meta-box-extension.php:291
+#: ../views/eventbrite-meta-box-extension.php:321
 msgid "Include Fee in Price"
 msgstr "Voeg een extra kost toe in de prijs"
 
-#: ../views/eventbrite-meta-box-extension.php:294
+#: ../views/eventbrite-meta-box-extension.php:324
 msgid "Add Service Fee on top of price"
 msgstr "Voeg een administratiekost toe op het totaalbedrag"
 
-#: ../views/eventbrite-meta-box-extension.php:296
+#: ../views/eventbrite-meta-box-extension.php:326
 msgid " Include Service fee in price"
 msgstr "Voeg een administratiekost toe"
 
-#: ../views/eventbrite-meta-box-extension.php:301
+#: ../views/eventbrite-meta-box-extension.php:331
 msgid "Accepted Payment Methods"
 msgstr "Geacepteerde betaling methodes"
 
-#: ../views/eventbrite-meta-box-extension.php:307
-msgid "None"
-msgstr "Geen"
-
-#: ../views/eventbrite-meta-box-extension.php:308
+#: ../views/eventbrite-meta-box-extension.php:346
 msgid "Paypal"
 msgstr "Paypal"
 
-#: ../views/eventbrite-meta-box-extension.php:309
+#: ../views/eventbrite-meta-box-extension.php:347
 msgid "Google Checkout"
 msgstr "Google Checkout"
 
-#: ../views/eventbrite-meta-box-extension.php:313
+#: ../views/eventbrite-meta-box-extension.php:351
 msgid "Check"
 msgstr "Cheque"
 
-#: ../views/eventbrite-meta-box-extension.php:314
+#: ../views/eventbrite-meta-box-extension.php:352
 msgid "Cash"
 msgstr "Cash"
 
-#: ../views/eventbrite-meta-box-extension.php:315
+#: ../views/eventbrite-meta-box-extension.php:353
 msgid "Send an Invoice"
 msgstr "Verstuur een factuur"
 
-#: ../views/eventbrite-meta-box-extension.php:322
+#: ../views/eventbrite-meta-box-extension.php:360
 msgid "Payment Details"
 msgstr "Betalingsdetails"
 
-#: ../views/eventbrite-meta-box-extension.php:328
+#: ../views/eventbrite-meta-box-extension.php:366
 msgid "Paypal Account Email Address"
 msgstr "Paypal account email adres"
 
-#: ../views/eventbrite-meta-box-extension.php:337
+#: ../views/eventbrite-meta-box-extension.php:375
 msgid "Google Merchant Id"
 msgstr "Google Merchant ID"
 
-#: ../views/eventbrite-meta-box-extension.php:341
+#: ../views/eventbrite-meta-box-extension.php:379
 msgid "Google Merchant Key"
 msgstr "Google Merchant Key"
 
-#: ../views/eventbrite-meta-box-extension.php:347
+#: ../views/eventbrite-meta-box-extension.php:385
 msgid "Instructions for Payment by Check"
 msgstr "Instructies voor betaling via cheque"
 
-#: ../views/eventbrite-meta-box-extension.php:351
+#: ../views/eventbrite-meta-box-extension.php:389
 msgid "Instructions for Payment by Cash"
 msgstr "Instructies voor betaling via Cash"
 
-#: ../views/eventbrite-meta-box-extension.php:355
+#: ../views/eventbrite-meta-box-extension.php:393
 msgid "Instructions for Payment by Invoice"
 msgstr "Instructies voor betaling via factuur"
 
-#: ../views/eventbrite-meta-box-extension.php:362
+#: ../views/eventbrite-meta-box-extension.php:400
 msgid "Save this post to create the Event with Eventbrite.com"
 msgstr "Sla deze post op om een evenement te creeeren op Eventbrite.com"
 
-#: ../views/eventbrite-meta-box-extension.php:363
-msgid "When you save this post, an event will be created for you within Eventbrite. You can choose whether this event will save as a draft or live event in Eventbrite below (regardless of whether the event here in WordPress is a draft or not). You will be able to further configure your event here after saving. For more advanced controls visit the Eventbrite administration here:"
-msgstr "Wanneer je deze post opslaat zal er een evenement gecreerd worden in Evenbrite. Je kan echter kiezen om dit evenement op te slaan als een concept of een live evenement in EventBrite, zie hier beneden. Het maakt voor Evenbrite niet uit of het evenement hier is opgeslagen als concept of gepubliceert is. Je kan hier achteraf nog steeds je evenement aanpassen. Voor meer geavanceerde functies moet je de administratieve functies bezoeken op Eventbrite. Dat kan je hier: "
+#: ../views/eventbrite-meta-box-extension.php:401
+msgid ""
+"When you save this post, an event will be created for you within Eventbrite. "
+"You can choose whether this event will save as a draft or live event in "
+"Eventbrite below (regardless of whether the event here in WordPress is a "
+"draft or not). You will be able to further configure your event here after "
+"saving. For more advanced controls visit the Eventbrite administration here:"
+msgstr ""
+"Wanneer je deze post opslaat zal er een evenement gecreerd worden in "
+"Evenbrite. Je kan echter kiezen om dit evenement op te slaan als een concept "
+"of een live evenement in EventBrite, zie hier beneden. Het maakt voor "
+"Evenbrite niet uit of het evenement hier is opgeslagen als concept of "
+"gepubliceert is. Je kan hier achteraf nog steeds je evenement aanpassen. "
+"Voor meer geavanceerde functies moet je de administratieve functies bezoeken "
+"op Eventbrite. Dat kan je hier: "
 
-#: ../views/eventbrite-meta-box-extension.php:369
+#: ../views/eventbrite-meta-box-extension.php:407
 msgid "Eventbrite Event Status"
 msgstr "Eventbrite event status"
 
-#: ../views/eventbrite-meta-box-extension.php:389
+#: ../views/eventbrite-meta-box-extension.php:427
 msgid "You must configure your Eventbrite API User Key in your"
 msgstr "Je moet je Eventbrite API user key configureren in je"
 
-#: ../views/eventbrite-meta-box-extension.php:390
+#: ../views/eventbrite-meta-box-extension.php:428
 msgid "profile page"
 msgstr "Profiel pagina"
 
-#: ../views/eventbrite-meta-box-extension.php:391
+#: ../views/eventbrite-meta-box-extension.php:429
 msgid "before you can use the Eventbrite features of this plugin."
 msgstr "Voordat je de Eventbrite functies kan gebruiken"
 
 #: ../views/eventbrite-options.php:10
 #, php-format
-msgid "In order to enable Eventbrite for the The Events Calendar, please enter your Eventbrite User Key on %s"
-msgstr "Om de mogelijkheid van Eventbrite te activeren voor the Events Calendar moet je je Eventbrite user Key ingeven op %s"
+msgid ""
+"In order to enable Eventbrite for the The Events Calendar, please enter your "
+"Eventbrite User Key on %s"
+msgstr ""
+"Om de mogelijkheid van Eventbrite te activeren voor the Events Calendar moet "
+"je je Eventbrite user Key ingeven op %s"
 
 #: ../views/eventbrite-options.php:10
 msgid "your user profile page"
 msgstr "je gebruikersprofiel pagina"
 
-#: ../views/import-eventbrite-events.php:8
+#: ../views/import-eventbrite-events.php:19
 msgid "Import Eventbrite Events"
 msgstr "Importeer eventbrite evenementen"
 
-#: ../views/import-eventbrite-events.php:10
-msgid "Your Eventbrite event id can be found by going to your event page at Eventbrite.com.  Once there, examine your browser's address bar to see something like this - https://www.eventbrite.com/event/212356789.  The number after '/event/' is your event id."
-msgstr "Je Eventbrite Event id kan gevonden worden door te gaan naar je evenement pagina op Eventbrite.com. Eenmaal daar, kijk naar je browser adresbalk en je zal iets zien zoals dit - https://www.eventbrite.com/event/212356789. Het nummer achter '/event/' is je event id."
+#: ../views/import-eventbrite-events.php:21
+msgid ""
+"<p>Import the event details from any public Eventbrite event.</p><p>Your "
+"Eventbrite event id can be found by going to your event page at Eventbrite."
+"com.  Once there, examine your browser's address bar to see something like "
+"this - https://www.eventbrite.com/event/212356789.  The number after '/"
+"event/' is your event id.</p>"
+msgstr ""
 
-#: ../views/import-eventbrite-events.php:18
+#: ../views/import-eventbrite-events.php:29
 msgid "Eventbrite Event ID"
 msgstr "Eventbrite Event ID"
 
-#: ../views/options.php:2
+#: ../views/options.php:13
 msgid "Eventbrite Options"
 msgstr "Eventbrite opties"
 
-#: ../views/options.php:3
-msgid "These settings change the default event form. For example, if you set a default venue, this field will be automatically filled in on a new event."
-msgstr "Deze instellingen veranderd het standaard evenementen formulier, wanneer je een nieuw standaard etablissement ingeeft, zal dat automatisch ingegeven worden bij een nieuw evenement."
+#: ../views/options.php:14
+msgid ""
+"These settings change the default event form. For example, if you set a "
+"default venue, this field will be automatically filled in on a new event."
+msgstr ""
+"Deze instellingen veranderd het standaard evenementen formulier, wanneer je "
+"een nieuw standaard etablissement ingeeft, zal dat automatisch ingegeven "
+"worden bij een nieuw evenement."
 
-#: ../views/options.php:6
-#: ../views/options.php:10
+#: ../views/options.php:17 ../views/options.php:21
 msgid "Automatically replace empty fields with default values"
 msgstr "Vervang automatisch lege velden met de standaard waarden"
 
-#: ../views/options.php:14
+#: ../views/options.php:25
 msgid "Enabled"
 msgstr "Actief"
 
-#: ../views/user-profile.php:1
+#: ../views/user-profile.php:12
 msgid "Eventbrite User Account"
 msgstr "Eventbrite user account"
 
-#: ../views/user-profile.php:4
+#: ../views/user-profile.php:15
 #, php-format
-msgid "Your API Key can be found in your %s in Eventbrite. Don't have an Eventbrite account yet? It takes less than 30 seconds to set one up."
-msgstr "Je API key kan gevonden worden in je %S in Eventbrite. Heb je nog geen Eventbrite account? Het neemt minder dan 30 seconden in om eentje op te zetten."
+msgid ""
+"Your API Key can be found in your %s in Eventbrite. Don't have an Eventbrite "
+"account yet? It takes less than 30 seconds to set one up. "
+msgstr ""
 
-#: ../views/user-profile.php:4
+#: ../views/user-profile.php:15
+msgctxt "API key settings link"
 msgid "account settings"
-msgstr "account instellingen"
+msgstr ""
 
-#: ../views/user-profile.php:4
+#: ../views/user-profile.php:15
 msgid "Click here to register."
 msgstr "Klik hier om te registreren."
 
-#: ../views/user-profile.php:9
+#: ../views/user-profile.php:20
 msgid "Eventbrite API User Key"
 msgstr "Eventbrite API User Key"
 
+#~ msgid "The Events Calendar: Eventbrite Tickets plugin requires %s plugin"
+#~ msgstr ""
+#~ "The Events Calendar: Eventribe Ticket plugin heeft de %s plugin nodig"
+
+#~ msgid "Ticket Description"
+#~ msgstr "Ticket beschrijving"
+
+#~ msgid "License Key for %s"
+#~ msgstr "Licentie sleutel voor %s"
+
+#~ msgid "[X]"
+#~ msgstr "[X]"
+
+#~ msgid ""
+#~ "Deleted (this will delete the event from Eventbrite & unregister this "
+#~ "event with Eventbrite)"
+#~ msgstr ""
+#~ "Verwijderd (dit zal het evenement verwijderen van Eventbrite & het "
+#~ "deregistreren op Eventbrite)"
+
+#~ msgid "Eventbrite Integration"
+#~ msgstr "Eventbrite integratie"
+
+#~ msgid "None"
+#~ msgstr "Geen"

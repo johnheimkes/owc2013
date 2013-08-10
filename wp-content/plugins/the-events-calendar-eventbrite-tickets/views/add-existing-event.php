@@ -1,4 +1,14 @@
 <?php
+
+/**
+ * displays the existing Eventbrite event (admin fields)
+ * expects _EventBriteId is present when editing an event
+ *
+ * @package TribeEventsEventBrite
+ * @since  3.0
+ * @author Modern Tribe Inc.
+ */
+
 global $userdata;
 if( get_user_meta( $userdata->ID, 'eventbrite_user_key', true ) && !$_EventBriteId  ) : ?>
 	<script type="text/javascript" charset="utf-8">

@@ -1,792 +1,1048 @@
-# Copyright (C) 2012 
-# This file is distributed under the same license as the  package.
+# Tribe Events Eventbrite Tickets by Modern Tribe, Inc.
+# Copyright (C) Modern Tribe, Inc.
+# This file is distributed under the same license as the Tribe Events Eventbrite Tickets package.
 msgid ""
 msgstr ""
-"Project-Id-Version: The Events Calendar - Eventbrite Tickets\n"
+"Project-Id-Version: Tribe Events Eventbrite Tickets\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-04-08 21:53-0800\n"
-"PO-Revision-Date: 2012-06-20 14:57+0200\n"
-"Last-Translator: petri <info@petrikajander.com>\n"
-"Language-Team: Modern Tribe Inc. <pro@tri.be>\n"
+"POT-Creation-Date: 2013-06-26 13:21-0800\n"
+"PO-Revision-Date: 2013-06-26 13:21-0800\n"
+"Last-Translator: Modern Tribe, Inc. <pro@tri.be>\n"
+"Language-Team: Modern Tribe, Inc. <pro@tri.be>\n"
+"Language: Finnish\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Poedit-Language: Finnish\n"
-"X-Poedit-Country: FINLAND\n"
-"X-Poedit-Basepath: ./\n"
-"X-Poedit-KeywordsList: _;__;_e;_c;_n;_n_noop;_nc;__ngettext;__ngettext_noop;_x;_nx;_nx_noop;esc_attr__;esc_html__;esc_attr_e;esc_html_e;esc_attr_x;esc_html_x\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;"
+"_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2\n"
+"X-Poedit-Basepath: ./\n"
+"X-Textdomain-Support: yes\n"
+"X-Generator: Poedit 1.5.5\n"
 "X-Poedit-SearchPath-0: ..\n"
 
-#: ../eventbrite-api.class.php:42
-msgid "An error occurred while contacting Eventbrite. Please review your information and try again.<br />Error: "
-msgstr "Yhteydessä Eventbriteen oli ongelmia. Tarkista tiedot ja yritä uudelleen.<br />Virhe:"
+#: ../lib/eventbrite-api.class.php:76
+msgid ""
+"An error occurred while contacting Eventbrite. Please review your "
+"information and try again.<br />Error: "
+msgstr ""
+"Yhteydessä Eventbriteen oli ongelmia. Tarkista tiedot ja yritä uudelleen."
+"<br />Virhe:"
 
-#: ../eventbrite-api.class.php:48
-msgid "An error occurred while contacting Eventbrite. Please review your information and try again.<br />Status: "
-msgstr "Yhteydessä Eventbriteen oli ongelmia. Tarkista tiedot ja yritä uudelleen.<br />Tila:"
+#: ../lib/eventbrite-api.class.php:85
+msgid ""
+"An error occurred while contacting Eventbrite. Please review your "
+"information and try again.<br />Status: "
+msgstr ""
+"Yhteydessä Eventbriteen oli ongelmia. Tarkista tiedot ja yritä uudelleen."
+"<br />Tila:"
 
-#: ../eventbrite-api.class.php:50
-msgid "EventBrite is not answering us. Most likely they are too busy. The changes have been saved localy, maybe try again later?"
-msgstr "EventBrite ei vastaa. Ovat varmaan liian kiireisiä. Muutokset on talletettu paikallisesti, ehkä kannattaa yrittää myöhemmin?"
+#: ../lib/eventbrite-api.class.php:87
+msgid ""
+"EventBrite is not answering us. Most likely they are too busy. The changes "
+"have been saved localy, maybe try again later?"
+msgstr ""
+"EventBrite ei vastaa. Ovat varmaan liian kiireisiä. Muutokset on talletettu "
+"paikallisesti, ehkä kannattaa yrittää myöhemmin?"
 
-#: ../eventbrite-api.class.php:62
-msgid "An error occurred while updating Eventbrite. Please review your information and try again.<br />Error:<br />"
-msgstr "Päivityksessä Eventbriteen oli ongelmia. Tarkist tiedot ja yritä uudelleen.<br />Virhe:<br />"
+#: ../lib/eventbrite-api.class.php:102
+msgid ""
+"An error occurred while updating Eventbrite. Please review your information "
+"and try again.<br />Error:<br />"
+msgstr ""
+"Päivityksessä Eventbriteen oli ongelmia. Tarkist tiedot ja yritä uudelleen."
+"<br />Virhe:<br />"
 
-#: ../template-tags.php:123
-msgid "m.d.Y"
-msgstr "m.d.Y"
+#: ../lib/tribe-eventbrite.class.php:130
+msgid "The Events Calendar"
+msgstr ""
 
-#: ../tribe-eventbrite.class.php:132
-msgid "The Events Calendar: Eventbrite Tickets plugin requires the The Events Calendar plugin"
-msgstr "The Events Calendar: Eventbrite Tickets -lisäosa edellyttää The Events Calendar -lisäosaa"
+#: ../lib/tribe-eventbrite.class.php:131
+#, php-format
+msgid ""
+"To begin using The Events Calendar: Eventbrite Tickets, please install the "
+"latest version of <a href=\"%s\" class=\"thickbox\" title=\"%s\">The Events "
+"Calendar</a>."
+msgstr ""
 
-#: ../tribe-eventbrite.class.php:332
+#: ../lib/tribe-eventbrite.class.php:397
+msgid "Eventbrite requires that the venue have a country."
+msgstr ""
+
+#
+#: ../lib/tribe-eventbrite.class.php:398 ../lib/tribe-eventbrite.class.php:407
+msgid "Please adjust the venue and try saving again."
+msgstr ""
+
+#: ../lib/tribe-eventbrite.class.php:399
+msgid "Edit the venue"
+msgstr ""
+
+#: ../lib/tribe-eventbrite.class.php:406
+msgid "Eventbrite requires that United States addresses include the state."
+msgstr ""
+
+#: ../lib/tribe-eventbrite.class.php:415
 msgid "Ticket Name"
 msgstr "Lipun nimi"
 
-#: ../tribe-eventbrite.class.php:333
-msgid "Ticket Description"
-msgstr "Lipun kuvaus"
+#: ../lib/tribe-eventbrite.class.php:416
+#: ../views/eventbrite-meta-box-extension.php:257
+msgid "Date to Start Ticket Sales"
+msgstr "Lipunmyynnin aloituspäivä"
 
-#: ../tribe-eventbrite.class.php:334
-msgid "Ticket Sales Start Date"
-msgstr "Lipunmyynnin aloituspäivä:"
+#: ../lib/tribe-eventbrite.class.php:417
+#: ../views/eventbrite-meta-box-extension.php:277
+msgid "Date to End Ticket Sales"
+msgstr "Lipunmyynnin päättymispäivä"
 
-#: ../tribe-eventbrite.class.php:335
-msgid "Ticket Sales End Date"
-msgstr "Lipunmyynnin päättymispäivä:"
-
-#: ../tribe-eventbrite.class.php:336
+#: ../lib/tribe-eventbrite.class.php:418
 msgid "Ticket Type"
 msgstr "Lipputyyppi"
 
-#: ../tribe-eventbrite.class.php:337
-msgid "Ticket Quantity"
-msgstr "Lippumäärä"
-
-#: ../tribe-eventbrite.class.php:338
+#: ../lib/tribe-eventbrite.class.php:419
 msgid "Ticket Cost"
 msgstr "Lipun hinta"
 
-#: ../tribe-eventbrite.class.php:339
-msgid "Service Fee Inclusion"
-msgstr "Palveluhinnan sisältyminen"
+#: ../lib/tribe-eventbrite.class.php:420
+msgid "Ticket Quantity"
+msgstr "Lippumäärä"
 
-#: ../tribe-eventbrite.class.php:361
+#
+#: ../lib/tribe-eventbrite.class.php:421
+msgid "Ticket - Include Fee in Price"
+msgstr ""
+
+#: ../lib/tribe-eventbrite.class.php:441
 msgid "Ticket Cost (must be numeric)"
 msgstr "Lipun hinta (numeroin)"
 
-#: ../tribe-eventbrite.class.php:374
-msgid "Payment method (at least one should be selected)"
-msgstr "Maksutapa (valitse ainakin yksi)"
+#
+#: ../lib/tribe-eventbrite.class.php:453
+msgid "Ticket Payment Methods (at least one should be selected)"
+msgstr ""
 
-#: ../tribe-eventbrite.class.php:383
-msgid "Paypal email address"
-msgstr "Paypal-sähköpostiosoite"
+#
+#: ../lib/tribe-eventbrite.class.php:461
+msgid "Ticket - Paypal Account Email Address"
+msgstr ""
 
-#: ../tribe-eventbrite.class.php:385
-msgid "Paypal email address (must be a valid email address)"
-msgstr "Paypal-sähköpostiosoite (vaaditaan oikea sähköpostiosoite)"
+#
+#: ../lib/tribe-eventbrite.class.php:463
+msgid "Ticket - Paypal Account Email Address (must be a valid email address)"
+msgstr ""
 
-#: ../tribe-eventbrite.class.php:392
-msgid "Google Merchant ID"
-msgstr "Google Merchant ID"
+#
+#: ../lib/tribe-eventbrite.class.php:470
+msgid "Ticket - Google Merchant ID"
+msgstr ""
 
-#: ../tribe-eventbrite.class.php:395
-#: ../views/eventbrite-meta-box-extension.php:323
-msgid "Google Merchant Key"
-msgstr "Google Merchant Key"
+#
+#: ../lib/tribe-eventbrite.class.php:473
+msgid "Ticket - Google Merchant Key"
+msgstr ""
 
-#: ../tribe-eventbrite.class.php:400
-msgid "All required fields must be filled out correctly in order for this event to be associated to Eventbrite. The following required fields were not filled out (or not correctly):"
-msgstr "Kaikki vaaditut kentät tulee täyttää, jotta tapahtuma hyväksytään Eventbriteen. Seuraavat kentät puuttuvat (tai ovat puutteellisia):"
+#: ../lib/tribe-eventbrite.class.php:478
+msgid ""
+"All required fields must be filled out correctly in order for this event to "
+"be associated to Eventbrite. The following required fields were not filled "
+"out (or not correctly):"
+msgstr ""
+"Kaikki vaaditut kentät tulee täyttää, jotta tapahtuma hyväksytään "
+"Eventbriteen. Seuraavat kentät puuttuvat (tai ovat puutteellisia):"
 
-#: ../tribe-eventbrite.class.php:404
+#: ../lib/tribe-eventbrite.class.php:482
 msgid "Please fill in the missing fields and try saving again."
 msgstr "Täytä puuttuvat kentät ja tallenna uudelleen."
 
-#: ../tribe-eventbrite.class.php:420
+#: ../lib/tribe-eventbrite.class.php:502
 msgid "Ticket sales start date cannot be after the event ends"
-msgstr "Lipunmyynnin aloituspäivää ei voi muuttaa tapahtuman päättymisen jälkeen"
+msgstr ""
+"Lipunmyynnin aloituspäivää ei voi muuttaa tapahtuman päättymisen jälkeen"
 
-#: ../tribe-eventbrite.class.php:424
+#: ../lib/tribe-eventbrite.class.php:506
 msgid "Ticket sales end date cannot be after the event ends"
-msgstr "Lipunmyynnin päättymispäivä ei voi olla tapahtuman päättymisen jälkeen."
+msgstr ""
+"Lipunmyynnin päättymispäivä ei voi olla tapahtuman päättymisen jälkeen."
 
-#: ../tribe-eventbrite.class.php:428
+#: ../lib/tribe-eventbrite.class.php:510
 msgid "Ticket sales start date cannot be after ticket sales end date"
-msgstr "Lipunmyynnin aloituspäivä ei voi olla lipunmyynnin aloituspäivän jälkeen"
+msgstr ""
+"Lipunmyynnin aloituspäivä ei voi olla lipunmyynnin aloituspäivän jälkeen"
 
-#: ../tribe-eventbrite.class.php:432
+#: ../lib/tribe-eventbrite.class.php:514
 msgid "The dates you have chosen for your ticket sales are inconsistent"
 msgstr "Lipunmyyntiin valitut päivämäärät eivät ole johdonmukaisia"
 
-#: ../tribe-eventbrite.class.php:436
+#: ../lib/tribe-eventbrite.class.php:518
 msgid "Please adjust the dates and try saving again."
 msgstr "Mukauta päivämääriä ja tallenna uudelleen."
 
-#: ../tribe-eventbrite.class.php:497
+#: ../lib/tribe-eventbrite.class.php:579
 msgid "Tickets must have a name"
 msgstr "Lipuilla tulee olla nimi"
 
-#: ../tribe-eventbrite.class.php:507
+#: ../lib/tribe-eventbrite.class.php:589
 msgid "Paid tickets must have a numeric cost."
 msgstr "Maksullisilla lipuilla tulee olla numeerinen hinta."
 
-#: ../tribe-eventbrite.class.php:513
+#: ../lib/tribe-eventbrite.class.php:595
 msgid "Ticket quantity must be numeric"
 msgstr "Lippujen määrän tulee olla numeerinen."
 
-#: ../tribe-eventbrite.class.php:555
+#: ../lib/tribe-eventbrite.class.php:652
 msgid "This post is a revision and cannot update an Evenbrite event."
-msgstr "Tämä artikkeli on tarkistus ja se ei voi päivittää Eventbrite tapahtumaa."
+msgstr ""
+"Tämä artikkeli on tarkistus ja se ei voi päivittää Eventbrite tapahtumaa."
 
-#: ../tribe-eventbrite.class.php:561
-#: ../tribe-eventbrite.class.php:615
-msgid "Please supply a post title. This will become the Eventbrite event title."
+#: ../lib/tribe-eventbrite.class.php:658 ../lib/tribe-eventbrite.class.php:712
+msgid ""
+"Please supply a post title. This will become the Eventbrite event title."
 msgstr "Lisää artikkelin otsikko. Siitä tulee Eventbrite-tapahtuman otsikko."
 
-#: ../tribe-eventbrite.class.php:604
+#: ../lib/tribe-eventbrite.class.php:702
 msgid "This post is a revision and cannot create an evenbrite event."
 msgstr "Tämä artikkeli on tarkistus ja se ei voi luoda Eventbrite tapahtumaa."
 
-#: ../tribe-eventbrite.class.php:613
+#: ../lib/tribe-eventbrite.class.php:711
 msgid "Event must have a title"
 msgstr "Tapahtumalla tulee olla nimi"
 
-#: ../tribe-eventbrite.class.php:653
-msgid "Your event could not be marked as live in Eventbrite. It was still created as a draft though. Please review the information below and proceed accordingly."
-msgstr "Tapahtumaasi ei voitu merkitä live-tapahtumaksi Eventbritessä. Se luotiin kuitenkin luonnokseksi. Tarkista alla olevat tiedot ja toimi sen mukaisesti."
+#: ../lib/tribe-eventbrite.class.php:750
+msgid ""
+"Your event could not be marked as live in Eventbrite. It was still created "
+"as a draft though. Please review the information below and proceed "
+"accordingly."
+msgstr ""
+"Tapahtumaasi ei voitu merkitä live-tapahtumaksi Eventbritessä. Se luotiin "
+"kuitenkin luonnokseksi. Tarkista alla olevat tiedot ja toimi sen mukaisesti."
 
-#: ../tribe-eventbrite.class.php:772
-msgid "Eventbrite doesn't support venues with duplicate names, please rename the venue and try again."
-msgstr "Eventbrite ei tue samoja nimiä, nimeä tapahtuma uudelleen ja kokeile uudestaan."
-
-#: ../tribe-eventbrite.class.php:788
+#: ../lib/tribe-eventbrite.class.php:945
 msgid "There was an error sending the venue to Eventbrite. Please try again."
-msgstr "Tapahtuman lähettämisessä Eventbriteen ilmeni virhe. Kokeile uudestaan."
+msgstr ""
+"Tapahtuman lähettämisessä Eventbriteen ilmeni virhe. Kokeile uudestaan."
 
-#: ../tribe-eventbrite.class.php:855
-msgid "An error occurred while updating Eventbrite's Organizer. Please review your information and try again.<br />Error:<br />"
-msgstr "Eventbrite Organizerin päivittämisessä tapahtui virhe. Tarkista tiedot ja kokeile uudestaan.<br />Error:<br />"
+#: ../lib/tribe-eventbrite.class.php:983
+msgid "Unamed Organizer"
+msgstr ""
 
-#: ../tribe-eventbrite.class.php:952
+#: ../lib/tribe-eventbrite.class.php:1029
+msgid ""
+"An error occurred while updating Eventbrite's Organizer. Please review your "
+"information and try again.<br />Error:<br />"
+msgstr ""
+"Eventbrite Organizerin päivittämisessä tapahtui virhe. Tarkista tiedot ja "
+"kokeile uudestaan.<br />Error:<br />"
+
+#: ../lib/tribe-eventbrite.class.php:1111
 msgid "We were unable to import your Eventbrite event. Please try again."
 msgstr "Eventbrite tapahtuman tuominen ei onnistunut. Kokeile uudestaan."
 
-#: ../tribe-eventbrite.class.php:955
+#: ../lib/tribe-eventbrite.class.php:1114
 msgid "Event already imported."
 msgstr "Tapahtuma on jo tuotu."
 
-#: ../tribe-eventbrite.class.php:958
-msgid "We were unable to import your Eventbrite event. Please verify the event id and try again."
-msgstr "Eventbrite tapahtumaa ei voitu tuoda. Tarkista tapahtuman id ja kokeile uudestaan."
+#: ../lib/tribe-eventbrite.class.php:1117
+msgid ""
+"We were unable to import your Eventbrite event. Please verify the event id "
+"and try again."
+msgstr ""
+"Eventbrite tapahtumaa ei voitu tuoda. Tarkista tapahtuman id ja kokeile "
+"uudestaan."
 
-#: ../tribe-eventbrite.class.php:1157
+#
+#: ../lib/tribe-eventbrite.class.php:1294
+msgid "This event is free to attend"
+msgstr ""
+
+#: ../lib/tribe-eventbrite.class.php:1337
 msgid "PayPal Payments"
 msgstr "PayPal maksut"
 
-#: ../tribe-eventbrite.class.php:1160
+#: ../lib/tribe-eventbrite.class.php:1340
 msgid "Google Checkout Payments"
 msgstr "Google Checkout maksut"
 
-#: ../tribe-eventbrite.class.php:1163
+#: ../lib/tribe-eventbrite.class.php:1343
 msgid "Pay by check"
 msgstr "Maksa sekillä"
 
-#: ../tribe-eventbrite.class.php:1166
+#: ../lib/tribe-eventbrite.class.php:1346
 msgid "Pay at the door"
 msgstr "Maksa ovella"
 
-#: ../tribe-eventbrite.class.php:1169
+#: ../lib/tribe-eventbrite.class.php:1349
 msgid "Send an invoice"
 msgstr "Lähetä lasku"
 
-#: ../tribe-eventbrite.class.php:1224
+#: ../lib/tribe-eventbrite.class.php:1408
 msgid "Your user API Key is invalid. Please go to your profile and adjust it."
 msgstr "API käyttäjäavaimesi ei toimi. Muuta sitä käyttäjäprofiilissasi."
 
-#: ../tribe-eventbrite.class.php:1225
-msgid "The specified user was not found or the login credentials didn’t match. Please go to your profile and verify your API Key."
-msgstr "Käyttäjää ei löydy tai sisäänkirjautuminen ei onnistunut. Varmista API-avaimesi käyttäjäprofiilista."
+#: ../lib/tribe-eventbrite.class.php:1409
+msgid ""
+"The specified user was not found or the login credentials didn’t match. "
+"Please go to your profile and verify your API Key."
+msgstr ""
+"Käyttäjää ei löydy tai sisäänkirjautuminen ei onnistunut. Varmista API-"
+"avaimesi käyttäjäprofiilista."
 
-#: ../tribe-eventbrite.class.php:1226
-#: ../tribe-eventbrite.class.php:1227
-#: ../tribe-eventbrite.class.php:1238
-#: ../tribe-eventbrite.class.php:1239
-#: ../tribe-eventbrite.class.php:1240
-#: ../tribe-eventbrite.class.php:1241
-#: ../tribe-eventbrite.class.php:1242
-#: ../tribe-eventbrite.class.php:1243
-#: ../tribe-eventbrite.class.php:1244
-#: ../tribe-eventbrite.class.php:1245
-#: ../tribe-eventbrite.class.php:1246
-#: ../tribe-eventbrite.class.php:1252
-#: ../tribe-eventbrite.class.php:1254
-#: ../tribe-eventbrite.class.php:1255
-msgid "An API error occurred. Please double check the information you've entered and try again"
+#: ../lib/tribe-eventbrite.class.php:1410
+#: ../lib/tribe-eventbrite.class.php:1411
+#: ../lib/tribe-eventbrite.class.php:1422
+#: ../lib/tribe-eventbrite.class.php:1423
+#: ../lib/tribe-eventbrite.class.php:1424
+#: ../lib/tribe-eventbrite.class.php:1425
+#: ../lib/tribe-eventbrite.class.php:1426
+#: ../lib/tribe-eventbrite.class.php:1427
+#: ../lib/tribe-eventbrite.class.php:1428
+#: ../lib/tribe-eventbrite.class.php:1429
+#: ../lib/tribe-eventbrite.class.php:1430
+#: ../lib/tribe-eventbrite.class.php:1436
+#: ../lib/tribe-eventbrite.class.php:1438
+#: ../lib/tribe-eventbrite.class.php:1439
+msgid ""
+"An API error occurred. Please double check the information you've entered "
+"and try again"
 msgstr "Tapahtui API-virhe. Tarkista syöttämäsi tiedot ja yritä uudelleen."
 
-#: ../tribe-eventbrite.class.php:1228
+#: ../lib/tribe-eventbrite.class.php:1412
 msgid "The total number of tickets exceeds the maximum allowed (50)"
 msgstr "Lippujen kokonaismäärä ylittää sallitun määrän (50)"
 
-#: ../tribe-eventbrite.class.php:1229
+#: ../lib/tribe-eventbrite.class.php:1413
 msgid "The ticket name is missing. Please enter a ticket name and try again."
 msgstr "Lipun nimi puuttuu. Lisää lipun nimi ja yritä uudelleen."
 
-#: ../tribe-eventbrite.class.php:1230
-msgid "The date you selected for ticket sales to end is before the date you selected for ticket sales to start, please adjust your dates accordingly."
-msgstr "Valitsemasi lipunmyynnin päättymispäivä on ennen valitsemaasi lipunmyynnin aloituspäivää, korjaa päivämäärää."
+#: ../lib/tribe-eventbrite.class.php:1414
+msgid ""
+"The date you selected for ticket sales to end is before the date you "
+"selected for ticket sales to start, please adjust your dates accordingly."
+msgstr ""
+"Valitsemasi lipunmyynnin päättymispäivä on ennen valitsemaasi lipunmyynnin "
+"aloituspäivää, korjaa päivämäärää."
 
-#: ../tribe-eventbrite.class.php:1231
-msgid "The date you selected for ticket sales to end is after the date you selected for the event to end, please adjust your dates accordingly."
-msgstr "Valitsemasi lipunmyynnin päättymispäivä on valitsemasi lipunmyynnin aloituspäivän jälkeen. Korjaa päivämäärää."
+#: ../lib/tribe-eventbrite.class.php:1415
+msgid ""
+"The date you selected for ticket sales to end is after the date you selected "
+"for the event to end, please adjust your dates accordingly."
+msgstr ""
+"Valitsemasi lipunmyynnin päättymispäivä on valitsemasi lipunmyynnin "
+"aloituspäivän jälkeen. Korjaa päivämäärää."
 
-#: ../tribe-eventbrite.class.php:1232
+#: ../lib/tribe-eventbrite.class.php:1416
 msgid "Please specify the quantity of tickets available."
 msgstr "Ilmoita lippujen kokonaismäärä."
 
-#: ../tribe-eventbrite.class.php:1233
+#: ../lib/tribe-eventbrite.class.php:1417
 msgid "Please specify a valid number for quantity of tickets available."
 msgstr "Määritä saatavissa olevien lippujen oikea määrä."
 
-#: ../tribe-eventbrite.class.php:1234
-msgid "The quantity of tickets you provided is greater than event capacity. Please adjust your numbers accordingly"
-msgstr "Määrittämäsi lippujen määrä on suurempi kuin tilaisuuden kapasiteetti. Muuta määrä sopivaksi."
+#: ../lib/tribe-eventbrite.class.php:1418
+msgid ""
+"The quantity of tickets you provided is greater than event capacity. Please "
+"adjust your numbers accordingly"
+msgstr ""
+"Määrittämäsi lippujen määrä on suurempi kuin tilaisuuden kapasiteetti. Muuta "
+"määrä sopivaksi."
 
-#: ../tribe-eventbrite.class.php:1235
+#: ../lib/tribe-eventbrite.class.php:1419
 msgid "Please enter a valid price for the ticket"
 msgstr "Ilmoita sopiva hinta lipulle."
 
-#: ../tribe-eventbrite.class.php:1236
+#: ../lib/tribe-eventbrite.class.php:1420
 msgid "Please enter a valid minimum number of tickets per order"
 msgstr "Aseta sopiva lippujen vähimmäismäärä tilausta kohden"
 
-#: ../tribe-eventbrite.class.php:1237
+#: ../lib/tribe-eventbrite.class.php:1421
 msgid "Please enter a valid maximum number of tickets per order"
 msgstr "Aseta sopiva lippujen enimmäismäärä tilausta kohden"
 
-#: ../tribe-eventbrite.class.php:1247
+#: ../lib/tribe-eventbrite.class.php:1431
 msgid "Please provide a valid Google merchant ID and Key"
 msgstr "Ilmoita Google merchant ID ja avain"
 
-#: ../tribe-eventbrite.class.php:1248
-msgid "To use Google Checkout you need to enter a 10 or 15 digit Google Checkout Merchant ID"
-msgstr "Google Checkoutin käyttämiseen vaaditaan 10 tai 15 numeron mittainen Google Checkout Merchant ID."
+#: ../lib/tribe-eventbrite.class.php:1432
+msgid ""
+"To use Google Checkout you need to enter a 10 or 15 digit Google Checkout "
+"Merchant ID"
+msgstr ""
+"Google Checkoutin käyttämiseen vaaditaan 10 tai 15 numeron mittainen Google "
+"Checkout Merchant ID."
 
-#: ../tribe-eventbrite.class.php:1249
-msgid "To use Google Checkout you need to enter a 22 character Google Checkout Merchant Key"
-msgstr "Google Checkoutin käyttämiseen vaaditaan 22 merkin Google Checkout Merchant avain."
+#: ../lib/tribe-eventbrite.class.php:1433
+msgid ""
+"To use Google Checkout you need to enter a 22 character Google Checkout "
+"Merchant Key"
+msgstr ""
+"Google Checkoutin käyttämiseen vaaditaan 22 merkin Google Checkout Merchant "
+"avain."
 
-#: ../tribe-eventbrite.class.php:1250
-msgid "Please select at least one method of payment (PayPal, Google or Alternative)"
+#: ../lib/tribe-eventbrite.class.php:1434
+msgid ""
+"Please select at least one method of payment (PayPal, Google or Alternative)"
 msgstr "Valitse ainakin yksi maksutapa (PayPal, Google tai vaihtoehtoinen)"
 
-#: ../tribe-eventbrite.class.php:1251
-msgid "The Paypal email address you provided is invalid. Please go to Eventbrite to adjust it."
-msgstr "Ilmoittamasi Paypal -sähköpostiosoite ei kelpaa. Mene Eventbriteen muokkaamaan sitä."
+#: ../lib/tribe-eventbrite.class.php:1435
+msgid ""
+"The Paypal email address you provided is invalid. Please go to Eventbrite to "
+"adjust it."
+msgstr ""
+"Ilmoittamasi Paypal -sähköpostiosoite ei kelpaa. Mene Eventbriteen "
+"muokkaamaan sitä."
 
-#: ../tribe-eventbrite.class.php:1253
+#: ../lib/tribe-eventbrite.class.php:1437
 msgid "This event has been deleted from Eventbrite."
 msgstr "Tapahtuma on poistettu Eventbritestä."
 
-#: ../tribe-eventbrite.class.php:1256
-msgid "The organizer name already exists. Please enter a different organizer name and try again. Note that your event was not registered with Eventbrite as a result."
-msgstr "Organisaation nimi on jo olemassa. Syötä eri organisaationimi ja yritä uudelleen. Huomioithan, että tapahtumaasi ei rekisteröity Eventbriteen."
+#: ../lib/tribe-eventbrite.class.php:1440
+msgid ""
+"The organizer name already exists. Please enter a different organizer name "
+"and try again. Note that your event was not registered with Eventbrite as a "
+"result."
+msgstr ""
+"Organisaation nimi on jo olemassa. Syötä eri organisaationimi ja yritä "
+"uudelleen. Huomioithan, että tapahtumaasi ei rekisteröity Eventbriteen."
 
-#: ../tribe-eventbrite.class.php:1257
-msgid "The venue name already exists. Please enter a different venue name and try again. Note that your event was not registered with Eventbrite as a result."
-msgstr "Tapahtumapaikan nim on jo olemassa. Syötä eri nimi ja yritä uudelleen. Tapahtumaasi ei rekisteröity Eventbriteen."
+#: ../lib/tribe-eventbrite.class.php:1441
+msgid ""
+"The venue name already exists. Please enter a different venue name and try "
+"again. Note that your event was not registered with Eventbrite as a result."
+msgstr ""
+"Tapahtumapaikan nim on jo olemassa. Syötä eri nimi ja yritä uudelleen. "
+"Tapahtumaasi ei rekisteröity Eventbriteen."
 
-#: ../tribe-eventbrite.class.php:1271
+#: ../lib/tribe-eventbrite.class.php:1455
 msgid "The following Eventbrite error has occurred"
 msgstr "Ilmaantui seuraava Eventbrite virhe"
 
-#: ../tribe-eventbrite.class.php:1297
-msgid "Import Events"
-msgstr "Tuo tapahtumat"
+#: ../lib/tribe-eventbrite.class.php:1460
+msgid "The event could not be made live as a result of this error."
+msgstr ""
 
-#: ../tribe-eventbrite.class.php:1484
+#
+#: ../lib/tribe-eventbrite.class.php:1484
+msgid "Import: Eventbrite "
+msgstr ""
+
+#
+#: ../lib/tribe-eventbrite.class.php:1484
+msgid "Import: Eventbrite"
+msgstr ""
+
+#: ../lib/tribe-eventbrite.class.php:1651
 #, php-format
-msgid "The Events Calendar: Eventbrite Tickets is now active. Add your %s to your %s (Don't have one? %s). Then simply create a new event or modify an existing event and enable Eventbrite to add and sell tickets. %s"
-msgstr "The Events Calendar: Eventbrite lippu on nyt aktiivinen. Lisää %s omaan %s (Ei vielä ole? %s). Siinä tapauksessa luo uusi tapahtuma tai muokkaa nykyistä tapahtumaa ja salli Eventbriten lisätä ja myydä lippuja. %s"
+msgid ""
+"Welcome to The Events Calendar: Eventbrite Tickets! We appreciate your "
+"support and hope you enjoy the functionality this add-on has to offer. "
+"Before jumping into it, make sure you've reviewed our %sEventbrite Tickets "
+"new user primer%s so you're familiar with the basics."
+msgstr ""
 
-#: ../tribe-eventbrite.class.php:1484
+#: ../lib/tribe-eventbrite.class.php:1652
+#, php-format
+msgid ""
+"Add your %s to your %s (Don't have one? %s). Then simply create a new event "
+"or modify an existing one and enable Eventbrite to add and sell tickets. %s"
+msgstr ""
+
+#: ../lib/tribe-eventbrite.class.php:1652
 msgid "Eventbrite User API Key"
 msgstr "Eventbrite käyttäjäAPI -avain"
 
-#: ../tribe-eventbrite.class.php:1484
+#: ../lib/tribe-eventbrite.class.php:1652
 msgid "profile"
 msgstr "profiili"
 
-#: ../tribe-eventbrite.class.php:1484
+#: ../lib/tribe-eventbrite.class.php:1652
 msgid "Sign up now"
 msgstr "Rekisteröidy"
 
+#: ../lib/tribe-eventbrite.class.php:1663
+msgid ""
+"Eventbrite status is set to DRAFT. You can update this in the 'Eventbrite "
+"Information' section further down this page."
+msgstr ""
+"Eventbrite tila on asetettu LUONNOKSEKSI. Voit päivittää tätä kohdassa "
+"\"Eventbrite informaatio\" alempana tällä sivulla."
+
+#: ../lib/tribe-eventbrite.class.php:1667
+msgid ""
+"You did not create any tickets for your event.  You will not be able to "
+"publish this event on Eventbrite unless you first add a ticket at Eventbrite."
+"com."
+msgstr ""
+"Et luonut lippuja tapahtumallesi. Et voi julkaista tätä tapahtumaa "
+"Eventbritessä ennen kuin luot lipun Eventbrite.comissa."
+
+#
+#: ../lib/tribe-eventbrite.class.php:1687
+msgid "Import"
+msgstr ""
+
+#: ../lib/tribe-eventbrite.class.php:1696 ../views/eventbrite-options.php:8
+msgid "Eventbrite"
+msgstr "Eventbrite"
+
+#: ../lib/tribe-eventbrite.class.php:1712
+msgid "Import Events"
+msgstr "Tuo tapahtumat"
+
+#: ../public/template-tags.php:116
+msgid "m.d.Y"
+msgstr "m.d.Y"
+
 #: ../vendor/pue-client/admin-views/license-key.view.php:9
 #: ../vendor/pue-client/admin-views/license-key.view.php:13
+#: ../vendor/pue-client/lib/pue_plugin_update_engine.class.php:185
 msgid "License Key"
 msgstr "Lisenssiavain"
 
 #: ../vendor/pue-client/admin-views/license-key.view.php:10
-#: ../vendor/pue-client/admin-views/license-key.view.php:17
 msgid "A valid license key is required for support and updates."
 msgstr "Tukeen ja päivitykseen vaaditaan voimassaoleva lisenssiavain."
 
-#: ../vendor/pue-client/lib/pue_plugin_update_engine.class.php:194
-#, php-format
-msgid "License Key for %s"
-msgstr "Lisenssiavain: %s"
+#: ../vendor/pue-client/admin-views/license-key.view.php:16
+msgid "Replace empty fields"
+msgstr ""
 
-#: ../vendor/pue-client/lib/pue_plugin_update_engine.class.php:195
+#: ../vendor/pue-client/admin-views/license-key.view.php:25
+#: ../vendor/pue-client/lib/pue_plugin_update_engine.class.php:186
 msgid "A valid license key is required for support and updates"
 msgstr "Päivitykseen ja tukeen vaaditaan voimassaoleva lisenssiavain."
 
-#: ../vendor/pue-client/lib/pue_plugin_update_engine.class.php:258
+#: ../vendor/pue-client/lib/pue_plugin_update_engine.class.php:254
 msgid "License key(s) updated."
 msgstr "Lisenssiavain päivitetty."
 
-#: ../vendor/pue-client/lib/pue_plugin_update_engine.class.php:295
+#: ../vendor/pue-client/lib/pue_plugin_update_engine.class.php:294
 msgid "Sorry, key validation server is not available."
 msgstr "Valitettavasti avaimen tarkistuspalvelin ei vastaa."
 
-#: ../vendor/pue-client/lib/pue_plugin_update_engine.class.php:297
+#: ../vendor/pue-client/lib/pue_plugin_update_engine.class.php:296
 msgid "Sorry, this key is expired."
 msgstr "Valitettavasti tämä avain ei ole voimassa."
 
-#: ../vendor/pue-client/lib/pue_plugin_update_engine.class.php:299
+#: ../vendor/pue-client/lib/pue_plugin_update_engine.class.php:298
 msgid "Sorry, this key is out of installs."
 msgstr "Valitettavasti tämän avaimen asennukset ovat ylittyneet."
 
-#: ../vendor/pue-client/lib/pue_plugin_update_engine.class.php:301
+#: ../vendor/pue-client/lib/pue_plugin_update_engine.class.php:300
 msgid "Sorry, this key is not valid."
 msgstr "Tämä avain ei ole valitettavasti toimi."
 
-#: ../vendor/pue-client/lib/pue_plugin_update_engine.class.php:304
+#: ../vendor/pue-client/lib/pue_plugin_update_engine.class.php:303
 #, php-format
 msgid "Valid Key! Expires on %s"
 msgstr "Avain voimassa! Voimassaolo päättyy %s"
 
-#: ../vendor/pue-client/lib/pue_plugin_update_engine.class.php:308
-msgid "Hmmm... something's wrong with this validator. Please contact <a href=\"http://tri.be/support\">support.</a>"
-msgstr "Tarkistus ei toiminut. Ota yhteyttä <a href=\"http://tri.be/support\">tukeen.</a>"
+#: ../vendor/pue-client/lib/pue_plugin_update_engine.class.php:307
+#, php-format
+msgid ""
+"Hmmm... something's wrong with this validator. Please contact <a href=\"%s"
+"\">support.</a>"
+msgstr "Tarkistus ei toiminut. Ota yhteyttä <a href=\"%s\">tukeen.</a>"
 
-#: ../vendor/pue-client/lib/pue_plugin_update_engine.class.php:484
-msgid "[X]"
-msgstr "[X]"
-
-#: ../views/add-existing-event.php:31
-msgid "The content field must be empty in order to import the event description."
+#: ../views/add-existing-event.php:41
+msgid ""
+"The content field must be empty in order to import the event description."
 msgstr "Sisältökentän tulee olla tyhjä, jotta tapahtuman kuvaus voidaan tuoda."
 
-#: ../views/add-existing-event.php:104
+#: ../views/add-existing-event.php:114
 msgid "Import Event from Eventbrite"
 msgstr "Tuo Eventbrite tapahtuma"
 
-#: ../views/add-existing-event.php:109
+#: ../views/add-existing-event.php:119
 msgid "Import an existing Eventbrite event?"
 msgstr "Tuo nykyinen Eventbrite tapahtuma?"
 
-#: ../views/add-existing-event.php:118
+#: ../views/add-existing-event.php:128
 msgid "Enter your Eventbrite Event ID here:"
 msgstr "Lisää Eventbrite tapahtuman ID tähän: "
 
-#: ../views/eventbrite-events-table.php:3
-msgid "Eventbrite status is set to DRAFT. You can update this in the 'Eventbrite Information' section further down this page."
-msgstr "Eventbrite tila on asetettu LUONNOKSEKSI. Voit päivittää tätä kohdassa \"Eventbrite informaatio\" alempana tällä sivulla."
-
-#: ../views/eventbrite-events-table.php:8
-msgid "You did not create any tickets for your event.  You will not be able to publish this event on Eventbrite unless you first add a ticket at Eventbrite.com."
-msgstr "Et luonut lippuja tapahtumallesi. Et voi julkaista tätä tapahtumaa Eventbritessä ennen kuin luot lipun Eventbrite.comissa."
-
-#: ../views/eventbrite-events-table.php:14
+#: ../views/eventbrite-events-table.php:15
 msgid "Eventbrite Information"
 msgstr "Eventbrite informaatio"
 
-#: ../views/eventbrite-events-table.php:19
+#: ../views/eventbrite-events-table.php:20
 msgid "Eventbrite Event ID:"
 msgstr "Eventbrite tapahtuman ID:"
 
-#: ../views/eventbrite-events-table.php:27
+#: ../views/eventbrite-events-table.php:28
 msgid "Eventbrite Event Status:"
 msgstr "Eventbrite tapahtuman tilanne:"
 
-#: ../views/eventbrite-events-table.php:35
-#: ../views/eventbrite-meta-box-extension.php:359
+#: ../views/eventbrite-events-table.php:37
+#: ../views/eventbrite-meta-box-extension.php:415
 msgid "Draft"
 msgstr "Luonnos"
 
-#: ../views/eventbrite-events-table.php:36
-#: ../views/eventbrite-meta-box-extension.php:360
+#: ../views/eventbrite-events-table.php:38
+#: ../views/eventbrite-meta-box-extension.php:416
 msgid "Live"
 msgstr "Live"
 
-#: ../views/eventbrite-events-table.php:38
+#: ../views/eventbrite-events-table.php:40
 msgid "Canceled (this will cancel the event at Eventbrite)"
 msgstr "Keskeytys (tämä keskeyttää tapahtuman Eventbritestä)"
 
-#: ../views/eventbrite-events-table.php:39
-msgid "Deleted (this will delete the event from Eventbrite & unregister this event with Eventbrite)"
-msgstr "Poistettu (tämä poistaa tapahtuman Eventbritestä ja poistaa tapahtuman rekisteröinnin Eventbritestä)"
-
-#: ../views/eventbrite-events-table.php:46
+#: ../views/eventbrite-events-table.php:51
+#: ../views/eventbrite-events-table.php:63
 msgid "Note"
 msgstr "Merkintä"
 
-#: ../views/eventbrite-events-table.php:46
-msgid "Cancelling or deleting the event from Eventbrite cannot be undone"
-msgstr "Tapahtuman keskeyttämistä tai poistamista Eventbritestä ei voida palauttaa"
+#: ../views/eventbrite-events-table.php:51
+msgid ""
+"At this time, a canceled event can only be made live again through the Quick "
+"Links in the My Events tab of your account dashboard."
+msgstr ""
 
-#: ../views/eventbrite-events-table.php:55
+#
+#: ../views/eventbrite-events-table.php:51
+#: ../views/eventbrite-events-table.php:54
+msgid "Manage Event"
+msgstr ""
+
+#: ../views/eventbrite-events-table.php:54
+msgid ""
+"This event was created without a ticket. You need to create a ticket before "
+"you can change this event's status."
+msgstr ""
+
+#: ../views/eventbrite-events-table.php:64
+msgid "Cancelling the event from Eventbrite cannot be undone"
+msgstr ""
+
+#: ../views/eventbrite-events-table.php:76
 msgid "Associated Tickets:"
 msgstr "Liitetyt liput:"
 
-#: ../views/eventbrite-events-table.php:56
+#: ../views/eventbrite-events-table.php:77
 msgid "The following Eventbrite tickets are associated to this event"
 msgstr "Seuraavat Eventbrite liput on liitetty tähän tapahtumaan"
 
-#: ../views/eventbrite-events-table.php:61
+#: ../views/eventbrite-events-table.php:82
 msgid "Ticket"
 msgstr "Lippu"
 
-#: ../views/eventbrite-events-table.php:61
+#: ../views/eventbrite-events-table.php:82
 msgid "Sold"
 msgstr "Myyty"
 
-#: ../views/eventbrite-events-table.php:61
+#: ../views/eventbrite-events-table.php:82
 msgid "Available"
 msgstr "Saatavilla"
 
-#: ../views/eventbrite-events-table.php:61
+#: ../views/eventbrite-events-table.php:82
 msgid "End Sales"
 msgstr "Päätä myynti"
 
-#: ../views/eventbrite-events-table.php:79
+#: ../views/eventbrite-events-table.php:100
 msgid "Edit existing tickets"
 msgstr "Muokkaa nykyisiä lippuja"
 
-#: ../views/eventbrite-events-table.php:80
+#: ../views/eventbrite-events-table.php:101
 msgid "Create a new ticket"
 msgstr "Luo uusi lippu"
 
-#: ../views/eventbrite-events-table.php:89
+#: ../views/eventbrite-events-table.php:110
 msgid "There are no tickets associated with this event!"
 msgstr "Tälle tapahtumalla ei ole liitetty lippuja!"
 
-#: ../views/eventbrite-events-table.php:90
-msgid "You cannot publish this event in Eventbrite unless you first add a ticket on Eventbrite.com."
-msgstr "Et voi julkaista tapahtmaa Eventbritessä, ellet lisää ensin lippua Eventbrite.com:iin."
+#: ../views/eventbrite-events-table.php:111
+msgid ""
+"You cannot publish this event in Eventbrite unless you first add a ticket on "
+"Eventbrite.com."
+msgstr ""
+"Et voi julkaista tapahtmaa Eventbritessä, ellet lisää ensin lippua "
+"Eventbrite.com:iin."
 
-#: ../views/eventbrite-events-table.php:96
+#: ../views/eventbrite-events-table.php:117
 msgid "Eventbrite Shortcuts:"
 msgstr "Eventbrite oikopolut:"
 
-#: ../views/eventbrite-events-table.php:102
+#: ../views/eventbrite-events-table.php:123
 msgid "Manage my Event"
 msgstr "Hallinnoi tapahtumia"
 
-#: ../views/eventbrite-events-table.php:103
+#: ../views/eventbrite-events-table.php:124
 msgid "Manage Discounts"
 msgstr "Hallinnoi alennuksia"
 
-#: ../views/eventbrite-events-table.php:104
+#: ../views/eventbrite-events-table.php:125
 msgid "Manage Attendees"
 msgstr "Hallinnoi osallistujia"
 
-#: ../views/eventbrite-events-table.php:105
+#: ../views/eventbrite-events-table.php:126
 msgid "Email Attendees"
 msgstr "Lähetä osallistujat sähköpostilla"
 
-#: ../views/eventbrite-events-table.php:106
+#: ../views/eventbrite-events-table.php:127
 msgid "Print Badges"
 msgstr "Tulosta nimikyltit"
 
-#: ../views/eventbrite-events-table.php:107
+#: ../views/eventbrite-events-table.php:128
 msgid "Print Check-In List"
 msgstr "Tulosta Check-In lista"
 
-#: ../views/eventbrite-meta-box-extension.php:72
-msgid "EventBrite only allows events to be saved that start in the future."
-msgstr "EventBrite sallii tallettaa ainoastaan tapahtumat, jotka kohdistuvat tulevaisuuteen."
+#: ../views/eventbrite-meta-box-extension.php:97
+msgid "Eventbrite only allows events to be saved that start in the future."
+msgstr ""
 
-#: ../views/eventbrite-meta-box-extension.php:87
+#: ../views/eventbrite-meta-box-extension.php:112
 msgid "Please provide a ticket name for the Eventbrite ticket."
 msgstr "Aseta Evenbrite lipulle nimi"
 
-#: ../views/eventbrite-meta-box-extension.php:92
+#: ../views/eventbrite-meta-box-extension.php:117
 msgid "You must set a price for the ticket "
 msgstr "Lipulle tulee asettaa hinta"
 
-#: ../views/eventbrite-meta-box-extension.php:97
+#: ../views/eventbrite-meta-box-extension.php:122
 msgid "Ticket quantity is not a number"
 msgstr "Lippumäärä ei ole numero"
 
-#: ../views/eventbrite-meta-box-extension.php:104
+#: ../views/eventbrite-meta-box-extension.php:129
 msgid "A Paypal email address must be provided."
 msgstr "Paypal sähköpostiosoite tulee antaa."
 
-#: ../views/eventbrite-meta-box-extension.php:112
+#: ../views/eventbrite-meta-box-extension.php:137
 msgid "A Google Merchant Id must be provided."
 msgstr "Google Merchant id tulee antaa."
 
-#: ../views/eventbrite-meta-box-extension.php:118
+#: ../views/eventbrite-meta-box-extension.php:143
 msgid "A Google Merchant Key must be provided."
 msgstr "Google Merchant avain täytyy antaa."
 
-#: ../views/eventbrite-meta-box-extension.php:146
-msgid "This event has been deleted from Eventbrite. It is now unregistered from Eventbrite."
-msgstr "Tämä tapahtuma on poistettu Eventbritestä. Se on nyt poistettu rekisteristä Evenbritessä. "
+#
+#: ../views/eventbrite-meta-box-extension.php:182
+msgid "Tickets"
+msgstr ""
 
-#: ../views/eventbrite-meta-box-extension.php:154
+#: ../views/eventbrite-meta-box-extension.php:188
+msgid ""
+"This event has been deleted from Eventbrite. It is now unregistered from "
+"Eventbrite."
+msgstr ""
+"Tämä tapahtuma on poistettu Eventbritestä. Se on nyt poistettu rekisteristä "
+"Evenbritessä. "
+
+#: ../views/eventbrite-meta-box-extension.php:196
 msgid "Register this event with eventbrite.com?"
 msgstr "Rekisteröi tämä tapahtuma Eventbrite.com:iin?"
 
-#: ../views/eventbrite-meta-box-extension.php:156
+#: ../views/eventbrite-meta-box-extension.php:198
 msgid "Leave this event associated with eventbrite.com?"
 msgstr "Hylkää tämä Eventbrite.com:iin liitetty tapahtuma?"
 
-#: ../views/eventbrite-meta-box-extension.php:160
-#: ../views/eventbrite-meta-box-extension.php:174
+#: ../views/eventbrite-meta-box-extension.php:202
+#: ../views/eventbrite-meta-box-extension.php:216
 msgid "Yes"
 msgstr "Kyllä"
 
-#: ../views/eventbrite-meta-box-extension.php:161
-#: ../views/eventbrite-meta-box-extension.php:175
+#: ../views/eventbrite-meta-box-extension.php:203
+#: ../views/eventbrite-meta-box-extension.php:217
 msgid "No"
 msgstr "Ei"
 
-#: ../views/eventbrite-meta-box-extension.php:166
+#: ../views/eventbrite-meta-box-extension.php:208
 #, php-format
-msgid "This event was created by another user. Please consider contacting %s about editing these Eventbrite details."
-msgstr "Tämän tapahtuman loi toinen käyttäjä. Harkitse yhteydenottoa %s:n näistä Eventbrite yksityiskohtien muutoksista."
+msgid ""
+"This event was created by another user. Please consider contacting %s about "
+"editing these Eventbrite details."
+msgstr ""
+"Tämän tapahtuman loi toinen käyttäjä. Harkitse yhteydenottoa %s:n näistä "
+"Eventbrite yksityiskohtien muutoksista."
 
-#: ../views/eventbrite-meta-box-extension.php:172
+#: ../views/eventbrite-meta-box-extension.php:214
 msgid "Display tickets on event page?"
 msgstr "Näytä liput tapahtumasivulla?"
 
-#: ../views/eventbrite-meta-box-extension.php:181
-msgid "Note: The Eventbrite API does not yet support recurring events, so all instances of recurring events will be associated with a single Eventbrite event."
-msgstr "Huomio: Eventbrite APi ei tue vielä toistuvia tapahtumia, joten kaikki toistuvat tapahtumat liitetään yhteen Eventbrite tapahtumaan."
+#: ../views/eventbrite-meta-box-extension.php:223
+msgid ""
+"Note: The Eventbrite API does not yet support recurring events, so all "
+"instances of recurring events will be associated with a single Eventbrite "
+"event."
+msgstr ""
+"Huomio: Eventbrite APi ei tue vielä toistuvia tapahtumia, joten kaikki "
+"toistuvat tapahtumat liitetään yhteen Eventbrite tapahtumaan."
 
-#: ../views/eventbrite-meta-box-extension.php:186
+#: ../views/eventbrite-meta-box-extension.php:226
+msgid ""
+"Note: Eventbrite requires you enter an organizer. If you neglect to enter an "
+"organizer, your display name will be passed as the organizer name to "
+"Eventbrite"
+msgstr ""
+
+#: ../views/eventbrite-meta-box-extension.php:231
 msgid "Set up your first ticket"
 msgstr "Aseta ensimmäinen lippu"
 
-#: ../views/eventbrite-meta-box-extension.php:187
-msgid "To create multiple tickets per event, submit this form, then follow the link to Eventbrite."
-msgstr "Luodaksesi useita lippuja tapahtumaa kohden, lähetä tämä lomake ja seuraa sitten linkkiä Eventbriteen."
+#: ../views/eventbrite-meta-box-extension.php:232
+msgid ""
+"To create multiple tickets per event, submit this form, then follow the link "
+"to Eventbrite."
+msgstr ""
+"Luodaksesi useita lippuja tapahtumaa kohden, lähetä tämä lomake ja seuraa "
+"sitten linkkiä Eventbriteen."
 
-#: ../views/eventbrite-meta-box-extension.php:192
+#: ../views/eventbrite-meta-box-extension.php:237
 msgid "Name"
 msgstr "Nimi"
 
-#: ../views/eventbrite-meta-box-extension.php:200
+#: ../views/eventbrite-meta-box-extension.php:245
 msgid "Examples: Member, Non-member, Student, Early Bird"
 msgstr "Esimerkit: Jäsen, Ei-jäsen, Opiskelija, Alennus"
 
-#: ../views/eventbrite-meta-box-extension.php:204
+#: ../views/eventbrite-meta-box-extension.php:249
 msgid "Description"
 msgstr "Kuvaus"
 
-#: ../views/eventbrite-meta-box-extension.php:212
-msgid "Date to Start Ticket Sales"
-msgstr "Lipunmyynnin aloituspäivä"
-
-#: ../views/eventbrite-meta-box-extension.php:230
-msgid "Date to End Ticket Sales"
-msgstr "Lipunmyynnin päättymispäivä"
-
-#: ../views/eventbrite-meta-box-extension.php:250
+#: ../views/eventbrite-meta-box-extension.php:298
 msgid "Type"
 msgstr "Tyyppi"
 
-#: ../views/eventbrite-meta-box-extension.php:253
+#: ../views/eventbrite-meta-box-extension.php:301
 msgid " Set Price"
 msgstr "Aseta hinta"
 
-#: ../views/eventbrite-meta-box-extension.php:255
+#: ../views/eventbrite-meta-box-extension.php:303
 msgid " Donation Based"
 msgstr "Lahjoituksiin perustuva"
 
-#: ../views/eventbrite-meta-box-extension.php:257
+#: ../views/eventbrite-meta-box-extension.php:305
 msgid " Free"
 msgstr "Ilmainen"
 
-#: ../views/eventbrite-meta-box-extension.php:261
+#: ../views/eventbrite-meta-box-extension.php:309
 msgid "Cost"
 msgstr "Hinta"
 
-#: ../views/eventbrite-meta-box-extension.php:266
+#: ../views/eventbrite-meta-box-extension.php:314
 msgid "Quantity"
 msgstr "Määrä"
 
-#: ../views/eventbrite-meta-box-extension.php:273
+#: ../views/eventbrite-meta-box-extension.php:321
 msgid "Include Fee in Price"
 msgstr "Sisällytä maksu hintaan"
 
-#: ../views/eventbrite-meta-box-extension.php:276
+#: ../views/eventbrite-meta-box-extension.php:324
 msgid "Add Service Fee on top of price"
 msgstr "Lisää palvelumaksu hinnan päälle"
 
-#: ../views/eventbrite-meta-box-extension.php:278
+#: ../views/eventbrite-meta-box-extension.php:326
 msgid " Include Service fee in price"
 msgstr "Sisällytä palvelumaksu hintaan"
 
-#: ../views/eventbrite-meta-box-extension.php:283
+#: ../views/eventbrite-meta-box-extension.php:331
 msgid "Accepted Payment Methods"
 msgstr "Hyväksytyt maksutavat"
 
-#: ../views/eventbrite-meta-box-extension.php:289
-msgid "None"
-msgstr "Ei mitään"
-
-#: ../views/eventbrite-meta-box-extension.php:290
+#: ../views/eventbrite-meta-box-extension.php:346
 msgid "Paypal"
 msgstr "Paypal"
 
-#: ../views/eventbrite-meta-box-extension.php:291
+#: ../views/eventbrite-meta-box-extension.php:347
 msgid "Google Checkout"
 msgstr "Google Checkout"
 
-#: ../views/eventbrite-meta-box-extension.php:295
+#: ../views/eventbrite-meta-box-extension.php:351
 msgid "Check"
 msgstr "Sekki"
 
-#: ../views/eventbrite-meta-box-extension.php:296
+#: ../views/eventbrite-meta-box-extension.php:352
 msgid "Cash"
 msgstr "Käteinen"
 
-#: ../views/eventbrite-meta-box-extension.php:297
+#: ../views/eventbrite-meta-box-extension.php:353
 msgid "Send an Invoice"
 msgstr "Lähetä lasku"
 
-#: ../views/eventbrite-meta-box-extension.php:304
+#: ../views/eventbrite-meta-box-extension.php:360
 msgid "Payment Details"
 msgstr "Maksutiedot"
 
-#: ../views/eventbrite-meta-box-extension.php:310
+#: ../views/eventbrite-meta-box-extension.php:366
 msgid "Paypal Account Email Address"
 msgstr "PayPal-tilin sähköpostiosoite"
 
-#: ../views/eventbrite-meta-box-extension.php:319
+#: ../views/eventbrite-meta-box-extension.php:375
 msgid "Google Merchant Id"
 msgstr "Google Merchant Id"
 
-#: ../views/eventbrite-meta-box-extension.php:329
+#: ../views/eventbrite-meta-box-extension.php:379
+msgid "Google Merchant Key"
+msgstr "Google Merchant Key"
+
+#: ../views/eventbrite-meta-box-extension.php:385
 msgid "Instructions for Payment by Check"
 msgstr "Ohjeet maksulle sekillä"
 
-#: ../views/eventbrite-meta-box-extension.php:333
+#: ../views/eventbrite-meta-box-extension.php:389
 msgid "Instructions for Payment by Cash"
 msgstr "Ohjeet maksulle käteisellä"
 
-#: ../views/eventbrite-meta-box-extension.php:337
+#: ../views/eventbrite-meta-box-extension.php:393
 msgid "Instructions for Payment by Invoice"
 msgstr "Ohjeet maksulle laskulla"
 
-#: ../views/eventbrite-meta-box-extension.php:344
+#: ../views/eventbrite-meta-box-extension.php:400
 msgid "Save this post to create the Event with Eventbrite.com"
 msgstr "Tallenna tämä artikkeli luodaksesi tapahtuman Eventbrite.com:ssa"
 
-#: ../views/eventbrite-meta-box-extension.php:345
-msgid "When you save this post, an event will be created for you within Eventbrite. You can choose wether this event will save as a draft or live event in Eventbrite below (regardless of wether the event here in WordPress is a draft or not). You will be able to further configure your event here after saving. For more advanced controls visit the Eventbrite administration here:"
-msgstr "Kun talletat tämän artikkelin, Eventbriteen luodaan tämä tapahtuma. Voit valita talletetaanko tämä tapahtuma luonnokseksi vai live-tapahtumaksi Eventbritessä alla  (riippumatta siitä onko tapahtuma täällä Wordpressissä luonnos vai ei). Voit muokata täällä tapahtumaa tallentamisen jälkeen. Tarkempiin muutoksiin vieraile Eventbriten hallintoon täällä:"
+#: ../views/eventbrite-meta-box-extension.php:401
+msgid ""
+"When you save this post, an event will be created for you within Eventbrite. "
+"You can choose whether this event will save as a draft or live event in "
+"Eventbrite below (regardless of whether the event here in WordPress is a "
+"draft or not). You will be able to further configure your event here after "
+"saving. For more advanced controls visit the Eventbrite administration here:"
+msgstr ""
 
-#: ../views/eventbrite-meta-box-extension.php:351
+#: ../views/eventbrite-meta-box-extension.php:407
 msgid "Eventbrite Event Status"
 msgstr "Eventbrite tapahtuman tila"
 
-#: ../views/eventbrite-meta-box-extension.php:371
+#: ../views/eventbrite-meta-box-extension.php:427
 msgid "You must configure your Eventbrite API User Key in your"
 msgstr "Sinun tulee lisätä Eventbrite API käyttäjäavain "
 
-#: ../views/eventbrite-meta-box-extension.php:372
+#: ../views/eventbrite-meta-box-extension.php:428
 msgid "profile page"
 msgstr "profiilisivuun"
 
-#: ../views/eventbrite-meta-box-extension.php:373
+#: ../views/eventbrite-meta-box-extension.php:429
 msgid "before you can use the Eventbrite features of this plugin."
 msgstr "ennen kuin voit käyttää tämän lisäosan Eventbrite ominaisuuksia."
 
-#: ../views/eventbrite-options.php:8
-msgid "Eventbrite"
-msgstr "Eventbrite"
-
 #: ../views/eventbrite-options.php:10
 #, php-format
-msgid "In order to enable Eventbrite for the The Events Calendar, please enter your Eventbrite User Key on %s"
-msgstr "Aktivoidaksesi Eventbriten The Events Calendar:ia varten, syötä Eventbrite käyttäjäavaimesi %s"
+msgid ""
+"In order to enable Eventbrite for the The Events Calendar, please enter your "
+"Eventbrite User Key on %s"
+msgstr ""
+"Aktivoidaksesi Eventbriten The Events Calendar:ia varten, syötä Eventbrite "
+"käyttäjäavaimesi %s"
 
 #: ../views/eventbrite-options.php:10
 msgid "your user profile page"
 msgstr "Käyttätietosivusi"
 
-#: ../views/eventbrite-post-template.php:2
-msgid "Ticket Information"
-msgstr "Lipputiedot"
-
-#: ../views/eventbrite-post-template.php:7
-msgid "Remaining"
-msgstr "Jäljellä"
-
-#: ../views/eventbrite-post-template.php:8
-msgid "Sales End"
-msgstr "Myynti päättyy"
-
-#: ../views/eventbrite-post-template.php:9
-msgid "Price"
-msgstr "Hinta"
-
-#: ../views/import-eventbrite-events.php:8
+#: ../views/import-eventbrite-events.php:19
 msgid "Import Eventbrite Events"
 msgstr "Tuo Eventbrite tapahtumat"
 
-#: ../views/import-eventbrite-events.php:10
-msgid "Your Eventbrite event id can be found by going to your event page at Eventbrite.com.  Once there, examine your browser's address bar to see something like this - https://www.eventbrite.com/event/212356789.  The number after '/event/' is your event id."
-msgstr "Eventbrite tapahtumaIDsi löytyy tapahtumasivultasi Eventbrite.com:sta.  Kun olet siellä, selaimesi osoiterivillä pitäisi lukea jotain vastaavaa  - https://www.eventbrite.com/event/212356789. Kentän '/event/' jälkeinen numero on tapahtumaIDsi."
+#: ../views/import-eventbrite-events.php:21
+msgid ""
+"<p>Import the event details from any public Eventbrite event.</p><p>Your "
+"Eventbrite event id can be found by going to your event page at Eventbrite."
+"com.  Once there, examine your browser's address bar to see something like "
+"this - https://www.eventbrite.com/event/212356789.  The number after '/"
+"event/' is your event id.</p>"
+msgstr ""
 
-#: ../views/import-eventbrite-events.php:18
+#: ../views/import-eventbrite-events.php:29
 msgid "Eventbrite Event ID"
 msgstr "Eventbrite tapahtumaID"
 
-#: ../views/options.php:2
+#: ../views/options.php:13
 msgid "Eventbrite Options"
 msgstr "Eventbrite valinnat"
 
-#: ../views/options.php:3
-msgid "These settings change the default event form. For example, if you set a default venue, this field will be automatically filled in on a new event."
-msgstr "Nämä asetukset muuttavat oletustapahtumalomaketta. Jos esimerkiksi asetat oletustapahtumapaikan, tämä kenttä täytetään automaattisesti uuteen tapahtumaan."
+#: ../views/options.php:14
+msgid ""
+"These settings change the default event form. For example, if you set a "
+"default venue, this field will be automatically filled in on a new event."
+msgstr ""
+"Nämä asetukset muuttavat oletustapahtumalomaketta. Jos esimerkiksi asetat "
+"oletustapahtumapaikan, tämä kenttä täytetään automaattisesti uuteen "
+"tapahtumaan."
 
-#: ../views/options.php:6
-#: ../views/options.php:10
+#: ../views/options.php:17 ../views/options.php:21
 msgid "Automatically replace empty fields with default values"
 msgstr "Korvaa automaattisesti tyhjät kentät oletusarvoilla"
 
-#: ../views/options.php:14
+#: ../views/options.php:25
 msgid "Enabled"
 msgstr "Kytketty"
 
-#: ../views/user-profile.php:1
+#: ../views/user-profile.php:12
 msgid "Eventbrite User Account"
 msgstr "Eventbrite käyttäjätili"
 
-#: ../views/user-profile.php:4
+#: ../views/user-profile.php:15
 #, php-format
-msgid "Your API Key can be found in your %s in Eventbrite. Don't have an Eventbrite account yet? It takes less than 30 seconds to set one up."
-msgstr "API avaintasi ei löydy %s Eventbritessä. Jos sinulla ei ole vielä Eventbrite tiliä, voit avata sen alle 30 sekunnissa."
+msgid ""
+"Your API Key can be found in your %s in Eventbrite. Don't have an Eventbrite "
+"account yet? It takes less than 30 seconds to set one up. "
+msgstr ""
 
-#: ../views/user-profile.php:4
+#: ../views/user-profile.php:15
+msgctxt "API key settings link"
 msgid "account settings"
-msgstr "Tiliasetukset"
+msgstr ""
 
-#: ../views/user-profile.php:4
+#: ../views/user-profile.php:15
 msgid "Click here to register."
 msgstr "Klikkaa tästä rekisteröintiin"
 
-#: ../views/user-profile.php:9
+#: ../views/user-profile.php:20
 msgid "Eventbrite API User Key"
 msgstr "Eventbrite API käyttäjäavain"
 
+#~ msgid ""
+#~ "The Events Calendar: Eventbrite Tickets plugin requires the The Events "
+#~ "Calendar plugin"
+#~ msgstr ""
+#~ "The Events Calendar: Eventbrite Tickets -lisäosa edellyttää The Events "
+#~ "Calendar -lisäosaa"
+
+#~ msgid "Ticket Description"
+#~ msgstr "Lipun kuvaus"
+
+#~ msgid "Ticket Sales Start Date"
+#~ msgstr "Lipunmyynnin aloituspäivä:"
+
+#~ msgid "Ticket Sales End Date"
+#~ msgstr "Lipunmyynnin päättymispäivä:"
+
+#~ msgid "Service Fee Inclusion"
+#~ msgstr "Palveluhinnan sisältyminen"
+
+#~ msgid "Paypal email address"
+#~ msgstr "Paypal-sähköpostiosoite"
+
+#~ msgid ""
+#~ "Eventbrite doesn't support venues with duplicate names, please rename the "
+#~ "venue and try again."
+#~ msgstr ""
+#~ "Eventbrite ei tue samoja nimiä, nimeä tapahtuma uudelleen ja kokeile "
+#~ "uudestaan."
+
+#~ msgid "License Key for %s"
+#~ msgstr "Lisenssiavain: %s"
+
+#~ msgid "[X]"
+#~ msgstr "[X]"
+
+#~ msgid ""
+#~ "Deleted (this will delete the event from Eventbrite & unregister this "
+#~ "event with Eventbrite)"
+#~ msgstr ""
+#~ "Poistettu (tämä poistaa tapahtuman Eventbritestä ja poistaa tapahtuman "
+#~ "rekisteröinnin Eventbritestä)"
+
+#~ msgid "None"
+#~ msgstr "Ei mitään"
+
+#~ msgid "Ticket Information"
+#~ msgstr "Lipputiedot"
+
+#~ msgid "Remaining"
+#~ msgstr "Jäljellä"
+
+#~ msgid "Sales End"
+#~ msgstr "Myynti päättyy"
+
+#~ msgid "Price"
+#~ msgstr "Hinta"

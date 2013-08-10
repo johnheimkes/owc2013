@@ -1,3 +1,14 @@
+<?php
+
+/**
+ * This adds fields to the user edit profile fields
+ * 
+ * @package TribeEventsEventBrite
+ * @since  3.0
+ * @author Modern Tribe Inc.
+ */
+
+?>
 <h3><?php _e('Eventbrite User Account') ?></h3>
 
 <div>

@@ -1,3 +1,8 @@
+.tec_eb_status_cancel_notice{
+	color:red;
+	font-size: smaller;
+	margin-top:10px;
+}
 .eventsWarning {
 	display: block;
 	margin: 30px 0;
@@ -74,7 +79,7 @@ span.tec-radio-option {
 	margin: 0 0 2px;
 }
 
-#event_cost tr td:first-child { width: 260px; }
+#event_cost tr td:first-child { width:172px; }
 .event_links li { margin-bottom: 2px; }
 .event_links li a { font-size: 11px; }
 

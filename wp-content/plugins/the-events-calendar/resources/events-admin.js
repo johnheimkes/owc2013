@@ -2,6 +2,13 @@ jQuery(document).ready(function($) {
 
 	// Load the Chosen JQuery plugin for all select elements with the class 'chosen'.
 	$('.chosen, .tribe-field-dropdown_chosen select').chosen();
+	$('.select2, .tribe-field-dropdown_select2 select').select2({width: '250px'});
+
+	if($('select[name="tribeEventsTemplate"]' ).length && $('select[name="tribeEventsTemplate"]' ).val() === '' ){
+		$templates = $('select[name="tribeEventsTemplate"]' );
+		var name = $templates.find("option:selected" ).text();
+		$templates.prev('.select2-container' ).children().children('span').text(name);
+	}
 
 	//not done by default on front end
 	$('.hide-if-js').hide();
@@ -26,7 +33,7 @@ jQuery(document).ready(function($) {
 		
 		// toggle time input
 		function toggleDayTimeDisplay(){
-			if( $('#allDayCheckbox').attr("checked") === true || $('#allDayCheckbox').attr("checked") === "checked" ) {
+			if( $('#allDayCheckbox').prop('checked') === true ) {
 				$(".timeofdayoptions").hide();
 				$("#EventTimeFormatDiv").hide();
 			} else {
@@ -100,12 +107,15 @@ jQuery(document).ready(function($) {
 		
 		if ( savedVenue.size() > 0 && savedVenue.val() != '0' && !$('.nosaved').get(0) ) {
 			venueFields.hide();
-			$('input',venueFields).val('');
+			$('[name="venue[Venue]"]').val('');
 		}
 		
 		savedVenue.change(function() {
 			if ( $(this).val() == '0' ) {
-				venueFields.fadeIn()
+				venueFields.fadeIn();
+				$("#EventCountry").val(0).trigger("liszt:updated");
+				$("#StateProvinceSelect").val(0).trigger("liszt:updated");
+				tribeShowHideCorrectStateProvinceInput('');
 					//.find("input, select").val('').removeAttr('checked');
 			}
 			else {
@@ -246,16 +256,11 @@ jQuery(document).ready(function($) {
 		}
 	});	
 	
-	function setupSubmitButton() {
-		//publishing-action		
-	}
-
 	$('.wp-admin.events-cal .submitdelete').click(function(e) {
 
 		var link = $(this);
-		var isRecurringLink = $(this).attr('href').split('&eventDate');
 
-		if(isRecurringLink[1]) {
+		if ( isExistingRecurringEvent() ) {
 			e.preventDefault();
 
 			$('#deletion-dialog').dialog({
@@ -277,6 +282,10 @@ jQuery(document).ready(function($) {
 		}
 
 	});
+	
+	function setupSubmitButton() {
+		//publishing-action		
+	}
 
 	// recurrence ui
 	$('[name="recurrence[type]"]').change(function() {
@@ -336,31 +345,62 @@ jQuery(document).ready(function($) {
 		}
 	});
 
-	function maybeDisplayPressTrendsDialogue() {
-		return $('[name="maybeDisplayPressTrendsDialogue"]').val() == "1"
+	// Workaround for venue & organizer post types when editing or adding
+	// so events parent menu stays open and active
+	if ( $('#icon-edit').hasClass('icon32-posts-tribe_venue') ) {
+		$('#menu-posts-tribe_events, #menu-posts-tribe_events a.wp-has-submenu')
+			.addClass('wp-menu-open wp-has-current-submenu')
+			.removeClass('wp-not-current-submenu')
+			.find("li:contains('Venues')")
+			.addClass('current');
 	}
-
-	if( maybeDisplayPressTrendsDialogue() ) {
-			$('#presstrends-dialog').dialog({
-				modal: true,
-				buttons: [{
-						text:"Send data",
-						click: function() { 
-							$('[name="presstrends_action"]').val(1);
-							$(this).dialog("close"); 							
-							$('[name="sendPressTrendsData"]').prop("checked", true);
-							$('#tribeSaveSettings').click();
-						}
-				}, {
-						text:"Do not send data",
-						click: function() { 
-							$('[name="presstrends_action"]').val(0);
-							$(this).dialog("close"); 
-							$('[name="sendPressTrendsData"]').prop("checked", false);
-						}
-				}]
-			});
-			
-		}
+	if ( $('#icon-edit').hasClass('icon32-posts-tribe_organizer') ) {
+		$('#menu-posts-tribe_events, #menu-posts-tribe_events a.wp-has-submenu')
+			.addClass('wp-menu-open wp-has-current-submenu')
+			.removeClass('wp-not-current-submenu')
+			.find("li:contains('Organizers')")
+			.addClass('current');
+	}
 	
+	// Default Layout Settings
+	// shows / hides proper views that are to be used on front-end
+	if( $('#tribe-field-tribeEnableViews').length ) {
+		$('#tribe-field-tribeEnableViews').on('change', 'input:checkbox', function () {
+			reset_val = false;
+			if( jQuery('[name="tribeEnableViews[]"]:checked').size() < 1 ) {
+				$(this).attr('checked',true);
+				$('#tribe-field-tribeEnableViews .tribe-field-wrap p.description').css('color', 'red');
+			} else {
+				$('#tribe-field-tribeEnableViews .tribe-field-wrap p.description').removeAttr('style');
+			}
+			$('select[name="viewOption"] option').each(function(i,val) {
+				option_val = $(this).val();
+				if( $('#tribe-field-tribeEnableViews input[value=' + option_val + ']').is(":checked") ) { 
+					$(this).prop('disabled',false);
+				} else { 
+					$(this).removeProp('selected');
+					$(this).prop('disabled', true);
+				}
+    		});
+    		views = new Array();
+    		$('[name="tribeEnableViews[]"]:checked').each(function(){
+    			views.push( $(this).val() );
+    		});
+			if( typeof $('select[name="viewOption"] option:selected').first().val() == 'undefined' || ! $.inArray( $('select[name="viewOption"] option:selected').first().val(), views ) ) {
+				$('select[name="viewOption"] option').not(':disabled').first().attr('selected','selected');
+	    	}
+    		$('select[name="viewOption"]').trigger("change");
+    	});
+    }
+	
+});
+
+/**
+ * Re-initialize chosen on widgets when moved
+ * credits: http://www.johngadbois.com/adding-your-own-callbacks-to-wordpress-ajax-requests/
+ */
+jQuery(document).ajaxSuccess(function(e, xhr, settings) {
+	if(typeof settings !== 'undefined' && typeof settings.data !== 'undefined' && settings.data.search('action=save-widget') != -1) {
+		jQuery("#widgets-right .chosen").chosen();
+	}
 });

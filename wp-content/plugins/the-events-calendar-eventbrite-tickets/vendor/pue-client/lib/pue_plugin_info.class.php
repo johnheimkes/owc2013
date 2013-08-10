@@ -6,13 +6,13 @@
 // Don't load directly
 if ( !defined('ABSPATH') ) { die('-1'); }
 
-if ( !class_exists('PU_PluginInfo') ) {
+if ( !class_exists('Tribe_PU_PluginInfo') ) {
 	/**
 	 * A container class for holding and transforming various plugin metadata.
-	 * @version 1.2
+	 * @version 1.5
 	 * @access public
 	 */
-	class PU_PluginInfo {
+	class Tribe_PU_PluginInfo {
 		//Most fields map directly to the contents of the plugin's info.json file.
 
 		public $name;
@@ -37,13 +37,13 @@ if ( !class_exists('PU_PluginInfo') ) {
 		public $id = 0; //The native WP.org API returns numeric plugin IDs, but they're not used for anything.
 
 		/**
-		 * Create a new instance of PU_PluginInfo from JSON-encoded plugin info
+		 * Create a new instance of Tribe_PU_PluginInfo from JSON-encoded plugin info
 		 * returned by an external update API.
 		 *
 		 * @param string $json Valid JSON string representing plugin info.
-		 * @return PU_PluginInfo New instance of PU_PluginInfo, or NULL on error.
+		 * @return Tribe_PU_PluginInfo New instance of Tribe_PU_PluginInfo, or NULL on error.
 		 */
-		public static function fromJson($json){
+		public static function from_json($json){
 			$apiResponse = json_decode($json);
 			if ( empty($apiResponse) || !is_object($apiResponse) ){
 				return null;
@@ -55,7 +55,7 @@ if ( !class_exists('PU_PluginInfo') ) {
 				return null;
 			}
 
-			$info = new PU_PluginInfo();
+			$info = new Tribe_PU_PluginInfo();
 
 			foreach(get_object_vars($apiResponse) as $key => $value){
 				$key = str_replace('plugin_', '', $key); //let's strip out the "plugin_" prefix we've added in plugin-updater-classes.
@@ -70,7 +70,7 @@ if ( !class_exists('PU_PluginInfo') ) {
 		 *
 		 * @return object
 		 */
-		public function toWpFormat(){
+		public function to_wp_format(){
 			$info = new StdClass;
 
 			//The custom update API is built so that many fields have the same name and format

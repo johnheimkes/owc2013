@@ -1,0 +1,922 @@
+# Tribe Events Eventbrite Tickets by Modern Tribe, Inc.
+# Copyright (C) Modern Tribe, Inc.
+# This file is distributed under the same license as the Tribe Events Eventbrite Tickets package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Tribe Events Eventbrite Tickets\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-06-26 13:21-0800\n"
+"PO-Revision-Date: 2013-06-26 13:21-0800\n"
+"Last-Translator: Modern Tribe, Inc. <pro@tri.be>\n"
+"Language-Team: Modern Tribe, Inc. <pro@tri.be>\n"
+"Language: TEST\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;"
+"_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2\n"
+"X-Poedit-Basepath: ./\n"
+"X-Textdomain-Support: yes\n"
+"X-Generator: Poedit 1.5.5\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../lib/eventbrite-api.class.php:76
+msgid ""
+"An error occurred while contacting Eventbrite. Please review your "
+"information and try again.<br />Error: "
+msgstr "XXXXX"
+
+#: ../lib/eventbrite-api.class.php:85
+msgid ""
+"An error occurred while contacting Eventbrite. Please review your "
+"information and try again.<br />Status: "
+msgstr "XXXXX"
+
+#: ../lib/eventbrite-api.class.php:87
+msgid ""
+"EventBrite is not answering us. Most likely they are too busy. The changes "
+"have been saved localy, maybe try again later?"
+msgstr "XXXXX"
+
+#: ../lib/eventbrite-api.class.php:102
+msgid ""
+"An error occurred while updating Eventbrite. Please review your information "
+"and try again.<br />Error:<br />"
+msgstr "XXXXX"
+
+#: ../lib/tribe-eventbrite.class.php:130
+msgid "The Events Calendar"
+msgstr "XXXXX"
+
+#: ../lib/tribe-eventbrite.class.php:131
+#, php-format
+msgid ""
+"To begin using The Events Calendar: Eventbrite Tickets, please install the "
+"latest version of <a href=\"%s\" class=\"thickbox\" title=\"%s\">The Events "
+"Calendar</a>."
+msgstr "XXXXX"
+
+#: ../lib/tribe-eventbrite.class.php:397
+msgid "Eventbrite requires that the venue have a country."
+msgstr "XXXXX"
+
+#: ../lib/tribe-eventbrite.class.php:398 ../lib/tribe-eventbrite.class.php:407
+msgid "Please adjust the venue and try saving again."
+msgstr "XXXXX"
+
+#: ../lib/tribe-eventbrite.class.php:399
+msgid "Edit the venue"
+msgstr "XXXXX"
+
+#: ../lib/tribe-eventbrite.class.php:406
+msgid "Eventbrite requires that United States addresses include the state."
+msgstr "XXXXX"
+
+#: ../lib/tribe-eventbrite.class.php:415
+msgid "Ticket Name"
+msgstr "XXXXX"
+
+#: ../lib/tribe-eventbrite.class.php:416
+#: ../views/eventbrite-meta-box-extension.php:257
+msgid "Date to Start Ticket Sales"
+msgstr "XXXXX"
+
+#: ../lib/tribe-eventbrite.class.php:417
+#: ../views/eventbrite-meta-box-extension.php:277
+msgid "Date to End Ticket Sales"
+msgstr "XXXXX"
+
+#: ../lib/tribe-eventbrite.class.php:418
+msgid "Ticket Type"
+msgstr "XXXXX"
+
+#: ../lib/tribe-eventbrite.class.php:419
+msgid "Ticket Cost"
+msgstr "XXXXX"
+
+#: ../lib/tribe-eventbrite.class.php:420
+msgid "Ticket Quantity"
+msgstr "XXXXX"
+
+#: ../lib/tribe-eventbrite.class.php:421
+msgid "Ticket - Include Fee in Price"
+msgstr "XXXXX"
+
+#: ../lib/tribe-eventbrite.class.php:441
+msgid "Ticket Cost (must be numeric)"
+msgstr "XXXXX"
+
+#: ../lib/tribe-eventbrite.class.php:453
+msgid "Ticket Payment Methods (at least one should be selected)"
+msgstr "XXXXX"
+
+#: ../lib/tribe-eventbrite.class.php:461
+msgid "Ticket - Paypal Account Email Address"
+msgstr "XXXXX"
+
+#: ../lib/tribe-eventbrite.class.php:463
+msgid "Ticket - Paypal Account Email Address (must be a valid email address)"
+msgstr "XXXXX"
+
+#: ../lib/tribe-eventbrite.class.php:470
+msgid "Ticket - Google Merchant ID"
+msgstr "XXXXX"
+
+#: ../lib/tribe-eventbrite.class.php:473
+msgid "Ticket - Google Merchant Key"
+msgstr "XXXXX"
+
+#: ../lib/tribe-eventbrite.class.php:478
+msgid ""
+"All required fields must be filled out correctly in order for this event to "
+"be associated to Eventbrite. The following required fields were not filled "
+"out (or not correctly):"
+msgstr "XXXXX"
+
+#: ../lib/tribe-eventbrite.class.php:482
+msgid "Please fill in the missing fields and try saving again."
+msgstr "XXXXX"
+
+#: ../lib/tribe-eventbrite.class.php:502
+msgid "Ticket sales start date cannot be after the event ends"
+msgstr "XXXXX"
+
+#: ../lib/tribe-eventbrite.class.php:506
+msgid "Ticket sales end date cannot be after the event ends"
+msgstr "XXXXX"
+
+#: ../lib/tribe-eventbrite.class.php:510
+msgid "Ticket sales start date cannot be after ticket sales end date"
+msgstr "XXXXX"
+
+#: ../lib/tribe-eventbrite.class.php:514
+msgid "The dates you have chosen for your ticket sales are inconsistent"
+msgstr "XXXXX"
+
+#: ../lib/tribe-eventbrite.class.php:518
+msgid "Please adjust the dates and try saving again."
+msgstr "XXXXX"
+
+#: ../lib/tribe-eventbrite.class.php:579
+msgid "Tickets must have a name"
+msgstr "XXXXX"
+
+#: ../lib/tribe-eventbrite.class.php:589
+msgid "Paid tickets must have a numeric cost."
+msgstr "XXXXX"
+
+#: ../lib/tribe-eventbrite.class.php:595
+msgid "Ticket quantity must be numeric"
+msgstr "XXXXX"
+
+#: ../lib/tribe-eventbrite.class.php:652
+msgid "This post is a revision and cannot update an Evenbrite event."
+msgstr "XXXXX"
+
+#: ../lib/tribe-eventbrite.class.php:658 ../lib/tribe-eventbrite.class.php:712
+msgid ""
+"Please supply a post title. This will become the Eventbrite event title."
+msgstr "XXXXX"
+
+#: ../lib/tribe-eventbrite.class.php:702
+msgid "This post is a revision and cannot create an evenbrite event."
+msgstr "XXXXX"
+
+#: ../lib/tribe-eventbrite.class.php:711
+msgid "Event must have a title"
+msgstr "XXXXX"
+
+#: ../lib/tribe-eventbrite.class.php:750
+msgid ""
+"Your event could not be marked as live in Eventbrite. It was still created "
+"as a draft though. Please review the information below and proceed "
+"accordingly."
+msgstr "XXXXX"
+
+#: ../lib/tribe-eventbrite.class.php:945
+msgid "There was an error sending the venue to Eventbrite. Please try again."
+msgstr "XXXXX"
+
+#: ../lib/tribe-eventbrite.class.php:983
+msgid "Unamed Organizer"
+msgstr "XXXXX"
+
+#: ../lib/tribe-eventbrite.class.php:1029
+msgid ""
+"An error occurred while updating Eventbrite's Organizer. Please review your "
+"information and try again.<br />Error:<br />"
+msgstr "XXXXX"
+
+#: ../lib/tribe-eventbrite.class.php:1111
+msgid "We were unable to import your Eventbrite event. Please try again."
+msgstr "XXXXX"
+
+#: ../lib/tribe-eventbrite.class.php:1114
+msgid "Event already imported."
+msgstr "XXXXX"
+
+#: ../lib/tribe-eventbrite.class.php:1117
+msgid ""
+"We were unable to import your Eventbrite event. Please verify the event id "
+"and try again."
+msgstr "XXXXX"
+
+#: ../lib/tribe-eventbrite.class.php:1294
+msgid "This event is free to attend"
+msgstr "XXXXX"
+
+#: ../lib/tribe-eventbrite.class.php:1337
+msgid "PayPal Payments"
+msgstr "XXXXX"
+
+#: ../lib/tribe-eventbrite.class.php:1340
+msgid "Google Checkout Payments"
+msgstr "XXXXX"
+
+#: ../lib/tribe-eventbrite.class.php:1343
+msgid "Pay by check"
+msgstr "XXXXX"
+
+#: ../lib/tribe-eventbrite.class.php:1346
+msgid "Pay at the door"
+msgstr "XXXXX"
+
+#: ../lib/tribe-eventbrite.class.php:1349
+msgid "Send an invoice"
+msgstr "XXXXX"
+
+#: ../lib/tribe-eventbrite.class.php:1408
+msgid "Your user API Key is invalid. Please go to your profile and adjust it."
+msgstr "XXXXX"
+
+#: ../lib/tribe-eventbrite.class.php:1409
+msgid ""
+"The specified user was not found or the login credentials didn’t match. "
+"Please go to your profile and verify your API Key."
+msgstr "XXXXX"
+
+#: ../lib/tribe-eventbrite.class.php:1410
+#: ../lib/tribe-eventbrite.class.php:1411
+#: ../lib/tribe-eventbrite.class.php:1422
+#: ../lib/tribe-eventbrite.class.php:1423
+#: ../lib/tribe-eventbrite.class.php:1424
+#: ../lib/tribe-eventbrite.class.php:1425
+#: ../lib/tribe-eventbrite.class.php:1426
+#: ../lib/tribe-eventbrite.class.php:1427
+#: ../lib/tribe-eventbrite.class.php:1428
+#: ../lib/tribe-eventbrite.class.php:1429
+#: ../lib/tribe-eventbrite.class.php:1430
+#: ../lib/tribe-eventbrite.class.php:1436
+#: ../lib/tribe-eventbrite.class.php:1438
+#: ../lib/tribe-eventbrite.class.php:1439
+msgid ""
+"An API error occurred. Please double check the information you've entered "
+"and try again"
+msgstr "XXXXX"
+
+#: ../lib/tribe-eventbrite.class.php:1412
+msgid "The total number of tickets exceeds the maximum allowed (50)"
+msgstr "XXXXX"
+
+#: ../lib/tribe-eventbrite.class.php:1413
+msgid "The ticket name is missing. Please enter a ticket name and try again."
+msgstr "XXXXX"
+
+#: ../lib/tribe-eventbrite.class.php:1414
+msgid ""
+"The date you selected for ticket sales to end is before the date you "
+"selected for ticket sales to start, please adjust your dates accordingly."
+msgstr "XXXXX"
+
+#: ../lib/tribe-eventbrite.class.php:1415
+msgid ""
+"The date you selected for ticket sales to end is after the date you selected "
+"for the event to end, please adjust your dates accordingly."
+msgstr "XXXXX"
+
+#: ../lib/tribe-eventbrite.class.php:1416
+msgid "Please specify the quantity of tickets available."
+msgstr "XXXXX"
+
+#: ../lib/tribe-eventbrite.class.php:1417
+msgid "Please specify a valid number for quantity of tickets available."
+msgstr "XXXXX"
+
+#: ../lib/tribe-eventbrite.class.php:1418
+msgid ""
+"The quantity of tickets you provided is greater than event capacity. Please "
+"adjust your numbers accordingly"
+msgstr "XXXXX"
+
+#: ../lib/tribe-eventbrite.class.php:1419
+msgid "Please enter a valid price for the ticket"
+msgstr "XXXXX"
+
+#: ../lib/tribe-eventbrite.class.php:1420
+msgid "Please enter a valid minimum number of tickets per order"
+msgstr "XXXXX"
+
+#: ../lib/tribe-eventbrite.class.php:1421
+msgid "Please enter a valid maximum number of tickets per order"
+msgstr "XXXXX"
+
+#: ../lib/tribe-eventbrite.class.php:1431
+msgid "Please provide a valid Google merchant ID and Key"
+msgstr "XXXXX"
+
+#: ../lib/tribe-eventbrite.class.php:1432
+msgid ""
+"To use Google Checkout you need to enter a 10 or 15 digit Google Checkout "
+"Merchant ID"
+msgstr "XXXXX"
+
+#: ../lib/tribe-eventbrite.class.php:1433
+msgid ""
+"To use Google Checkout you need to enter a 22 character Google Checkout "
+"Merchant Key"
+msgstr "XXXXX"
+
+#: ../lib/tribe-eventbrite.class.php:1434
+msgid ""
+"Please select at least one method of payment (PayPal, Google or Alternative)"
+msgstr "XXXXX"
+
+#: ../lib/tribe-eventbrite.class.php:1435
+msgid ""
+"The Paypal email address you provided is invalid. Please go to Eventbrite to "
+"adjust it."
+msgstr "XXXXX"
+
+#: ../lib/tribe-eventbrite.class.php:1437
+msgid "This event has been deleted from Eventbrite."
+msgstr "XXXXX"
+
+#: ../lib/tribe-eventbrite.class.php:1440
+msgid ""
+"The organizer name already exists. Please enter a different organizer name "
+"and try again. Note that your event was not registered with Eventbrite as a "
+"result."
+msgstr "XXXXX"
+
+#: ../lib/tribe-eventbrite.class.php:1441
+msgid ""
+"The venue name already exists. Please enter a different venue name and try "
+"again. Note that your event was not registered with Eventbrite as a result."
+msgstr "XXXXX"
+
+#: ../lib/tribe-eventbrite.class.php:1455
+msgid "The following Eventbrite error has occurred"
+msgstr "XXXXX"
+
+#: ../lib/tribe-eventbrite.class.php:1460
+msgid "The event could not be made live as a result of this error."
+msgstr "XXXXX"
+
+#
+#: ../lib/tribe-eventbrite.class.php:1484
+msgid "Import: Eventbrite "
+msgstr "XXXXX"
+
+#
+#: ../lib/tribe-eventbrite.class.php:1484
+msgid "Import: Eventbrite"
+msgstr "XXXXX"
+
+#: ../lib/tribe-eventbrite.class.php:1651
+#, php-format
+msgid ""
+"Welcome to The Events Calendar: Eventbrite Tickets! We appreciate your "
+"support and hope you enjoy the functionality this add-on has to offer. "
+"Before jumping into it, make sure you've reviewed our %sEventbrite Tickets "
+"new user primer%s so you're familiar with the basics."
+msgstr "XXXXX"
+
+#: ../lib/tribe-eventbrite.class.php:1652
+#, php-format
+msgid ""
+"Add your %s to your %s (Don't have one? %s). Then simply create a new event "
+"or modify an existing one and enable Eventbrite to add and sell tickets. %s"
+msgstr "XXXXX"
+
+#: ../lib/tribe-eventbrite.class.php:1652
+msgid "Eventbrite User API Key"
+msgstr "XXXXX"
+
+#: ../lib/tribe-eventbrite.class.php:1652
+msgid "profile"
+msgstr "XXXXX"
+
+#: ../lib/tribe-eventbrite.class.php:1652
+msgid "Sign up now"
+msgstr "XXXXX"
+
+#: ../lib/tribe-eventbrite.class.php:1663
+msgid ""
+"Eventbrite status is set to DRAFT. You can update this in the 'Eventbrite "
+"Information' section further down this page."
+msgstr "XXXXX"
+
+#: ../lib/tribe-eventbrite.class.php:1667
+msgid ""
+"You did not create any tickets for your event.  You will not be able to "
+"publish this event on Eventbrite unless you first add a ticket at Eventbrite."
+"com."
+msgstr "XXXXX"
+
+#: ../lib/tribe-eventbrite.class.php:1687
+msgid "Import"
+msgstr "XXXXX"
+
+#: ../lib/tribe-eventbrite.class.php:1696 ../views/eventbrite-options.php:8
+msgid "Eventbrite"
+msgstr "XXXXX"
+
+#: ../lib/tribe-eventbrite.class.php:1712
+msgid "Import Events"
+msgstr "XXXXX"
+
+#: ../public/template-tags.php:116
+msgid "m.d.Y"
+msgstr "XXXXX"
+
+#: ../vendor/pue-client/admin-views/license-key.view.php:9
+#: ../vendor/pue-client/admin-views/license-key.view.php:13
+#: ../vendor/pue-client/lib/pue_plugin_update_engine.class.php:185
+msgid "License Key"
+msgstr "XXXXX"
+
+#: ../vendor/pue-client/admin-views/license-key.view.php:10
+msgid "A valid license key is required for support and updates."
+msgstr "XXXXX"
+
+#: ../vendor/pue-client/admin-views/license-key.view.php:16
+msgid "Replace empty fields"
+msgstr "XXXXX"
+
+#: ../vendor/pue-client/admin-views/license-key.view.php:25
+#: ../vendor/pue-client/lib/pue_plugin_update_engine.class.php:186
+msgid "A valid license key is required for support and updates"
+msgstr "XXXXX"
+
+#: ../vendor/pue-client/lib/pue_plugin_update_engine.class.php:254
+msgid "License key(s) updated."
+msgstr "XXXXX"
+
+#: ../vendor/pue-client/lib/pue_plugin_update_engine.class.php:294
+msgid "Sorry, key validation server is not available."
+msgstr "XXXXX"
+
+#: ../vendor/pue-client/lib/pue_plugin_update_engine.class.php:296
+msgid "Sorry, this key is expired."
+msgstr "XXXXX"
+
+#: ../vendor/pue-client/lib/pue_plugin_update_engine.class.php:298
+msgid "Sorry, this key is out of installs."
+msgstr "XXXXX"
+
+#: ../vendor/pue-client/lib/pue_plugin_update_engine.class.php:300
+msgid "Sorry, this key is not valid."
+msgstr "XXXXX"
+
+#: ../vendor/pue-client/lib/pue_plugin_update_engine.class.php:303
+#, php-format
+msgid "Valid Key! Expires on %s"
+msgstr "XXXXX"
+
+#: ../vendor/pue-client/lib/pue_plugin_update_engine.class.php:307
+#, fuzzy, php-format
+msgid ""
+"Hmmm... something's wrong with this validator. Please contact <a href=\"%s"
+"\">support.</a>"
+msgstr "XXXXX"
+
+#: ../views/add-existing-event.php:41
+msgid ""
+"The content field must be empty in order to import the event description."
+msgstr "XXXXX"
+
+#: ../views/add-existing-event.php:114
+msgid "Import Event from Eventbrite"
+msgstr "XXXXX"
+
+#: ../views/add-existing-event.php:119
+msgid "Import an existing Eventbrite event?"
+msgstr "XXXXX"
+
+#: ../views/add-existing-event.php:128
+msgid "Enter your Eventbrite Event ID here:"
+msgstr "XXXXX"
+
+#: ../views/eventbrite-events-table.php:15
+msgid "Eventbrite Information"
+msgstr "XXXXX"
+
+#: ../views/eventbrite-events-table.php:20
+msgid "Eventbrite Event ID:"
+msgstr "XXXXX"
+
+#: ../views/eventbrite-events-table.php:28
+msgid "Eventbrite Event Status:"
+msgstr "XXXXX"
+
+#: ../views/eventbrite-events-table.php:37
+#: ../views/eventbrite-meta-box-extension.php:415
+msgid "Draft"
+msgstr "XXXXX"
+
+#: ../views/eventbrite-events-table.php:38
+#: ../views/eventbrite-meta-box-extension.php:416
+msgid "Live"
+msgstr "XXXXX"
+
+#: ../views/eventbrite-events-table.php:40
+msgid "Canceled (this will cancel the event at Eventbrite)"
+msgstr "XXXXX"
+
+#: ../views/eventbrite-events-table.php:51
+#: ../views/eventbrite-events-table.php:63
+msgid "Note"
+msgstr "XXXXX"
+
+#: ../views/eventbrite-events-table.php:51
+msgid ""
+"At this time, a canceled event can only be made live again through the Quick "
+"Links in the My Events tab of your account dashboard."
+msgstr "XXXXX"
+
+#: ../views/eventbrite-events-table.php:51
+#: ../views/eventbrite-events-table.php:54
+msgid "Manage Event"
+msgstr "XXXXX"
+
+#: ../views/eventbrite-events-table.php:54
+msgid ""
+"This event was created without a ticket. You need to create a ticket before "
+"you can change this event's status."
+msgstr "XXXXX"
+
+#: ../views/eventbrite-events-table.php:64
+msgid "Cancelling the event from Eventbrite cannot be undone"
+msgstr "XXXXX"
+
+#: ../views/eventbrite-events-table.php:76
+msgid "Associated Tickets:"
+msgstr "XXXXX"
+
+#: ../views/eventbrite-events-table.php:77
+msgid "The following Eventbrite tickets are associated to this event"
+msgstr "XXXXX"
+
+#: ../views/eventbrite-events-table.php:82
+msgid "Ticket"
+msgstr "XXXXX"
+
+#: ../views/eventbrite-events-table.php:82
+msgid "Sold"
+msgstr "XXXXX"
+
+#: ../views/eventbrite-events-table.php:82
+msgid "Available"
+msgstr "XXXXX"
+
+#: ../views/eventbrite-events-table.php:82
+msgid "End Sales"
+msgstr "XXXXX"
+
+#: ../views/eventbrite-events-table.php:100
+msgid "Edit existing tickets"
+msgstr "XXXXX"
+
+#: ../views/eventbrite-events-table.php:101
+msgid "Create a new ticket"
+msgstr "XXXXX"
+
+#: ../views/eventbrite-events-table.php:110
+msgid "There are no tickets associated with this event!"
+msgstr "XXXXX"
+
+#: ../views/eventbrite-events-table.php:111
+msgid ""
+"You cannot publish this event in Eventbrite unless you first add a ticket on "
+"Eventbrite.com."
+msgstr "XXXXX"
+
+#: ../views/eventbrite-events-table.php:117
+msgid "Eventbrite Shortcuts:"
+msgstr "XXXXX"
+
+#: ../views/eventbrite-events-table.php:123
+msgid "Manage my Event"
+msgstr "XXXXX"
+
+#: ../views/eventbrite-events-table.php:124
+msgid "Manage Discounts"
+msgstr "XXXXX"
+
+#: ../views/eventbrite-events-table.php:125
+msgid "Manage Attendees"
+msgstr "XXXXX"
+
+#: ../views/eventbrite-events-table.php:126
+msgid "Email Attendees"
+msgstr "XXXXX"
+
+#: ../views/eventbrite-events-table.php:127
+msgid "Print Badges"
+msgstr "XXXXX"
+
+#: ../views/eventbrite-events-table.php:128
+msgid "Print Check-In List"
+msgstr "XXXXX"
+
+#: ../views/eventbrite-meta-box-extension.php:97
+msgid "Eventbrite only allows events to be saved that start in the future."
+msgstr "XXXXX"
+
+#: ../views/eventbrite-meta-box-extension.php:112
+msgid "Please provide a ticket name for the Eventbrite ticket."
+msgstr "XXXXX"
+
+#: ../views/eventbrite-meta-box-extension.php:117
+msgid "You must set a price for the ticket "
+msgstr "XXXXX"
+
+#: ../views/eventbrite-meta-box-extension.php:122
+msgid "Ticket quantity is not a number"
+msgstr "XXXXX"
+
+#: ../views/eventbrite-meta-box-extension.php:129
+msgid "A Paypal email address must be provided."
+msgstr "XXXXX"
+
+#: ../views/eventbrite-meta-box-extension.php:137
+msgid "A Google Merchant Id must be provided."
+msgstr "XXXXX"
+
+#: ../views/eventbrite-meta-box-extension.php:143
+msgid "A Google Merchant Key must be provided."
+msgstr "XXXXX"
+
+#: ../views/eventbrite-meta-box-extension.php:182
+msgid "Tickets"
+msgstr "XXXXX"
+
+#: ../views/eventbrite-meta-box-extension.php:188
+msgid ""
+"This event has been deleted from Eventbrite. It is now unregistered from "
+"Eventbrite."
+msgstr "XXXXX"
+
+#: ../views/eventbrite-meta-box-extension.php:196
+msgid "Register this event with eventbrite.com?"
+msgstr "XXXXX"
+
+#: ../views/eventbrite-meta-box-extension.php:198
+msgid "Leave this event associated with eventbrite.com?"
+msgstr "XXXXX"
+
+#: ../views/eventbrite-meta-box-extension.php:202
+#: ../views/eventbrite-meta-box-extension.php:216
+msgid "Yes"
+msgstr "XXXXX"
+
+#: ../views/eventbrite-meta-box-extension.php:203
+#: ../views/eventbrite-meta-box-extension.php:217
+msgid "No"
+msgstr "XXXXX"
+
+#: ../views/eventbrite-meta-box-extension.php:208
+#, php-format
+msgid ""
+"This event was created by another user. Please consider contacting %s about "
+"editing these Eventbrite details."
+msgstr "XXXXX"
+
+#: ../views/eventbrite-meta-box-extension.php:214
+msgid "Display tickets on event page?"
+msgstr "XXXXX"
+
+#: ../views/eventbrite-meta-box-extension.php:223
+msgid ""
+"Note: The Eventbrite API does not yet support recurring events, so all "
+"instances of recurring events will be associated with a single Eventbrite "
+"event."
+msgstr "XXXXX"
+
+#: ../views/eventbrite-meta-box-extension.php:226
+msgid ""
+"Note: Eventbrite requires you enter an organizer. If you neglect to enter an "
+"organizer, your display name will be passed as the organizer name to "
+"Eventbrite"
+msgstr "XXXXX"
+
+#: ../views/eventbrite-meta-box-extension.php:231
+msgid "Set up your first ticket"
+msgstr "XXXXX"
+
+#: ../views/eventbrite-meta-box-extension.php:232
+msgid ""
+"To create multiple tickets per event, submit this form, then follow the link "
+"to Eventbrite."
+msgstr "XXXXX"
+
+#: ../views/eventbrite-meta-box-extension.php:237
+msgid "Name"
+msgstr "XXXXX"
+
+#: ../views/eventbrite-meta-box-extension.php:245
+msgid "Examples: Member, Non-member, Student, Early Bird"
+msgstr "XXXXX"
+
+#: ../views/eventbrite-meta-box-extension.php:249
+msgid "Description"
+msgstr "XXXXX"
+
+#: ../views/eventbrite-meta-box-extension.php:298
+msgid "Type"
+msgstr "XXXXX"
+
+#: ../views/eventbrite-meta-box-extension.php:301
+msgid " Set Price"
+msgstr "XXXXX"
+
+#: ../views/eventbrite-meta-box-extension.php:303
+msgid " Donation Based"
+msgstr "XXXXX"
+
+#: ../views/eventbrite-meta-box-extension.php:305
+msgid " Free"
+msgstr "XXXXX"
+
+#: ../views/eventbrite-meta-box-extension.php:309
+msgid "Cost"
+msgstr "XXXXX"
+
+#: ../views/eventbrite-meta-box-extension.php:314
+msgid "Quantity"
+msgstr "XXXXX"
+
+#: ../views/eventbrite-meta-box-extension.php:321
+msgid "Include Fee in Price"
+msgstr "XXXXX"
+
+#: ../views/eventbrite-meta-box-extension.php:324
+msgid "Add Service Fee on top of price"
+msgstr "XXXXX"
+
+#: ../views/eventbrite-meta-box-extension.php:326
+msgid " Include Service fee in price"
+msgstr "XXXXX"
+
+#: ../views/eventbrite-meta-box-extension.php:331
+msgid "Accepted Payment Methods"
+msgstr "XXXXX"
+
+#: ../views/eventbrite-meta-box-extension.php:346
+msgid "Paypal"
+msgstr "XXXXX"
+
+#: ../views/eventbrite-meta-box-extension.php:347
+msgid "Google Checkout"
+msgstr "XXXXX"
+
+#: ../views/eventbrite-meta-box-extension.php:351
+msgid "Check"
+msgstr "XXXXX"
+
+#: ../views/eventbrite-meta-box-extension.php:352
+msgid "Cash"
+msgstr "XXXXX"
+
+#: ../views/eventbrite-meta-box-extension.php:353
+msgid "Send an Invoice"
+msgstr "XXXXX"
+
+#: ../views/eventbrite-meta-box-extension.php:360
+msgid "Payment Details"
+msgstr "XXXXX"
+
+#: ../views/eventbrite-meta-box-extension.php:366
+msgid "Paypal Account Email Address"
+msgstr "XXXXX"
+
+#: ../views/eventbrite-meta-box-extension.php:375
+msgid "Google Merchant Id"
+msgstr "XXXXX"
+
+#: ../views/eventbrite-meta-box-extension.php:379
+msgid "Google Merchant Key"
+msgstr "XXXXX"
+
+#: ../views/eventbrite-meta-box-extension.php:385
+msgid "Instructions for Payment by Check"
+msgstr "XXXXX"
+
+#: ../views/eventbrite-meta-box-extension.php:389
+msgid "Instructions for Payment by Cash"
+msgstr "XXXXX"
+
+#: ../views/eventbrite-meta-box-extension.php:393
+msgid "Instructions for Payment by Invoice"
+msgstr "XXXXX"
+
+#: ../views/eventbrite-meta-box-extension.php:400
+msgid "Save this post to create the Event with Eventbrite.com"
+msgstr "XXXXX"
+
+#: ../views/eventbrite-meta-box-extension.php:401
+msgid ""
+"When you save this post, an event will be created for you within Eventbrite. "
+"You can choose whether this event will save as a draft or live event in "
+"Eventbrite below (regardless of whether the event here in WordPress is a "
+"draft or not). You will be able to further configure your event here after "
+"saving. For more advanced controls visit the Eventbrite administration here:"
+msgstr "XXXXX"
+
+#: ../views/eventbrite-meta-box-extension.php:407
+msgid "Eventbrite Event Status"
+msgstr "XXXXX"
+
+#: ../views/eventbrite-meta-box-extension.php:427
+msgid "You must configure your Eventbrite API User Key in your"
+msgstr "XXXXX"
+
+#: ../views/eventbrite-meta-box-extension.php:428
+msgid "profile page"
+msgstr "XXXXX"
+
+#: ../views/eventbrite-meta-box-extension.php:429
+msgid "before you can use the Eventbrite features of this plugin."
+msgstr "XXXXX"
+
+#: ../views/eventbrite-options.php:10
+#, php-format
+msgid ""
+"In order to enable Eventbrite for the The Events Calendar, please enter your "
+"Eventbrite User Key on %s"
+msgstr "XXXXX"
+
+#: ../views/eventbrite-options.php:10
+msgid "your user profile page"
+msgstr "XXXXX"
+
+#: ../views/import-eventbrite-events.php:19
+msgid "Import Eventbrite Events"
+msgstr "XXXXX"
+
+#: ../views/import-eventbrite-events.php:21
+msgid ""
+"<p>Import the event details from any public Eventbrite event.</p><p>Your "
+"Eventbrite event id can be found by going to your event page at Eventbrite."
+"com.  Once there, examine your browser's address bar to see something like "
+"this - https://www.eventbrite.com/event/212356789.  The number after '/"
+"event/' is your event id.</p>"
+msgstr "XXXXX"
+
+#: ../views/import-eventbrite-events.php:29
+msgid "Eventbrite Event ID"
+msgstr "XXXXX"
+
+#: ../views/options.php:13
+msgid "Eventbrite Options"
+msgstr "XXXXX"
+
+#: ../views/options.php:14
+msgid ""
+"These settings change the default event form. For example, if you set a "
+"default venue, this field will be automatically filled in on a new event."
+msgstr "XXXXX"
+
+#: ../views/options.php:17 ../views/options.php:21
+msgid "Automatically replace empty fields with default values"
+msgstr "XXXXX"
+
+#: ../views/options.php:25
+msgid "Enabled"
+msgstr "XXXXX"
+
+#: ../views/user-profile.php:12
+msgid "Eventbrite User Account"
+msgstr "XXXXX"
+
+#: ../views/user-profile.php:15
+#, php-format
+msgid ""
+"Your API Key can be found in your %s in Eventbrite. Don't have an Eventbrite "
+"account yet? It takes less than 30 seconds to set one up. "
+msgstr "XXXXX"
+
+#: ../views/user-profile.php:15
+msgctxt "API key settings link"
+msgid "account settings"
+msgstr "XXXXX"
+
+#: ../views/user-profile.php:15
+msgid "Click here to register."
+msgstr "XXXXX"
+
+#: ../views/user-profile.php:20
+msgid "Eventbrite API User Key"
+msgstr "XXXXX"

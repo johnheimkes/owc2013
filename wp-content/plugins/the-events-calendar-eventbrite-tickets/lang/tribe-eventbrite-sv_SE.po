@@ -1,0 +1,1028 @@
+# Tribe Events Eventbrite Tickets by Modern Tribe, Inc.
+# Copyright (C) Modern Tribe, Inc.
+# This file is distributed under the same license as the Tribe Events Eventbrite Tickets package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Tribe Events Eventbrite Tickets\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-06-26 13:21-0800\n"
+"PO-Revision-Date: 2013-06-26 13:21-0800\n"
+"Last-Translator: Andreas Bodin <andreas.bodin@me.com>\n"
+"Language-Team: Modern Tribe, Inc. <pro@tri.be>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;"
+"_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2\n"
+"X-Poedit-Basepath: ./\n"
+"X-Textdomain-Support: yes\n"
+"X-Generator: Poedit 1.5.5\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../lib/eventbrite-api.class.php:76
+msgid ""
+"An error occurred while contacting Eventbrite. Please review your "
+"information and try again.<br />Error: "
+msgstr ""
+"Ett fel uppstod medan Eventbrite kontaktades. Vänligen revidera din "
+"information och försök igen.<br />Fel:"
+
+#: ../lib/eventbrite-api.class.php:85
+msgid ""
+"An error occurred while contacting Eventbrite. Please review your "
+"information and try again.<br />Status: "
+msgstr ""
+"Ett fel uppstod medan Eventbrite kontaktades. Vänligen revidera din "
+"information och försök igen.<br />Fel:"
+
+#: ../lib/eventbrite-api.class.php:87
+msgid ""
+"EventBrite is not answering us. Most likely they are too busy. The changes "
+"have been saved localy, maybe try again later?"
+msgstr ""
+"EventBrite svarar inte. Troligen är de för upptagna. Förändringarna har "
+"sparats lokalt, kanske försöka senare?"
+
+#: ../lib/eventbrite-api.class.php:102
+msgid ""
+"An error occurred while updating Eventbrite. Please review your information "
+"and try again.<br />Error:<br />"
+msgstr ""
+"Ett fel uppstod medan Eventbrite uppdaterades. Vänligen revidera din "
+"information och försök igen.<br />Fel:<br />"
+
+#: ../lib/tribe-eventbrite.class.php:130
+msgid "The Events Calendar"
+msgstr "The Events Calendar"
+
+#: ../lib/tribe-eventbrite.class.php:131
+#, php-format
+msgid ""
+"To begin using The Events Calendar: Eventbrite Tickets, please install the "
+"latest version of <a href=\"%s\" class=\"thickbox\" title=\"%s\">The Events "
+"Calendar</a>."
+msgstr ""
+"För att börja använda The Events Calendar: Eventbrite Tickets, vänligen "
+"installera den senaste versionen av <a href=\"%s\" class=\"thickbox\" title="
+"\"%s\">The Events Calendar</a>."
+
+#: ../lib/tribe-eventbrite.class.php:397
+msgid "Eventbrite requires that the venue have a country."
+msgstr "Eventbrite kräver att platsen har ett land angivet."
+
+#: ../lib/tribe-eventbrite.class.php:398 ../lib/tribe-eventbrite.class.php:407
+msgid "Please adjust the venue and try saving again."
+msgstr "Vänligen justera platsen och försök spara igen."
+
+#: ../lib/tribe-eventbrite.class.php:399
+msgid "Edit the venue"
+msgstr "Redigera platsen"
+
+#: ../lib/tribe-eventbrite.class.php:406
+msgid "Eventbrite requires that United States addresses include the state."
+msgstr "Eventbrite kräver att adresser i USA inkluderar vilken stat."
+
+#: ../lib/tribe-eventbrite.class.php:415
+msgid "Ticket Name"
+msgstr "Biljett Namn"
+
+#: ../lib/tribe-eventbrite.class.php:416
+#: ../views/eventbrite-meta-box-extension.php:257
+msgid "Date to Start Ticket Sales"
+msgstr "Datum för Påbörjan av biljettförsäljning"
+
+#: ../lib/tribe-eventbrite.class.php:417
+#: ../views/eventbrite-meta-box-extension.php:277
+msgid "Date to End Ticket Sales"
+msgstr "Datum för Slut av biljettförsäljning"
+
+#: ../lib/tribe-eventbrite.class.php:418
+msgid "Ticket Type"
+msgstr "Biljettyp"
+
+#: ../lib/tribe-eventbrite.class.php:419
+msgid "Ticket Cost"
+msgstr "Biljettkostnad"
+
+#: ../lib/tribe-eventbrite.class.php:420
+msgid "Ticket Quantity"
+msgstr "Antal biljetter"
+
+#: ../lib/tribe-eventbrite.class.php:421
+msgid "Ticket - Include Fee in Price"
+msgstr "Biljett - Inkludera avgift i priset"
+
+#: ../lib/tribe-eventbrite.class.php:441
+msgid "Ticket Cost (must be numeric)"
+msgstr "Biljettkostnad (måste vara numeriskt)"
+
+#: ../lib/tribe-eventbrite.class.php:453
+msgid "Ticket Payment Methods (at least one should be selected)"
+msgstr "Betalningsmetod för biljetter (minst en måste väljas)"
+
+#: ../lib/tribe-eventbrite.class.php:461
+msgid "Ticket - Paypal Account Email Address"
+msgstr "Biljett - Paypal Konto Email Adress"
+
+#: ../lib/tribe-eventbrite.class.php:463
+msgid "Ticket - Paypal Account Email Address (must be a valid email address)"
+msgstr ""
+"Biljett - Paypal Konto Email Adress (måste vara en giltigt emailadress)"
+
+#: ../lib/tribe-eventbrite.class.php:470
+msgid "Ticket - Google Merchant ID"
+msgstr "Biljett - Google Merchant ID"
+
+#: ../lib/tribe-eventbrite.class.php:473
+msgid "Ticket - Google Merchant Key"
+msgstr "Biljett - Google Merchant Nyckel"
+
+#: ../lib/tribe-eventbrite.class.php:478
+msgid ""
+"All required fields must be filled out correctly in order for this event to "
+"be associated to Eventbrite. The following required fields were not filled "
+"out (or not correctly):"
+msgstr ""
+"Samtliga fält som måste fyllas i måste vara ifylla korrekt för att detta "
+"event skall associeras med Eventbrite. Följande fält som krävs att vara "
+"ifyllda var inte ifyllda (eller felaktigt ifyllda):"
+
+#: ../lib/tribe-eventbrite.class.php:482
+msgid "Please fill in the missing fields and try saving again."
+msgstr "Vänligen fyll i de saknade fälten och försök spara igen."
+
+#: ../lib/tribe-eventbrite.class.php:502
+msgid "Ticket sales start date cannot be after the event ends"
+msgstr ""
+"Biljettförsäljningens start datum kan inte vara efter att eventet slutar"
+
+#: ../lib/tribe-eventbrite.class.php:506
+msgid "Ticket sales end date cannot be after the event ends"
+msgstr ""
+"Biljettförsäljningens slut datum kan inte vara efter att eventet slutar"
+
+#: ../lib/tribe-eventbrite.class.php:510
+msgid "Ticket sales start date cannot be after ticket sales end date"
+msgstr ""
+"Start datumet för biljettförsäljning kan inte vara efter "
+"biljettförsäljningens slut datum"
+
+#: ../lib/tribe-eventbrite.class.php:514
+msgid "The dates you have chosen for your ticket sales are inconsistent"
+msgstr "Datumen som du har valt för din biljettförsälning är inkosekvent"
+
+#: ../lib/tribe-eventbrite.class.php:518
+msgid "Please adjust the dates and try saving again."
+msgstr "Vänligen justera datumen och försök spara igen."
+
+#: ../lib/tribe-eventbrite.class.php:579
+msgid "Tickets must have a name"
+msgstr "Biljetterna måste ha ett namn"
+
+#: ../lib/tribe-eventbrite.class.php:589
+msgid "Paid tickets must have a numeric cost."
+msgstr "Biljetter som köps måste ha en numerisk kostnad."
+
+#: ../lib/tribe-eventbrite.class.php:595
+msgid "Ticket quantity must be numeric"
+msgstr "Biljett antalet måste vara numeriskt"
+
+#: ../lib/tribe-eventbrite.class.php:652
+msgid "This post is a revision and cannot update an Evenbrite event."
+msgstr ""
+"Detta inlägg är en omarbetning och kan inte uppdatera ett Eventbrite event."
+
+#: ../lib/tribe-eventbrite.class.php:658 ../lib/tribe-eventbrite.class.php:712
+msgid ""
+"Please supply a post title. This will become the Eventbrite event title."
+msgstr ""
+"Vänligen tillgodose en inläggs titel. Detta kommer att bli Eventbrite titeln "
+"för eventet."
+
+#: ../lib/tribe-eventbrite.class.php:702
+msgid "This post is a revision and cannot create an evenbrite event."
+msgstr ""
+"Detta inlägg är en omarbetning och kan inte skapa ett eventbrite event."
+
+#: ../lib/tribe-eventbrite.class.php:711
+msgid "Event must have a title"
+msgstr "Event måste ha en titel"
+
+#: ../lib/tribe-eventbrite.class.php:750
+msgid ""
+"Your event could not be marked as live in Eventbrite. It was still created "
+"as a draft though. Please review the information below and proceed "
+"accordingly."
+msgstr ""
+"Ditt event kunde inte markeras som tillgängligt i Eventbrite. Det skapades "
+"dock som ett utkast. Vänligen revidera informationen nedan och fortsätt."
+
+#: ../lib/tribe-eventbrite.class.php:945
+msgid "There was an error sending the venue to Eventbrite. Please try again."
+msgstr ""
+"Det uppstod ett problem med att skicka platsen till Eventbrite. Vänligen "
+"försökt igen."
+
+#: ../lib/tribe-eventbrite.class.php:983
+msgid "Unamed Organizer"
+msgstr "Ej namngiven Organisatör"
+
+#: ../lib/tribe-eventbrite.class.php:1029
+msgid ""
+"An error occurred while updating Eventbrite's Organizer. Please review your "
+"information and try again.<br />Error:<br />"
+msgstr ""
+"Ett fel uppstod vid uppdatering av Eventbrites organisatör. Vänligen "
+"revidera din information och försök igen.<br />Fel:<br />"
+
+#: ../lib/tribe-eventbrite.class.php:1111
+msgid "We were unable to import your Eventbrite event. Please try again."
+msgstr "Vi kunde ej importera ditt Eventbrite event. Vänligen försök igen."
+
+#: ../lib/tribe-eventbrite.class.php:1114
+msgid "Event already imported."
+msgstr "Eventet är redan importerat."
+
+#: ../lib/tribe-eventbrite.class.php:1117
+msgid ""
+"We were unable to import your Eventbrite event. Please verify the event id "
+"and try again."
+msgstr ""
+"Vi kunde ej importera ditt Eventbrite event. Vänligen verifiera event id och "
+"försök igen."
+
+#: ../lib/tribe-eventbrite.class.php:1294
+msgid "This event is free to attend"
+msgstr "Detta event är kostnadsfritt."
+
+#: ../lib/tribe-eventbrite.class.php:1337
+msgid "PayPal Payments"
+msgstr "PayPal betalningar"
+
+#: ../lib/tribe-eventbrite.class.php:1340
+msgid "Google Checkout Payments"
+msgstr "Google Checkout betalningar"
+
+#: ../lib/tribe-eventbrite.class.php:1343
+msgid "Pay by check"
+msgstr "Betala via check"
+
+#: ../lib/tribe-eventbrite.class.php:1346
+msgid "Pay at the door"
+msgstr "Betala vid dörren"
+
+#: ../lib/tribe-eventbrite.class.php:1349
+msgid "Send an invoice"
+msgstr "Skicka en faktura"
+
+#: ../lib/tribe-eventbrite.class.php:1408
+msgid "Your user API Key is invalid. Please go to your profile and adjust it."
+msgstr ""
+"Din användar API nyckel är ogiltig. Vänligen gå till din profil och "
+"korrigera."
+
+#: ../lib/tribe-eventbrite.class.php:1409
+msgid ""
+"The specified user was not found or the login credentials didn’t match. "
+"Please go to your profile and verify your API Key."
+msgstr ""
+"Den angivna användaren hittades inte eller så matchar inte login "
+"uppgifterna. Vänligen gå till din profil och verifiera din API nyckel."
+
+#: ../lib/tribe-eventbrite.class.php:1410
+#: ../lib/tribe-eventbrite.class.php:1411
+#: ../lib/tribe-eventbrite.class.php:1422
+#: ../lib/tribe-eventbrite.class.php:1423
+#: ../lib/tribe-eventbrite.class.php:1424
+#: ../lib/tribe-eventbrite.class.php:1425
+#: ../lib/tribe-eventbrite.class.php:1426
+#: ../lib/tribe-eventbrite.class.php:1427
+#: ../lib/tribe-eventbrite.class.php:1428
+#: ../lib/tribe-eventbrite.class.php:1429
+#: ../lib/tribe-eventbrite.class.php:1430
+#: ../lib/tribe-eventbrite.class.php:1436
+#: ../lib/tribe-eventbrite.class.php:1438
+#: ../lib/tribe-eventbrite.class.php:1439
+msgid ""
+"An API error occurred. Please double check the information you've entered "
+"and try again"
+msgstr ""
+"Ett API fel uppstod. Vänligen dubbelkontrollera informationen som du angivit "
+"och försök igen"
+
+#: ../lib/tribe-eventbrite.class.php:1412
+msgid "The total number of tickets exceeds the maximum allowed (50)"
+msgstr "Det totala antalet biljetter överskrider det maximalt tillåtna (50)"
+
+#: ../lib/tribe-eventbrite.class.php:1413
+msgid "The ticket name is missing. Please enter a ticket name and try again."
+msgstr "Biljettnamnet saknas. Vänligen ange ett biljettnamn och försök igen."
+
+#: ../lib/tribe-eventbrite.class.php:1414
+msgid ""
+"The date you selected for ticket sales to end is before the date you "
+"selected for ticket sales to start, please adjust your dates accordingly."
+msgstr ""
+"Slutdatumet du angivit för biljettförsäljningen är före det startdatum du "
+"angivit för biljettförsäljning, vänligen korrigera datumen."
+
+#: ../lib/tribe-eventbrite.class.php:1415
+msgid ""
+"The date you selected for ticket sales to end is after the date you selected "
+"for the event to end, please adjust your dates accordingly."
+msgstr ""
+"Slutdatumet du angivit för biljettförsäljningen är efter det datum du "
+"angivit att eventet slutar, vänligen korrigera datumen."
+
+#: ../lib/tribe-eventbrite.class.php:1416
+msgid "Please specify the quantity of tickets available."
+msgstr "Vänligen specificera antalet biljetter som skall finnas tillgängliga."
+
+#: ../lib/tribe-eventbrite.class.php:1417
+msgid "Please specify a valid number for quantity of tickets available."
+msgstr ""
+"Vänligen specificera ett giltigt numeriskt antal biljetter som skall finnas "
+"tillgänliga."
+
+#: ../lib/tribe-eventbrite.class.php:1418
+msgid ""
+"The quantity of tickets you provided is greater than event capacity. Please "
+"adjust your numbers accordingly"
+msgstr ""
+"Antalet biljetter som du angivit är större än kapaciteten för eventet. "
+"Vänligen justera antalet."
+
+#: ../lib/tribe-eventbrite.class.php:1419
+msgid "Please enter a valid price for the ticket"
+msgstr "Vänligen ange ett giltigt pris för biljetten"
+
+#: ../lib/tribe-eventbrite.class.php:1420
+msgid "Please enter a valid minimum number of tickets per order"
+msgstr "Vänligen ange ett giltigt minimi antal av biljetter per order"
+
+#: ../lib/tribe-eventbrite.class.php:1421
+msgid "Please enter a valid maximum number of tickets per order"
+msgstr "Vänligen ange ett giltigt max värde för antalet biljetter per order"
+
+#: ../lib/tribe-eventbrite.class.php:1431
+msgid "Please provide a valid Google merchant ID and Key"
+msgstr "Vänligen ange ett giltigt Google merchant ID och nyckel"
+
+#: ../lib/tribe-eventbrite.class.php:1432
+msgid ""
+"To use Google Checkout you need to enter a 10 or 15 digit Google Checkout "
+"Merchant ID"
+msgstr ""
+"För att använda Google Checkout behöver du ange ett 10 eller 15 siffrigt "
+"Google Checkout Merchant ID"
+
+#: ../lib/tribe-eventbrite.class.php:1433
+msgid ""
+"To use Google Checkout you need to enter a 22 character Google Checkout "
+"Merchant Key"
+msgstr ""
+"För att använda Google Checkout behöver du ange ett 22 tecken långt Google "
+"Checkout Merchant nyckel"
+
+#: ../lib/tribe-eventbrite.class.php:1434
+msgid ""
+"Please select at least one method of payment (PayPal, Google or Alternative)"
+msgstr ""
+"Vänligen välj minst en betalningsmetod (PayPal, Google eller Annat "
+"alternativ)"
+
+#: ../lib/tribe-eventbrite.class.php:1435
+msgid ""
+"The Paypal email address you provided is invalid. Please go to Eventbrite to "
+"adjust it."
+msgstr ""
+"Paypal emailadressen du angav är ogiltig. Vänligen gå till Eventbrite och "
+"justera."
+
+#: ../lib/tribe-eventbrite.class.php:1437
+msgid "This event has been deleted from Eventbrite."
+msgstr "Detta event har raderats från Eventbrite."
+
+#: ../lib/tribe-eventbrite.class.php:1440
+msgid ""
+"The organizer name already exists. Please enter a different organizer name "
+"and try again. Note that your event was not registered with Eventbrite as a "
+"result."
+msgstr ""
+"Organisatörens namn existerar redan. Vänligen ange ett annat namn på "
+"organisatören och försök igen. Notera att ditt event har inte registrerats "
+"hos Eventbrite."
+
+#: ../lib/tribe-eventbrite.class.php:1441
+msgid ""
+"The venue name already exists. Please enter a different venue name and try "
+"again. Note that your event was not registered with Eventbrite as a result."
+msgstr ""
+"Platsnamnet existerar redan. Vänligen ange ett annat platsnamn och försök "
+"igen. Notera att ditt event har inte registrerats hos Eventbrite."
+
+#: ../lib/tribe-eventbrite.class.php:1455
+msgid "The following Eventbrite error has occurred"
+msgstr "Följande Eventbrite fel uppstod"
+
+#: ../lib/tribe-eventbrite.class.php:1460
+msgid "The event could not be made live as a result of this error."
+msgstr "Eventet kunde inte gå live som ett resultat av detta fel."
+
+#: ../lib/tribe-eventbrite.class.php:1484
+msgid "Import: Eventbrite "
+msgstr "Importera: Eventbrite"
+
+#: ../lib/tribe-eventbrite.class.php:1484
+msgid "Import: Eventbrite"
+msgstr "Importera: Eventbrite"
+
+#: ../lib/tribe-eventbrite.class.php:1651
+#, php-format
+msgid ""
+"Welcome to The Events Calendar: Eventbrite Tickets! We appreciate your "
+"support and hope you enjoy the functionality this add-on has to offer. "
+"Before jumping into it, make sure you've reviewed our %sEventbrite Tickets "
+"new user primer%s so you're familiar with the basics."
+msgstr ""
+"Välkommen till The Events Calendar: Eventbrite Tickets! Vi uppskattar ditt "
+"stöd och hoppas att du blir nöjd med funktionaliteten som detta tillägg "
+"erbjuder. Innan du startar igång, se till att du har gått igenom vår "
+"%sEventbrite Tickets new user primer%s så du blir familjär med grunderna."
+
+#: ../lib/tribe-eventbrite.class.php:1652
+#, php-format
+msgid ""
+"Add your %s to your %s (Don't have one? %s). Then simply create a new event "
+"or modify an existing one and enable Eventbrite to add and sell tickets. %s"
+msgstr ""
+"Lägg till ditt %s till ditt %s (Har Du inte en? %s). Skapa då enkelt ett "
+"nytt event eller ändra ett existerande och aktivera Eventbrite för att lägga "
+"till och sälja biljetter. %s"
+
+#: ../lib/tribe-eventbrite.class.php:1652
+msgid "Eventbrite User API Key"
+msgstr "Eventbrite User API Key"
+
+#: ../lib/tribe-eventbrite.class.php:1652
+msgid "profile"
+msgstr "profil"
+
+#: ../lib/tribe-eventbrite.class.php:1652
+msgid "Sign up now"
+msgstr "Registrera nu"
+
+#: ../lib/tribe-eventbrite.class.php:1663
+msgid ""
+"Eventbrite status is set to DRAFT. You can update this in the 'Eventbrite "
+"Information' section further down this page."
+msgstr ""
+"Eventbrite status är satt till UTKAST. Du kan uppdatera detta i 'Eventbrite "
+"Information' sektionen längre ner på denna sida."
+
+#: ../lib/tribe-eventbrite.class.php:1667
+msgid ""
+"You did not create any tickets for your event.  You will not be able to "
+"publish this event on Eventbrite unless you first add a ticket at Eventbrite."
+"com."
+msgstr ""
+"Du skapade inte några biljetter till ditt event. Du kommer inte att kunna "
+"publicera detta event på Eventbrite så tillvida du inte först lägger till en "
+"biljett på Eventbrite.com."
+
+#: ../lib/tribe-eventbrite.class.php:1687
+msgid "Import"
+msgstr "Importera"
+
+#: ../lib/tribe-eventbrite.class.php:1696 ../views/eventbrite-options.php:8
+msgid "Eventbrite"
+msgstr "Eventbrite"
+
+#: ../lib/tribe-eventbrite.class.php:1712
+msgid "Import Events"
+msgstr "Importera Events"
+
+#: ../public/template-tags.php:116
+msgid "m.d.Y"
+msgstr "m.d.Å"
+
+#: ../vendor/pue-client/admin-views/license-key.view.php:9
+#: ../vendor/pue-client/admin-views/license-key.view.php:13
+#: ../vendor/pue-client/lib/pue_plugin_update_engine.class.php:185
+msgid "License Key"
+msgstr "Licensnyckel"
+
+#: ../vendor/pue-client/admin-views/license-key.view.php:10
+msgid "A valid license key is required for support and updates."
+msgstr "En giltig licensnyckel krävs för support och uppdateringar."
+
+#: ../vendor/pue-client/admin-views/license-key.view.php:16
+msgid "Replace empty fields"
+msgstr "Ersätt tomma fält"
+
+#: ../vendor/pue-client/admin-views/license-key.view.php:25
+#: ../vendor/pue-client/lib/pue_plugin_update_engine.class.php:186
+msgid "A valid license key is required for support and updates"
+msgstr "En giltig licensnyckel krävs för support och uppdateringar"
+
+#: ../vendor/pue-client/lib/pue_plugin_update_engine.class.php:254
+msgid "License key(s) updated."
+msgstr "Licensnyckel/-nycklar uppdaterade."
+
+#: ../vendor/pue-client/lib/pue_plugin_update_engine.class.php:294
+msgid "Sorry, key validation server is not available."
+msgstr "Tyvärr, servern som validerar nycklar är inte tillgänglig."
+
+#: ../vendor/pue-client/lib/pue_plugin_update_engine.class.php:296
+msgid "Sorry, this key is expired."
+msgstr "Tyvärr, denna nyckel har utgått."
+
+#: ../vendor/pue-client/lib/pue_plugin_update_engine.class.php:298
+msgid "Sorry, this key is out of installs."
+msgstr "Tyvärr, denna nyckel kan ej används för fler installationer."
+
+#: ../vendor/pue-client/lib/pue_plugin_update_engine.class.php:300
+msgid "Sorry, this key is not valid."
+msgstr "Tyvärr, denna nyckel är inte giltig."
+
+#: ../vendor/pue-client/lib/pue_plugin_update_engine.class.php:303
+#, php-format
+msgid "Valid Key! Expires on %s"
+msgstr "Giltig nyckel! Upphör %s"
+
+#: ../vendor/pue-client/lib/pue_plugin_update_engine.class.php:307
+#, php-format
+msgid ""
+"Hmmm... something's wrong with this validator. Please contact <a href=\"%s"
+"\">support.</a>"
+msgstr ""
+"Hmmm… något är fel med denna validator. Vänligen kontakta <a href=\"%s"
+"\">supporten.</a>"
+
+#: ../views/add-existing-event.php:41
+msgid ""
+"The content field must be empty in order to import the event description."
+msgstr ""
+"Innehållsfältet måste vara tomt för att kunna importera eventbeskrivningen."
+
+#: ../views/add-existing-event.php:114
+msgid "Import Event from Eventbrite"
+msgstr "Importera Event från Eventbrite"
+
+#: ../views/add-existing-event.php:119
+msgid "Import an existing Eventbrite event?"
+msgstr "Importera ett existerande Eventbrite event?"
+
+#: ../views/add-existing-event.php:128
+msgid "Enter your Eventbrite Event ID here:"
+msgstr "Ange ditt Eventbrite Event ID här:"
+
+#: ../views/eventbrite-events-table.php:15
+msgid "Eventbrite Information"
+msgstr "Eventbrite Information"
+
+#: ../views/eventbrite-events-table.php:20
+msgid "Eventbrite Event ID:"
+msgstr "Eventbrite Event ID:"
+
+#: ../views/eventbrite-events-table.php:28
+msgid "Eventbrite Event Status:"
+msgstr "Eventbrite Event Status:"
+
+#: ../views/eventbrite-events-table.php:37
+#: ../views/eventbrite-meta-box-extension.php:415
+msgid "Draft"
+msgstr "Utkast"
+
+#: ../views/eventbrite-events-table.php:38
+#: ../views/eventbrite-meta-box-extension.php:416
+msgid "Live"
+msgstr "Live"
+
+#: ../views/eventbrite-events-table.php:40
+msgid "Canceled (this will cancel the event at Eventbrite)"
+msgstr "Cancellerat (detta cancellerar eventet på Eventbrite)"
+
+#: ../views/eventbrite-events-table.php:51
+#: ../views/eventbrite-events-table.php:63
+msgid "Note"
+msgstr "Notering"
+
+#: ../views/eventbrite-events-table.php:51
+msgid ""
+"At this time, a canceled event can only be made live again through the Quick "
+"Links in the My Events tab of your account dashboard."
+msgstr ""
+"Vid detta tillfälle så kan ett cancellerat event enbart bli live igenom via "
+"Quick Links under My Events fliken på ditt kontos dashboard."
+
+#: ../views/eventbrite-events-table.php:51
+#: ../views/eventbrite-events-table.php:54
+msgid "Manage Event"
+msgstr "Hantera Event"
+
+#: ../views/eventbrite-events-table.php:54
+msgid ""
+"This event was created without a ticket. You need to create a ticket before "
+"you can change this event's status."
+msgstr ""
+"Detta event skapades utan biljetter. Du behöver skapa biljetter innan du kan "
+"ändra detta events status."
+
+#: ../views/eventbrite-events-table.php:64
+msgid "Cancelling the event from Eventbrite cannot be undone"
+msgstr "Det går inte att ångra om du cancellerar detta event från Eventbrite"
+
+#: ../views/eventbrite-events-table.php:76
+msgid "Associated Tickets:"
+msgstr "Associerade biljetter:"
+
+#: ../views/eventbrite-events-table.php:77
+msgid "The following Eventbrite tickets are associated to this event"
+msgstr "Följande Eventbrite biljetter är associerade till detta event"
+
+#: ../views/eventbrite-events-table.php:82
+msgid "Ticket"
+msgstr "Biljett"
+
+#: ../views/eventbrite-events-table.php:82
+msgid "Sold"
+msgstr "Såld"
+
+#: ../views/eventbrite-events-table.php:82
+msgid "Available"
+msgstr "Tillgänglig"
+
+#: ../views/eventbrite-events-table.php:82
+msgid "End Sales"
+msgstr "Slutförsäljning"
+
+#: ../views/eventbrite-events-table.php:100
+msgid "Edit existing tickets"
+msgstr "Ändra existerande biljetter"
+
+#: ../views/eventbrite-events-table.php:101
+msgid "Create a new ticket"
+msgstr "Skapa en ny biljett"
+
+#: ../views/eventbrite-events-table.php:110
+msgid "There are no tickets associated with this event!"
+msgstr "Det finns inga biljetter associerade med detta event!"
+
+#: ../views/eventbrite-events-table.php:111
+msgid ""
+"You cannot publish this event in Eventbrite unless you first add a ticket on "
+"Eventbrite.com."
+msgstr ""
+"Du kan inte publicera detta event på Eventbrite ifall du inte först lägger "
+"till en biljett på Eventbrite.com."
+
+#: ../views/eventbrite-events-table.php:117
+msgid "Eventbrite Shortcuts:"
+msgstr "Eventbrite genvägar:"
+
+#: ../views/eventbrite-events-table.php:123
+msgid "Manage my Event"
+msgstr "Hantera mina Event"
+
+#: ../views/eventbrite-events-table.php:124
+msgid "Manage Discounts"
+msgstr "Hantera rabatter"
+
+#: ../views/eventbrite-events-table.php:125
+msgid "Manage Attendees"
+msgstr "Hantera deltagare"
+
+#: ../views/eventbrite-events-table.php:126
+msgid "Email Attendees"
+msgstr "Maila deltagare"
+
+#: ../views/eventbrite-events-table.php:127
+msgid "Print Badges"
+msgstr "Skriv ut emblem"
+
+#: ../views/eventbrite-events-table.php:128
+msgid "Print Check-In List"
+msgstr "Skriv ut Incheckningslista"
+
+#: ../views/eventbrite-meta-box-extension.php:97
+msgid "Eventbrite only allows events to be saved that start in the future."
+msgstr "Eventbrite tillåter enbart events att sparas som startar i framtiden."
+
+#: ../views/eventbrite-meta-box-extension.php:112
+msgid "Please provide a ticket name for the Eventbrite ticket."
+msgstr "Vänligen tillgodose ett biljettnamn för Eventbrite biljetten."
+
+#: ../views/eventbrite-meta-box-extension.php:117
+msgid "You must set a price for the ticket "
+msgstr "Du måste sätta ett pris för biljetten"
+
+#: ../views/eventbrite-meta-box-extension.php:122
+msgid "Ticket quantity is not a number"
+msgstr "Biljettantal är inte ett nummer"
+
+#: ../views/eventbrite-meta-box-extension.php:129
+msgid "A Paypal email address must be provided."
+msgstr "En Paypal emailadress måste anges."
+
+#: ../views/eventbrite-meta-box-extension.php:137
+msgid "A Google Merchant Id must be provided."
+msgstr "Ett Google Merchant Id måste anges."
+
+#: ../views/eventbrite-meta-box-extension.php:143
+msgid "A Google Merchant Key must be provided."
+msgstr "Ett Google Merchant Key måste anges."
+
+#: ../views/eventbrite-meta-box-extension.php:182
+msgid "Tickets"
+msgstr "Biljetter"
+
+#: ../views/eventbrite-meta-box-extension.php:188
+msgid ""
+"This event has been deleted from Eventbrite. It is now unregistered from "
+"Eventbrite."
+msgstr ""
+"Detta event har tagits bort från Eventbrite. Det är nu avregistrerat från "
+"Eventbrite."
+
+#: ../views/eventbrite-meta-box-extension.php:196
+msgid "Register this event with eventbrite.com?"
+msgstr "Registrera detta event med eventbrite.com?"
+
+#: ../views/eventbrite-meta-box-extension.php:198
+msgid "Leave this event associated with eventbrite.com?"
+msgstr "Lämna detta event associerat med eventbrite.com?"
+
+#: ../views/eventbrite-meta-box-extension.php:202
+#: ../views/eventbrite-meta-box-extension.php:216
+msgid "Yes"
+msgstr "Ja"
+
+#: ../views/eventbrite-meta-box-extension.php:203
+#: ../views/eventbrite-meta-box-extension.php:217
+msgid "No"
+msgstr "Nej"
+
+#: ../views/eventbrite-meta-box-extension.php:208
+#, php-format
+msgid ""
+"This event was created by another user. Please consider contacting %s about "
+"editing these Eventbrite details."
+msgstr ""
+"Detta event var skapat av en annan användare. Vänligen kontakta %s gällande "
+"korrigering av Eventbrite detaljer."
+
+#: ../views/eventbrite-meta-box-extension.php:214
+msgid "Display tickets on event page?"
+msgstr "Visa biljetter på event sidan?"
+
+#: ../views/eventbrite-meta-box-extension.php:223
+msgid ""
+"Note: The Eventbrite API does not yet support recurring events, so all "
+"instances of recurring events will be associated with a single Eventbrite "
+"event."
+msgstr ""
+"Notera: Eventbrite API stödjer förnärvarande inte återkommande events, så "
+"alla instanser av återkommande events kommer att bli associerade med enbart "
+"ett Eventbrite event."
+
+#: ../views/eventbrite-meta-box-extension.php:226
+msgid ""
+"Note: Eventbrite requires you enter an organizer. If you neglect to enter an "
+"organizer, your display name will be passed as the organizer name to "
+"Eventbrite"
+msgstr ""
+"Notera: Eventbrite kräver att du anger en organisatör. Om du ignorerar att "
+"ange en organisatör kommer ditt visningsnamn att sända som organisatör till "
+"Eventbrite"
+
+#: ../views/eventbrite-meta-box-extension.php:231
+msgid "Set up your first ticket"
+msgstr "Såld"
+
+#: ../views/eventbrite-meta-box-extension.php:232
+msgid ""
+"To create multiple tickets per event, submit this form, then follow the link "
+"to Eventbrite."
+msgstr ""
+"För att skapa flera biljetter per event, sänd detta formulär, följ sedan "
+"länken till Eventbrite."
+
+#: ../views/eventbrite-meta-box-extension.php:237
+msgid "Name"
+msgstr "Namn"
+
+#: ../views/eventbrite-meta-box-extension.php:245
+msgid "Examples: Member, Non-member, Student, Early Bird"
+msgstr "Exempel: Medlem, Icke medlem, Studerande, Early Bird"
+
+#: ../views/eventbrite-meta-box-extension.php:249
+msgid "Description"
+msgstr "Beskrivning"
+
+#: ../views/eventbrite-meta-box-extension.php:298
+msgid "Type"
+msgstr "Typ"
+
+#: ../views/eventbrite-meta-box-extension.php:301
+msgid " Set Price"
+msgstr "Sätt pris"
+
+#: ../views/eventbrite-meta-box-extension.php:303
+msgid " Donation Based"
+msgstr "Donationsbaserad"
+
+#: ../views/eventbrite-meta-box-extension.php:305
+msgid " Free"
+msgstr "Gratis"
+
+#: ../views/eventbrite-meta-box-extension.php:309
+msgid "Cost"
+msgstr "Kostnad"
+
+#: ../views/eventbrite-meta-box-extension.php:314
+msgid "Quantity"
+msgstr "Kvantitet"
+
+#: ../views/eventbrite-meta-box-extension.php:321
+msgid "Include Fee in Price"
+msgstr "Inkludera avgift i priset"
+
+#: ../views/eventbrite-meta-box-extension.php:324
+msgid "Add Service Fee on top of price"
+msgstr "Lägg till serviceavgift på toppen av priset"
+
+#: ../views/eventbrite-meta-box-extension.php:326
+msgid " Include Service fee in price"
+msgstr "Inkludera serviceavgift i priset"
+
+#: ../views/eventbrite-meta-box-extension.php:331
+msgid "Accepted Payment Methods"
+msgstr "Accepterade betalningsmetoder"
+
+#: ../views/eventbrite-meta-box-extension.php:346
+msgid "Paypal"
+msgstr "Paypal"
+
+#: ../views/eventbrite-meta-box-extension.php:347
+msgid "Google Checkout"
+msgstr "Google Checkout"
+
+#: ../views/eventbrite-meta-box-extension.php:351
+msgid "Check"
+msgstr "Check"
+
+#: ../views/eventbrite-meta-box-extension.php:352
+msgid "Cash"
+msgstr "Kontanter"
+
+#: ../views/eventbrite-meta-box-extension.php:353
+msgid "Send an Invoice"
+msgstr "Skicka en faktura"
+
+#: ../views/eventbrite-meta-box-extension.php:360
+msgid "Payment Details"
+msgstr "Betalningsdetaljer"
+
+#: ../views/eventbrite-meta-box-extension.php:366
+msgid "Paypal Account Email Address"
+msgstr "Emailadress för Paypal konto"
+
+#: ../views/eventbrite-meta-box-extension.php:375
+msgid "Google Merchant Id"
+msgstr "Google Merchant Id"
+
+#: ../views/eventbrite-meta-box-extension.php:379
+msgid "Google Merchant Key"
+msgstr "Google Merchant nyckel"
+
+#: ../views/eventbrite-meta-box-extension.php:385
+msgid "Instructions for Payment by Check"
+msgstr "Anvisningar för betalning via check"
+
+#: ../views/eventbrite-meta-box-extension.php:389
+msgid "Instructions for Payment by Cash"
+msgstr "Anvisningar för kontant betalning"
+
+#: ../views/eventbrite-meta-box-extension.php:393
+msgid "Instructions for Payment by Invoice"
+msgstr "Anvisningar för betalning via faktura"
+
+#: ../views/eventbrite-meta-box-extension.php:400
+msgid "Save this post to create the Event with Eventbrite.com"
+msgstr "Spara denna post för att skapa Eventet med Eventbrite.com"
+
+#: ../views/eventbrite-meta-box-extension.php:401
+msgid ""
+"When you save this post, an event will be created for you within Eventbrite. "
+"You can choose whether this event will save as a draft or live event in "
+"Eventbrite below (regardless of whether the event here in WordPress is a "
+"draft or not). You will be able to further configure your event here after "
+"saving. For more advanced controls visit the Eventbrite administration here:"
+msgstr ""
+"När du sparar denna post kommer ett event att skapas åt dig inom Eventbrite. "
+"Nedan kan du välja om detta event skall sparas som ett utkast eller som ett "
+"live event inom Eventbrite (oavsett om eventet här i WordPress är ett utkast "
+"eller inte). Du kommer ha möjligheten att konfigurera ditt event här efter "
+"att du har sparat. För mer avancerade inställningar besök Evenbrite "
+"administration här:"
+
+#: ../views/eventbrite-meta-box-extension.php:407
+msgid "Eventbrite Event Status"
+msgstr "Eventbrite Event Status"
+
+#: ../views/eventbrite-meta-box-extension.php:427
+msgid "You must configure your Eventbrite API User Key in your"
+msgstr "Du måste konfigurera ditt Eventbrite API User Key i din"
+
+#: ../views/eventbrite-meta-box-extension.php:428
+msgid "profile page"
+msgstr "profilsida"
+
+#: ../views/eventbrite-meta-box-extension.php:429
+msgid "before you can use the Eventbrite features of this plugin."
+msgstr "innan du kan använda Eventbrite egenskaperna i denna plugin."
+
+#: ../views/eventbrite-options.php:10
+#, php-format
+msgid ""
+"In order to enable Eventbrite for the The Events Calendar, please enter your "
+"Eventbrite User Key on %s"
+msgstr ""
+"För att aktivera Eventbrite för The Events Calendar, vänligen ange ditt "
+"Eventbrite User Key på %s"
+
+#: ../views/eventbrite-options.php:10
+msgid "your user profile page"
+msgstr "din användarprofil sida"
+
+#: ../views/import-eventbrite-events.php:19
+msgid "Import Eventbrite Events"
+msgstr "Importera Eventbrite Events"
+
+#: ../views/import-eventbrite-events.php:21
+msgid ""
+"<p>Import the event details from any public Eventbrite event.</p><p>Your "
+"Eventbrite event id can be found by going to your event page at Eventbrite."
+"com.  Once there, examine your browser's address bar to see something like "
+"this - https://www.eventbrite.com/event/212356789.  The number after '/"
+"event/' is your event id.</p>"
+msgstr ""
+"<p>Importera event information från vilket publikt Eventbrite event.</"
+"p><p>Ditt Eventbrite event id kan återfinnas genom att du besöker din event "
+"sida på Eventbrite.com. När du väl är där, kika på din webbläsares "
+"adressfält för att finna något som liknar följande - https://www.eventbrite."
+"com/event/212356789. Numret efter '/event'/ är ditt event id.</p>"
+
+#: ../views/import-eventbrite-events.php:29
+msgid "Eventbrite Event ID"
+msgstr "Eventbrite Event ID"
+
+#: ../views/options.php:13
+msgid "Eventbrite Options"
+msgstr "Eventbrite alternativ"
+
+#: ../views/options.php:14
+msgid ""
+"These settings change the default event form. For example, if you set a "
+"default venue, this field will be automatically filled in on a new event."
+msgstr ""
+"Dessa inställningar ändrar standard event formuläret. Till exempel, om du "
+"sätter standard plats kommer detta fält att automatiskt fyllas i vid ett "
+"nytt event."
+
+#: ../views/options.php:17 ../views/options.php:21
+msgid "Automatically replace empty fields with default values"
+msgstr "Ersätt automatiskt tomma fält med standard värden"
+
+#: ../views/options.php:25
+msgid "Enabled"
+msgstr "Aktivera"
+
+#: ../views/user-profile.php:12
+msgid "Eventbrite User Account"
+msgstr "Eventbrite Användarkonto"
+
+#: ../views/user-profile.php:15
+#, php-format
+msgid ""
+"Your API Key can be found in your %s in Eventbrite. Don't have an Eventbrite "
+"account yet? It takes less than 30 seconds to set one up. "
+msgstr ""
+"Ditt API Key kan återfinnas i din %s på Eventbrite. Har du inte ett "
+"Eventbrite konto än? Det tar mindre än 30 sekunder att sätta upp ett."
+
+#: ../views/user-profile.php:15
+msgctxt "API key settings link"
+msgid "account settings"
+msgstr "kontoinställningar"
+
+#: ../views/user-profile.php:15
+msgid "Click here to register."
+msgstr "Klicka här för att registrera."
+
+#: ../views/user-profile.php:20
+msgid "Eventbrite API User Key"
+msgstr "Eventbrite API User Key"
