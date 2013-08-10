@@ -276,7 +276,7 @@
                             <div class="grid-col grid-col-3">
                                 <?php if(get_field('about__pdf_financial_report')): ?>
                                     <?php while(has_sub_field('about__pdf_financial_report')): ?>
-                                        <a class="btn" href="<?php has_sub_field('about__financial_report_pdf'); ?>"><?php has_sub_field('about__financial_report_title'); ?></a>
+                                        <a class="btn" href="<?php the_sub_field('about__financial_report_pdf'); ?>"><?php the_sub_field('about__financial_report_title'); ?></a>
                                     <?php endwhile; ?>
                                 <?php endif; ?>
                             </div>
