@@ -326,7 +326,7 @@
                             <input type="submit" value="Submit" class="btn" />
                         </fieldset>
                     </form> -->
-						<?php do_shortcode('[contact-form-7 id="20" title="Contact form 1"]'); ?>
+						<?php echo do_shortcode('[contact-form-7 id="20" title="Contact form 1"]'); ?>
                 </div>
                 <div class="contact-form-ft">
                     <div>
