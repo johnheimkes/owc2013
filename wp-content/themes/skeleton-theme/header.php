@@ -79,9 +79,6 @@
                 <li>
                     <a <?php if(is_page('resources')) { echo " class='current'"; } ?> href="<?php echo home_url(); ?>/resources">Resources</a>
                 </li>
-                <li>
-                    <a <?php if(is_page('volunteer-login')) { echo " class='current'"; } ?> href="<?php echo home_url(); ?>/volunteer-login">Volunteer Login</a>
-                </li>
             </ul>
         </div>
     </div>

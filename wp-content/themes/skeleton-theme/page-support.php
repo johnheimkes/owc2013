@@ -11,7 +11,7 @@
 ?>
 <?php get_header(); ?>
 
-    <div id="support-us" class="section-wrap bg-lightblue js-jump-link-target">
+    <div id="support-us" class="section-wrap bg-white js-jump-link-target">
         <div class="grid-site">
             <div class="grid-sidebar">
                 <div class="secondary-nav">
@@ -60,7 +60,7 @@
         </div>
     </div>
 
-    <div class="section-wrap">
+    <div class="section-wrap bg-white">
         <div class="grid-site">
             <div class="grid-main">
                 <div class="grid-row-s">
