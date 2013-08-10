@@ -1614,6 +1614,6 @@ body p {
     font-weight: bold;
 }
 
-.wpcf7-form-control-wrap {
+.wpcf7-form-control-wrap.your-message {
 	top: 2px;
 }
