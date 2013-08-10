@@ -1617,3 +1617,7 @@ body p {
 .wpcf7-form-control-wrap.your-message {
 	top: 2px;
 }
+
+.wpcf7-submit {
+	margin-top: 7px;
+}
