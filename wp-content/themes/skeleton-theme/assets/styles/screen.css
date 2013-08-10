@@ -177,6 +177,10 @@ body p {
     padding: 55px 0 40px;
 }
 
+.section-wrap-img {
+	min-height: 300px;
+}
+
 .section-hr {
     border-bottom: 1px solid #54accd;
 }
