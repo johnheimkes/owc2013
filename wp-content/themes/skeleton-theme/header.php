@@ -13,7 +13,7 @@
 <html lang="en">
 <head>
 
-    <title><?php bloginfo('name'); ?><?php wp_title(' - '); ?></title>
+    <title><?php bloginfo('name'); ?> <?php wp_title(' - '); ?></title>
 
     <!-- META DATA -->
     <meta charset="utf-8" />
