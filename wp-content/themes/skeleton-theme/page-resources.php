@@ -24,8 +24,8 @@
 						<?php if(get_field('alternative_dispute_resolutions')): ?>
  
 							<ul>
-							<?php while(has_sub_field('adr_link')): ?>
-								<li><a href="<?php echo the_sub_field('adr_link'); ?>"><?php echo the_sub_field('adr_name'); ?></a></li>
+							<?php while(has_sub_field('alternative_dispute_resolutions')): ?>
+								<li><a href="<?php the_sub_field('adr_link'); ?>"><?php the_sub_field('adr_name'); ?></a></li>
 							<?php endwhile; ?>
 							</ul>
  
@@ -48,8 +48,8 @@
 						<?php if(get_field('courts_resources')): ?>
  
 							<ul>
-							<?php while(has_sub_field('rc_link')): ?>
-								<li><a href="<?php echo the_sub_field('rc_link'); ?>"><?php echo the_sub_field('rc_name'); ?></a></li>
+							<?php while(has_sub_field('courts_resources')): ?>
+								<li><a href="<?php the_sub_field('rc_link'); ?>"><?php the_sub_field('rc_name'); ?></a></li>
 							<?php endwhile; ?>
 							</ul>
  
@@ -70,8 +70,8 @@
 						<?php if(get_field('legal_resources')): ?>
  
 							<ul>
-							<?php while(has_sub_field('rl_link')): ?>
-								<li><a href="<?php echo the_sub_field('rl_link'); ?>"><?php echo the_sub_field('rl_name'); ?></a></li>
+							<?php while(has_sub_field('legal_resources')): ?>
+								<li><a href="<?php the_sub_field('rl_link'); ?>"><?php the_sub_field('rl_name'); ?></a></li>
 							<?php endwhile; ?>
 							</ul>
  
@@ -96,8 +96,8 @@
 						<?php if(get_field('nonprofit_resources')): ?>
  
 							<ul>
-							<?php while(has_sub_field('rn_link')): ?>
-								<li><a href="<?php echo the_sub_field('rn_link'); ?>"><?php echo the_sub_field('rn_name'); ?></a></li>
+							<?php while(has_sub_field('nonprofit_resources')): ?>
+								<li><a href="<?php the_sub_field('rn_link'); ?>"><?php the_sub_field('rn_name'); ?></a></li>
 							<?php endwhile; ?>
 							</ul>
  
@@ -125,8 +125,8 @@
 				<?php if(get_field('neighborly_tips')): ?>
 
 					<ol class="tip-list">
-					<?php while(has_sub_field('neighbor_tip')): ?>
-						<li><?php echo the_sub_field('neighbor_tip'); ?></li>
+					<?php while(has_sub_field('neighborly_tips')): ?>
+						<li><?php the_sub_field('neighbor_tip'); ?></li>
 					<?php endwhile; ?>
 					</ol>
 
