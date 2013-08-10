@@ -273,6 +273,8 @@
                                     </div>
                                 </div><!-- End financial report section -->
                             </div>
+		                <?php endwhile; ?>
+		                <?php endif; ?>
                             <div class="grid-col grid-col-3">
                                 <?php if(get_field('about__pdf_financial_report')): ?>
                                     <?php while(has_sub_field('about__pdf_financial_report')): ?>
@@ -281,8 +283,6 @@
                                 <?php endif; ?>
                             </div>
                         </div>           
-                <?php endwhile; ?>
-                <?php endif; ?>
             </div>
 
             <div id="partners" class="grid-main js-jump-link-target">
