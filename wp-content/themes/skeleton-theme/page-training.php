@@ -35,12 +35,7 @@
         <div class="grid-site grid-site_thin">
             <div class="grid-main">
                 <div class="grid-row-s">
-                    <div class="grid-col grid-col-8 white">
-                        <h2 class="hdg-4 hdg-bold">Sign up to be notified for the next available classes</h2>
-                    </div>
-                    <div class="grid-col grid-col-2 white">
-                        <a href="#" class="btn">Sign Up</a>
-                    </div>
+
                 </div>
             </div>
         </div>
